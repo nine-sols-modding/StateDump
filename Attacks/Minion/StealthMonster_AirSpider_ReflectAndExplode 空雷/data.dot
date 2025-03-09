@@ -1,0 +1,42 @@
+strict digraph "Foo" {
+	"rankdir"="LR";
+	node ["shape"="box", "fontname"="Helvetica"];
+	edge ["fontname"="Helvetica"];
+	"FollowChaseHitPlayer" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >FollowChaseHitPlayer  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.00s: CheckFacing<br/>0.50s: CheckFacing<br/>1.62s: Done</FONT>  </TD></TR></TABLE>>]
+	"FollowChaseHitPlayer" -> "Explosion"  ["color"="cornsilk3", "fontcolor"="cornsilk3"]
+	"Explosion" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >Explosion  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.08s: Done</FONT>  </TD></TR></TABLE>>]
+	"Explosion" -> "DeadState"  ["color"="cornsilk3", "fontcolor"="cornsilk3"]
+	"FollowChaseHitPlayer(QuickVer航母版)" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >FollowChaseHitPlayer(QuickVer航母版)  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.00s: CheckFacing<br/>0.08s: CheckFacing<br/>0.17s: CheckFacing<br/>0.25s: CheckFacing<br/>0.33s: CheckFacing<br/>1.12s: Done</FONT>  </TD></TR></TABLE>>]
+	"FollowChaseHitPlayer(QuickVer航母版)" -> "Explosion"  ["color"="cornsilk3", "fontcolor"="cornsilk3"]
+	"Forward Chase 直射" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >Forward Chase 直射  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.00s: CheckFacing<br/>1.12s: Done</FONT>  </TD></TR></TABLE>>]
+	"Forward Chase 直射" -> "Explosion"  ["color"="cornsilk3", "fontcolor"="cornsilk3"]
+	"AttackParrying" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >AttackParrying  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.58s: Done</FONT>  </TD></TR></TABLE>>]
+	"AttackParrying" -> "Explosion"  ["color"="cornsilk3", "fontcolor"="cornsilk3"]
+	"Hurt1" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >Hurt1  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.25s: Done</FONT>  </TD></TR></TABLE>>]
+	"Hurt1" -> "Engaging"  ["color"="cornsilk3", "fontcolor"="cornsilk3"]
+	"Hurt2" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >Hurt2  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.25s: Done</FONT>  </TD></TR></TABLE>>]
+	"Hurt2" -> "Engaging"  ["color"="cornsilk3", "fontcolor"="cornsilk3"]
+	"Sleep" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >Sleep  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.08s: DisableGravity</FONT>  </TD></TR></TABLE>>]
+	"Sleep" -> "Engaging"  ["color"="cornsilk3", "fontcolor"="cornsilk3"]
+	"WakeUp" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >WakeUp  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.08s: DisableGravity<br/>1.00s: Done</FONT>  </TD></TR></TABLE>>]
+	"WakeUp" -> "Engaging"  ["color"="cornsilk3", "fontcolor"="cornsilk3"]
+	"Idle" ["label"="Idle (Init)"]
+	subgraph "cluster_attacksensors" {
+		"rank"="sink";
+		"label"="Attack Sensors";
+		"fontname"="Helvetica";
+		"Level Once Sensor" ["label"="Level Once Sensor"]
+		"Level Once Sensor_linked" ["shape"="box", "style"="dotted", "label"=<<TABLE border="0" cellborder="0" cellspacing="0" cellpadding="2"><TR><TD>FollowChaseHitPlayer  </TD></TR></TABLE>>, "margin"="0.05"]
+		"Level Once Sensor" -> "Level Once Sensor_linked"  ["label"="QueueEnd", "color"="aquamarine3", "fontcolor"="aquamarine3"]
+		"Level Once Sensor_mustuse" ["shape"="box", "style"="dotted", "label"=<<TABLE border="0" cellborder="0" cellspacing="0" cellpadding="2"><TR><TD>1 Undefined  </TD></TR></TABLE>>]
+		"Level Once Sensor" -> "Level Once Sensor_mustuse"  ["label"="Weight", "color"="aquamarine4", "fontcolor"="aquamarine4"]
+		"RunAwaySensor" ["label"="RunAwaySensor"]
+		"AttackSensor" ["label"="AttackSensor"]
+		"AttackSensor_linked" ["shape"="box", "style"="dotted", "label"=<<TABLE border="0" cellborder="0" cellspacing="0" cellpadding="2"><TR><TD>FollowChaseHitPlayer  </TD></TR></TABLE>>, "margin"="0.05"]
+		"AttackSensor" -> "AttackSensor_linked"  ["label"="QueueEnd", "color"="aquamarine3", "fontcolor"="aquamarine3"]
+		"DodgePredictSensor" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >DodgePredictSensor  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">if: Dodge</FONT>  </TD></TR></TABLE>>]
+		"DodgePredictSensor_linked" ["shape"="box", "style"="dotted", "label"=<<TABLE border="0" cellborder="0" cellspacing="0" cellpadding="2"><TR><TD>FollowChaseHitPlayer  </TD></TR></TABLE>>, "margin"="0.05"]
+		"DodgePredictSensor" -> "DodgePredictSensor_linked"  ["label"="QueueEnd", "color"="aquamarine3", "fontcolor"="aquamarine3"]
+	}
+	
+}

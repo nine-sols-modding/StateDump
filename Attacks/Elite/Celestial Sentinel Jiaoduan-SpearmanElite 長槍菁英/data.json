@@ -1,0 +1,1149 @@
+{
+  "InitState": "MonsterBase+States.WanderingIdle",
+  "BossGeneralStates": {
+    "MonsterBase+States.JumpBack": {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/JumpBack@BossGeneralState",
+      "state": "MonsterBase+States.JumpBack",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [
+        {
+          "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/JumpBack/weight (1)@LinkNextMoveStateWeight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Undefined",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Undefined",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "linkInterruptMoveConditionalWeights": [],
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.8333333,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.RollThrough": {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/RollThrough@BossGeneralState",
+      "state": "MonsterBase+States.RollThrough",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [
+        {
+          "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/RollThrough/weight@LinkNextMoveStateWeight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Undefined",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Undefined",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Undefined",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "linkInterruptMoveConditionalWeights": [],
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 1.0,
+          "Event": "AnimationEvents+AnimationEvent.InterruptFacing_TargetRight"
+        },
+        {
+          "Time": 1.01666665,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 1.5,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Attack1": {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/Attacks/[1]TurnAroundPoke@BossGeneralState",
+      "state": "MonsterBase+States.Attack1",
+      "linkedStateTypes": [
+        "MonsterBase+States.Undefined",
+        "MonsterBase+States.RollThrough"
+      ],
+      "linkNextMoveStateWeights": [],
+      "linkInterruptMoveConditionalWeights": [],
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 1.0,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Attack2": {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/Attacks/[2]DoubleAttack@BossGeneralState",
+      "state": "MonsterBase+States.Attack2",
+      "linkedStateTypes": [
+        "MonsterBase+States.Attack3",
+        "MonsterBase+States.RollThrough"
+      ],
+      "linkNextMoveStateWeights": [
+        {
+          "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/Attacks/[2]DoubleAttack/weight@LinkNextMoveStateWeight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Undefined",
+              "Weight": 2
+            },
+            {
+              "StateType": "MonsterBase+States.Undefined",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Undefined",
+              "Weight": 0
+            }
+          ]
+        }
+      ],
+      "linkInterruptMoveConditionalWeights": [],
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.983333349,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 1.66666663,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 2.66666675,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.PreAttack",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Attack3": {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/Attacks/[3]DangerSpear@BossGeneralState",
+      "state": "MonsterBase+States.Attack3",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [
+        {
+          "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/Attacks/[3]DangerSpear/GameObject (1)@LinkNextMoveStateWeight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": []
+        }
+      ],
+      "linkInterruptMoveConditionalWeights": [],
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.333333343,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 2.26666665,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 2.35,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.PreAttack",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Attack4": {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/Attacks/[4]RunPoke@BossGeneralState",
+      "state": "MonsterBase+States.Attack4",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [
+        {
+          "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/Attacks/[4]RunPoke/weight@LinkNextMoveStateWeight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Undefined",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Undefined",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "linkInterruptMoveConditionalWeights": [],
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.DangerHint"
+        },
+        {
+          "Time": 1.56666672,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 1.58333337,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.PreAttack",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.PostureBreak": {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/PostureBreak@PostureBreakState",
+      "postureBreakAmmoSpawner": null,
+      "state": "MonsterBase+States.Undefined",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [],
+      "linkInterruptMoveConditionalWeights": [],
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": false,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.EnableGravity"
+        },
+        {
+          "Time": 1.5,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.PreAttack",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Hurt": {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/HurtState@BossGeneralState",
+      "state": "MonsterBase+States.Hurt",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [],
+      "linkInterruptMoveConditionalWeights": [],
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.EnableGravity"
+        },
+        {
+          "Time": 0.183333337,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.PreAttack",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Hurt_Big": {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/Hurt_BigState@BossGeneralState",
+      "state": "MonsterBase+States.Hurt_Big",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [],
+      "linkInterruptMoveConditionalWeights": [],
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.EnableGravity"
+        },
+        {
+          "Time": 1.0,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.PreAttack",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    }
+  },
+  "OtherStates": {
+    "MonsterBase+States.WanderingIdle": {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/0_Wandering_Idle@StealthWanderingIdle",
+      "originalPos": {
+        "x": -5624.0,
+        "y": -1520.0,
+        "z": 0.0
+      },
+      "originalFacing": "Facings.Right",
+      "SinglePointIdle": false,
+      "newPosTime": 2.0,
+      "newPosTimer": 1.98351026,
+      "IsNewPosRandom": false,
+      "configSetting": "StealthWanderingIdle+ConfigWanderingSetting.Undefined",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.EnableGravity"
+        }
+      ],
+      "exitState": "MonsterBase+States.Wandering",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Wandering": {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/0_Wandering_Walking@StealthWandering",
+      "MaxRun": -1.0,
+      "RunAccel": -1.0,
+      "RunReduce": -1.0,
+      "wanderingPointGenerator": {
+        "$ref": "A2_S2/Room/Prefab/GameplayLeftTop/WanderingPoints@LoopWanderingPointGenerator"
+      },
+      "FailReason": "",
+      "preAllocateGotoTargetSuccess": null,
+      "OnAirMoveSpeed": 0.65,
+      "canTurnAround": true,
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.EnableGravity"
+        }
+      ],
+      "exitState": "MonsterBase+States.WanderingIdle",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Alerted": {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/Alert@StealthAlertState",
+      "_alertSoundPlayer": null,
+      "customStartScoutTime": -1.0,
+      "lookAroundParma": {
+        "$ref": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/0_Wandering_Walking@MoveParam"
+      },
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.EnableGravity"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Engaging": {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/1_Engaging@StealthEngaging",
+      "IsEngagingInstantAttack": false,
+      "ForceRunToPlayer": false,
+      "beforeTransitionClip": null,
+      "RunReduce": -1.0,
+      "MaxRun": -1.0,
+      "RunAccel": -1.0,
+      "OnAirMoveSpeed": 0.65,
+      "IsIgnoringPathFinder": false,
+      "RandomEnterAnimation": true,
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.EnableGravity"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.PreAttack": {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/1_PreAttack@StealthPreAttackState",
+      "exitPreAttackCoolDown": 2.0,
+      "ChangeToEngageDelayTime": 0.0,
+      "ApproachingSchemes": [
+        {
+          "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/1_PreAttack/preAttack@StealthEngagingScheme",
+          "EnterApproachingRange": 110,
+          "EnterApproachingRangeRandomOffset": 40,
+          "ExitApproachingRange": 190,
+          "coolDownStat": {
+            "CoolDownWeight": {
+              "IsRandom": true,
+              "stateWeightList": [
+                {
+                  "option": 1.0,
+                  "weight": 1
+                },
+                {
+                  "option": 2.0,
+                  "weight": 1
+                }
+              ],
+              "customizedInitQueue": []
+            },
+            "HasForceAttackCount": false,
+            "MinAttackCount": 2,
+            "MaxAttackCount": 4
+          },
+          "RunToPlayerDelayTimeMax": 3.5,
+          "RunToPlayerDelayTimeMin": 2.5,
+          "CurrentRunIntoDelay": -1.0,
+          "bindingAnimation": "WalkingPreAttack",
+          "MaxRun": 0.0,
+          "RunAccel": 800.0,
+          "RunReduce": 800.0,
+          "IsEscaping": false
+        }
+      ],
+      "IsGuardingPath": false,
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.EnableGravity"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Panic": {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/Not See Player/1_Panic@StealthPanicState",
+      "isDone": false,
+      "MinStateTime": 0.5,
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.EnableGravity"
+        }
+      ],
+      "exitState": "MonsterBase+States.LookingAround",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.OutOfReach": {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/Not See Player/3_Out of Reach@StealthOutOfReachState",
+      "MinStateTime": 0.5,
+      "OutOfReachReason": "OutOfReachState",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.EnableGravity"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Confused": {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/Not See Player/4_Confuse@StealthConfuse",
+      "_confuseSoundPlayer": {
+        "$ref": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/Not See Player/4_Confuse/confuseSound@SoundPlayer"
+      },
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.EnableGravity"
+        }
+      ],
+      "exitState": "MonsterBase+States.Wandering",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.TurnAround": {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/TurnAround@StealthTurnAround",
+      "_currentAnimState": null,
+      "engagingTurnAroundAnimation": {
+        "stateName": "EngagingTurnAround",
+        "prototypeClip": [
+          {
+            "Time": 0.0,
+            "Event": "AnimationEvents+AnimationEvent.ResetEvaluate"
+          },
+          {
+            "Time": 0.333333343,
+            "Event": "AnimationEvents+AnimationEvent.Done"
+          }
+        ],
+        "_cachedBaseClipName": null,
+        "overrideStateType": "MonsterBase+States.Undefined",
+        "note": ""
+      },
+      "VelXRemainRatio": 0.0,
+      "clip": [
+        {
+          "Time": 0.333333343,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Dead": {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/DeadState@MonsterDeadState",
+      "shootEvent": "UnityEvent(0)",
+      "_selfDestructClip": null,
+      "IsDeadShooted": false,
+      "IsRemoveDeadBody": true,
+      "hitData": null,
+      "deadNoiseEffect": {
+        "$ref": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/MonsterCore/Animator(Proxy)/Animator/LogicRoot/EventBroadcastSystem/Dead Noise@EffectDealer"
+      },
+      "IsEnterClearVelX": true,
+      "DeadValue": [],
+      "overrideByTimeline": null,
+      "monsterViewDummy": null,
+      "_isCulling": true,
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.EnableGravity"
+        },
+        {
+          "Time": 0.183333337,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.MoveToPosition": {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/States/MoveToState@StealthMoveToState",
+      "targetPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "WanderingAnimation": "Wandering_Walking",
+      "ArrivedCallBack": null,
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.EnableGravity"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    }
+  },
+  "HurtInterrupt": {
+    "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/MonsterCore/Animator(Proxy)/Animator/LogicRoot/HurtInterrupt@MonsterHurtInterrupt",
+    "customInterruptTH": -1.0,
+    "IsHurtInterruptChangeState": true,
+    "IsForcePlayingBigHurtAnimation": false,
+    "LowHealthPercentage": 0.0,
+    "AccumulateDamageTh": 0.0,
+    "<currentAccumulateDamage>k__BackingField": 0.0,
+    "linkMoveWeights": []
+  },
+  "TeleportBinding": {
+    "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Teleport@TeleportBinding",
+    "teleportScheme": "TeleportBinding+TeleportScheme.ToPlayerPosition",
+    "offsetCandidates": [],
+    "offset": {
+      "x": 20.0,
+      "y": 0.0
+    },
+    "offsetYFromGround": false,
+    "PhysicsDetect": false
+  },
+  "AttackSensors": [
+    {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor@AttackSensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
+      "AttackWeightPhaseList": [
+        {
+          "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor/weight@LinkNextMoveStateWeight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Undefined",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "testWeight": null,
+      "OnlySameArea": false,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.Attack1"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.0,
+      "currentAttackDelay": 0.0,
+      "coolDownType": "CooldownTokenType.NormalAttack",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": null,
+      "CoolDownWeight": {
+        "IsRandom": false,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 0.0,
+      "UseCoolDownVariation": true,
+      "CooldownMin": 0.5,
+      "CooldownMax": 2.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": false,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    },
+    {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/0_RunAwaySensor@AttackSensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
+      "AttackWeightPhaseList": [],
+      "testWeight": null,
+      "OnlySameArea": true,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.RunAway"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.5,
+      "currentAttackDelay": 0.06540096,
+      "coolDownType": "CooldownTokenType.NoCoolDown",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": null,
+      "CoolDownWeight": {
+        "IsRandom": true,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 5.0,
+      "UseCoolDownVariation": false,
+      "CooldownMin": 0.0,
+      "CooldownMax": 0.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": false,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    },
+    {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor@AttackSensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.PreAttackOnly",
+      "AttackWeightPhaseList": [
+        {
+          "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor/weight (1)@LinkNextMoveStateWeight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Undefined",
+              "Weight": 2
+            },
+            {
+              "StateType": "MonsterBase+States.Undefined",
+              "Weight": 0
+            },
+            {
+              "StateType": "MonsterBase+States.Undefined",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "testWeight": null,
+      "OnlySameArea": false,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.Attack2"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.25,
+      "currentAttackDelay": 0.210517079,
+      "coolDownType": "CooldownTokenType.NormalAttack",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": {
+        "CoolDownWeight": {
+          "IsRandom": true,
+          "stateWeightList": [
+            {
+              "option": 4.0,
+              "weight": 2
+            },
+            {
+              "option": 2.0,
+              "weight": 1
+            }
+          ],
+          "customizedInitQueue": []
+        },
+        "HasForceAttackCount": true,
+        "MinAttackCount": 2,
+        "MaxAttackCount": 4
+      },
+      "CoolDownWeight": {
+        "IsRandom": true,
+        "stateWeightList": [
+          {
+            "option": 4.0,
+            "weight": 1
+          },
+          {
+            "option": 6.0,
+            "weight": 1
+          }
+        ],
+        "customizedInitQueue": []
+      },
+      "coolDown": 0.5,
+      "UseCoolDownVariation": true,
+      "CooldownMin": 8.0,
+      "CooldownMax": 10.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": false,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    },
+    {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor@AttackSensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
+      "AttackWeightPhaseList": [],
+      "testWeight": null,
+      "OnlySameArea": false,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.Attack2"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.0,
+      "currentAttackDelay": 0.0,
+      "coolDownType": "CooldownTokenType.NormalAttack",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": null,
+      "CoolDownWeight": {
+        "IsRandom": true,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 3.0,
+      "UseCoolDownVariation": false,
+      "CooldownMin": 0.0,
+      "CooldownMax": 0.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": true,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [
+        {
+          "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor/rollingCondition@PlayerMovePredictCondition",
+          "ParryDetect": false,
+          "DodgeDetect": true,
+          "JumpDetect": false,
+          "InAirDetect": false,
+          "AttackDetect": false,
+          "ThirdAttackDetect": false,
+          "ChargeAttackDetect": false,
+          "FooDetect": false,
+          "ArrowDetect": false,
+          "randomChance": 1.0,
+          "_isConditionChanged": false,
+          "FinalResultInverted": false,
+          "debugConditionResultOverrider": null
+        }
+      ],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    },
+    {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor@AttackSensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
+      "AttackWeightPhaseList": [
+        {
+          "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/weight@LinkNextMoveStateWeight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": []
+        }
+      ],
+      "testWeight": null,
+      "OnlySameArea": false,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.Attack1"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.0,
+      "currentAttackDelay": 0.0,
+      "coolDownType": "CooldownTokenType.NoCoolDown",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": null,
+      "CoolDownWeight": {
+        "IsRandom": true,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 2.0,
+      "UseCoolDownVariation": false,
+      "CooldownMin": 0.0,
+      "CooldownMax": 0.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": true,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [
+        {
+          "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/attackCondition@PlayerMovePredictCondition",
+          "ParryDetect": false,
+          "DodgeDetect": false,
+          "JumpDetect": false,
+          "InAirDetect": false,
+          "AttackDetect": true,
+          "ThirdAttackDetect": false,
+          "ChargeAttackDetect": false,
+          "FooDetect": false,
+          "ArrowDetect": false,
+          "randomChance": 1.0,
+          "_isConditionChanged": false,
+          "FinalResultInverted": false,
+          "debugConditionResultOverrider": null
+        }
+      ],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    },
+    {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackRunToSensor@AttackSensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingOnly",
+      "AttackWeightPhaseList": [
+        {
+          "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackRunToSensor/weight@LinkNextMoveStateWeight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Undefined",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "testWeight": null,
+      "OnlySameArea": false,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.Attack4"
+      ],
+      "AttackDelayMin": 0.2,
+      "AttackDelayMax": 0.2,
+      "currentAttackDelay": 0.200000018,
+      "coolDownType": "CooldownTokenType.NormalAttack",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": {
+        "CoolDownWeight": {
+          "IsRandom": true,
+          "stateWeightList": [
+            {
+              "option": 6.0,
+              "weight": 1
+            }
+          ],
+          "customizedInitQueue": []
+        },
+        "HasForceAttackCount": false,
+        "MinAttackCount": -1,
+        "MaxAttackCount": -1
+      },
+      "CoolDownWeight": {
+        "IsRandom": true,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 2.0,
+      "UseCoolDownVariation": false,
+      "CooldownMin": 2.0,
+      "CooldownMax": 2.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": false,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    },
+    {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor@AttackSensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
+      "AttackWeightPhaseList": [
+        {
+          "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/weight@LinkNextMoveStateWeight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Undefined",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "testWeight": null,
+      "OnlySameArea": false,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.Attack1"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.0,
+      "currentAttackDelay": 0.0,
+      "coolDownType": "CooldownTokenType.NoCoolDown",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": {
+        "CoolDownWeight": {
+          "IsRandom": true,
+          "stateWeightList": [
+            {
+              "option": 6.0,
+              "weight": 1
+            }
+          ],
+          "customizedInitQueue": []
+        },
+        "HasForceAttackCount": false,
+        "MinAttackCount": -1,
+        "MaxAttackCount": -1
+      },
+      "CoolDownWeight": {
+        "IsRandom": true,
+        "stateWeightList": [
+          {
+            "option": 8.0,
+            "weight": 1
+          }
+        ],
+        "customizedInitQueue": [
+          4.0
+        ]
+      },
+      "coolDown": 2.0,
+      "UseCoolDownVariation": false,
+      "CooldownMin": 0.0,
+      "CooldownMax": 0.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": true,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [
+        {
+          "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/attackCondition@PlayerMovePredictCondition",
+          "ParryDetect": false,
+          "DodgeDetect": false,
+          "JumpDetect": false,
+          "InAirDetect": false,
+          "AttackDetect": true,
+          "ThirdAttackDetect": false,
+          "ChargeAttackDetect": false,
+          "FooDetect": false,
+          "ArrowDetect": false,
+          "randomChance": 1.0,
+          "_isConditionChanged": false,
+          "FinalResultInverted": false,
+          "debugConditionResultOverrider": null
+        }
+      ],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    },
+    {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_RollSensor@AttackSensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
+      "AttackWeightPhaseList": [],
+      "testWeight": null,
+      "OnlySameArea": false,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.RollThrough"
+      ],
+      "AttackDelayMin": 0.5,
+      "AttackDelayMax": 1.0,
+      "currentAttackDelay": 0.5143884,
+      "coolDownType": "CooldownTokenType.NormalAttack",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": null,
+      "CoolDownWeight": {
+        "IsRandom": true,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 5.0,
+      "UseCoolDownVariation": false,
+      "CooldownMin": 0.0,
+      "CooldownMax": 0.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": false,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    },
+    {
+      "$id": "A2_S2/Room/Prefab/GameplayLeftTop/StealthGameMonster_SpearmanElite 長槍菁英/MonsterCore/Animator(Proxy)/Animator/LogicRoot/JumpAwaySensor@AttackSensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
+      "AttackWeightPhaseList": [],
+      "testWeight": null,
+      "OnlySameArea": false,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.RollThrough"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.5,
+      "currentAttackDelay": 0.109660447,
+      "coolDownType": "CooldownTokenType.NormalAttack",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": null,
+      "CoolDownWeight": {
+        "IsRandom": true,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 0.5,
+      "UseCoolDownVariation": false,
+      "CooldownMin": 0.0,
+      "CooldownMax": 0.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": false,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    }
+  ]
+}

@@ -1,0 +1,3173 @@
+{
+  "InitState": "MonsterBase+States.WanderingIdle",
+  "BossGeneralStates": {
+    "MonsterBase+States.JumpBack": {
+      "$id": "/States/JumpBack@JumpBack",
+      "$component": "JumpBack",
+      "state": "MonsterBase+States.JumpBack",
+      "linkedStateTypes": [
+        "MonsterBase+States.Attack2",
+        "MonsterBase+States.Attack10"
+      ],
+      "linkNextMoveStateWeights": [
+        {
+          "$id": "/States/JumpBack/weight@weight",
+          "$component": "weight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack1",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack10",
+              "Weight": 0
+            },
+            {
+              "StateType": "MonsterBase+States.Attack7",
+              "Weight": 2
+            }
+          ]
+        },
+        {
+          "$id": "/States/JumpBack/weight (1)@weight (1)",
+          "$component": "weight (1)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack7",
+              "Weight": 2
+            },
+            {
+              "StateType": "MonsterBase+States.Attack10",
+              "Weight": 0
+            },
+            {
+              "StateType": "MonsterBase+States.Attack8",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/JumpBack/weight 2@weight 2",
+          "$component": "weight 2",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack7",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack2",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack8",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 0.416666657,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 1.5,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.RollThrough": {
+      "$id": "/States/RollThrough (PhaseChange Start@RollThrough (PhaseChange Start",
+      "$component": "RollThrough (PhaseChange Start",
+      "state": "MonsterBase+States.RollThrough",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [
+        {
+          "$id": "/States/RollThrough (PhaseChange Start/weight@weight",
+          "$component": "weight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [
+            {
+              "$ref": "/States/Attacks/[8] Long Charge (2階才有@[8] Long Charge (2階才有"
+            }
+          ],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack8",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/RollThrough (PhaseChange Start/weight (1)@weight (1)",
+          "$component": "weight (1)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [
+            {
+              "$ref": "/States/Attacks/[8] Long Charge (2階才有@[8] Long Charge (2階才有"
+            }
+          ],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack8",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/RollThrough (PhaseChange Start/weight (2)@weight (2)",
+          "$component": "weight (2)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [
+            {
+              "$ref": "/States/Attacks/[19] Thrust Full Screen Slash@[19] Thrust Full Screen Slash"
+            }
+          ],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack19",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 0.416666657,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 1.5,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Attack1": {
+      "$id": "/States/Attacks/[1] Starter  Slow Attack 慢刀前揮@[1] Starter  Slow Attack 慢刀前揮",
+      "$component": "[1] Starter  Slow Attack 慢刀前揮",
+      "state": "MonsterBase+States.Attack1",
+      "linkedStateTypes": [
+        "MonsterBase+States.Attack5",
+        "MonsterBase+States.Attack6"
+      ],
+      "linkNextMoveStateWeights": [
+        {
+          "$id": "/States/Attacks/[1] Starter  Slow Attack 慢刀前揮/phase (0)@phase (0)",
+          "$component": "phase (0)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack6",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack13",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/Attacks/[1] Starter  Slow Attack 慢刀前揮/phase (1)@phase (1)",
+          "$component": "phase (1)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack9",
+              "Weight": 0
+            },
+            {
+              "StateType": "MonsterBase+States.Attack13",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack10",
+              "Weight": 0
+            },
+            {
+              "StateType": "MonsterBase+States.Attack5",
+              "Weight": 0
+            },
+            {
+              "StateType": "MonsterBase+States.Attack6",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 1.5,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 2.0,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 3.0,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 4.5,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        },
+        {
+          "Time": 4.65,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Attack2": {
+      "$id": "/States/Attacks/[2] Teleport To Top@[2] Teleport To Top",
+      "$component": "[2] Teleport To Top",
+      "state": "MonsterBase+States.Attack2",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [
+        {
+          "$id": "/States/Attacks/[2] Teleport To Top/phase (0)@phase (0)",
+          "$component": "phase (0)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack17",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/Attacks/[2] Teleport To Top/phase (1)@phase (1)",
+          "$component": "phase (1)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack17",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/Attacks/[2] Teleport To Top/phase (2)@phase (2)",
+          "$component": "phase (2)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack20",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 0.166666672,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMovePhase3"
+        },
+        {
+          "Time": 0.25,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 0.266666681,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 1.0,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Attack9",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Attack3": {
+      "$id": "/States/Attacks/[3] Thrust Delay 一閃@[3] Thrust Delay 一閃",
+      "$component": "[3] Thrust Delay 一閃",
+      "state": "MonsterBase+States.Attack3",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [
+        {
+          "$id": "/States/Attacks/[3] Thrust Delay 一閃/phase (0)@phase (0)",
+          "$component": "phase (0)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack15",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack14",
+              "Weight": 0
+            },
+            {
+              "StateType": "MonsterBase+States.Skip",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/Attacks/[3] Thrust Delay 一閃/phase (1)@phase (1)",
+          "$component": "phase (1)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack14",
+              "Weight": 0
+            },
+            {
+              "StateType": "MonsterBase+States.Attack15",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Skip",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/Attacks/[3] Thrust Delay 一閃/phase (2)@phase (2)",
+          "$component": "phase (2)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Skip",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 1.18333328,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMovePhase3"
+        },
+        {
+          "Time": 1.33333337,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMovePhase2"
+        },
+        {
+          "Time": 1.5,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 2.16666675,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Attack4": {
+      "$id": "/States/Attacks/[4] Slash Up 上撈下打 大反危@[4] Slash Up 上撈下打 大反危",
+      "$component": "[4] Slash Up 上撈下打 大反危",
+      "state": "MonsterBase+States.Attack4",
+      "linkedStateTypes": [
+        "MonsterBase+States.Attack5",
+        "MonsterBase+States.Attack6"
+      ],
+      "linkNextMoveStateWeights": [
+        {
+          "$id": "/States/Attacks/[4] Slash Up 上撈下打 大反危/phase (0)@phase (0)",
+          "$component": "phase (0)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack10",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/Attacks/[4] Slash Up 上撈下打 大反危/phase (1)@phase (1)",
+          "$component": "phase (1)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack10",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 0.416666657,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 0.75,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 1.75,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 3.5,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Attack5": {
+      "$id": "/States/Attacks/[5] Teleport to Back@[5] Teleport to Back",
+      "$component": "[5] Teleport to Back",
+      "state": "MonsterBase+States.Attack5",
+      "linkedStateTypes": [
+        "MonsterBase+States.Attack3",
+        "MonsterBase+States.Attack7"
+      ],
+      "linkNextMoveStateWeights": [
+        {
+          "$id": "/States/Attacks/[5] Teleport to Back/weight@weight",
+          "$component": "weight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack10",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack14",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.JumpBack",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/Attacks/[5] Teleport to Back/weight (1)@weight (1)",
+          "$component": "weight (1)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack10",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack14",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack8",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/Attacks/[5] Teleport to Back/weight (2)@weight (2)",
+          "$component": "weight (2)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.JumpBack",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 0.25,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 0.416666657,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 0.9166667,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Attack6": {
+      "$id": "/States/Attacks/[6] Double Attack@[6] Double Attack",
+      "$component": "[6] Double Attack",
+      "state": "MonsterBase+States.Attack6",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [],
+      "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
+      "groupingNodes": [
+        {
+          "$id": "/States/Attacks/[6] Double Attack/LinkMoveGroupingNode1 Turn@LinkMoveGroupingNode1 Turn",
+          "$component": "LinkMoveGroupingNode1 Turn",
+          "queue": {
+            "$id": "/States/Attacks/[6] Double Attack/LinkMoveGroupingNode1 Turn@LinkMoveGroupingNode1 Turn",
+            "$component": "LinkMoveGroupingNode1 Turn",
+            "linkNextMoveStateWeights": [
+              {
+                "$id": "/States/Attacks/[6] Double Attack/LinkMoveGroupingNode1 Turn/phase (0)@phase (0)",
+                "$component": "phase (0)",
+                "type": "LinkMoveSetType.NextMove",
+                "IsRandom": true,
+                "mustUseStates": [],
+                "stateWeightList": [
+                  {
+                    "StateType": "MonsterBase+States.Attack15",
+                    "Weight": 1
+                  },
+                  {
+                    "StateType": "MonsterBase+States.Attack2",
+                    "Weight": 1
+                  },
+                  {
+                    "StateType": "MonsterBase+States.Skip",
+                    "Weight": 2
+                  },
+                  {
+                    "StateType": "MonsterBase+States.Attack5",
+                    "Weight": 0
+                  }
+                ]
+              },
+              {
+                "$id": "/States/Attacks/[6] Double Attack/LinkMoveGroupingNode1 Turn/phase (1)@phase (1)",
+                "$component": "phase (1)",
+                "type": "LinkMoveSetType.NextMove",
+                "IsRandom": true,
+                "mustUseStates": [],
+                "stateWeightList": [
+                  {
+                    "StateType": "MonsterBase+States.Attack15",
+                    "Weight": 1
+                  },
+                  {
+                    "StateType": "MonsterBase+States.JumpBack",
+                    "Weight": 1
+                  },
+                  {
+                    "StateType": "MonsterBase+States.Attack2",
+                    "Weight": 1
+                  },
+                  {
+                    "StateType": "MonsterBase+States.Skip",
+                    "Weight": 1
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "$id": "/States/Attacks/[6] Double Attack/LinkMoveGroupingNode2 StarterPose@LinkMoveGroupingNode2 StarterPose",
+          "$component": "LinkMoveGroupingNode2 StarterPose",
+          "queue": {
+            "$id": "/States/Attacks/[6] Double Attack/LinkMoveGroupingNode2 StarterPose@LinkMoveGroupingNode2 StarterPose",
+            "$component": "LinkMoveGroupingNode2 StarterPose",
+            "linkNextMoveStateWeights": [
+              {
+                "$id": "/States/Attacks/[6] Double Attack/LinkMoveGroupingNode2 StarterPose/phase (0)@phase (0)",
+                "$component": "phase (0)",
+                "type": "LinkMoveSetType.NextMove",
+                "IsRandom": true,
+                "mustUseStates": [],
+                "stateWeightList": [
+                  {
+                    "StateType": "MonsterBase+States.Attack6",
+                    "Weight": 1
+                  },
+                  {
+                    "StateType": "MonsterBase+States.Attack13",
+                    "Weight": 1
+                  }
+                ]
+              },
+              {
+                "$id": "/States/Attacks/[6] Double Attack/LinkMoveGroupingNode2 StarterPose/phase (1)@phase (1)",
+                "$component": "phase (1)",
+                "type": "LinkMoveSetType.NextMove",
+                "IsRandom": true,
+                "mustUseStates": [],
+                "stateWeightList": [
+                  {
+                    "StateType": "MonsterBase+States.Attack6",
+                    "Weight": 1
+                  },
+                  {
+                    "StateType": "MonsterBase+States.Attack13",
+                    "Weight": 1
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 0.933333337,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 1.66666663,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 2.16666675,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 3.16666675,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Attack7": {
+      "$id": "/States/Attacks/[7] Teleport Dash Forward@[7] Teleport Dash Forward",
+      "$component": "[7] Teleport Dash Forward",
+      "state": "MonsterBase+States.Attack5",
+      "linkedStateTypes": [
+        "MonsterBase+States.Attack3",
+        "MonsterBase+States.Attack7"
+      ],
+      "linkNextMoveStateWeights": [
+        {
+          "$id": "/States/Attacks/[7] Teleport Dash Forward/weight@weight",
+          "$component": "weight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack3",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack10",
+              "Weight": 2
+            }
+          ]
+        },
+        {
+          "$id": "/States/Attacks/[7] Teleport Dash Forward/weight (1)@weight (1)",
+          "$component": "weight (1)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack10",
+              "Weight": 2
+            },
+            {
+              "StateType": "MonsterBase+States.Attack14",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/Attacks/[7] Teleport Dash Forward/weight (2)@weight (2)",
+          "$component": "weight (2)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack6",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.06666667,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 0.25,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Attack8": {
+      "$id": "/States/Attacks/[8] Long Charge (2階才有@[8] Long Charge (2階才有",
+      "$component": "[8] Long Charge (2階才有",
+      "state": "MonsterBase+States.Attack8",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [
+        {
+          "$id": "/States/Attacks/[8] Long Charge (2階才有/weight@weight",
+          "$component": "weight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack11",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/Attacks/[8] Long Charge (2階才有/weight (1)@weight (1)",
+          "$component": "weight (1)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack11",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/Attacks/[8] Long Charge (2階才有/weight (2)@weight (2)",
+          "$component": "weight (2)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack11",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 0.5,
+          "Event": "AnimationEvents+AnimationEvent.LinkMoveInterrupt"
+        },
+        {
+          "Time": 1.41666663,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 1.58333337,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        },
+        {
+          "Time": 5.016667,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 5.016667,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 7.10000038,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 7.266667,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Attack9": {
+      "$id": "/States/Attacks/[9] Starter@[9] Starter",
+      "$component": "[9] Starter",
+      "state": "MonsterBase+States.Attack9",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [
+        {
+          "$id": "/States/Attacks/[9] Starter/phase (0)@phase (0)",
+          "$component": "phase (0)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack6",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack13",
+              "Weight": 0
+            }
+          ]
+        },
+        {
+          "$id": "/States/Attacks/[9] Starter/phase (1)@phase (1)",
+          "$component": "phase (1)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack6",
+              "Weight": 2
+            },
+            {
+              "StateType": "MonsterBase+States.Attack13",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 0.5,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Attack10": {
+      "$id": "/States/Attacks/[10] Danger Foo Grab@[10] Danger Foo Grab",
+      "$component": "[10] Danger Foo Grab",
+      "state": "MonsterBase+States.Attack10",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [],
+      "linkInterruptMoveConditionalWeights": [
+        {
+          "$id": "/States/Attacks/[10] Danger Foo Grab/interrupt weight@interrupt weight",
+          "$component": "interrupt weight",
+          "type": "LinkMoveSetType.InterruptConditional",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack5",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/Attacks/[10] Danger Foo Grab/interrupt weight (1)@interrupt weight (1)",
+          "$component": "interrupt weight (1)",
+          "type": "LinkMoveSetType.InterruptConditional",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack4",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack12",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/Attacks/[10] Danger Foo Grab/interrupt weight (2)@interrupt weight (2)",
+          "$component": "interrupt weight (2)",
+          "type": "LinkMoveSetType.InterruptConditional",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack4",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack12",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack2",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "DelayOffset": 0.0,
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 1.83333337,
+          "Event": "AnimationEvents+AnimationEvent.LinkMoveInterrupt"
+        },
+        {
+          "Time": 2.5,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 3.0,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Attack11": {
+      "$id": "/States/Attacks/[11] GiantChargeWave 紅白白紅@[11] GiantChargeWave 紅白白紅",
+      "$component": "[11] GiantChargeWave 紅白白紅",
+      "state": "MonsterBase+States.Attack11",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [
+        {
+          "$id": "/States/Attacks/[11] GiantChargeWave 紅白白紅/weight (1)@weight (1)",
+          "$component": "weight (1)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": false,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Skip",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack3",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/Attacks/[11] GiantChargeWave 紅白白紅/weight (2)@weight (2)",
+          "$component": "weight (2)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": false,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Skip",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack3",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/Attacks/[11] GiantChargeWave 紅白白紅/weight (3)@weight (3)",
+          "$component": "weight (3)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": false,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack19",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack3",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Skip",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 0.6666667,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 1.16666663,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 1.48333335,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 2.38333344,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 3.16666675,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Attack12": {
+      "$id": "/States/Attacks/[12] UpSlash Down Danger@[12] UpSlash Down Danger",
+      "$component": "[12] UpSlash Down Danger",
+      "state": "MonsterBase+States.Attack11",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [
+        {
+          "$id": "/States/Attacks/[12] UpSlash Down Danger/weight@weight",
+          "$component": "weight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Skip",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/Attacks/[12] UpSlash Down Danger/weight (1)@weight (1)",
+          "$component": "weight (1)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack5",
+              "Weight": 0
+            },
+            {
+              "StateType": "MonsterBase+States.Attack14",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 0.25,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 1.0,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 1.66666663,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 2.5,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Attack13": {
+      "$id": "/States/Attacks/[13] Tripple Poke 三連@[13] Tripple Poke 三連",
+      "$component": "[13] Tripple Poke 三連",
+      "state": "MonsterBase+States.Attack11",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [
+        {
+          "$id": "/States/Attacks/[13] Tripple Poke 三連/weight@weight",
+          "$component": "weight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.JumpBack",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Skip",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack13",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/Attacks/[13] Tripple Poke 三連/weight (1)@weight (1)",
+          "$component": "weight (1)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.JumpBack",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack10",
+              "Weight": 0
+            },
+            {
+              "StateType": "MonsterBase+States.Attack2",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack5",
+              "Weight": 0
+            }
+          ]
+        }
+      ],
+      "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 0.6666667,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 1.08333337,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 1.33333337,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMoveBreak"
+        },
+        {
+          "Time": 1.5,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 1.83333337,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 2.26666665,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Attack14": {
+      "$id": "/States/Attacks/[14] FooExplode Smash 下砸紅球@[14] FooExplode Smash 下砸紅球",
+      "$component": "[14] FooExplode Smash 下砸紅球",
+      "state": "MonsterBase+States.Attack11",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [
+        {
+          "$id": "/States/Attacks/[14] FooExplode Smash 下砸紅球/phase0 (1)@phase0 (1)",
+          "$component": "phase0 (1)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Skip",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack5",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 0.75,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 1.41666663,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 2.0,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 2.58333325,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Attack15": {
+      "$id": "/States/Attacks/[15] TurnAroundPrepare@[15] TurnAroundPrepare",
+      "$component": "[15] TurnAroundPrepare",
+      "state": "MonsterBase+States.Attack11",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [
+        {
+          "$id": "/States/Attacks/[15] TurnAroundPrepare/weight@weight",
+          "$component": "weight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack16",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/Attacks/[15] TurnAroundPrepare/weight (1)@weight (1)",
+          "$component": "weight (1)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack16",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.6666667,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 0.75,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Attack16": {
+      "$id": "/States/Attacks/[16] QuickFoo@[16] QuickFoo",
+      "$component": "[16] QuickFoo",
+      "state": "MonsterBase+States.Attack10",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [],
+      "linkInterruptMoveConditionalWeights": [
+        {
+          "$id": "/States/Attacks/[16] QuickFoo/interrupt weight@interrupt weight",
+          "$component": "interrupt weight",
+          "type": "LinkMoveSetType.InterruptConditional",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack5",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/Attacks/[16] QuickFoo/interrupt weight (1)@interrupt weight (1)",
+          "$component": "interrupt weight (1)",
+          "type": "LinkMoveSetType.InterruptConditional",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack4",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack12",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/Attacks/[16] QuickFoo/interrupt weight (2)@interrupt weight (2)",
+          "$component": "interrupt weight (2)",
+          "type": "LinkMoveSetType.InterruptConditional",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack4",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack12",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack5",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "DelayOffset": 0.0,
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 1.0,
+          "Event": "AnimationEvents+AnimationEvent.LinkMoveInterrupt"
+        },
+        {
+          "Time": 2.5,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Attack17": {
+      "$id": "/States/Attacks/[17] DownAttack Danger 空中下危@[17] DownAttack Danger 空中下危",
+      "$component": "[17] DownAttack Danger 空中下危",
+      "state": "MonsterBase+States.Attack10",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [
+        {
+          "$id": "/States/Attacks/[17] DownAttack Danger 空中下危/weight@weight",
+          "$component": "weight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack3",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/Attacks/[17] DownAttack Danger 空中下危/weight (1)@weight (1)",
+          "$component": "weight (1)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack3",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.JumpBack",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/Attacks/[17] DownAttack Danger 空中下危/weight (2)@weight (2)",
+          "$component": "weight (2)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack16",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack3",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 1.0,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 2.0,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Attack18": {
+      "$id": "/States/Attacks/[18] Teleport to Back Combo@[18] Teleport to Back Combo",
+      "$component": "[18] Teleport to Back Combo",
+      "state": "MonsterBase+States.Attack5",
+      "linkedStateTypes": [
+        "MonsterBase+States.Attack3",
+        "MonsterBase+States.Attack7"
+      ],
+      "linkNextMoveStateWeights": [
+        {
+          "$id": "/States/Attacks/[18] Teleport to Back Combo/weight@weight",
+          "$component": "weight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack10",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 0.25,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 0.416666657,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 0.9166667,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Attack19": {
+      "$id": "/States/Attacks/[19] Thrust Full Screen Slash@[19] Thrust Full Screen Slash",
+      "$component": "[19] Thrust Full Screen Slash",
+      "state": "MonsterBase+States.Attack5",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [],
+      "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
+      "groupingNodes": [
+        {
+          "$id": "/States/Attacks/[19] Thrust Full Screen Slash/LinkMoveGroupingNode Timing 1 invisible@LinkMoveGroupingNode Timing 1 invisible",
+          "$component": "LinkMoveGroupingNode Timing 1 invisible",
+          "queue": {
+            "$id": "/States/Attacks/[19] Thrust Full Screen Slash/LinkMoveGroupingNode Timing 1 invisible@LinkMoveGroupingNode Timing 1 invisible",
+            "$component": "LinkMoveGroupingNode Timing 1 invisible",
+            "linkNextMoveStateWeights": [
+              {
+                "$id": "/States/Attacks/[19] Thrust Full Screen Slash/LinkMoveGroupingNode Timing 1 invisible/weight (2)@weight (2)",
+                "$component": "weight (2)",
+                "type": "LinkMoveSetType.NextMove",
+                "IsRandom": true,
+                "mustUseStates": [],
+                "stateWeightList": [
+                  {
+                    "StateType": "MonsterBase+States.Attack20",
+                    "Weight": 2
+                  },
+                  {
+                    "StateType": "MonsterBase+States.Skip",
+                    "Weight": 1
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "$id": "/States/Attacks/[19] Thrust Full Screen Slash/LinkMoveGroupingNode Timing 2 Ground@LinkMoveGroupingNode Timing 2 Ground",
+          "$component": "LinkMoveGroupingNode Timing 2 Ground",
+          "queue": {
+            "$id": "/States/Attacks/[19] Thrust Full Screen Slash/LinkMoveGroupingNode Timing 2 Ground@LinkMoveGroupingNode Timing 2 Ground",
+            "$component": "LinkMoveGroupingNode Timing 2 Ground",
+            "linkNextMoveStateWeights": [
+              {
+                "$id": "/States/Attacks/[19] Thrust Full Screen Slash/LinkMoveGroupingNode Timing 2 Ground/weight (2)@weight (2)",
+                "$component": "weight (2)",
+                "type": "LinkMoveSetType.NextMove",
+                "IsRandom": true,
+                "mustUseStates": [],
+                "stateWeightList": [
+                  {
+                    "StateType": "MonsterBase+States.Attack16",
+                    "Weight": 2
+                  },
+                  {
+                    "StateType": "MonsterBase+States.Attack3",
+                    "Weight": 1
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 2.25,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 2.33333325,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 3.13333344,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Attack20": {
+      "$id": "/States/Attacks/[20] TeleportOut@[20] TeleportOut",
+      "$component": "[20] TeleportOut",
+      "state": "MonsterBase+States.Attack5",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [
+        {
+          "$id": "/States/Attacks/[20] TeleportOut/weight (2)@weight (2)",
+          "$component": "weight (2)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack3",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack16",
+              "Weight": 2
+            }
+          ]
+        }
+      ],
+      "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 2.08333325,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 2.58333325,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.PostureBreak": {
+      "$id": "/States/PostureBreak@PostureBreak",
+      "$component": "PostureBreak",
+      "postureBreakAmmoSpawner": null,
+      "state": "MonsterBase+States.Undefined",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [
+        {
+          "$id": "/States/PostureBreak/phase0@phase0",
+          "$component": "phase0",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack2",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack5",
+              "Weight": 2
+            }
+          ]
+        },
+        {
+          "$id": "/States/PostureBreak/phase1@phase1",
+          "$component": "phase1",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack2",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack4",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack12",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/PostureBreak/phase2@phase2",
+          "$component": "phase2",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack12",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack4",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.JumpBack",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": false,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.333333343,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 2.0,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.PreAttack",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Hurt": {
+      "$id": "/States/HurtState@HurtState",
+      "$component": "HurtState",
+      "state": "MonsterBase+States.Hurt",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [
+        {
+          "$id": "/States/HurtState/weight@weight",
+          "$component": "weight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack5",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.JumpBack",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 0.25,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 0.6666667,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.PreAttack",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.LastHit": {
+      "$id": "/States/LastHit@LastHit",
+      "$component": "LastHit",
+      "state": "MonsterBase+States.LastHit",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [],
+      "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": false,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 0.0833333358,
+          "Event": "AnimationEvents+AnimationEvent.EnableGravity"
+        },
+        {
+          "Time": 1.0,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Dead",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.AttackParrying1": {
+      "$id": "/States/AttackParrying@AttackParrying",
+      "$component": "AttackParrying",
+      "state": "MonsterBase+States.AttackParrying1",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [
+        {
+          "$id": "/States/AttackParrying/weight@weight",
+          "$component": "weight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack3",
+              "Weight": 0
+            },
+            {
+              "StateType": "MonsterBase+States.Skip",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/AttackParrying/weight (1)@weight (1)",
+          "$component": "weight (1)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack3",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Skip",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/States/AttackParrying/weight (2)@weight (2)",
+          "$component": "weight (2)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack19",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Skip",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 1.0,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 1.33333337,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Hurt_Big": {
+      "$id": "/States/Hurt_BigState@Hurt_BigState",
+      "$component": "Hurt_BigState",
+      "state": "MonsterBase+States.Hurt_Big",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [],
+      "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 1.0,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.PreAttack",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    }
+  },
+  "OtherStates": {
+    "MonsterBase+States.WanderingIdle": {
+      "$id": "/States/0_Wandering_Idle@0_Wandering_Idle",
+      "$component": "0_Wandering_Idle",
+      "originalPos": {
+        "x": -2520.5,
+        "y": -1104.0,
+        "z": 0.0
+      },
+      "originalFacing": "Facings.Left",
+      "SinglePointIdle": true,
+      "newPosTime": -1.0,
+      "newPosTimer": -1.0,
+      "IsNewPosRandom": false,
+      "configSetting": "StealthWanderingIdle+ConfigWanderingSetting.Undefined",
+      "clip": [],
+      "exitState": "MonsterBase+States.Wandering",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Wandering": {
+      "$id": "/States/0_Wandering_Walking@0_Wandering_Walking",
+      "$component": "0_Wandering_Walking",
+      "MaxRun": 72.0,
+      "RunAccel": 100.0,
+      "RunReduce": 400.0,
+      "wanderingPointGenerator": {
+        "$ref": "GameLevel/Room/Prefab/EventBinder/General Boss Fight FSM Object Variant/FSM Animator/LogicRoot/---Boss---/WanderingPoints@WanderingPoints"
+      },
+      "FailReason": "",
+      "preAllocateGotoTargetSuccess": null,
+      "OnAirMoveSpeed": 0.65,
+      "canTurnAround": true,
+      "clip": [
+        {
+          "Time": 0.9166667,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.WanderingIdle",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Engaging": {
+      "$id": "/States/1_Engaging@1_Engaging",
+      "$component": "1_Engaging",
+      "IsEngagingInstantAttack": false,
+      "ForceRunToPlayer": false,
+      "beforeTransitionClip": null,
+      "RunReduce": 800.0,
+      "MaxRun": 60.0,
+      "RunAccel": 800.0,
+      "OnAirMoveSpeed": 0.65,
+      "IsIgnoringPathFinder": false,
+      "RandomEnterAnimation": true,
+      "clip": [
+        {
+          "Time": 0.9166667,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.PreAttack": {
+      "$id": "/States/1_PreAttack@1_PreAttack",
+      "$component": "1_PreAttack",
+      "exitPreAttackCoolDown": 2.0,
+      "ChangeToEngageDelayTime": 0.0,
+      "ApproachingSchemes": [
+        {
+          "$id": "/States/1_PreAttack/preAttack@preAttack",
+          "$component": "preAttack",
+          "EnterApproachingRange": 0,
+          "EnterApproachingRangeRandomOffset": 160,
+          "ExitApproachingRange": 200,
+          "coolDownStat": null,
+          "RunToPlayerDelayTimeMax": 0.0,
+          "RunToPlayerDelayTimeMin": 2.0,
+          "CurrentRunIntoDelay": -1.0,
+          "bindingAnimation": "WalkingPreAttack",
+          "MaxRun": 0.0,
+          "RunAccel": 800.0,
+          "RunReduce": 800.0,
+          "IsEscaping": false
+        }
+      ],
+      "IsGuardingPath": false,
+      "clip": [],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Panic": {
+      "$id": "/States/Not See Player/1_Panic@1_Panic",
+      "$component": "1_Panic",
+      "isDone": false,
+      "MinStateTime": 0.5,
+      "clip": null,
+      "exitState": "MonsterBase+States.LookingAround",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.OutOfReach": {
+      "$id": "/States/Not See Player/3_Out of Reach@3_Out of Reach",
+      "$component": "3_Out of Reach",
+      "MinStateTime": 0.5,
+      "OutOfReachReason": "OutOfReachState",
+      "clip": [],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Confused": {
+      "$id": "/States/Not See Player/4_Confuse@4_Confuse",
+      "$component": "4_Confuse",
+      "_confuseSoundPlayer": {
+        "$ref": "/States/Not See Player/4_Confuse/confuseSound@confuseSound"
+      },
+      "clip": [],
+      "exitState": "MonsterBase+States.Wandering",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.TurnAround": {
+      "$id": "/States/TurnAround@TurnAround",
+      "$component": "TurnAround",
+      "_currentAnimState": null,
+      "engagingTurnAroundAnimation": {
+        "stateName": "EngagingTurnAround",
+        "prototypeClip": [
+          {
+            "Time": 0.0,
+            "Event": "AnimationEvents+AnimationEvent.ResetEvaluate"
+          },
+          {
+            "Time": 0.333333343,
+            "Event": "AnimationEvents+AnimationEvent.Done"
+          }
+        ],
+        "_cachedBaseClipName": null,
+        "overrideStateType": "MonsterBase+States.Undefined",
+        "note": ""
+      },
+      "VelXRemainRatio": 0.0,
+      "clip": [
+        {
+          "Time": 0.416666657,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 0.5,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Attack9",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Dead": {
+      "$id": "/States/DeadState@DeadState",
+      "$component": "DeadState",
+      "shootEvent": "UnityEvent(0)",
+      "_selfDestructClip": null,
+      "IsDeadShooted": false,
+      "IsRemoveDeadBody": true,
+      "hitData": null,
+      "deadNoiseEffect": {
+        "$ref": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/EventBroadcastSystem/Dead Noise@Dead Noise"
+      },
+      "IsEnterClearVelX": true,
+      "DeadValue": [],
+      "overrideByTimeline": null,
+      "monsterViewDummy": null,
+      "_isCulling": false,
+      "clip": [
+        {
+          "Time": 1.0,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.FooStunEnter": {
+      "$id": "/States/FooStunEnter (Boss Angry 2 去三階段@FooStunEnter (Boss Angry 2 去三階段",
+      "$component": "FooStunEnter (Boss Angry 2 去三階段",
+      "OnPhaseChangeStart": "UnityEvent(1)",
+      "OnPhaseChangeDone": "UnityEvent(1)",
+      "AutoTurnAround": false,
+      "animatorController": null,
+      "outsourceDummyReference": null,
+      "AnimationSpeed": 1.0,
+      "oursourcingCallback": false,
+      "selfClipDone": false,
+      "UseLoopAngry": false,
+      "LoopTime": 10.0,
+      "_loopCounter": 0.0,
+      "loopForever": false,
+      "loopState": "BossPhaseChangeState+LoopState.Enter",
+      "ShootEvent": "UnityEvent(0)",
+      "StartExitLoop": "UnityEvent(0)",
+      "UseCrossFade": false,
+      "clip": [
+        {
+          "Time": 0.5,
+          "Event": "AnimationEvents+AnimationEvent.EnableGravity"
+        },
+        {
+          "Time": 8.5,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.RollThrough",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.BossAngry": {
+      "$id": "/States/[BossAngry] BossAngry 二階段@[BossAngry] BossAngry 二階段",
+      "$component": "[BossAngry] BossAngry 二階段",
+      "OnPhaseChangeStart": "UnityEvent(1)",
+      "OnPhaseChangeDone": "UnityEvent(1)",
+      "AutoTurnAround": false,
+      "animatorController": null,
+      "outsourceDummyReference": null,
+      "AnimationSpeed": 1.0,
+      "oursourcingCallback": false,
+      "selfClipDone": false,
+      "UseLoopAngry": false,
+      "LoopTime": 10.0,
+      "_loopCounter": 0.0,
+      "loopForever": false,
+      "loopState": "BossPhaseChangeState+LoopState.Enter",
+      "ShootEvent": "UnityEvent(0)",
+      "StartExitLoop": "UnityEvent(0)",
+      "UseCrossFade": false,
+      "clip": [
+        {
+          "Time": 0.166666672,
+          "Event": "AnimationEvents+AnimationEvent.EnableGravity"
+        },
+        {
+          "Time": 5.0,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.RollThrough",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.MoveToPosition": {
+      "$id": "/States/MoveToState@MoveToState",
+      "$component": "MoveToState",
+      "targetPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "WanderingAnimation": "Wandering_Walking",
+      "ArrivedCallBack": null,
+      "clip": [
+        {
+          "Time": 0.9166667,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    }
+  },
+  "HurtInterrupt": {
+    "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/HurtInterrupt@HurtInterrupt",
+    "$component": "HurtInterrupt",
+    "customInterruptTH": -1.0,
+    "IsHurtInterruptChangeState": true,
+    "IsForcePlayingBigHurtAnimation": false,
+    "LowHealthPercentage": 0.0,
+    "AccumulateDamageTh": 0.0,
+    "<currentAccumulateDamage>k__BackingField": 0.0,
+    "linkMoveWeights": []
+  },
+  "TeleportBinding": {
+    "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Teleport@Teleport",
+    "$component": "Teleport",
+    "teleportScheme": "TeleportBinding+TeleportScheme.ToPlayerPosition",
+    "offsetCandidates": [],
+    "offset": {
+      "x": 80.0,
+      "y": 0.0
+    },
+    "offsetYFromGround": true,
+    "PhysicsDetect": false
+  },
+  "AttackSensors": [
+    {
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor@Level Once Sensor",
+      "$component": "Level Once Sensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
+      "AttackWeightPhaseList": [
+        {
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor/weight@weight",
+          "$component": "weight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack1",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "testWeight": null,
+      "OnlySameArea": false,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.Attack1"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.0,
+      "currentAttackDelay": 0.0,
+      "coolDownType": "CooldownTokenType.NormalAttack",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": null,
+      "CoolDownWeight": {
+        "IsRandom": false,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 0.0,
+      "UseCoolDownVariation": true,
+      "CooldownMin": 0.5,
+      "CooldownMax": 2.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": false,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    },
+    {
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/0_RunAwaySensor@0_RunAwaySensor",
+      "$component": "0_RunAwaySensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
+      "AttackWeightPhaseList": [],
+      "testWeight": null,
+      "OnlySameArea": true,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.RunAway"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.5,
+      "currentAttackDelay": 0.432548821,
+      "coolDownType": "CooldownTokenType.NoCoolDown",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": null,
+      "CoolDownWeight": {
+        "IsRandom": true,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 5.0,
+      "UseCoolDownVariation": false,
+      "CooldownMin": 0.0,
+      "CooldownMax": 0.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": false,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    },
+    {
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor@1_AttackSensor",
+      "$component": "1_AttackSensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.PreAttackOnly",
+      "AttackWeightPhaseList": [
+        {
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor/phase (0)@phase (0)",
+          "$component": "phase (0)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack9",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.JumpBack",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor/phase (1)@phase (1)",
+          "$component": "phase (1)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [
+            {
+              "$ref": "/States/JumpBack@JumpBack"
+            }
+          ],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack9",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.JumpBack",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor/phase (2)@phase (2)",
+          "$component": "phase (2)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [
+            {
+              "$ref": "/States/JumpBack@JumpBack"
+            }
+          ],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.JumpBack",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack2",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "testWeight": {
+        "$ref": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor/test move@test move"
+      },
+      "OnlySameArea": false,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.Attack1",
+        "MonsterBase+States.Attack4"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.0,
+      "currentAttackDelay": 0.0,
+      "coolDownType": "CooldownTokenType.Boss",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": {
+        "CoolDownWeight": {
+          "IsRandom": true,
+          "stateWeightList": [
+            {
+              "option": 0.0,
+              "weight": 1
+            }
+          ],
+          "customizedInitQueue": []
+        },
+        "HasForceAttackCount": true,
+        "MinAttackCount": 0,
+        "MaxAttackCount": 2
+      },
+      "CoolDownWeight": {
+        "IsRandom": true,
+        "stateWeightList": [
+          {
+            "option": 0.0,
+            "weight": 2
+          },
+          {
+            "option": 2.0,
+            "weight": 1
+          }
+        ],
+        "customizedInitQueue": []
+      },
+      "coolDown": 0.0,
+      "UseCoolDownVariation": false,
+      "CooldownMin": 3.0,
+      "CooldownMax": 6.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": false,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    },
+    {
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor@2_DodgePredictSensor",
+      "$component": "2_DodgePredictSensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
+      "AttackWeightPhaseList": [
+        {
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor/phase 0@phase 0",
+          "$component": "phase 0",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack5",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack2",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "testWeight": null,
+      "OnlySameArea": false,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.Attack1"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.0,
+      "currentAttackDelay": 0.0,
+      "coolDownType": "CooldownTokenType.Boss",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": null,
+      "CoolDownWeight": {
+        "IsRandom": true,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 3.0,
+      "UseCoolDownVariation": false,
+      "CooldownMin": 0.0,
+      "CooldownMax": 0.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": true,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [
+        {
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor/rollingCondition@rollingCondition",
+          "$component": "rollingCondition",
+          "ParryDetect": false,
+          "DodgeDetect": false,
+          "JumpDetect": false,
+          "InAirDetect": false,
+          "AttackDetect": false,
+          "ThirdAttackDetect": false,
+          "ChargeAttackDetect": false,
+          "FooDetect": false,
+          "ArrowDetect": true,
+          "randomChance": 1.0,
+          "_isConditionChanged": false,
+          "FinalResultInverted": false,
+          "debugConditionResultOverrider": null
+        }
+      ],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    },
+    {
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor@3_AttackPredictSensor",
+      "$component": "3_AttackPredictSensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.AllValid",
+      "AttackWeightPhaseList": [
+        {
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/weight@weight",
+          "$component": "weight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack9",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "testWeight": null,
+      "OnlySameArea": false,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.Attack1"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.0,
+      "currentAttackDelay": 0.0,
+      "coolDownType": "CooldownTokenType.NoCoolDown",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": null,
+      "CoolDownWeight": {
+        "IsRandom": false,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 0.0,
+      "UseCoolDownVariation": false,
+      "CooldownMin": 0.0,
+      "CooldownMax": 0.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": true,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [
+        {
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/attackCondition@attackCondition",
+          "$component": "attackCondition",
+          "ParryDetect": false,
+          "DodgeDetect": false,
+          "JumpDetect": false,
+          "InAirDetect": false,
+          "AttackDetect": true,
+          "ThirdAttackDetect": true,
+          "ChargeAttackDetect": false,
+          "FooDetect": false,
+          "ArrowDetect": false,
+          "randomChance": 0.5,
+          "_isConditionChanged": false,
+          "FinalResultInverted": false,
+          "debugConditionResultOverrider": null
+        }
+      ],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    },
+    {
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackRunToSensor@1_AttackRunToSensor",
+      "$component": "1_AttackRunToSensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingOnly",
+      "AttackWeightPhaseList": [
+        {
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackRunToSensor/move@move",
+          "$component": "move",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack1",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack5",
+              "Weight": 0
+            }
+          ]
+        }
+      ],
+      "testWeight": {
+        "$ref": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackRunToSensor/test move (1)@test move (1)"
+      },
+      "OnlySameArea": false,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.Attack1"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.0,
+      "currentAttackDelay": 0.0,
+      "coolDownType": "CooldownTokenType.Boss",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": {
+        "CoolDownWeight": {
+          "IsRandom": true,
+          "stateWeightList": [
+            {
+              "option": 0.0,
+              "weight": 1
+            }
+          ],
+          "customizedInitQueue": []
+        },
+        "HasForceAttackCount": true,
+        "MinAttackCount": 0,
+        "MaxAttackCount": 2
+      },
+      "CoolDownWeight": {
+        "IsRandom": true,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 0.0,
+      "UseCoolDownVariation": false,
+      "CooldownMin": 3.0,
+      "CooldownMax": 6.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": false,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    },
+    {
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor (1)@3_AttackPredictSensor (1)",
+      "$component": "3_AttackPredictSensor (1)",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
+      "AttackWeightPhaseList": [
+        {
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor (1)/weight@weight",
+          "$component": "weight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack5",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.JumpBack",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor (1)/weight (1)@weight (1)",
+          "$component": "weight (1)",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack5",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "testWeight": null,
+      "OnlySameArea": false,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.Attack1"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.0,
+      "currentAttackDelay": 0.0,
+      "coolDownType": "CooldownTokenType.Boss",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": {
+        "CoolDownWeight": {
+          "IsRandom": true,
+          "stateWeightList": [
+            {
+              "option": 0.0,
+              "weight": 1
+            }
+          ],
+          "customizedInitQueue": []
+        },
+        "HasForceAttackCount": true,
+        "MinAttackCount": 0,
+        "MaxAttackCount": 2
+      },
+      "CoolDownWeight": {
+        "IsRandom": false,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 0.0,
+      "UseCoolDownVariation": false,
+      "CooldownMin": 0.0,
+      "CooldownMax": 0.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": true,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [
+        {
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor (1)/attackCondition@attackCondition",
+          "$component": "attackCondition",
+          "ParryDetect": false,
+          "DodgeDetect": false,
+          "JumpDetect": false,
+          "InAirDetect": false,
+          "AttackDetect": false,
+          "ThirdAttackDetect": false,
+          "ChargeAttackDetect": false,
+          "FooDetect": false,
+          "ArrowDetect": true,
+          "randomChance": 1.0,
+          "_isConditionChanged": false,
+          "FinalResultInverted": false,
+          "debugConditionResultOverrider": null
+        }
+      ],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    },
+    {
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor Far@1_AttackSensor Far",
+      "$component": "1_AttackSensor Far",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
+      "AttackWeightPhaseList": [
+        {
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor Far/move phase0@move phase0",
+          "$component": "move phase0",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack5",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack1",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor Far/move phase1@move phase1",
+          "$component": "move phase1",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack8",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack1",
+              "Weight": 1
+            }
+          ]
+        },
+        {
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor Far/move phase2@move phase2",
+          "$component": "move phase2",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack8",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack7",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "testWeight": {
+        "$ref": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor Far/test move@test move"
+      },
+      "OnlySameArea": false,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.Attack1",
+        "MonsterBase+States.Attack4"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.0,
+      "currentAttackDelay": 0.0,
+      "coolDownType": "CooldownTokenType.Boss",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": {
+        "CoolDownWeight": {
+          "IsRandom": true,
+          "stateWeightList": [
+            {
+              "option": 0.0,
+              "weight": 1
+            }
+          ],
+          "customizedInitQueue": []
+        },
+        "HasForceAttackCount": true,
+        "MinAttackCount": 0,
+        "MaxAttackCount": 2
+      },
+      "CoolDownWeight": {
+        "IsRandom": true,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 2.0,
+      "UseCoolDownVariation": false,
+      "CooldownMin": 0.0,
+      "CooldownMax": 0.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": false,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    },
+    {
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor Far Super@1_AttackSensor Far Super",
+      "$component": "1_AttackSensor Far Super",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
+      "AttackWeightPhaseList": [
+        {
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor Far Super/move phase0@move phase0",
+          "$component": "move phase0",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack5",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack2",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "testWeight": {
+        "$ref": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor Far Super/test move@test move"
+      },
+      "OnlySameArea": false,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.Attack1",
+        "MonsterBase+States.Attack4"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.0,
+      "currentAttackDelay": 0.0,
+      "coolDownType": "CooldownTokenType.Boss",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": {
+        "CoolDownWeight": {
+          "IsRandom": true,
+          "stateWeightList": [
+            {
+              "option": 0.0,
+              "weight": 1
+            }
+          ],
+          "customizedInitQueue": []
+        },
+        "HasForceAttackCount": true,
+        "MinAttackCount": 0,
+        "MaxAttackCount": 2
+      },
+      "CoolDownWeight": {
+        "IsRandom": true,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 2.0,
+      "UseCoolDownVariation": false,
+      "CooldownMin": 0.0,
+      "CooldownMax": 0.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": false,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    }
+  ]
+}

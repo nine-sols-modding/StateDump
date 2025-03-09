@@ -1,0 +1,539 @@
+{
+  "InitState": "MonsterBase+States.WanderingIdle",
+  "BossGeneralStates": {
+    "MonsterBase+States.Attack1": {
+      "$id": "A4_S1/Room/Prefab/Gameplay_6/StealthMonster_FlyingBase_FlyingTeleportWizard Variant (1)/States/Attacks/[1]Attack1_Shoot@BossGeneralState",
+      "state": "MonsterBase+States.Attack1",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [],
+      "linkInterruptMoveConditionalWeights": [],
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 1.83333337,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Attack2": {
+      "$id": "A4_S1/Room/Prefab/Gameplay_6/StealthMonster_FlyingBase_FlyingTeleportWizard Variant (1)/States/Attacks/[2]Attack2_TeleportAndShoot@BossGeneralState",
+      "state": "MonsterBase+States.Attack2",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [],
+      "linkInterruptMoveConditionalWeights": [],
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.9166667,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 2.41666675,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Hurt": {
+      "$id": "A4_S1/Room/Prefab/Gameplay_6/StealthMonster_FlyingBase_FlyingTeleportWizard Variant (1)/States/Hurt1@BossGeneralState",
+      "state": "MonsterBase+States.Hurt",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [],
+      "linkInterruptMoveConditionalWeights": [],
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.166666672,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Hurt_Big": {
+      "$id": "A4_S1/Room/Prefab/Gameplay_6/StealthMonster_FlyingBase_FlyingTeleportWizard Variant (1)/States/Hurt2@BossGeneralState",
+      "state": "MonsterBase+States.Hurt_Big",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [],
+      "linkInterruptMoveConditionalWeights": [],
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 1.0,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    }
+  },
+  "OtherStates": {
+    "MonsterBase+States.WanderingIdle": {
+      "$id": "A4_S1/Room/Prefab/Gameplay_6/StealthMonster_FlyingBase_FlyingTeleportWizard Variant (1)/States/Idle@WanderingIdleState",
+      "newPosTime": 3.0,
+      "configSetting": "WanderingIdleState+ConfigWanderingSetting.Undefined",
+      "newPosTimer": 2.98,
+      "DecaySpeed": true,
+      "DecaySpeedValue": 100.0,
+      "clip": [],
+      "exitState": "MonsterBase+States.Wandering",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Wandering": {
+      "$id": "A4_S1/Room/Prefab/Gameplay_6/StealthMonster_FlyingBase_FlyingTeleportWizard Variant (1)/States/Wandering@FlyingMonsterWandering",
+      "wanderingPos": {
+        "x": 430.5,
+        "y": -3072.0,
+        "z": 0.0
+      },
+      "maxWanderingLength": 30.0,
+      "wanderingIdleLength": 3.0,
+      "forceRelocateWanderingLocationTime": 5.0,
+      "forceRelocateWanderingLocationTimer": 0.0,
+      "patrolPoints": [
+        {
+          "position": {
+            "x": -81.5,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "localScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 85.6000061,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "localScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "currentPointIndex": 0,
+      "MaxRun": 30.0,
+      "RunAccel": 300.0,
+      "clip": [],
+      "exitState": "MonsterBase+States.WanderingIdle",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Engaging": {
+      "$id": "A4_S1/Room/Prefab/Gameplay_6/StealthMonster_FlyingBase_FlyingTeleportWizard Variant (1)/States/Engaging@FlyingMonsterEngaging",
+      "state": "MonsterBase+States.Engaging",
+      "MaxDirectionThreashold": 100.0,
+      "DelayTargetTime": 0.0,
+      "changeDirectionDelay": 0.5,
+      "flyingOffset": {
+        "x": 0.0,
+        "y": 110.0
+      },
+      "PlayerOnTheRight": {
+        "extendFalseTimeCheck": null,
+        "_autoDestroy": false,
+        "_actionDone": null,
+        "_owner": null,
+        "_check": {
+          "delegates": null,
+          "method_ptr": {
+            "value": 2523184978576
+          },
+          "invoke_impl": {
+            "value": 2514087190656
+          },
+          "m_target": {
+            "$ref": "A4_S1/Room/Prefab/Gameplay_6/StealthMonster_FlyingBase_FlyingTeleportWizard Variant (1)/States/Engaging@FlyingMonsterEngaging"
+          },
+          "method": {
+            "value": 2519545109944
+          },
+          "delegate_trampoline": {
+            "value": 0
+          },
+          "extra_arg": {
+            "value": 0
+          },
+          "method_code": {
+            "value": 2523465397512
+          },
+          "interp_method": {
+            "value": 0
+          },
+          "interp_invoke_impl": {
+            "value": 0
+          },
+          "method_info": null,
+          "original_method_info": null,
+          "data": null,
+          "method_is_virtual": false
+        },
+        "_isTrueTimer": 0.0,
+        "_isFalseTimer": "Infinity",
+        "activated": true,
+        "CustomBufferTime": 0.09,
+        "IsCanceled": false,
+        "_result": false,
+        "onResultChanged": null,
+        "result": false,
+        "OnResultChanged": null
+      },
+      "detectMode": "DetectGroundMode.PlayerGround",
+      "KeepYDistance": true,
+      "KeepDistanceToGround": 100.0,
+      "MaxRun": 30.0,
+      "RunAccel": 300.0,
+      "RunReduce": 10.0,
+      "OffsetYAccel": 10.0,
+      "MaxRunY": 10.0,
+      "AnimationRandom": true,
+      "currentOffset": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "CanAttackRangeLargeBound": {
+        "x": 140.0,
+        "y": 40.0
+      },
+      "CanAttackRangeSmallBound": {
+        "x": 90.0,
+        "y": 0.0
+      },
+      "currentOffsetY": 0.0,
+      "chaseType": "FlyingMonsterEngaging+ChaseType.AroundPlayerWithDistance",
+      "ChasePlayerDistance": 100.0,
+      "EscapeFromPlayerDistance": 90.0,
+      "AroundPlayerDistance": -1.0,
+      "AroundPlayerFollowSpeed": 1.0,
+      "AroundPlayerSlowDownDistance": 40.0,
+      "IgnoreFacing": false,
+      "clip": [],
+      "exitState": "MonsterBase+States.Wandering",
+      "HasVariation": false,
+      "VariationRatio": 0.2
+    },
+    "MonsterBase+States.Dead": {
+      "$id": "A4_S1/Room/Prefab/Gameplay_6/StealthMonster_FlyingBase_FlyingTeleportWizard Variant (1)/States/MonsterSharedStates/DeadState@MonsterDeadState",
+      "shootEvent": "UnityEvent(0)",
+      "_selfDestructClip": null,
+      "IsDeadShooted": false,
+      "IsRemoveDeadBody": true,
+      "hitData": null,
+      "deadNoiseEffect": {
+        "$ref": "A4_S1/Room/Prefab/Gameplay_6/StealthMonster_FlyingBase_FlyingTeleportWizard Variant (1)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/EventBroadcastSystem/Dead Noise@EffectDealer"
+      },
+      "IsEnterClearVelX": false,
+      "DeadValue": [],
+      "overrideByTimeline": null,
+      "monsterViewDummy": null,
+      "_isCulling": true,
+      "clip": [
+        {
+          "Time": 0.166666672,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Confused": {
+      "$id": "A4_S1/Room/Prefab/Gameplay_6/StealthMonster_FlyingBase_FlyingTeleportWizard Variant (1)/States/3_Confuse@StealthConfuse",
+      "_confuseSoundPlayer": null,
+      "clip": [
+        {
+          "Time": 2.5333333,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Wandering",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.TurnAround": {
+      "$id": "A4_S1/Room/Prefab/Gameplay_6/StealthMonster_FlyingBase_FlyingTeleportWizard Variant (1)/States/TurnAround@StealthTurnAround",
+      "_currentAnimState": null,
+      "engagingTurnAroundAnimation": {
+        "stateName": "EngagingTurnAround",
+        "prototypeClip": [
+          {
+            "Time": 0.0,
+            "Event": "AnimationEvents+AnimationEvent.ResetEvaluate"
+          },
+          {
+            "Time": 0.333333343,
+            "Event": "AnimationEvents+AnimationEvent.Done"
+          }
+        ],
+        "_cachedBaseClipName": null,
+        "overrideStateType": "MonsterBase+States.Undefined",
+        "note": ""
+      },
+      "VelXRemainRatio": 0.0,
+      "clip": [
+        {
+          "Time": 0.416666657,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    }
+  },
+  "HurtInterrupt": {
+    "$id": "A4_S1/Room/Prefab/Gameplay_6/StealthMonster_FlyingBase_FlyingTeleportWizard Variant (1)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/HurtInterrupt@MonsterHurtInterrupt",
+    "customInterruptTH": -1.0,
+    "IsHurtInterruptChangeState": true,
+    "IsForcePlayingBigHurtAnimation": false,
+    "LowHealthPercentage": 0.0,
+    "AccumulateDamageTh": 0.0,
+    "<currentAccumulateDamage>k__BackingField": 0.0,
+    "linkMoveWeights": []
+  },
+  "TeleportBinding": {
+    "$id": "A4_S1/Room/Prefab/Gameplay_6/StealthMonster_FlyingBase_FlyingTeleportWizard Variant (1)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Teleport@TeleportBinding",
+    "teleportScheme": "TeleportBinding+TeleportScheme.ToCircularPos",
+    "offsetCandidates": [],
+    "offset": {
+      "x": -120.0,
+      "y": 70.0
+    },
+    "offsetYFromGround": true,
+    "PhysicsDetect": false
+  },
+  "AttackSensors": [
+    {
+      "$id": "A4_S1/Room/Prefab/Gameplay_6/StealthMonster_FlyingBase_FlyingTeleportWizard Variant (1)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor@AttackSensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
+      "AttackWeightPhaseList": [
+        {
+          "$id": "A4_S1/Room/Prefab/Gameplay_6/StealthMonster_FlyingBase_FlyingTeleportWizard Variant (1)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor/weight@LinkNextMoveStateWeight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Undefined",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "testWeight": null,
+      "OnlySameArea": false,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.Attack1"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.0,
+      "currentAttackDelay": 0.0,
+      "coolDownType": "CooldownTokenType.NormalAttack",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": null,
+      "CoolDownWeight": {
+        "IsRandom": false,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 0.0,
+      "UseCoolDownVariation": true,
+      "CooldownMin": 0.5,
+      "CooldownMax": 2.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": false,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    },
+    {
+      "$id": "A4_S1/Room/Prefab/Gameplay_6/StealthMonster_FlyingBase_FlyingTeleportWizard Variant (1)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/0_RunAwaySensor@AttackSensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
+      "AttackWeightPhaseList": [],
+      "testWeight": null,
+      "OnlySameArea": true,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.RunAway"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.5,
+      "currentAttackDelay": 0.349421322,
+      "coolDownType": "CooldownTokenType.NoCoolDown",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": null,
+      "CoolDownWeight": {
+        "IsRandom": true,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 5.0,
+      "UseCoolDownVariation": false,
+      "CooldownMin": 0.0,
+      "CooldownMax": 0.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": false,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    },
+    {
+      "$id": "A4_S1/Room/Prefab/Gameplay_6/StealthMonster_FlyingBase_FlyingTeleportWizard Variant (1)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor@AttackSensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
+      "AttackWeightPhaseList": [],
+      "testWeight": null,
+      "OnlySameArea": false,
+      "OnlyMonsterCanSeePlayer": false,
+      "BindingAttacks": [
+        "MonsterBase+States.Attack2"
+      ],
+      "AttackDelayMin": 0.1,
+      "AttackDelayMax": 0.3,
+      "currentAttackDelay": 0.2566154,
+      "coolDownType": "CooldownTokenType.RangedAttack",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": null,
+      "CoolDownWeight": {
+        "IsRandom": true,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 1.5,
+      "UseCoolDownVariation": false,
+      "CooldownMin": 0.0,
+      "CooldownMax": 0.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": false,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    },
+    {
+      "$id": "A4_S1/Room/Prefab/Gameplay_6/StealthMonster_FlyingBase_FlyingTeleportWizard Variant (1)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor@AttackSensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
+      "AttackWeightPhaseList": [],
+      "testWeight": null,
+      "OnlySameArea": false,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.Attack1"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.5,
+      "currentAttackDelay": 0.203819841,
+      "coolDownType": "CooldownTokenType.NoCoolDown",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": null,
+      "CoolDownWeight": {
+        "IsRandom": true,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 5.0,
+      "UseCoolDownVariation": false,
+      "CooldownMin": 0.0,
+      "CooldownMax": 0.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": false,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [
+        {
+          "$id": "A4_S1/Room/Prefab/Gameplay_6/StealthMonster_FlyingBase_FlyingTeleportWizard Variant (1)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor/rollingCondition@PlayerMovePredictCondition",
+          "ParryDetect": false,
+          "DodgeDetect": true,
+          "JumpDetect": false,
+          "InAirDetect": false,
+          "AttackDetect": false,
+          "ThirdAttackDetect": false,
+          "ChargeAttackDetect": false,
+          "FooDetect": false,
+          "ArrowDetect": false,
+          "randomChance": 1.0,
+          "_isConditionChanged": false,
+          "FinalResultInverted": false,
+          "debugConditionResultOverrider": null
+        }
+      ],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    }
+  ]
+}

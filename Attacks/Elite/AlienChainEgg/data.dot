@@ -1,0 +1,38 @@
+strict digraph "Foo" {
+	"rankdir"="LR";
+	node ["shape"="box", "fontname"="Helvetica"];
+	edge ["fontname"="Helvetica"];
+	"Attack" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >Attack  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">3.50s: Done</FONT>  </TD></TR></TABLE>>]
+	"Attack" -> "Engaging"  ["color"="cornsilk3", "fontcolor"="cornsilk3"]
+	"FakeDead" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >FakeDead  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">1.00s: Done</FONT>  </TD></TR></TABLE>>]
+	"FakeDead" -> "Revive"  ["color"="cornsilk3", "fontcolor"="cornsilk3"]
+	"HurtState" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >HurtState  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.50s: Done</FONT>  </TD></TR></TABLE>>]
+	"Hurt_BigState" ["label"="Hurt_BigState"]
+	"Wandering_Idle" ["label"="Wandering_Idle (Init)"]
+	subgraph "cluster_attacksensors" {
+		"rank"="sink";
+		"label"="Attack Sensors";
+		"fontname"="Helvetica";
+		"Level Once Sensor" ["label"="Level Once Sensor"]
+		"Level Once Sensor_linked" ["shape"="box", "style"="dotted", "label"=<<TABLE border="0" cellborder="0" cellspacing="0" cellpadding="2"><TR><TD>Attack  </TD></TR></TABLE>>, "margin"="0.05"]
+		"Level Once Sensor" -> "Level Once Sensor_linked"  ["label"="QueueEnd", "color"="aquamarine3", "fontcolor"="aquamarine3"]
+		"Level Once Sensor_mustuse" ["shape"="box", "style"="dotted", "label"=<<TABLE border="0" cellborder="0" cellspacing="0" cellpadding="2"><TR><TD>1 Undefined  </TD></TR></TABLE>>]
+		"Level Once Sensor" -> "Level Once Sensor_mustuse"  ["label"="Weight", "color"="aquamarine4", "fontcolor"="aquamarine4"]
+		"RunAwaySensor" ["label"="RunAwaySensor"]
+		"AttackSensor" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >AttackSensor  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">if: state is Engaging</FONT>  </TD></TR></TABLE>>]
+		"AttackSensor_linked" ["shape"="box", "style"="dotted", "label"=<<TABLE border="0" cellborder="0" cellspacing="0" cellpadding="2"><TR><TD>Attack  </TD></TR></TABLE>>, "margin"="0.05"]
+		"AttackSensor" -> "AttackSensor_linked"  ["label"="QueueEnd", "color"="aquamarine3", "fontcolor"="aquamarine3"]
+		"AttackSensor_mustuse" ["shape"="box", "style"="dotted", "label"=<<TABLE border="0" cellborder="0" cellspacing="0" cellpadding="2"><TR><TD>1 Attack  </TD></TR></TABLE>>]
+		"AttackSensor" -> "AttackSensor_mustuse"  ["label"="Weight", "color"="aquamarine4", "fontcolor"="aquamarine4"]
+		"DodgePredictSensor" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >DodgePredictSensor  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">if: Dodge</FONT>  </TD></TR></TABLE>>]
+		"DodgePredictSensor_linked" ["shape"="box", "style"="dotted", "label"=<<TABLE border="0" cellborder="0" cellspacing="0" cellpadding="2"><TR><TD>Attack  </TD></TR></TABLE>>, "margin"="0.05"]
+		"DodgePredictSensor" -> "DodgePredictSensor_linked"  ["label"="QueueEnd", "color"="aquamarine3", "fontcolor"="aquamarine3"]
+		"AttackPredictSensor" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >AttackPredictSensor  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">if: Attack</FONT>  </TD></TR></TABLE>>]
+		"AttackPredictSensor_linked" ["shape"="box", "style"="dotted", "label"=<<TABLE border="0" cellborder="0" cellspacing="0" cellpadding="2"><TR><TD>Attack  </TD></TR></TABLE>>, "margin"="0.05"]
+		"AttackPredictSensor" -> "AttackPredictSensor_linked"  ["label"="QueueEnd", "color"="aquamarine3", "fontcolor"="aquamarine3"]
+		"AttackRunToSensor" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >AttackRunToSensor  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">if: state is Engaging</FONT>  </TD></TR></TABLE>>]
+		"AttackRunToSensor_linked" ["shape"="box", "style"="dotted", "label"=<<TABLE border="0" cellborder="0" cellspacing="0" cellpadding="2"><TR><TD>Attack  </TD></TR></TABLE>>, "margin"="0.05"]
+		"AttackRunToSensor" -> "AttackRunToSensor_linked"  ["label"="QueueEnd", "color"="aquamarine3", "fontcolor"="aquamarine3"]
+	}
+	
+}

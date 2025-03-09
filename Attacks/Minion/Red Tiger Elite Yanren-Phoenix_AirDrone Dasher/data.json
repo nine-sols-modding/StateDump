@@ -1,0 +1,476 @@
+{
+  "InitState": "MonsterBase+States.WanderingIdle",
+  "BossGeneralStates": {
+    "MonsterBase+States.Attack1": {
+      "$id": "A2_S6/Room/Prefab/Gameplay1/警報 On / Off 差別/General FSM Object_On And Off Switch Variant/FSM Animator/LogicRoot/[Off]Node/[Version2]/[怪物飛進來框架] /[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario/[MonsterBehaviorProvider] LevelDesign_PlayerSensor/StealthGameMonster_Phoenix_AirDrone Dasher/States/Attacks/[1]FlyingDashAttack@BossGeneralState",
+      "state": "MonsterBase+States.Attack1",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [],
+      "linkInterruptMoveConditionalWeights": [],
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": false,
+      "ClearSpeedWithDecay": true,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.DirectToPlayerAtStartAbovePlayerGroundY",
+      "clip": [
+        {
+          "Time": 0.333333343,
+          "Event": "AnimationEvents+AnimationEvent.CheckFacing"
+        },
+        {
+          "Time": 1.5333333,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Hurt": {
+      "$id": "A2_S6/Room/Prefab/Gameplay1/警報 On / Off 差別/General FSM Object_On And Off Switch Variant/FSM Animator/LogicRoot/[Off]Node/[Version2]/[怪物飛進來框架] /[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario/[MonsterBehaviorProvider] LevelDesign_PlayerSensor/StealthGameMonster_Phoenix_AirDrone Dasher/States/Hurt1@BossGeneralState",
+      "state": "MonsterBase+States.Hurt",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [],
+      "linkInterruptMoveConditionalWeights": [],
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.25,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Hurt_Big": {
+      "$id": "A2_S6/Room/Prefab/Gameplay1/警報 On / Off 差別/General FSM Object_On And Off Switch Variant/FSM Animator/LogicRoot/[Off]Node/[Version2]/[怪物飛進來框架] /[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario/[MonsterBehaviorProvider] LevelDesign_PlayerSensor/StealthGameMonster_Phoenix_AirDrone Dasher/States/Hurt2@BossGeneralState",
+      "state": "MonsterBase+States.Hurt_Big",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [],
+      "linkInterruptMoveConditionalWeights": [],
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.25,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    }
+  },
+  "OtherStates": {
+    "MonsterBase+States.WanderingIdle": {
+      "$id": "A2_S6/Room/Prefab/Gameplay1/警報 On / Off 差別/General FSM Object_On And Off Switch Variant/FSM Animator/LogicRoot/[Off]Node/[Version2]/[怪物飛進來框架] /[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario/[MonsterBehaviorProvider] LevelDesign_PlayerSensor/StealthGameMonster_Phoenix_AirDrone Dasher/States/Idle@WanderingIdleState",
+      "newPosTime": 3.0,
+      "configSetting": "WanderingIdleState+ConfigWanderingSetting.Guard",
+      "newPosTimer": 3.0,
+      "DecaySpeed": true,
+      "DecaySpeedValue": 100.0,
+      "clip": [],
+      "exitState": "MonsterBase+States.Wandering",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Wandering": {
+      "$id": "A2_S6/Room/Prefab/Gameplay1/警報 On / Off 差別/General FSM Object_On And Off Switch Variant/FSM Animator/LogicRoot/[Off]Node/[Version2]/[怪物飛進來框架] /[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario/[MonsterBehaviorProvider] LevelDesign_PlayerSensor/StealthGameMonster_Phoenix_AirDrone Dasher/States/Wandering@FlyingMonsterWandering",
+      "wanderingPos": {
+        "x": 6104.5,
+        "y": -4439.0,
+        "z": 0.0
+      },
+      "maxWanderingLength": 30.0,
+      "wanderingIdleLength": 3.0,
+      "forceRelocateWanderingLocationTime": 5.0,
+      "forceRelocateWanderingLocationTimer": 0.0,
+      "patrolPoints": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "localScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "localScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "currentPointIndex": 0,
+      "MaxRun": 100.0,
+      "RunAccel": 300.0,
+      "clip": [],
+      "exitState": "MonsterBase+States.WanderingIdle",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Engaging": {
+      "$id": "A2_S6/Room/Prefab/Gameplay1/警報 On / Off 差別/General FSM Object_On And Off Switch Variant/FSM Animator/LogicRoot/[Off]Node/[Version2]/[怪物飛進來框架] /[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario/[MonsterBehaviorProvider] LevelDesign_PlayerSensor/StealthGameMonster_Phoenix_AirDrone Dasher/States/Engaging@FlyingMonsterEngaging",
+      "state": "MonsterBase+States.Engaging",
+      "MaxDirectionThreashold": 50.0,
+      "DelayTargetTime": 0.0,
+      "changeDirectionDelay": 0.5,
+      "flyingOffset": {
+        "x": 0.0,
+        "y": 110.0
+      },
+      "PlayerOnTheRight": null,
+      "detectMode": "DetectGroundMode.PlayerGround",
+      "KeepYDistance": true,
+      "KeepDistanceToGround": 100.0,
+      "MaxRun": 100.0,
+      "RunAccel": 150.0,
+      "RunReduce": 150.0,
+      "OffsetYAccel": 170.0,
+      "MaxRunY": 150.0,
+      "AnimationRandom": false,
+      "currentOffset": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "CanAttackRangeLargeBound": {
+        "x": 140.0,
+        "y": 40.0
+      },
+      "CanAttackRangeSmallBound": {
+        "x": 90.0,
+        "y": 0.0
+      },
+      "currentOffsetY": 0.0,
+      "chaseType": "FlyingMonsterEngaging+ChaseType.AroundPlayerWithDistance",
+      "ChasePlayerDistance": 100.0,
+      "EscapeFromPlayerDistance": 90.0,
+      "AroundPlayerDistance": -1.0,
+      "AroundPlayerFollowSpeed": 1.0,
+      "AroundPlayerSlowDownDistance": 40.0,
+      "IgnoreFacing": false,
+      "clip": [],
+      "exitState": "MonsterBase+States.Wandering",
+      "HasVariation": false,
+      "VariationRatio": 0.2
+    },
+    "MonsterBase+States.Dead": {
+      "$id": "A2_S6/Room/Prefab/Gameplay1/警報 On / Off 差別/General FSM Object_On And Off Switch Variant/FSM Animator/LogicRoot/[Off]Node/[Version2]/[怪物飛進來框架] /[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario/[MonsterBehaviorProvider] LevelDesign_PlayerSensor/StealthGameMonster_Phoenix_AirDrone Dasher/States/MonsterSharedStates/DeadState@MonsterDeadState",
+      "shootEvent": "UnityEvent(0)",
+      "_selfDestructClip": null,
+      "IsDeadShooted": false,
+      "IsRemoveDeadBody": true,
+      "hitData": null,
+      "deadNoiseEffect": {
+        "$ref": "A2_S6/Room/Prefab/Gameplay1/警報 On / Off 差別/General FSM Object_On And Off Switch Variant/FSM Animator/LogicRoot/[Off]Node/[Version2]/[怪物飛進來框架] /[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario/[MonsterBehaviorProvider] LevelDesign_PlayerSensor/StealthGameMonster_Phoenix_AirDrone Dasher/MonsterCore/Animator(Proxy)/Animator/LogicRoot/EventBroadcastSystem/Dead Noise@EffectDealer"
+      },
+      "IsEnterClearVelX": false,
+      "DeadValue": [],
+      "overrideByTimeline": null,
+      "monsterViewDummy": null,
+      "_isCulling": false,
+      "clip": [
+        {
+          "Time": 0.25,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.OutOfReach": {
+      "$id": "A2_S6/Room/Prefab/Gameplay1/警報 On / Off 差別/General FSM Object_On And Off Switch Variant/FSM Animator/LogicRoot/[Off]Node/[Version2]/[怪物飛進來框架] /[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario/[MonsterBehaviorProvider] LevelDesign_PlayerSensor/StealthGameMonster_Phoenix_AirDrone Dasher/States/Out of Reach@StealthOutOfReachState",
+      "MinStateTime": 0.5,
+      "OutOfReachReason": "OutOfReachState",
+      "clip": [],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Confused": {
+      "$id": "A2_S6/Room/Prefab/Gameplay1/警報 On / Off 差別/General FSM Object_On And Off Switch Variant/FSM Animator/LogicRoot/[Off]Node/[Version2]/[怪物飛進來框架] /[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario/[MonsterBehaviorProvider] LevelDesign_PlayerSensor/StealthGameMonster_Phoenix_AirDrone Dasher/States/3_Confuse@StealthConfuse",
+      "_confuseSoundPlayer": null,
+      "clip": [
+        {
+          "Time": 1.0,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Wandering",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.TurnAround": {
+      "$id": "A2_S6/Room/Prefab/Gameplay1/警報 On / Off 差別/General FSM Object_On And Off Switch Variant/FSM Animator/LogicRoot/[Off]Node/[Version2]/[怪物飛進來框架] /[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario/[MonsterBehaviorProvider] LevelDesign_PlayerSensor/StealthGameMonster_Phoenix_AirDrone Dasher/States/TurnAround@StealthTurnAround",
+      "_currentAnimState": null,
+      "engagingTurnAroundAnimation": {
+        "stateName": "EngagingTurnAround",
+        "prototypeClip": [
+          {
+            "Time": 0.0,
+            "Event": "AnimationEvents+AnimationEvent.ResetEvaluate"
+          },
+          {
+            "Time": 0.333333343,
+            "Event": "AnimationEvents+AnimationEvent.Done"
+          }
+        ],
+        "_cachedBaseClipName": null,
+        "overrideStateType": "MonsterBase+States.Undefined",
+        "note": ""
+      },
+      "VelXRemainRatio": 0.0,
+      "clip": [
+        {
+          "Time": 0.25,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    }
+  },
+  "HurtInterrupt": {
+    "$id": "A2_S6/Room/Prefab/Gameplay1/警報 On / Off 差別/General FSM Object_On And Off Switch Variant/FSM Animator/LogicRoot/[Off]Node/[Version2]/[怪物飛進來框架] /[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario/[MonsterBehaviorProvider] LevelDesign_PlayerSensor/StealthGameMonster_Phoenix_AirDrone Dasher/MonsterCore/Animator(Proxy)/Animator/LogicRoot/HurtInterrupt@MonsterHurtInterrupt",
+    "customInterruptTH": -1.0,
+    "IsHurtInterruptChangeState": true,
+    "IsForcePlayingBigHurtAnimation": false,
+    "LowHealthPercentage": 0.0,
+    "AccumulateDamageTh": 0.0,
+    "<currentAccumulateDamage>k__BackingField": 0.0,
+    "linkMoveWeights": []
+  },
+  "TeleportBinding": {
+    "$id": "A2_S6/Room/Prefab/Gameplay1/警報 On / Off 差別/General FSM Object_On And Off Switch Variant/FSM Animator/LogicRoot/[Off]Node/[Version2]/[怪物飛進來框架] /[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario/[MonsterBehaviorProvider] LevelDesign_PlayerSensor/StealthGameMonster_Phoenix_AirDrone Dasher/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Teleport@TeleportBinding",
+    "teleportScheme": "TeleportBinding+TeleportScheme.ToPlayerPosition",
+    "offsetCandidates": [],
+    "offset": {
+      "x": 20.0,
+      "y": 0.0
+    },
+    "offsetYFromGround": false,
+    "PhysicsDetect": false
+  },
+  "AttackSensors": [
+    {
+      "$id": "A2_S6/Room/Prefab/Gameplay1/警報 On / Off 差別/General FSM Object_On And Off Switch Variant/FSM Animator/LogicRoot/[Off]Node/[Version2]/[怪物飛進來框架] /[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario/[MonsterBehaviorProvider] LevelDesign_PlayerSensor/StealthGameMonster_Phoenix_AirDrone Dasher/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor@AttackSensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
+      "AttackWeightPhaseList": [
+        {
+          "$id": "A2_S6/Room/Prefab/Gameplay1/警報 On / Off 差別/General FSM Object_On And Off Switch Variant/FSM Animator/LogicRoot/[Off]Node/[Version2]/[怪物飛進來框架] /[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario/[MonsterBehaviorProvider] LevelDesign_PlayerSensor/StealthGameMonster_Phoenix_AirDrone Dasher/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor/weight@LinkNextMoveStateWeight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Undefined",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "testWeight": null,
+      "OnlySameArea": false,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.Attack1"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.0,
+      "currentAttackDelay": 0.0,
+      "coolDownType": "CooldownTokenType.NormalAttack",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": null,
+      "CoolDownWeight": {
+        "IsRandom": false,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 0.0,
+      "UseCoolDownVariation": true,
+      "CooldownMin": 0.5,
+      "CooldownMax": 2.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": false,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    },
+    {
+      "$id": "A2_S6/Room/Prefab/Gameplay1/警報 On / Off 差別/General FSM Object_On And Off Switch Variant/FSM Animator/LogicRoot/[Off]Node/[Version2]/[怪物飛進來框架] /[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario/[MonsterBehaviorProvider] LevelDesign_PlayerSensor/StealthGameMonster_Phoenix_AirDrone Dasher/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/0_RunAwaySensor@AttackSensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
+      "AttackWeightPhaseList": [],
+      "testWeight": null,
+      "OnlySameArea": true,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.RunAway"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.5,
+      "currentAttackDelay": 0.351401865,
+      "coolDownType": "CooldownTokenType.NoCoolDown",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": null,
+      "CoolDownWeight": {
+        "IsRandom": true,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 5.0,
+      "UseCoolDownVariation": false,
+      "CooldownMin": 0.0,
+      "CooldownMax": 0.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": false,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    },
+    {
+      "$id": "A2_S6/Room/Prefab/Gameplay1/警報 On / Off 差別/General FSM Object_On And Off Switch Variant/FSM Animator/LogicRoot/[Off]Node/[Version2]/[怪物飛進來框架] /[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario/[MonsterBehaviorProvider] LevelDesign_PlayerSensor/StealthGameMonster_Phoenix_AirDrone Dasher/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor@AttackSensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
+      "AttackWeightPhaseList": [],
+      "testWeight": null,
+      "OnlySameArea": false,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.Attack1"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.5,
+      "currentAttackDelay": 0.4556867,
+      "coolDownType": "CooldownTokenType.NormalAttack",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": null,
+      "CoolDownWeight": {
+        "IsRandom": true,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 10.0,
+      "UseCoolDownVariation": true,
+      "CooldownMin": 3.5,
+      "CooldownMax": 5.5,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": false,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    },
+    {
+      "$id": "A2_S6/Room/Prefab/Gameplay1/警報 On / Off 差別/General FSM Object_On And Off Switch Variant/FSM Animator/LogicRoot/[Off]Node/[Version2]/[怪物飛進來框架] /[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario/[MonsterBehaviorProvider] LevelDesign_PlayerSensor/StealthGameMonster_Phoenix_AirDrone Dasher/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor@AttackSensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
+      "AttackWeightPhaseList": [],
+      "testWeight": null,
+      "OnlySameArea": false,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.Attack1"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.5,
+      "currentAttackDelay": 0.412936449,
+      "coolDownType": "CooldownTokenType.NoCoolDown",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": null,
+      "CoolDownWeight": {
+        "IsRandom": true,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 5.0,
+      "UseCoolDownVariation": false,
+      "CooldownMin": 0.0,
+      "CooldownMax": 0.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": false,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [
+        {
+          "$id": "A2_S6/Room/Prefab/Gameplay1/警報 On / Off 差別/General FSM Object_On And Off Switch Variant/FSM Animator/LogicRoot/[Off]Node/[Version2]/[怪物飛進來框架] /[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario/[MonsterBehaviorProvider] LevelDesign_PlayerSensor/StealthGameMonster_Phoenix_AirDrone Dasher/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor/rollingCondition@PlayerMovePredictCondition",
+          "ParryDetect": false,
+          "DodgeDetect": true,
+          "JumpDetect": false,
+          "InAirDetect": false,
+          "AttackDetect": false,
+          "ThirdAttackDetect": false,
+          "ChargeAttackDetect": false,
+          "FooDetect": false,
+          "ArrowDetect": false,
+          "randomChance": 1.0,
+          "_isConditionChanged": false,
+          "FinalResultInverted": false,
+          "debugConditionResultOverrider": null
+        }
+      ],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    }
+  ]
+}

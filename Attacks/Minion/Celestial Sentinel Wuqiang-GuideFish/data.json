@@ -1,0 +1,711 @@
+{
+  "InitState": "MonsterBase+States.Sit",
+  "BossGeneralStates": {
+    "MonsterBase+States.Attack2": {
+      "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/States/Attacks/[1]Attack@BossGeneralState",
+      "state": "MonsterBase+States.Attack2",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [],
+      "linkInterruptMoveConditionalWeights": [],
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 2.91666675,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Attack1": {
+      "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/States/Attacks/[2]FooAttached@BossGeneralState",
+      "state": "MonsterBase+States.Attack1",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [],
+      "linkInterruptMoveConditionalWeights": [],
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 2.33333325,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.ZEnter": {
+      "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/States/ZEnterState@BossGeneralState",
+      "state": "MonsterBase+States.ZEnter",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [],
+      "linkInterruptMoveConditionalWeights": [],
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": null,
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.ZExit": {
+      "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/States/ZExitState@BossGeneralState",
+      "state": "MonsterBase+States.ZExit",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [],
+      "linkInterruptMoveConditionalWeights": [],
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": null,
+      "exitState": "MonsterBase+States.ZEnter",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.PostureBreak": {
+      "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/States/PostureBreak@PostureBreakState",
+      "postureBreakAmmoSpawner": null,
+      "state": "MonsterBase+States.Undefined",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [],
+      "linkInterruptMoveConditionalWeights": [],
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": false,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.166666672,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Dead",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Hurt": {
+      "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/States/HurtState@BossGeneralState",
+      "state": "MonsterBase+States.Hurt",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [],
+      "linkInterruptMoveConditionalWeights": [],
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": [
+        {
+          "Time": 0.0166666675,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 0.166666672,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.PreAttack",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.AttackParrying1": {
+      "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/States/AttackParrying@BossGeneralState",
+      "state": "MonsterBase+States.AttackParrying1",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [],
+      "linkInterruptMoveConditionalWeights": [],
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": true,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": null,
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.StandUp": {
+      "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/States/StandUp@BossGeneralState",
+      "state": "MonsterBase+States.StandUp",
+      "linkedStateTypes": [],
+      "linkNextMoveStateWeights": [],
+      "linkInterruptMoveConditionalWeights": [],
+      "groupingNodes": [],
+      "ToCloseTransitionState": "MonsterBase+States.Undefined",
+      "HasInterruptTurnaround": false,
+      "CanInterruptStartTime": 1.0,
+      "InterruptJumpToTime": 7.0,
+      "EnterClearSpeed": false,
+      "ClearSpeedWithDecay": false,
+      "directionRemap": "BossGeneralState+MoveDirectionRemap.Normal",
+      "clip": null,
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    }
+  },
+  "OtherStates": {
+    "MonsterBase+States.WanderingIdle": {
+      "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/States/0_Wandering_Idle@StealthWanderingIdle",
+      "originalPos": {
+        "x": 4304.0,
+        "y": -4864.0,
+        "z": 0.0
+      },
+      "originalFacing": "Facings.Left",
+      "SinglePointIdle": true,
+      "newPosTime": -1.0,
+      "newPosTimer": -1.0,
+      "IsNewPosRandom": false,
+      "configSetting": "StealthWanderingIdle+ConfigWanderingSetting.Undefined",
+      "clip": null,
+      "exitState": "MonsterBase+States.Wandering",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Wandering": {
+      "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/States/0_Wandering_Walking@StealthWandering",
+      "MaxRun": 0.0,
+      "RunAccel": 100.0,
+      "RunReduce": 400.0,
+      "wanderingPointGenerator": {
+        "$ref": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/States/0_Wandering_Walking/WanderingPoints@LoopWanderingPointGenerator"
+      },
+      "FailReason": "",
+      "preAllocateGotoTargetSuccess": null,
+      "OnAirMoveSpeed": 0.65,
+      "canTurnAround": true,
+      "clip": null,
+      "exitState": "MonsterBase+States.WanderingIdle",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Alerted": {
+      "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/States/Alert@StealthAlertState",
+      "_alertSoundPlayer": null,
+      "customStartScoutTime": -1.0,
+      "lookAroundParma": {
+        "$ref": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/States/0_Wandering_Walking@MoveParam"
+      },
+      "clip": null,
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Engaging": {
+      "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/States/1_Engaging@StealthEngaging",
+      "IsEngagingInstantAttack": false,
+      "ForceRunToPlayer": false,
+      "beforeTransitionClip": null,
+      "RunReduce": 800.0,
+      "MaxRun": 0.0,
+      "RunAccel": 800.0,
+      "OnAirMoveSpeed": 0.65,
+      "IsIgnoringPathFinder": false,
+      "RandomEnterAnimation": true,
+      "clip": [],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.PreAttack": {
+      "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/States/1_PreAttack@StealthPreAttackState",
+      "exitPreAttackCoolDown": 2.0,
+      "ChangeToEngageDelayTime": 0.0,
+      "ApproachingSchemes": [
+        {
+          "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/States/1_PreAttack/preAttack@StealthEngagingScheme",
+          "EnterApproachingRange": 160,
+          "EnterApproachingRangeRandomOffset": 20,
+          "ExitApproachingRange": 240,
+          "coolDownStat": {
+            "CoolDownWeight": {
+              "IsRandom": true,
+              "stateWeightList": [
+                {
+                  "option": 1.0,
+                  "weight": 1
+                },
+                {
+                  "option": 2.0,
+                  "weight": 1
+                }
+              ],
+              "customizedInitQueue": []
+            },
+            "HasForceAttackCount": false,
+            "MinAttackCount": 2,
+            "MaxAttackCount": 4
+          },
+          "RunToPlayerDelayTimeMax": 0.0,
+          "RunToPlayerDelayTimeMin": 0.0,
+          "CurrentRunIntoDelay": -1.0,
+          "bindingAnimation": "WalkingPreAttack",
+          "MaxRun": 20.0,
+          "RunAccel": 800.0,
+          "RunReduce": 800.0,
+          "IsEscaping": false
+        }
+      ],
+      "IsGuardingPath": false,
+      "clip": [],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Panic": {
+      "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/States/Not See Player/1_Panic@StealthPanicState",
+      "isDone": false,
+      "MinStateTime": 0.5,
+      "clip": null,
+      "exitState": "MonsterBase+States.LookingAround",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.OutOfReach": {
+      "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/States/Not See Player/3_Out of Reach@StealthOutOfReachState",
+      "MinStateTime": 0.5,
+      "OutOfReachReason": "OutOfReachState",
+      "clip": null,
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Confused": {
+      "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/States/Not See Player/4_Confuse@StealthConfuse",
+      "_confuseSoundPlayer": {
+        "$ref": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/States/Not See Player/4_Confuse/confuseSound@SoundPlayer"
+      },
+      "clip": null,
+      "exitState": "MonsterBase+States.Wandering",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.TurnAround": {
+      "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/States/TurnAround@StealthTurnAround",
+      "_currentAnimState": null,
+      "engagingTurnAroundAnimation": {
+        "stateName": "EngagingTurnAround",
+        "prototypeClip": [
+          {
+            "Time": 0.0,
+            "Event": "AnimationEvents+AnimationEvent.ResetEvaluate"
+          },
+          {
+            "Time": 0.333333343,
+            "Event": "AnimationEvents+AnimationEvent.Done"
+          }
+        ],
+        "_cachedBaseClipName": null,
+        "overrideStateType": "MonsterBase+States.Undefined",
+        "note": ""
+      },
+      "VelXRemainRatio": 0.0,
+      "clip": null,
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Dead": {
+      "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/States/DeadState@MonsterDeadState",
+      "shootEvent": "UnityEvent(0)",
+      "_selfDestructClip": null,
+      "IsDeadShooted": false,
+      "IsRemoveDeadBody": true,
+      "hitData": null,
+      "deadNoiseEffect": {
+        "$ref": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/MonsterCore/Animator(Proxy)/Animator/LogicRoot/EventBroadcastSystem/Dead Noise@EffectDealer"
+      },
+      "IsEnterClearVelX": true,
+      "DeadValue": [],
+      "overrideByTimeline": null,
+      "monsterViewDummy": null,
+      "_isCulling": true,
+      "clip": [
+        {
+          "Time": 0.0166666675,
+          "Event": "AnimationEvents+AnimationEvent.LinkNextMove"
+        },
+        {
+          "Time": 0.166666672,
+          "Event": "AnimationEvents+AnimationEvent.Done"
+        }
+      ],
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.MoveToPosition": {
+      "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/States/MoveToState@StealthMoveToState",
+      "targetPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "WanderingAnimation": "Wandering_Walking",
+      "ArrivedCallBack": null,
+      "clip": null,
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.JumpEnter": {
+      "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/States/JumpEnterState@MonsterJumpEnterState",
+      "subState": "MonsterJumpEnterState+JumpEnterSubState.ThrowUp",
+      "ThrowUpAnimation": "JumpEnterUp",
+      "ThrowDownAnimtion": "JumpEnterUp",
+      "LandingAnimtion": "Landing",
+      "initThrowVelocity": {
+        "x": 100.0,
+        "y": 200.0
+      },
+      "clip": null,
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    },
+    "MonsterBase+States.Sit": {
+      "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/States/Seat@StealthSeatState",
+      "isSitDown": false,
+      "clip": null,
+      "exitState": "MonsterBase+States.Engaging",
+      "HasVariation": false,
+      "VariationRatio": 0.3
+    }
+  },
+  "HurtInterrupt": {
+    "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/MonsterCore/Animator(Proxy)/Animator/LogicRoot/HurtInterrupt@MonsterHurtInterrupt",
+    "customInterruptTH": -1.0,
+    "IsHurtInterruptChangeState": true,
+    "IsForcePlayingBigHurtAnimation": false,
+    "LowHealthPercentage": 0.0,
+    "AccumulateDamageTh": 0.0,
+    "<currentAccumulateDamage>k__BackingField": 0.0,
+    "linkMoveWeights": []
+  },
+  "TeleportBinding": {
+    "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Teleport@TeleportBinding",
+    "teleportScheme": "TeleportBinding+TeleportScheme.ToPlayerPosition",
+    "offsetCandidates": [],
+    "offset": {
+      "x": 20.0,
+      "y": 0.0
+    },
+    "offsetYFromGround": false,
+    "PhysicsDetect": false
+  },
+  "AttackSensors": [
+    {
+      "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor@AttackSensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
+      "AttackWeightPhaseList": [
+        {
+          "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor/weight@LinkNextMoveStateWeight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Undefined",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "testWeight": null,
+      "OnlySameArea": false,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.Attack1"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.0,
+      "currentAttackDelay": 0.0,
+      "coolDownType": "CooldownTokenType.NormalAttack",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": null,
+      "CoolDownWeight": {
+        "IsRandom": false,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 0.0,
+      "UseCoolDownVariation": true,
+      "CooldownMin": 0.5,
+      "CooldownMax": 2.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": false,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    },
+    {
+      "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/0_RunAwaySensor@AttackSensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
+      "AttackWeightPhaseList": [],
+      "testWeight": null,
+      "OnlySameArea": true,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.RunAway"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.5,
+      "currentAttackDelay": 0.0215600729,
+      "coolDownType": "CooldownTokenType.NoCoolDown",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": null,
+      "CoolDownWeight": {
+        "IsRandom": true,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 5.0,
+      "UseCoolDownVariation": false,
+      "CooldownMin": 0.0,
+      "CooldownMax": 0.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": false,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    },
+    {
+      "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor@AttackSensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
+      "AttackWeightPhaseList": [],
+      "testWeight": null,
+      "OnlySameArea": false,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.Attack2"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.0,
+      "currentAttackDelay": 0.0,
+      "coolDownType": "CooldownTokenType.NormalAttack",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": null,
+      "CoolDownWeight": {
+        "IsRandom": true,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 0.0,
+      "UseCoolDownVariation": false,
+      "CooldownMin": 0.0,
+      "CooldownMax": 0.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": false,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    },
+    {
+      "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor@AttackSensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
+      "AttackWeightPhaseList": [],
+      "testWeight": null,
+      "OnlySameArea": false,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.Attack1"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.0,
+      "currentAttackDelay": 0.0,
+      "coolDownType": "CooldownTokenType.NoCoolDown",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": null,
+      "CoolDownWeight": {
+        "IsRandom": true,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 3.0,
+      "UseCoolDownVariation": false,
+      "CooldownMin": 0.0,
+      "CooldownMax": 0.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": true,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [
+        {
+          "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor/rollingCondition@PlayerMovePredictCondition",
+          "ParryDetect": false,
+          "DodgeDetect": true,
+          "JumpDetect": false,
+          "InAirDetect": false,
+          "AttackDetect": false,
+          "ThirdAttackDetect": false,
+          "ChargeAttackDetect": false,
+          "FooDetect": false,
+          "ArrowDetect": false,
+          "randomChance": 1.0,
+          "_isConditionChanged": false,
+          "FinalResultInverted": false,
+          "debugConditionResultOverrider": null
+        }
+      ],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    },
+    {
+      "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor@AttackSensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
+      "AttackWeightPhaseList": [
+        {
+          "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/weight@LinkNextMoveStateWeight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": []
+        }
+      ],
+      "testWeight": null,
+      "OnlySameArea": false,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.Attack1"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.0,
+      "currentAttackDelay": 0.0,
+      "coolDownType": "CooldownTokenType.NoCoolDown",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": null,
+      "CoolDownWeight": {
+        "IsRandom": true,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 2.0,
+      "UseCoolDownVariation": false,
+      "CooldownMin": 0.0,
+      "CooldownMax": 0.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": true,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [
+        {
+          "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/attackCondition@PlayerMovePredictCondition",
+          "ParryDetect": false,
+          "DodgeDetect": false,
+          "JumpDetect": false,
+          "InAirDetect": false,
+          "AttackDetect": true,
+          "ThirdAttackDetect": false,
+          "ChargeAttackDetect": false,
+          "FooDetect": false,
+          "ArrowDetect": false,
+          "randomChance": 1.0,
+          "_isConditionChanged": false,
+          "FinalResultInverted": false,
+          "debugConditionResultOverrider": null
+        }
+      ],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    },
+    {
+      "$id": "A5_S4/Room/Prefab/寶箱 Chest/A5地圖魚暴走情境 FSM Object Variant A5山海RAM/FSM Animator/LogicRoot/LootProvider/StealthGameMonster_GuideFish/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackRunToSensor@AttackSensor",
+      "IsAvailbleInCombo": false,
+      "forStateType": "AttackSensorForStateType.EngagingOnly",
+      "AttackWeightPhaseList": [],
+      "testWeight": null,
+      "OnlySameArea": false,
+      "OnlyMonsterCanSeePlayer": true,
+      "BindingAttacks": [
+        "MonsterBase+States.Attack1"
+      ],
+      "AttackDelayMin": 0.0,
+      "AttackDelayMax": 0.0,
+      "currentAttackDelay": 0.0,
+      "coolDownType": "CooldownTokenType.NormalAttack",
+      "_stateCoolDownProvider": null,
+      "coolDownStat": null,
+      "CoolDownWeight": {
+        "IsRandom": true,
+        "stateWeightList": [],
+        "customizedInitQueue": []
+      },
+      "coolDown": 0.0,
+      "UseCoolDownVariation": false,
+      "CooldownMin": 0.5,
+      "CooldownMax": 3.0,
+      "HurtReduceCoolDownModule": null,
+      "AutoFacingPlayer": false,
+      "ParentToRoot": false,
+      "conditions": [],
+      "_conditions": [],
+      "aggressivenessResetCounter": 999,
+      "coolDownCounter": 0.0,
+      "triggerDelay": 0.0,
+      "triggerOnce": false,
+      "IsOnGroundOnly": false
+    }
+  ]
+}

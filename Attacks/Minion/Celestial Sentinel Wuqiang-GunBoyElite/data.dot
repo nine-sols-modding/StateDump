@@ -1,0 +1,37 @@
+strict digraph "Foo" {
+	"rankdir"="LR";
+	node ["shape"="box", "fontname"="Helvetica"];
+	edge ["fontname"="Helvetica"];
+	"Shoot" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >Shoot  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.00s: CheckFacing<br/>1.83s: LinkNextMove<br/>2.00s: Done</FONT>  </TD></TR></TABLE>>]
+	"Shoot" -> "PreAttack"  ["color"="cornsilk3", "fontcolor"="cornsilk3"]
+	"Triple Shot" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >Triple Shot  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.00s: CheckFacing<br/>0.62s: Shoot<br/>1.32s: Shoot<br/>1.95s: Shoot<br/>2.78s: Done</FONT>  </TD></TR></TABLE>>]
+	"Triple Shot" -> "Engaging"  ["color"="cornsilk3", "fontcolor"="cornsilk3"]
+	"AttackParrying" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >AttackParrying  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.67s: Done</FONT>  </TD></TR></TABLE>>]
+	"AttackParrying" -> "Engaging"  ["color"="cornsilk3", "fontcolor"="cornsilk3"]
+	"HurtState" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >HurtState  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.00s: EnableGravity<br/>0.17s: Done</FONT>  </TD></TR></TABLE>>]
+	"HurtState" -> "PreAttack"  ["color"="cornsilk3", "fontcolor"="cornsilk3"]
+	"Hurt_BigState" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >Hurt_BigState  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.00s: EnableGravity<br/>1.00s: Done</FONT>  </TD></TR></TABLE>>]
+	"Hurt_BigState" -> "PreAttack"  ["color"="cornsilk3", "fontcolor"="cornsilk3"]
+	"PostureBreak" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >PostureBreak  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.00s: EnableGravity<br/>3.50s: Done</FONT>  </TD></TR></TABLE>>]
+	"PostureBreak" -> "PreAttack"  ["color"="cornsilk3", "fontcolor"="cornsilk3"]
+	"RollThrough" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >RollThrough  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.67s: LinkNextMove<br/>0.68s: Done</FONT>  </TD></TR></TABLE>>]
+	"RollThrough" -> "Engaging"  ["color"="cornsilk3", "fontcolor"="cornsilk3"]
+	"RollThrough_mustuse" ["shape"="box", "style"="dotted", "label"=<<TABLE border="0" cellborder="0" cellspacing="0" cellpadding="2"><TR><TD>1 Undefined  </TD></TR></TABLE>>]
+	"RollThrough" -> "RollThrough_mustuse"  ["label"="Weight", "color"="aquamarine4", "fontcolor"="aquamarine4"]
+	"Wandering_Idle" ["label"="Wandering_Idle (Init)"]
+	subgraph "cluster_attacksensors" {
+		"rank"="sink";
+		"label"="Attack Sensors";
+		"fontname"="Helvetica";
+		"Level Once Sensor" ["label"="Level Once Sensor"]
+		"RunAwaySensor" ["label"="RunAwaySensor"]
+		"AttackSensor" ["label"="AttackSensor"]
+		"DodgePredictSensor" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >DodgePredictSensor  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">if: Dodge</FONT>  </TD></TR></TABLE>>]
+		"AttackPredictSensor" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >AttackPredictSensor  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">if: Attack</FONT>  </TD></TR></TABLE>>]
+		"AttackRunToSensor" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >AttackRunToSensor  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">if: state is Engaging</FONT>  </TD></TR></TABLE>>]
+		"ShootSensor" ["label"="ShootSensor"]
+		"ShootSensor_linked" ["shape"="box", "style"="dotted", "label"=<<TABLE border="0" cellborder="0" cellspacing="0" cellpadding="2"><TR><TD>Shoot  </TD></TR></TABLE>>, "margin"="0.05"]
+		"ShootSensor" -> "ShootSensor_linked"  ["label"="QueueEnd", "color"="aquamarine3", "fontcolor"="aquamarine3"]
+	}
+	
+}

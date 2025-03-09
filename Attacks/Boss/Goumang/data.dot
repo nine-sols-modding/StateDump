@@ -1,0 +1,44 @@
+strict digraph "Foo" {
+	"rankdir"="LR";
+	node ["shape"="box", "fontname"="Helvetica"];
+	edge ["fontname"="Helvetica"];
+	"Attack_FlyingRing" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >Attack_FlyingRing  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.00s: DisableGravity<br/>5.67s: Done</FONT>  </TD></TR></TABLE>>]
+	"Attack_FlyingRing" -> "Attack_FlyingToSeat"  ["color"="cornsilk3", "fontcolor"="cornsilk3"]
+	"Attack_FlyingToSeat" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >Attack_FlyingToSeat  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">6.42s: Done</FONT>  </TD></TR></TABLE>>]
+	"Attack_FlyingToSeat" -> "Seat"  ["color"="cornsilk3", "fontcolor"="cornsilk3"]
+	"Attack_FlyingRing_Weakness" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >Attack_FlyingRing_Weakness  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.00s: DisableGravity<br/>5.67s: Done</FONT>  </TD></TR></TABLE>>]
+	"Attack_FlyingRing_Weakness" -> "Attack_FlyingToSeat"  ["color"="cornsilk3", "fontcolor"="cornsilk3"]
+	"StandUp_Weakness" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >StandUp_Weakness  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">6.12s: Done</FONT>  </TD></TR></TABLE>>]
+	"StandUp_Weakness" -> "Attack_FlyingRing_Weakness"  ["color"="cornsilk3", "fontcolor"="cornsilk3"]
+	"HurtState" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >HurtState  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.42s: Done</FONT>  </TD></TR></TABLE>>]
+	"HurtState" -> "Attack_FlyingToSeat"  ["color"="cornsilk3", "fontcolor"="cornsilk3"]
+	"LastHit" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >LastHit  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">2.50s: Done</FONT>  </TD></TR></TABLE>>]
+	"LastHit" -> "DeadState"  ["color"="cornsilk3", "fontcolor"="cornsilk3"]
+	"StandUp" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >StandUp  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">6.08s: Done</FONT>  </TD></TR></TABLE>>]
+	"StandUp" -> "Attack_FlyingRing"  ["color"="cornsilk3", "fontcolor"="cornsilk3"]
+	"Seat" ["label"="Seat (Init)"]
+	subgraph "cluster_attacksensors" {
+		"rank"="sink";
+		"label"="Attack Sensors";
+		"fontname"="Helvetica";
+		"Level Once Sensor" ["label"="Level Once Sensor"]
+		"Level Once Sensor_linked" ["shape"="box", "style"="dotted", "label"=<<TABLE border="0" cellborder="0" cellspacing="0" cellpadding="2"><TR><TD>Attack_FlyingRing  </TD></TR></TABLE>>, "margin"="0.05"]
+		"Level Once Sensor" -> "Level Once Sensor_linked"  ["label"="QueueEnd", "color"="aquamarine3", "fontcolor"="aquamarine3"]
+		"Level Once Sensor_mustuse" ["shape"="box", "style"="dotted", "label"=<<TABLE border="0" cellborder="0" cellspacing="0" cellpadding="2"><TR><TD>1 Attack_FlyingRing  </TD></TR></TABLE>>]
+		"Level Once Sensor" -> "Level Once Sensor_mustuse"  ["label"="Weight", "color"="aquamarine4", "fontcolor"="aquamarine4"]
+		"RunAwaySensor" ["label"="RunAwaySensor"]
+		"AttackSensor" ["label"="AttackSensor"]
+		"AttackSensor_linked" ["shape"="box", "style"="dotted", "label"=<<TABLE border="0" cellborder="0" cellspacing="0" cellpadding="2"><TR><TD>Attack_FlyingRing  </TD></TR></TABLE>>, "margin"="0.05"]
+		"AttackSensor" -> "AttackSensor_linked"  ["label"="QueueEnd", "color"="aquamarine3", "fontcolor"="aquamarine3"]
+		"DodgePredictSensor" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >DodgePredictSensor  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">if: rollingCondition</FONT>  </TD></TR></TABLE>>]
+		"DodgePredictSensor_linked" ["shape"="box", "style"="dotted", "label"=<<TABLE border="0" cellborder="0" cellspacing="0" cellpadding="2"><TR><TD>Attack_FlyingRing  </TD></TR></TABLE>>, "margin"="0.05"]
+		"DodgePredictSensor" -> "DodgePredictSensor_linked"  ["label"="QueueEnd", "color"="aquamarine3", "fontcolor"="aquamarine3"]
+		"AttackPredictSensor" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >AttackPredictSensor  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">if: attackCondition</FONT>  </TD></TR></TABLE>>]
+		"AttackPredictSensor_linked" ["shape"="box", "style"="dotted", "label"=<<TABLE border="0" cellborder="0" cellspacing="0" cellpadding="2"><TR><TD>Attack_FlyingRing  </TD></TR></TABLE>>, "margin"="0.05"]
+		"AttackPredictSensor" -> "AttackPredictSensor_linked"  ["label"="QueueEnd", "color"="aquamarine3", "fontcolor"="aquamarine3"]
+		"AttackRunToSensor" ["shape"="plaintext", "label"=<<TABLE border="0" cellborder="1" cellspacing="0" cellpadding="2"><TR><TD >AttackRunToSensor  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">if: state is Engaging</FONT>  </TD></TR></TABLE>>]
+		"AttackRunToSensor_linked" ["shape"="box", "style"="dotted", "label"=<<TABLE border="0" cellborder="0" cellspacing="0" cellpadding="2"><TR><TD>Attack_FlyingRing  </TD></TR></TABLE>>, "margin"="0.05"]
+		"AttackRunToSensor" -> "AttackRunToSensor_linked"  ["label"="QueueEnd", "color"="aquamarine3", "fontcolor"="aquamarine3"]
+	}
+	
+}
