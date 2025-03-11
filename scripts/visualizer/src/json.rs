@@ -67,6 +67,17 @@ pub struct AnimationEvent {
 
 #[derive(Debug, serde::Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct LinkMoveGroupNode {
+    pub queue: MonsterStateQueue,
+}
+#[derive(Debug, serde::Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct MonsterStateQueue {
+    pub link_next_move_state_weights: Vec<LinkNextMoveStateWeight>,
+}
+
+#[derive(Debug, serde::Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct BossGeneralState {
     #[serde(rename = "$id")]
     pub id: String,
@@ -74,6 +85,7 @@ pub struct BossGeneralState {
     pub linked_state_types: Vec<State>,
     // indexed by phase index
     pub link_next_move_state_weights: Vec<LinkNextMoveStateWeight>,
+    pub grouping_nodes: Vec<LinkMoveGroupNode>,
     pub exit_state: State,
     #[serde(default)]
     pub clip: Option<Vec<AnimationEvent>>,

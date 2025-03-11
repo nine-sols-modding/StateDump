@@ -32,6 +32,10 @@ fn escape_id(input: &str) -> Cow<'_, str> {
 }
 
 fn format_attributes(attrs: &[(&str, &str)]) -> String {
+    format!(" [{}]", format_attributes_inner(attrs, ","))
+}
+
+fn format_attributes_inner(attrs: &[(&str, &str)], sep: &str) -> String {
     if attrs.is_empty() {
         return String::new();
     }
@@ -40,9 +44,16 @@ fn format_attributes(attrs: &[(&str, &str)]) -> String {
         .iter()
         .map(|(a, b)| format!("{}={}", escape_id(a), escape_id(b)))
         .collect();
-    let attrs = attrs.join(", ");
-    format!(" [{}]", attrs)
+    attrs.join(sep)
 }
+
+fn format_attributes_html(attrs: &[(&str, &str)]) -> String {
+    attrs
+        .iter()
+        .map(|(a, b)| format!(" {}={}", a, escape_id(b)))
+        .collect()
+}
+
 pub fn font_tag(text: &str, color: &str, size: u8) -> String {
     if text.is_empty() {
         return "".to_string();
@@ -172,5 +183,32 @@ impl DotGraph {
     fn write(&mut self, text: impl AsRef<str>) {
         self.buffer.push_str(text.as_ref());
         self.buffer.push('\n');
+    }
+}
+
+pub struct Table(String, bool);
+impl Table {
+    pub fn new(attributes: &[(&str, &str)]) -> Table {
+        let mut str = r#"RAW:<<TABLE"#.to_string();
+        str.push_str(&format_attributes_html(attributes));
+        str.push_str(">");
+        Table(str, false)
+    }
+
+    pub fn add_row(&mut self, row: &str, attributes: &[(&str, &str)]) {
+        self.0.push_str("<TR><TD");
+        self.0.push_str(&format_attributes_html(attributes));
+        self.0.push('>');
+        self.0.push_str(row);
+        self.0.push_str("  </TD></TR>");
+        self.1 = true;
+    }
+
+    pub fn finish(mut self) -> String {
+        self.0.push_str("</TABLE>>");
+        self.0
+    }
+    pub fn finish_nonempty(self) -> Option<String> {
+        self.1.then_some(self.finish())
     }
 }

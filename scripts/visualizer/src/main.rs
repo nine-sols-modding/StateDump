@@ -12,7 +12,7 @@ use json::*;
 
 mod attack_fsm;
 
-const DUMP_DIR: &str = "C:/Users/Jakob/AppData/Local/Temp/bossdump/Attacks";
+const DUMP_DIR: &str = "C:/Users/Jakob/Documents/dev/nine-sols/StateDump/Attacks";
 
 fn main() -> Result<()> {
     let path = Path::new(DUMP_DIR);
@@ -28,11 +28,11 @@ fn main() -> Result<()> {
         for monster in level.path().read_dir()? {
             let monster = monster?.path();
             let path = monster.join("data.json");
-            ensure!(path.exists());
+            ensure!(path.exists(), "{} does not exist", path.display());
 
-            // if !path.display().to_string().contains("Jiequan") {
-            // continue;
-            // }
+            /*if !path.display().to_string().contains("Eigong") {
+                continue;
+            }*/
 
             println!(
                 "graphing {}",

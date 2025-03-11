@@ -1,11 +1,12 @@
-use std::{borrow::Cow, fmt::Write as _, sync::LazyLock};
-
+use crate::dot::Table;
+use crate::json::{AnimationEvent, State};
 use crate::{
     dot::DotGraph,
     json::{Data, LinkNextMoveStateWeight},
 };
 use anyhow::Result;
 use regex::Regex;
+use std::{borrow::Cow, fmt::Write as _, sync::LazyLock};
 
 const COLOR_END: &str = "aquamarine3";
 const COLOR_WEIGHTS: &str = "aquamarine4";
@@ -25,73 +26,119 @@ impl Context {
             ])
             .edge_attributes(&[("fontname", "Helvetica")]);
 
+        dg.add_sub_graph(self.attack_sensors()?);
+
+        self.add_attack_states(&mut dg)?;
+
+        if let Some(init_state) = self.data.find_mapping_state_id(&self.data.init_state) {
+            dg.add_node(&init_state, &[("label", &format!("{init_state} (Init)"))]);
+        }
+
+        Ok(format!("strict {}", dg.finish()))
+    }
+
+    fn add_linked_states(
+        &self,
+        dg: &mut DotGraph,
+        base_id: &str,
+        linked_states: &[State],
+    ) -> Result<()> {
+        let mut table = default_table(0.0, 2.0);
+
+        linked_states
+            .iter()
+            .filter_map(|state| self.data.find_mapping_state_id(state))
+            .for_each(|state| table.add_row(&state, &[]));
+
+        if let Some(table) = table.finish_nonempty() {
+            let linked_id = format!("{}_linked", base_id);
+
+            dg.add_node(&linked_id, &[
+                ("shape", "box"),
+                ("style", "dotted"),
+                ("label", &table),
+                ("margin", "0.05"),
+            ]);
+
+            dg.add_edge(&base_id, &linked_id, &[
+                ("label", "QueueEnd"),
+                ("color", COLOR_END),
+                ("fontcolor", COLOR_END),
+            ]);
+        }
+        Ok(())
+    }
+
+    fn animation_clip_text(&self, clip: Option<&[AnimationEvent]>) -> String {
+        let clip = clip.as_deref().unwrap_or_default();
+        clip.iter()
+            .filter_map(|e| {
+                Some(format!(
+                    "{:.2}s: {}",
+                    e.time,
+                    enum_value_only(e.event.as_deref()?)
+                ))
+            })
+            .collect::<Vec<_>>()
+            .join("<br/>")
+    }
+
+    fn add_attack_states(&self, dg: &mut DotGraph) -> Result<()> {
         for bgs in self.data.boss_general_states.values() {
             let node_id = id_name(&bgs.id);
 
-            let clip = bgs.clip.as_deref().unwrap_or_default();
-            let clip_text = clip
-                .iter()
-                .filter_map(|e| {
-                    Some(format!(
-                        "{:.2}s: {}",
-                        e.time,
-                        enum_value_only(e.event.as_deref()?)
-                    ))
-                })
-                .collect::<Vec<_>>()
-                .join("<br/>");
+            let mut table =
+                self.detail_table(&node_id, &self.animation_clip_text(bgs.clip.as_deref()));
 
-            self.add_detail_node(&mut dg, &node_id, &node_id, &clip_text);
+            let has_groups = !bgs.grouping_nodes.is_empty();
+            if has_groups {
+                for (i, group) in bgs.grouping_nodes.iter().enumerate() {
+                    let port = format!("group{}", i.to_string());
+                    table.add_row(&format!("Group {i}"), &[("PORT", &port)]);
 
+                    let phase_index = 0;
+                    let next_move_weights = &group.queue.link_next_move_state_weights[phase_index];
+                    self.link_next_move(dg, &node_id, Some(&port), next_move_weights);
+                    // dg.add_edge_with_ports(&node_id, Some(&port), &port, None, &[]);
+                }
+            } else {
+            }
             if let Some(exit_state) = self.data.find_mapping_state_id(&bgs.exit_state) {
                 dg.add_edge(&node_id, &exit_state, &[
                     ("color", COLOR_EXIT),
                     ("fontcolor", COLOR_EXIT),
                 ]);
             }
-            let linked_states = bgs
-                .linked_state_types
-                .iter()
-                .filter_map(|state| self.data.find_mapping_state_id(state));
-            if let Some(table) = table_from_rows(linked_states, 0.0, 2.0) {
-                let linked_id = format!("{}_linked", node_id);
-
-                dg.add_node(&linked_id, &[
-                    ("shape", "box"),
-                    ("style", "dotted"),
-                    ("label", &table),
-                    ("margin", "0.05"),
-                ]);
-
-                dg.add_edge(&node_id, &linked_id, &[
-                    ("label", "QueueEnd"),
-                    ("color", COLOR_END),
-                    ("fontcolor", COLOR_END),
-                ]);
-            }
+            self.add_linked_states(dg, &node_id, &bgs.linked_state_types)?;
 
             let phase_index = 0;
+
             if let Some(next_move_weights) = bgs.link_next_move_state_weights.get(phase_index) {
-                self.link_next_move(&mut dg, &node_id, next_move_weights);
+                self.link_next_move(dg, &node_id, None, next_move_weights);
             }
+
+            dg.add_node(&node_id, &[
+                ("shape", "plaintext"),
+                ("label", &table.finish()),
+            ]);
         }
 
-        /*let mut other = DotGraph::new("other", "subgraph", &[("rank", "sink")]);
-        for state in data.other_states.values() {
-            let name = id_name(&state.id);
-            other.add_node(&id_name(&state.id), &[("label", &name)]);
-            dg.add_edge(
-                &data.boss_general_states.iter().last().unwrap().1.node_id(),
-                &id_name(&state.id),
-                &[("style", "invis")],
-            );
-        }
-        dg.add_sub_graph(other);*/
+        Ok(())
+    }
 
-        if let Some(init_state) = self.data.find_mapping_state_id(&self.data.init_state) {
-            dg.add_node(&init_state, &[("label", &format!("{init_state} (Init)"))]);
-        }
+    /* let mut other = DotGraph::new("other", "subgraph", &[("rank", "sink")]);
+    for state in data.other_states.values() {
+        let name = id_name(&state.id);
+        other.add_node(&id_name(&state.id), &[("label", &name)]);
+        dg.add_edge(
+            &data.boss_general_states.iter().last().unwrap().1.node_id(),
+            &id_name(&state.id),
+            &[("style", "invis")],
+        );
+    }
+    dg.add_sub_graph(other); */
 
+    fn attack_sensors(&self) -> Result<DotGraph> {
         let mut dg_sensors = DotGraph::new("cluster_attacksensors", "subgraph", &[
             ("rank", "sink"),
             ("label", "Attack Sensors"),
@@ -163,13 +210,20 @@ impl Context {
                 detail.push('\n');
             }
 
-            self.add_detail_node(&mut dg_sensors, &node_id, &node_id, &detail.trim_end());
+            let table = self.detail_table(&node_id, &detail.trim_end());
+            dg_sensors.add_node(&node_id, &[
+                ("shape", "plaintext"),
+                ("label", &table.finish()),
+            ]);
 
-            let linked_states = attack_sensor
+            let mut table = default_table(0.0, 2.0);
+            attack_sensor
                 .binding_attacks
                 .iter()
-                .filter_map(|state| self.data.find_mapping_state_id(state));
-            if let Some(table) = table_from_rows(linked_states, 0.0, 2.0) {
+                .filter_map(|state| self.data.find_mapping_state_id(state))
+                .for_each(|state| table.add_row(&state, &[]));
+
+            if let Some(table) = table.finish_nonempty() {
                 let linked_id = format!("{}_linked", node_id);
 
                 dg_sensors.add_node(&linked_id, &[
@@ -189,12 +243,11 @@ impl Context {
             let phase_index = 0;
             if let Some(link_move_weight) = attack_sensor.attack_weight_phase_list.get(phase_index)
             {
-                self.link_next_move(&mut dg_sensors, &node_id, link_move_weight)
+                self.link_next_move(&mut dg_sensors, &node_id, None, link_move_weight)
             }
         }
-        dg.add_sub_graph(dg_sensors);
 
-        Ok(format!("strict {}", dg.finish()))
+        Ok(dg_sensors)
     }
 
     // - must use
@@ -204,19 +257,22 @@ impl Context {
         &self,
         dg: &mut DotGraph,
         base_id: &str,
+        port: Option<&str>,
         next_move_weights: &LinkNextMoveStateWeight,
     ) {
-        let must_use = next_move_weights
+        let mut table = default_table(1.0, 4.0);
+        next_move_weights
             .must_use_states
             .iter()
             .filter_map(|state| self.data.get_bgs(&state.reference))
-            .map(|bgs| id_name(&bgs.id));
+            .map(|bgs| id_name(&bgs.id))
+            .for_each(|state| table.add_row(&state, &[]));
 
-        if let Some(table) = table_from_rows(must_use, 1.0, 4.0) {
+        if let Some(table) = table.finish_nonempty() {
             let must_use_id = format!("{}_mustuse", base_id);
             dg.add_node(&must_use_id, &[("shape", "plaintext"), ("label", &table)]);
 
-            dg.add_edge(base_id, &must_use_id, &[
+            dg.add_edge_with_ports(base_id, port, &must_use_id, None, &[
                 ("label", "Initial"),
                 ("color", COLOR_MUST_USE),
                 ("fontcolor", COLOR_MUST_USE),
@@ -229,23 +285,24 @@ impl Context {
                 false => (1.0, 4.0),
             };
 
-            let weighted = next_move_weights.state_weight_list.iter().map(|state| {
+            let mut table = default_table(border, padding);
+            for state in &next_move_weights.state_weight_list {
                 let id = self
                     .data
                     .find_mapping_state_id(&state.state_type)
                     .unwrap_or_else(|| enum_value_only(&state.state_type.0).into());
-                format!("{} {id}", state.weight)
-            });
-            let table = table_from_rows(weighted, border, padding).unwrap();
+                table.add_row(&format!("{} {id}", state.weight), &[]);
+            }
+            let table = table.finish();
 
             let node_attrs: &[_] = match next_move_weights.is_random {
                 true => &[("shape", "box"), ("style", "dotted"), ("label", &table)],
                 false => &[("shape", "plaintext"), ("label", &table)],
             };
 
-            let next_state_weight_id = format!("{}_mustuse", base_id);
+            let next_state_weight_id = format!("{}{}_weight", port.unwrap_or_default(), base_id);
             dg.add_node(&next_state_weight_id, node_attrs);
-            dg.add_edge(&base_id, &next_state_weight_id, &[
+            dg.add_edge_with_ports(&base_id, port, &next_state_weight_id, None, &[
                 ("label", "Weight"),
                 ("color", COLOR_WEIGHTS),
                 ("fontcolor", COLOR_WEIGHTS),
@@ -253,73 +310,27 @@ impl Context {
         }
     }
 
-    fn add_detail_node(&self, dg: &mut DotGraph, node_id: &str, label: &str, detail: &str) {
-        if detail.is_empty() {
-            dg.add_node(node_id, &[("label", node_id)]);
-            return;
+    fn detail_table(&self, label: &str, detail: &str) -> Table {
+        let mut table = default_table(1.0, 2.0);
+        table.add_row(&label, &[]);
+        if !detail.is_empty() {
+            let font = format!(
+                r#"<FONT point-size="12" color="azure4">{}</FONT>"#,
+                detail.replace("\n", "<br/>")
+            );
+            table.add_row(&font, &[("align", "left"), ("balign", "left")]);
         }
-
-        let font = format!(
-            r#"<FONT point-size="12" color="azure4">{}</FONT>"#,
-            detail.replace("\n", "<br/>")
-        );
-
-        dg.add_node(&node_id, &[
-            ("shape", "plaintext"),
-            (
-                "label",
-                &table_styled(
-                    [
-                        (label.to_owned(), ""),
-                        (font, r#"align="left" balign="left""#),
-                    ]
-                    .into_iter(),
-                    1.0,
-                    2.0,
-                )
-                .unwrap(),
-            ),
-        ]);
+        table
     }
 }
 
-fn table_from_rows(
-    iter: impl Iterator<Item = impl AsRef<str>>,
-    cell_border: f32,
-    cell_padding: f32,
-) -> Option<String> {
-    let mut table = format!(
-        r#"RAW:<<TABLE border="0" cellborder="{cell_border}" cellspacing="0" cellpadding="{cell_padding}">"#
-    );
-    let mut empty = true;
-    for row in iter {
-        table.push_str(r#"<TR><TD>"#);
-        table.push_str(row.as_ref());
-        table.push_str("  </TD></TR>");
-        empty = false;
-    }
-    table.push_str("</TABLE>>");
-    (!empty).then_some(table)
-}
-fn table_styled<'a>(
-    iter: impl Iterator<Item = (String, &'a str)>,
-    cell_border: f32,
-    cell_padding: f32,
-) -> Option<String> {
-    let mut table = format!(
-        r#"RAW:<<TABLE border="0" cellborder="{cell_border}" cellspacing="0" cellpadding="{cell_padding}">"#
-    );
-    let mut empty = true;
-    for (row, style) in iter {
-        table.push_str("<TR><TD ");
-        table.push_str(&style);
-        table.push('>');
-        table.push_str(row.as_ref());
-        table.push_str("  </TD></TR>");
-        empty = false;
-    }
-    table.push_str("</TABLE>>");
-    (!empty).then_some(table)
+fn default_table(cell_border: f32, cell_padding: f32) -> Table {
+    Table::new(&[
+        ("border", "0"),
+        ("cellspacing", "0"),
+        ("cellborder", &cell_border.to_string()),
+        ("cellpadding", &cell_padding.to_string()),
+    ])
 }
 
 fn enum_value_only(x: &str) -> &str {
