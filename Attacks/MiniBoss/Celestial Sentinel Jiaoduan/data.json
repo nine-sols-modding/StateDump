@@ -2,26 +2,28 @@
   "InitState": "MonsterBase+States.WanderingIdle",
   "BossGeneralStates": {
     "MonsterBase+States.JumpBack": {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/JumpBack@BossGeneralState",
+      "$id": "/States/JumpBack@JumpBack",
+      "$component": "JumpBack",
       "state": "MonsterBase+States.JumpBack",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [
         {
-          "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/JumpBack/weight (1)@LinkNextMoveStateWeight",
+          "$id": "/States/JumpBack/weight (1)@weight (1)",
+          "$component": "weight (1)",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
           "stateWeightList": [
             {
-              "StateType": "MonsterBase+States.Undefined",
+              "StateType": "MonsterBase+States.Attack2",
               "Weight": 2
             },
             {
-              "StateType": "MonsterBase+States.Undefined",
+              "StateType": "MonsterBase+States.Attack3",
               "Weight": 1
             },
             {
-              "StateType": "MonsterBase+States.Undefined",
+              "StateType": "MonsterBase+States.Attack1",
               "Weight": 1
             },
             {
@@ -29,13 +31,14 @@
               "Weight": 2
             },
             {
-              "StateType": "MonsterBase+States.Skip",
+              "StateType": "MonsterBase+States.Attack9",
               "Weight": 1
             }
           ]
         }
       ],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -63,36 +66,39 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Attack1": {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/Attacks/[1]Attack1 RunPush@BossGeneralState",
+      "$id": "/States/Attacks/[1]Attack1 RunPush@[1]Attack1 RunPush",
+      "$component": "[1]Attack1 RunPush",
       "state": "MonsterBase+States.Attack1",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [
         {
-          "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/Attacks/[1]Attack1 RunPush/weight@LinkNextMoveStateWeight",
+          "$id": "/States/Attacks/[1]Attack1 RunPush/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
           "stateWeightList": [
             {
-              "StateType": "MonsterBase+States.Undefined",
+              "StateType": "MonsterBase+States.Attack4",
               "Weight": 1
             },
             {
-              "StateType": "MonsterBase+States.Undefined",
-              "Weight": 1
-            },
-            {
-              "StateType": "MonsterBase+States.Undefined",
+              "StateType": "MonsterBase+States.Attack1",
               "Weight": 1
             },
             {
               "StateType": "MonsterBase+States.Skip",
+              "Weight": 1
+            },
+            {
+              "StateType": "MonsterBase+States.Attack3",
               "Weight": 1
             }
           ]
         }
       ],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -116,36 +122,39 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Attack2": {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/Attacks/[2]DoubleAttack@BossGeneralState",
+      "$id": "/States/Attacks/[2]DoubleAttack@[2]DoubleAttack",
+      "$component": "[2]DoubleAttack",
       "state": "MonsterBase+States.Attack2",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [
         {
-          "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/Attacks/[2]DoubleAttack/weight@LinkNextMoveStateWeight",
+          "$id": "/States/Attacks/[2]DoubleAttack/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
           "stateWeightList": [
             {
-              "StateType": "MonsterBase+States.Undefined",
+              "StateType": "MonsterBase+States.Attack1",
               "Weight": 2
             },
             {
-              "StateType": "MonsterBase+States.Undefined",
+              "StateType": "MonsterBase+States.Attack3",
               "Weight": 0
             },
             {
-              "StateType": "MonsterBase+States.Undefined",
+              "StateType": "MonsterBase+States.Attack2",
               "Weight": 0
             },
             {
-              "StateType": "MonsterBase+States.Undefined",
+              "StateType": "MonsterBase+States.Attack5",
               "Weight": 0
             }
           ]
         }
       ],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -173,12 +182,14 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Attack3": {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/Attacks/[3]DangerSpear@BossGeneralState",
+      "$id": "/States/Attacks/[3]DangerSpear@[3]DangerSpear",
+      "$component": "[3]DangerSpear",
       "state": "MonsterBase+States.Attack3",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [
         {
-          "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/Attacks/[3]DangerSpear/weight@LinkNextMoveStateWeight",
+          "$id": "/States/Attacks/[3]DangerSpear/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
@@ -186,6 +197,7 @@
         }
       ],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -213,18 +225,20 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Attack4": {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/Attacks/[4]RunPoke(For Enaging)@BossGeneralState",
+      "$id": "/States/Attacks/[4]RunPoke(For Enaging)@[4]RunPoke(For Enaging)",
+      "$component": "[4]RunPoke(For Enaging)",
       "state": "MonsterBase+States.Attack4",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [
         {
-          "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/Attacks/[4]RunPoke(For Enaging)/weight@LinkNextMoveStateWeight",
+          "$id": "/States/Attacks/[4]RunPoke(For Enaging)/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
           "stateWeightList": [
             {
-              "StateType": "MonsterBase+States.Skip",
+              "StateType": "MonsterBase+States.JumpBack",
               "Weight": 1
             },
             {
@@ -235,6 +249,7 @@
         }
       ],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -262,12 +277,14 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Attack5": {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/Attacks/[5]FireSpead@BossGeneralState",
+      "$id": "/States/Attacks/[5]FireSpead@[5]FireSpead",
+      "$component": "[5]FireSpead",
       "state": "MonsterBase+States.Attack3",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [
         {
-          "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/Attacks/[5]FireSpead/weight@LinkNextMoveStateWeight",
+          "$id": "/States/Attacks/[5]FireSpead/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
@@ -275,6 +292,7 @@
         }
       ],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -302,32 +320,35 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Attack6": {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/Attacks/[6]PokeDown@BossGeneralState",
+      "$id": "/States/Attacks/[6]PokeDown@[6]PokeDown",
+      "$component": "[6]PokeDown",
       "state": "MonsterBase+States.Attack3",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [
         {
-          "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/Attacks/[6]PokeDown/weight@LinkNextMoveStateWeight",
+          "$id": "/States/Attacks/[6]PokeDown/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
           "stateWeightList": [
             {
-              "StateType": "MonsterBase+States.Skip",
+              "StateType": "MonsterBase+States.Attack7",
               "Weight": 2
             },
             {
-              "StateType": "MonsterBase+States.Skip",
+              "StateType": "MonsterBase+States.Attack3",
               "Weight": 1
             },
             {
-              "StateType": "MonsterBase+States.Skip",
+              "StateType": "MonsterBase+States.Attack4",
               "Weight": 1
             }
           ]
         }
       ],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -355,18 +376,20 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Attack7": {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/Attacks/[7]PokeFlat@BossGeneralState",
+      "$id": "/States/Attacks/[7]PokeFlat@[7]PokeFlat",
+      "$component": "[7]PokeFlat",
       "state": "MonsterBase+States.Attack3",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [
         {
-          "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/Attacks/[7]PokeFlat/weight@LinkNextMoveStateWeight",
+          "$id": "/States/Attacks/[7]PokeFlat/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
           "stateWeightList": [
             {
-              "StateType": "MonsterBase+States.Undefined",
+              "StateType": "MonsterBase+States.Attack6",
               "Weight": 2
             },
             {
@@ -377,6 +400,7 @@
         }
       ],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -404,32 +428,35 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Attack8": {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/Attacks/[8]Starter@BossGeneralState",
+      "$id": "/States/Attacks/[8]Starter@[8]Starter",
+      "$component": "[8]Starter",
       "state": "MonsterBase+States.Attack3",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [
         {
-          "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/Attacks/[8]Starter/weight@LinkNextMoveStateWeight",
+          "$id": "/States/Attacks/[8]Starter/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": false,
           "mustUseStates": [],
           "stateWeightList": [
             {
-              "StateType": "MonsterBase+States.Skip",
+              "StateType": "MonsterBase+States.Attack2",
               "Weight": 2
             },
             {
-              "StateType": "MonsterBase+States.Skip",
+              "StateType": "MonsterBase+States.Attack3",
               "Weight": 1
             },
             {
-              "StateType": "MonsterBase+States.Skip",
+              "StateType": "MonsterBase+States.Attack5",
               "Weight": 0
             }
           ]
         }
       ],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -457,24 +484,27 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Attack9": {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/Attacks/[9]PokeStart@BossGeneralState",
+      "$id": "/States/Attacks/[9]PokeStart@[9]PokeStart",
+      "$component": "[9]PokeStart",
       "state": "MonsterBase+States.Attack3",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [
         {
-          "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/Attacks/[9]PokeStart/weight@LinkNextMoveStateWeight",
+          "$id": "/States/Attacks/[9]PokeStart/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": false,
           "mustUseStates": [],
           "stateWeightList": [
             {
-              "StateType": "MonsterBase+States.Skip",
+              "StateType": "MonsterBase+States.Attack7",
               "Weight": 1
             }
           ]
         }
       ],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -498,12 +528,14 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.PostureBreak": {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/PostureBreak@PostureBreakState",
+      "$id": "/States/PostureBreak@PostureBreak",
+      "$component": "PostureBreak",
       "postureBreakAmmoSpawner": null,
       "state": "MonsterBase+States.Undefined",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -527,11 +559,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Hurt": {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/HurtState@BossGeneralState",
+      "$id": "/States/HurtState@HurtState",
+      "$component": "HurtState",
       "state": "MonsterBase+States.Hurt",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -555,11 +589,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.LastHit": {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/LastHit@BossGeneralState",
+      "$id": "/States/LastHit@LastHit",
+      "$component": "LastHit",
       "state": "MonsterBase+States.LastHit",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -583,11 +619,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Hurt_Big": {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/Hurt_BigState@BossGeneralState",
+      "$id": "/States/Hurt_BigState@Hurt_BigState",
+      "$component": "Hurt_BigState",
       "state": "MonsterBase+States.Hurt_Big",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -613,7 +651,8 @@
   },
   "OtherStates": {
     "MonsterBase+States.WanderingIdle": {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/0_Wandering_Idle@StealthWanderingIdle",
+      "$id": "/States/0_Wandering_Idle@0_Wandering_Idle",
+      "$component": "0_Wandering_Idle",
       "originalPos": {
         "x": -4268.0,
         "y": -1968.0,
@@ -636,12 +675,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Wandering": {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/0_Wandering_Walking@StealthWandering",
+      "$id": "/States/0_Wandering_Walking@0_Wandering_Walking",
+      "$component": "0_Wandering_Walking",
       "MaxRun": 160.0,
       "RunAccel": 800.0,
       "RunReduce": 800.0,
       "wanderingPointGenerator": {
-        "$ref": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/WanderingPoints@LoopWanderingPointGenerator"
+        "$ref": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/WanderingPoints@WanderingPoints"
       },
       "FailReason": "",
       "preAllocateGotoTargetSuccess": null,
@@ -658,11 +698,12 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Alerted": {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/Alert@StealthAlertState",
+      "$id": "/States/Alert@Alert",
+      "$component": "Alert",
       "_alertSoundPlayer": null,
       "customStartScoutTime": -1.0,
       "lookAroundParma": {
-        "$ref": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/0_Wandering_Walking@MoveParam"
+        "$ref": "/States/0_Wandering_Walking@0_Wandering_Walking"
       },
       "clip": [
         {
@@ -675,7 +716,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Engaging": {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/1_Engaging@StealthEngaging",
+      "$id": "/States/1_Engaging@1_Engaging",
+      "$component": "1_Engaging",
       "IsEngagingInstantAttack": false,
       "ForceRunToPlayer": false,
       "beforeTransitionClip": null,
@@ -696,12 +738,14 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.PreAttack": {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/1_PreAttack@StealthPreAttackState",
+      "$id": "/States/1_PreAttack@1_PreAttack",
+      "$component": "1_PreAttack",
       "exitPreAttackCoolDown": 2.0,
       "ChangeToEngageDelayTime": 0.0,
       "ApproachingSchemes": [
         {
-          "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/1_PreAttack/preAttack@StealthEngagingScheme",
+          "$id": "/States/1_PreAttack/preAttack@preAttack",
+          "$component": "preAttack",
           "EnterApproachingRange": 260,
           "EnterApproachingRangeRandomOffset": 20,
           "ExitApproachingRange": 300,
@@ -746,7 +790,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Panic": {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/Not See Player/1_Panic@StealthPanicState",
+      "$id": "/States/Not See Player/1_Panic@1_Panic",
+      "$component": "1_Panic",
       "isDone": false,
       "MinStateTime": 0.5,
       "clip": [
@@ -760,7 +805,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.OutOfReach": {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/Not See Player/3_Out of Reach@StealthOutOfReachState",
+      "$id": "/States/Not See Player/3_Out of Reach@3_Out of Reach",
+      "$component": "3_Out of Reach",
       "MinStateTime": 0.5,
       "OutOfReachReason": "OutOfReachState",
       "clip": [
@@ -774,9 +820,10 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Confused": {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/Not See Player/4_Confuse@StealthConfuse",
+      "$id": "/States/Not See Player/4_Confuse@4_Confuse",
+      "$component": "4_Confuse",
       "_confuseSoundPlayer": {
-        "$ref": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/Not See Player/4_Confuse/confuseSound@SoundPlayer"
+        "$ref": "/States/Not See Player/4_Confuse/confuseSound@confuseSound"
       },
       "clip": [
         {
@@ -789,7 +836,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.TurnAround": {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/TurnAround@StealthTurnAround",
+      "$id": "/States/TurnAround@TurnAround",
+      "$component": "TurnAround",
       "_currentAnimState": null,
       "engagingTurnAroundAnimation": {
         "stateName": "EngagingTurnAround",
@@ -819,14 +867,15 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Dead": {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/DeadState@MonsterDeadState",
+      "$id": "/States/DeadState@DeadState",
+      "$component": "DeadState",
       "shootEvent": "UnityEvent(0)",
       "_selfDestructClip": null,
       "IsDeadShooted": false,
       "IsRemoveDeadBody": false,
       "hitData": null,
       "deadNoiseEffect": {
-        "$ref": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/MonsterCore/Animator(Proxy)/Animator/LogicRoot/EventBroadcastSystem/Dead Noise@EffectDealer"
+        "$ref": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/EventBroadcastSystem/Dead Noise@Dead Noise"
       },
       "IsEnterClearVelX": true,
       "DeadValue": [],
@@ -848,7 +897,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.MoveToPosition": {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/States/MoveToState@StealthMoveToState",
+      "$id": "/States/MoveToState@MoveToState",
+      "$component": "MoveToState",
       "targetPos": {
         "x": 0.0,
         "y": 0.0,
@@ -868,7 +918,8 @@
     }
   },
   "HurtInterrupt": {
-    "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/MonsterCore/Animator(Proxy)/Animator/LogicRoot/HurtInterrupt@MonsterHurtInterrupt",
+    "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/HurtInterrupt@HurtInterrupt",
+    "$component": "HurtInterrupt",
     "customInterruptTH": -1.0,
     "IsHurtInterruptChangeState": true,
     "IsForcePlayingBigHurtAnimation": false,
@@ -878,7 +929,8 @@
     "linkMoveWeights": []
   },
   "TeleportBinding": {
-    "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Teleport@TeleportBinding",
+    "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Teleport@Teleport",
+    "$component": "Teleport",
     "teleportScheme": "TeleportBinding+TeleportScheme.ToPlayerPosition",
     "offsetCandidates": [],
     "offset": {
@@ -890,18 +942,20 @@
   },
   "AttackSensors": [
     {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor@Level Once Sensor",
+      "$component": "Level Once Sensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [
         {
-          "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor/weight@LinkNextMoveStateWeight",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
           "stateWeightList": [
             {
-              "StateType": "MonsterBase+States.Undefined",
+              "StateType": "MonsterBase+States.Attack1",
               "Weight": 1
             }
           ]
@@ -940,7 +994,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/0_RunAwaySensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/0_RunAwaySensor@0_RunAwaySensor",
+      "$component": "0_RunAwaySensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [],
@@ -977,33 +1032,35 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor@1_AttackSensor",
+      "$component": "1_AttackSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.PreAttackOnly",
       "AttackWeightPhaseList": [
         {
-          "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor/weight (1)@LinkNextMoveStateWeight",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor/weight (1)@weight (1)",
+          "$component": "weight (1)",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
           "stateWeightList": [
             {
-              "StateType": "MonsterBase+States.Undefined",
+              "StateType": "MonsterBase+States.JumpBack",
               "Weight": 1
             },
             {
-              "StateType": "MonsterBase+States.Skip",
+              "StateType": "MonsterBase+States.Attack9",
               "Weight": 2
             },
             {
-              "StateType": "MonsterBase+States.Skip",
+              "StateType": "MonsterBase+States.Attack8",
               "Weight": 1
             }
           ]
         }
       ],
       "testWeight": {
-        "$ref": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor/test move@TestStateWeight"
+        "$ref": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor/test move@test move"
       },
       "OnlySameArea": false,
       "OnlyMonsterCanSeePlayer": true,
@@ -1015,7 +1072,7 @@
       "currentAttackDelay": 0.0,
       "coolDownType": "CooldownTokenType.NormalAttack",
       "_stateCoolDownProvider": {
-        "$ref": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor/cooldown@StateCoolDownProvider"
+        "$ref": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor/cooldown@cooldown"
       },
       "coolDownStat": null,
       "CoolDownWeight": {
@@ -1052,7 +1109,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor@2_DodgePredictSensor",
+      "$component": "2_DodgePredictSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [],
@@ -1083,7 +1141,8 @@
       "conditions": [],
       "_conditions": [
         {
-          "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor/rollingCondition@PlayerMovePredictCondition",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor/rollingCondition@rollingCondition",
+          "$component": "rollingCondition",
           "ParryDetect": false,
           "DodgeDetect": true,
           "JumpDetect": false,
@@ -1106,12 +1165,14 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor@3_AttackPredictSensor",
+      "$component": "3_AttackPredictSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [
         {
-          "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/weight@LinkNextMoveStateWeight",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
@@ -1145,7 +1206,8 @@
       "conditions": [],
       "_conditions": [
         {
-          "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/attackCondition@PlayerMovePredictCondition",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/attackCondition@attackCondition",
+          "$component": "attackCondition",
           "ParryDetect": false,
           "DodgeDetect": false,
           "JumpDetect": false,
@@ -1168,25 +1230,27 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackRunToSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackRunToSensor@1_AttackRunToSensor",
+      "$component": "1_AttackRunToSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingOnly",
       "AttackWeightPhaseList": [
         {
-          "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackRunToSensor/weight@LinkNextMoveStateWeight",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackRunToSensor/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
           "stateWeightList": [
             {
-              "StateType": "MonsterBase+States.Undefined",
+              "StateType": "MonsterBase+States.Attack4",
               "Weight": 1
             }
           ]
         }
       ],
       "testWeight": {
-        "$ref": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackRunToSensor/test move (1)@TestStateWeight"
+        "$ref": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackRunToSensor/test move (1)@test move (1)"
       },
       "OnlySameArea": false,
       "OnlyMonsterCanSeePlayer": true,
@@ -1198,7 +1262,7 @@
       "currentAttackDelay": 0.200000018,
       "coolDownType": "CooldownTokenType.NormalAttack",
       "_stateCoolDownProvider": {
-        "$ref": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackRunToSensor/cooldown@StateCoolDownProvider"
+        "$ref": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackRunToSensor/cooldown@cooldown"
       },
       "coolDownStat": null,
       "CoolDownWeight": {
@@ -1222,18 +1286,20 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor@3_AttackPredictSensor",
+      "$component": "3_AttackPredictSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [
         {
-          "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/weight@LinkNextMoveStateWeight",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
           "stateWeightList": [
             {
-              "StateType": "MonsterBase+States.Undefined",
+              "StateType": "MonsterBase+States.JumpBack",
               "Weight": 1
             }
           ]
@@ -1266,7 +1332,8 @@
       "conditions": [],
       "_conditions": [
         {
-          "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/attackCondition@PlayerMovePredictCondition",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/attackCondition@attackCondition",
+          "$component": "attackCondition",
           "ParryDetect": false,
           "DodgeDetect": false,
           "JumpDetect": false,
@@ -1289,33 +1356,35 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_Jumpback Sensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_Jumpback Sensor@3_Jumpback Sensor",
+      "$component": "3_Jumpback Sensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [
         {
-          "$id": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_Jumpback Sensor/move@LinkNextMoveStateWeight",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_Jumpback Sensor/move@move",
+          "$component": "move",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
           "stateWeightList": [
             {
-              "StateType": "MonsterBase+States.Skip",
+              "StateType": "MonsterBase+States.JumpBack",
               "Weight": 2
             },
             {
-              "StateType": "MonsterBase+States.Skip",
+              "StateType": "MonsterBase+States.Attack1",
               "Weight": 1
             },
             {
-              "StateType": "MonsterBase+States.Skip",
+              "StateType": "MonsterBase+States.Attack9",
               "Weight": 1
             }
           ]
         }
       ],
       "testWeight": {
-        "$ref": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_Jumpback Sensor/test move (2)@TestStateWeight"
+        "$ref": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_Jumpback Sensor/test move (2)@test move (2)"
       },
       "OnlySameArea": false,
       "OnlyMonsterCanSeePlayer": true,
@@ -1327,7 +1396,7 @@
       "currentAttackDelay": 0.0,
       "coolDownType": "CooldownTokenType.NormalAttack",
       "_stateCoolDownProvider": {
-        "$ref": "A2_S2/Room/Prefab/寶箱 Chests/EventBinder_開啟橋後觸發Boss Fight 算力元件/LootProvider 算力元件/General Boss Fight FSM Object Variant Variant/FSM Animator/LogicRoot/---Boss---/StealthGameMonster_SpearmanMiniBoss 長槍小王基本 Variant/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_Jumpback Sensor/cooldown (1)@StateCoolDownProvider"
+        "$ref": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_Jumpback Sensor/cooldown (1)@cooldown (1)"
       },
       "coolDownStat": null,
       "CoolDownWeight": {

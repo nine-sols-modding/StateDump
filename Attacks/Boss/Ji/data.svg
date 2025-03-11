@@ -5,536 +5,536 @@
  -->
 <!-- Title: Foo Pages: 1 -->
 <svg width="644pt" height="2244pt"
- viewBox="0.00 0.00 644.25 2243.88" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 2239.88)">
+ viewBox="0.00 0.00 644.25 2244.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 2240)">
 <title>Foo</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-2239.88 640.25,-2239.88 640.25,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-2240 640.25,-2240 640.25,4 -4,4"/>
 <g id="clust1" class="cluster">
 <title>cluster_attacksensors</title>
-<polygon fill="none" stroke="black" points="46.75,-1717.88 46.75,-2227.88 628.25,-2227.88 628.25,-1717.88 46.75,-1717.88"/>
-<text text-anchor="middle" x="337.5" y="-2210.57" font-family="Helvetica,sans-Serif" font-size="14.00">Attack Sensors</text>
-</g>
-<!-- Divination Free Zone -->
-<g id="node1" class="node">
-<title>Divination Free Zone</title>
-<polygon fill="none" stroke="black" points="62.38,-1362 62.38,-1383.75 201.12,-1383.75 201.12,-1362 62.38,-1362"/>
-<text text-anchor="start" x="65.38" y="-1367.45" font-family="Helvetica,sans-Serif" font-size="14.00">Divination Free Zone &#160;</text>
-<polygon fill="none" stroke="black" points="62.38,-1318 62.38,-1362 201.12,-1362 201.12,-1318 62.38,-1318"/>
-<text text-anchor="start" x="65.38" y="-1348.6" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">2.98s: JeeQTELoop</text>
-<text text-anchor="start" x="65.38" y="-1336.6" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">7.00s: LinkNextMove</text>
-<text text-anchor="start" x="65.38" y="-1322.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">7.17s: Done</text>
-<text text-anchor="start" x="129.88" y="-1322.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
-</g>
-<!-- Engaging -->
-<g id="node2" class="node">
-<title>Engaging</title>
-<polygon fill="none" stroke="black" points="529,-680.88 456,-680.88 456,-644.88 529,-644.88 529,-680.88"/>
-<text text-anchor="middle" x="492.5" y="-657.45" font-family="Helvetica,sans-Serif" font-size="14.00">Engaging</text>
-</g>
-<!-- Divination Free Zone&#45;&gt;Engaging -->
-<g id="edge1" class="edge">
-<title>Divination Free Zone&#45;&gt;Engaging</title>
-<path fill="none" stroke="#cdc8b1" d="M209.08,-1333.51C228.16,-1326.73 247.68,-1317.45 263.5,-1304.88 317.51,-1261.96 318.55,-1236.83 346.75,-1173.88 424.9,-999.38 471.42,-772.31 486.27,-692.31"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="489.68,-693.14 488.04,-682.67 482.79,-691.88 489.68,-693.14"/>
-</g>
-<!-- [Altar]SmallBlackHole -->
-<g id="node3" class="node">
-<title>[Altar]SmallBlackHole</title>
-<polygon fill="none" stroke="black" points="59.75,-1270 59.75,-1291.75 203.75,-1291.75 203.75,-1270 59.75,-1270"/>
-<text text-anchor="start" x="62.75" y="-1275.45" font-family="Helvetica,sans-Serif" font-size="14.00">[Altar]SmallBlackHole &#160;</text>
-<polygon fill="none" stroke="black" points="59.75,-1238 59.75,-1270 203.75,-1270 203.75,-1238 59.75,-1238"/>
-<text text-anchor="start" x="62.75" y="-1256.6" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.42s: LinkNextMove</text>
-<text text-anchor="start" x="62.75" y="-1242.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.58s: Done</text>
-<text text-anchor="start" x="127.25" y="-1242.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
-</g>
-<!-- [Altar]SmallBlackHole&#45;&gt;Engaging -->
-<g id="edge2" class="edge">
-<title>[Altar]SmallBlackHole&#45;&gt;Engaging</title>
-<path fill="none" stroke="#cdc8b1" d="M211.61,-1249.7C229.72,-1243.86 248.15,-1235.85 263.5,-1224.88 314.83,-1188.18 318.18,-1166.13 346.75,-1109.88 422.15,-961.4 469.34,-765.49 485.37,-692.2"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="488.75,-693.12 487.44,-682.61 481.91,-691.65 488.75,-693.12"/>
-</g>
-<!-- [Short]ShorFlyingSword -->
-<g id="node4" class="node">
-<title>[Short]ShorFlyingSword</title>
-<polygon fill="none" stroke="black" points="53.75,-1190 53.75,-1211.75 209.75,-1211.75 209.75,-1190 53.75,-1190"/>
-<text text-anchor="start" x="56.75" y="-1195.45" font-family="Helvetica,sans-Serif" font-size="14.00">[Short]ShorFlyingSword &#160;</text>
-<polygon fill="none" stroke="black" points="53.75,-1158 53.75,-1190 209.75,-1190 209.75,-1158 53.75,-1158"/>
-<text text-anchor="start" x="56.75" y="-1176.6" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">1.00s: LinkNextMove</text>
-<text text-anchor="start" x="56.75" y="-1162.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">1.17s: Done</text>
-<text text-anchor="start" x="121.25" y="-1162.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
-</g>
-<!-- [Short]ShorFlyingSword&#45;&gt;Engaging -->
-<g id="edge3" class="edge">
-<title>[Short]ShorFlyingSword&#45;&gt;Engaging</title>
-<path fill="none" stroke="#cdc8b1" d="M217.73,-1168.17C233.91,-1162.5 249.98,-1154.94 263.5,-1144.88 419.7,-1028.56 473.15,-777.9 487.24,-692.26"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="490.67,-693 488.77,-682.57 483.75,-691.9 490.67,-693"/>
-</g>
-<!-- [Short]QuickHorizontalDoubleSword -->
-<g id="node5" class="node">
-<title>[Short]QuickHorizontalDoubleSword</title>
-<polygon fill="none" stroke="black" points="16.62,-1110 16.62,-1131.75 246.88,-1131.75 246.88,-1110 16.62,-1110"/>
-<text text-anchor="start" x="19.62" y="-1115.45" font-family="Helvetica,sans-Serif" font-size="14.00">[Short]QuickHorizontalDoubleSword &#160;</text>
-<polygon fill="none" stroke="black" points="16.62,-1066 16.62,-1110 246.88,-1110 246.88,-1066 16.62,-1066"/>
-<text text-anchor="start" x="19.62" y="-1096.6" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">0.00s: CheckFacing</text>
-<text text-anchor="start" x="19.62" y="-1084.6" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">1.50s: LinkNextMove</text>
-<text text-anchor="start" x="19.62" y="-1070.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">1.83s: Done</text>
-<text text-anchor="start" x="84.12" y="-1070.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
-</g>
-<!-- [Short]QuickHorizontalDoubleSword&#45;&gt;Engaging -->
-<g id="edge4" class="edge">
-<title>[Short]QuickHorizontalDoubleSword&#45;&gt;Engaging</title>
-<path fill="none" stroke="#cdc8b1" d="M250.45,-1062.18C255.01,-1059.3 259.38,-1056.2 263.5,-1052.88 388,-952.22 458.92,-764.11 482.55,-692.02"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="485.87,-693.12 485.59,-682.53 479.2,-690.98 485.87,-693.12"/>
-</g>
-<!-- [Finisher]QuickTeleportSword 危戳 -->
-<g id="node6" class="node">
-<title>[Finisher]QuickTeleportSword 危戳</title>
-<polygon fill="none" stroke="black" points="17.38,-1018 17.38,-1039.75 246.12,-1039.75 246.12,-1018 17.38,-1018"/>
-<text text-anchor="start" x="20.38" y="-1023.45" font-family="Helvetica,sans-Serif" font-size="14.00">[Finisher]QuickTeleportSword 危戳 &#160;</text>
-<polygon fill="none" stroke="black" points="17.38,-962 17.38,-1018 246.12,-1018 246.12,-962 17.38,-962"/>
-<text text-anchor="start" x="20.38" y="-1004.6" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">0.00s: CheckFacing</text>
-<text text-anchor="start" x="20.38" y="-992.6" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">1.17s: CheckFacing</text>
-<text text-anchor="start" x="20.38" y="-980.6" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.08s: LinkNextMove</text>
-<text text-anchor="start" x="20.38" y="-966.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.17s: Done</text>
-<text text-anchor="start" x="84.88" y="-966.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
-</g>
-<!-- [Finisher]QuickTeleportSword 危戳&#45;&gt;Engaging -->
-<g id="edge5" class="edge">
-<title>[Finisher]QuickTeleportSword 危戳&#45;&gt;Engaging</title>
-<path fill="none" stroke="#cdc8b1" d="M249.56,-958.09C254.39,-955.18 259.06,-952.11 263.5,-948.88 363.76,-875.77 443.8,-747.64 476.08,-691.07"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="479.12,-692.81 480.97,-682.38 473.02,-689.38 479.12,-692.81"/>
-</g>
-<!-- [Altar]Laser Altar Circle -->
-<g id="node7" class="node">
-<title>[Altar]Laser Altar Circle</title>
-<polygon fill="none" stroke="black" points="56,-914 56,-935.75 207.5,-935.75 207.5,-914 56,-914"/>
-<text text-anchor="start" x="59" y="-919.45" font-family="Helvetica,sans-Serif" font-size="14.00">[Altar]Laser Altar Circle &#160;</text>
-<polygon fill="none" stroke="black" points="56,-882 56,-914 207.5,-914 207.5,-882 56,-882"/>
-<text text-anchor="start" x="59" y="-900.6" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">4.17s: LinkNextMove</text>
-<text text-anchor="start" x="59" y="-886.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">4.33s: Done</text>
-<text text-anchor="start" x="123.5" y="-886.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
-</g>
-<!-- [Altar]Laser Altar Circle&#45;&gt;Engaging -->
-<g id="edge6" class="edge">
-<title>[Altar]Laser Altar Circle&#45;&gt;Engaging</title>
-<path fill="none" stroke="#cdc8b1" d="M215.25,-889.65C231.79,-884.16 248.63,-877.31 263.5,-868.88 349.72,-819.99 430.88,-733.56 468.91,-689.83"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="471.5,-692.19 475.37,-682.32 466.2,-687.62 471.5,-692.19"/>
-</g>
-<!-- [Altar]Health Altar -->
-<g id="node8" class="node">
-<title>[Altar]Health Altar</title>
-<polygon fill="none" stroke="black" points="72.5,-834 72.5,-855.75 191,-855.75 191,-834 72.5,-834"/>
-<text text-anchor="start" x="75.5" y="-839.45" font-family="Helvetica,sans-Serif" font-size="14.00">[Altar]Health Altar &#160;</text>
-<polygon fill="none" stroke="black" points="72.5,-802 72.5,-834 191,-834 191,-802 72.5,-802"/>
-<text text-anchor="start" x="75.5" y="-820.6" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">2.08s: LinkNextMove</text>
-<text text-anchor="start" x="75.5" y="-806.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">2.25s: Done</text>
-<text text-anchor="start" x="140" y="-806.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
-</g>
-<!-- [Altar]Health Altar&#45;&gt;Engaging -->
-<g id="edge7" class="edge">
-<title>[Altar]Health Altar&#45;&gt;Engaging</title>
-<path fill="none" stroke="#cdc8b1" d="M198.88,-811.55C219.87,-805.29 242.96,-797.58 263.5,-788.88 333.04,-759.4 408.87,-714.77 453.2,-687.29"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="455.05,-690.26 461.68,-682 451.34,-684.32 455.05,-690.26"/>
-</g>
-<!-- Divination JumpKicked -->
-<g id="node9" class="node">
-<title>Divination JumpKicked</title>
-<polygon fill="none" stroke="black" points="56.38,-754 56.38,-775.75 207.12,-775.75 207.12,-754 56.38,-754"/>
-<text text-anchor="start" x="59.38" y="-759.45" font-family="Helvetica,sans-Serif" font-size="14.00">Divination JumpKicked &#160;</text>
-<polygon fill="none" stroke="black" points="56.38,-722 56.38,-754 207.12,-754 207.12,-722 56.38,-722"/>
-<text text-anchor="start" x="59.38" y="-740.6" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">2.58s: LinkNextMove</text>
-<text text-anchor="start" x="59.38" y="-726.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.50s: Done</text>
-<text text-anchor="start" x="123.88" y="-726.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
-</g>
-<!-- Divination JumpKicked&#45;&gt;Engaging -->
-<g id="edge8" class="edge">
-<title>Divination JumpKicked&#45;&gt;Engaging</title>
-<path fill="none" stroke="#cdc8b1" d="M215.05,-729.14C286.23,-712.08 386.58,-688.03 444.76,-674.08"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="445.43,-677.52 454.34,-671.78 443.8,-670.71 445.43,-677.52"/>
-</g>
-<!-- [Short]Flying Projectiles -->
-<g id="node10" class="node">
-<title>[Short]Flying Projectiles</title>
-<polygon fill="none" stroke="black" points="54.12,-674 54.12,-695.75 209.38,-695.75 209.38,-674 54.12,-674"/>
-<text text-anchor="start" x="57.12" y="-679.45" font-family="Helvetica,sans-Serif" font-size="14.00">[Short]Flying Projectiles &#160;</text>
-<polygon fill="none" stroke="black" points="54.12,-630 54.12,-674 209.38,-674 209.38,-630 54.12,-630"/>
-<text text-anchor="start" x="57.12" y="-660.6" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">0.50s: CheckFacing</text>
-<text text-anchor="start" x="57.12" y="-648.6" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">4.08s: LinkNextMove</text>
-<text text-anchor="start" x="57.12" y="-634.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">4.25s: Done</text>
-<text text-anchor="start" x="121.62" y="-634.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
-</g>
-<!-- [Short]Flying Projectiles&#45;&gt;Engaging -->
-<g id="edge9" class="edge">
-<title>[Short]Flying Projectiles&#45;&gt;Engaging</title>
-<path fill="none" stroke="#cdc8b1" d="M217.31,-662.88C288.25,-662.88 386.93,-662.88 444.53,-662.88"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="444.31,-666.38 454.31,-662.88 444.31,-659.38 444.31,-666.38"/>
-</g>
-<!-- [Finisher]BlackHoleAttack -->
-<g id="node11" class="node">
-<title>[Finisher]BlackHoleAttack</title>
-<polygon fill="none" stroke="black" points="48.12,-582 48.12,-603.75 215.38,-603.75 215.38,-582 48.12,-582"/>
-<text text-anchor="start" x="51.12" y="-587.45" font-family="Helvetica,sans-Serif" font-size="14.00">[Finisher]BlackHoleAttack &#160;</text>
-<polygon fill="none" stroke="black" points="48.12,-550 48.12,-582 215.38,-582 215.38,-550 48.12,-550"/>
-<text text-anchor="start" x="51.12" y="-568.6" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">10.72s: LinkNextMove</text>
-<text text-anchor="start" x="51.12" y="-554.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">11.17s: Done</text>
-<text text-anchor="start" x="121.62" y="-554.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
-</g>
-<!-- [Finisher]BlackHoleAttack&#45;&gt;Engaging -->
-<g id="edge10" class="edge">
-<title>[Finisher]BlackHoleAttack&#45;&gt;Engaging</title>
-<path fill="none" stroke="#cdc8b1" d="M223.28,-598.58C293.77,-615.47 388.75,-638.24 444.73,-651.66"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="443.71,-655.02 454.25,-653.94 445.34,-648.21 443.71,-655.02"/>
-</g>
-<!-- [Altar]Set Laser Altar Environment -->
-<g id="node12" class="node">
-<title>[Altar]Set Laser Altar Environment</title>
-<polygon fill="none" stroke="black" points="23,-502 23,-523.75 240.5,-523.75 240.5,-502 23,-502"/>
-<text text-anchor="start" x="26" y="-507.45" font-family="Helvetica,sans-Serif" font-size="14.00">[Altar]Set Laser Altar Environment &#160;</text>
-<polygon fill="none" stroke="black" points="23,-470 23,-502 240.5,-502 240.5,-470 23,-470"/>
-<text text-anchor="start" x="26" y="-488.6" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.75s: LinkNextMove</text>
-<text text-anchor="start" x="26" y="-474.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.92s: Done</text>
-<text text-anchor="start" x="90.5" y="-474.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
-</g>
-<!-- [Altar]Set Laser Altar Environment&#45;&gt;Engaging -->
-<g id="edge11" class="edge">
-<title>[Altar]Set Laser Altar Environment&#45;&gt;Engaging</title>
-<path fill="none" stroke="#cdc8b1" d="M240.08,-527.71C248.08,-530.62 255.96,-533.68 263.5,-536.88 333.04,-566.35 408.87,-610.98 453.2,-638.46"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="451.34,-641.43 461.68,-643.75 455.05,-635.49 451.34,-641.43"/>
-</g>
-<!-- [Short]SuckSword 往內 -->
-<g id="node13" class="node">
-<title>[Short]SuckSword 往內</title>
-<polygon fill="none" stroke="black" points="51.88,-422 51.88,-443.75 211.62,-443.75 211.62,-422 51.88,-422"/>
-<text text-anchor="start" x="54.88" y="-427.45" font-family="Helvetica,sans-Serif" font-size="14.00">[Short]SuckSword 往內 &#160;</text>
-<polygon fill="none" stroke="black" points="51.88,-390 51.88,-422 211.62,-422 211.62,-390 51.88,-390"/>
-<text text-anchor="start" x="54.88" y="-408.6" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.58s: LinkNextMove</text>
-<text text-anchor="start" x="54.88" y="-394.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.67s: Done</text>
-<text text-anchor="start" x="119.38" y="-394.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
-</g>
-<!-- [Short]SuckSword 往內&#45;&gt;Engaging -->
-<g id="edge12" class="edge">
-<title>[Short]SuckSword 往內&#45;&gt;Engaging</title>
-<path fill="none" stroke="#cdc8b1" d="M219.39,-437.5C234.58,-442.75 249.87,-449.15 263.5,-456.88 349.72,-505.76 430.88,-592.19 468.91,-635.92"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="466.2,-638.13 475.37,-643.43 471.5,-633.56 466.2,-638.13"/>
-</g>
-<!-- [Finisher]Teleport3Sword Smash 下砸 -->
-<g id="node14" class="node">
-<title>[Finisher]Teleport3Sword Smash 下砸</title>
-<polygon fill="none" stroke="black" points="8,-342 8,-363.75 255.5,-363.75 255.5,-342 8,-342"/>
-<text text-anchor="start" x="11" y="-347.45" font-family="Helvetica,sans-Serif" font-size="14.00">[Finisher]Teleport3Sword Smash 下砸 &#160;</text>
-<polygon fill="none" stroke="black" points="8,-298 8,-342 255.5,-342 255.5,-298 8,-298"/>
-<text text-anchor="start" x="11" y="-328.6" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">2.00s: CheckFacing</text>
-<text text-anchor="start" x="11" y="-316.6" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">4.25s: LinkNextMove</text>
-<text text-anchor="start" x="11" y="-302.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">4.33s: Done</text>
-<text text-anchor="start" x="75.5" y="-302.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
-</g>
-<!-- [Finisher]Teleport3Sword Smash 下砸&#45;&gt;Engaging -->
-<g id="edge13" class="edge">
-<title>[Finisher]Teleport3Sword Smash 下砸&#45;&gt;Engaging</title>
-<path fill="none" stroke="#cdc8b1" d="M247.7,-367.61C253.16,-370.5 258.46,-373.59 263.5,-376.88 367.86,-445.03 446.22,-576.8 477.1,-634.57"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="473.85,-635.91 481.61,-643.13 480.05,-632.65 473.85,-635.91"/>
-</g>
-<!-- [Finisher]SwordBlizzard -->
-<g id="node15" class="node">
-<title>[Finisher]SwordBlizzard</title>
-<polygon fill="none" stroke="black" points="54.12,-250 54.12,-271.75 209.38,-271.75 209.38,-250 54.12,-250"/>
-<text text-anchor="start" x="57.12" y="-255.45" font-family="Helvetica,sans-Serif" font-size="14.00">[Finisher]SwordBlizzard &#160;</text>
-<polygon fill="none" stroke="black" points="54.12,-218 54.12,-250 209.38,-250 209.38,-218 54.12,-218"/>
-<text text-anchor="start" x="57.12" y="-236.6" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">5.93s: LinkNextMove</text>
-<text text-anchor="start" x="57.12" y="-222.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">6.27s: Done</text>
-<text text-anchor="start" x="121.62" y="-222.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
-</g>
-<!-- [Finisher]SwordBlizzard&#45;&gt;Engaging -->
-<g id="edge14" class="edge">
-<title>[Finisher]SwordBlizzard&#45;&gt;Engaging</title>
-<path fill="none" stroke="#cdc8b1" d="M217.09,-262.47C233.32,-268.07 249.58,-275.38 263.5,-284.88 392.74,-373.04 460.84,-560.95 483.13,-633.47"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="479.77,-634.45 486,-643.02 486.48,-632.44 479.77,-634.45"/>
-</g>
-<!-- Divination Free Zone_EndLessLoop -->
-<g id="node16" class="node">
-<title>Divination Free Zone_EndLessLoop</title>
-<polygon fill="none" stroke="black" points="247.38,-195.88 16.12,-195.88 16.12,-159.88 247.38,-159.88 247.38,-195.88"/>
-<text text-anchor="middle" x="131.75" y="-172.45" font-family="Helvetica,sans-Serif" font-size="14.00">Divination Free Zone_EndLessLoop</text>
-</g>
-<!-- Divination Free Zone_EndLessLoop&#45;&gt;Engaging -->
-<g id="edge15" class="edge">
-<title>Divination Free Zone_EndLessLoop&#45;&gt;Engaging</title>
-<path fill="none" stroke="#cdc8b1" d="M245.37,-196.25C251.66,-198.77 257.75,-201.63 263.5,-204.88 310.95,-231.66 317.78,-248.73 346.75,-294.88 419.43,-410.65 466.62,-568.94 484,-633.58"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="480.57,-634.3 486.51,-643.07 487.33,-632.5 480.57,-634.3"/>
-</g>
-<!-- Divination Free Zone_EndLessLoop_linked -->
-<g id="node17" class="node">
-<title>Divination Free Zone_EndLessLoop_linked</title>
-<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="533.73,-195.88 451.27,-195.88 451.27,-159.88 533.73,-159.88 533.73,-195.88"/>
-<text text-anchor="start" x="456.88" y="-172.45" font-family="Helvetica,sans-Serif" font-size="14.00">JumpBack &#160;</text>
-</g>
-<!-- Divination Free Zone_EndLessLoop&#45;&gt;Divination Free Zone_EndLessLoop_linked -->
-<g id="edge16" class="edge">
-<title>Divination Free Zone_EndLessLoop&#45;&gt;Divination Free Zone_EndLessLoop_linked</title>
-<path fill="none" stroke="#66cdaa" d="M247.74,-177.88C312.25,-177.88 389.57,-177.88 439.57,-177.88"/>
-<polygon fill="#66cdaa" stroke="#66cdaa" points="439.53,-181.38 449.53,-177.88 439.53,-174.38 439.53,-181.38"/>
-<text text-anchor="middle" x="314.12" y="-180.32" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#66cdaa">QueueEnd</text>
-</g>
-<!-- [Short]GroundSword -->
-<g id="node18" class="node">
-<title>[Short]GroundSword</title>
-<polygon fill="none" stroke="black" points="63.12,-116 63.12,-137.75 200.38,-137.75 200.38,-116 63.12,-116"/>
-<text text-anchor="start" x="66.12" y="-121.45" font-family="Helvetica,sans-Serif" font-size="14.00">[Short]GroundSword &#160;</text>
-<polygon fill="none" stroke="black" points="63.12,-84 63.12,-116 200.38,-116 200.38,-84 63.12,-84"/>
-<text text-anchor="start" x="66.12" y="-102.6" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">2.92s: LinkNextMove</text>
-<text text-anchor="start" x="66.12" y="-88.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.08s: Done</text>
-<text text-anchor="start" x="130.62" y="-88.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
-</g>
-<!-- [Short]GroundSword&#45;&gt;Engaging -->
-<g id="edge17" class="edge">
-<title>[Short]GroundSword&#45;&gt;Engaging</title>
-<path fill="none" stroke="#cdc8b1" d="M208.24,-115.32C253.96,-121.9 310.3,-137.48 346.75,-173.88 380.62,-207.69 460.53,-533.19 484.55,-633.56"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="481.12,-634.26 486.85,-643.18 487.93,-632.64 481.12,-634.26"/>
-</g>
-<!-- HurtState -->
-<g id="node19" class="node">
-<title>HurtState</title>
-<polygon fill="none" stroke="black" points="72.88,-1576 72.88,-1597.75 190.62,-1597.75 190.62,-1576 72.88,-1576"/>
-<text text-anchor="start" x="99.5" y="-1581.45" font-family="Helvetica,sans-Serif" font-size="14.00">HurtState &#160;</text>
-<polygon fill="none" stroke="black" points="72.88,-1544 72.88,-1576 190.62,-1576 190.62,-1544 72.88,-1544"/>
-<text text-anchor="start" x="75.88" y="-1562.6" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">0.83s: LinkNextMove</text>
-<text text-anchor="start" x="75.88" y="-1548.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">0.92s: Done</text>
-<text text-anchor="start" x="140.38" y="-1548.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
-</g>
-<!-- PreAttack -->
-<g id="node20" class="node">
-<title>PreAttack</title>
-<polygon fill="none" stroke="black" points="529.75,-1508.88 455.25,-1508.88 455.25,-1472.88 529.75,-1472.88 529.75,-1508.88"/>
-<text text-anchor="middle" x="492.5" y="-1485.45" font-family="Helvetica,sans-Serif" font-size="14.00">PreAttack</text>
-</g>
-<!-- HurtState&#45;&gt;PreAttack -->
-<g id="edge18" class="edge">
-<title>HurtState&#45;&gt;PreAttack</title>
-<path fill="none" stroke="#cdc8b1" d="M198.55,-1556.2C269.58,-1540.36 380.97,-1515.52 443.96,-1501.48"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="444.66,-1504.91 453.65,-1499.31 443.13,-1498.07 444.66,-1504.91"/>
-</g>
-<!-- Hurt_BigState -->
-<g id="node21" class="node">
-<title>Hurt_BigState</title>
-<polygon fill="none" stroke="black" points="72.88,-1496 72.88,-1517.75 190.62,-1517.75 190.62,-1496 72.88,-1496"/>
-<text text-anchor="start" x="86" y="-1501.45" font-family="Helvetica,sans-Serif" font-size="14.00">Hurt_BigState &#160;</text>
-<polygon fill="none" stroke="black" points="72.88,-1464 72.88,-1496 190.62,-1496 190.62,-1464 72.88,-1464"/>
-<text text-anchor="start" x="75.88" y="-1482.6" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">0.83s: LinkNextMove</text>
-<text text-anchor="start" x="75.88" y="-1468.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">0.92s: Done</text>
-<text text-anchor="start" x="140.38" y="-1468.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
-</g>
-<!-- Hurt_BigState&#45;&gt;PreAttack -->
-<g id="edge19" class="edge">
-<title>Hurt_BigState&#45;&gt;PreAttack</title>
-<path fill="none" stroke="#cdc8b1" d="M198.55,-1490.88C269.58,-1490.88 380.97,-1490.88 443.96,-1490.88"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="443.62,-1494.38 453.62,-1490.88 443.62,-1487.38 443.62,-1494.38"/>
-</g>
-<!-- JumpBack -->
-<g id="node22" class="node">
-<title>JumpBack</title>
-<polygon fill="none" stroke="black" points="72.88,-36 72.88,-57.75 190.62,-57.75 190.62,-36 72.88,-36"/>
-<text text-anchor="start" x="96.12" y="-41.45" font-family="Helvetica,sans-Serif" font-size="14.00">JumpBack &#160;</text>
-<polygon fill="none" stroke="black" points="72.88,-4 72.88,-36 190.62,-36 190.62,-4 72.88,-4"/>
-<text text-anchor="start" x="75.88" y="-22.6" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">0.50s: LinkNextMove</text>
-<text text-anchor="start" x="75.88" y="-8.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">1.17s: Done</text>
-<text text-anchor="start" x="140.38" y="-8.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
-</g>
-<!-- JumpBack&#45;&gt;Engaging -->
-<g id="edge20" class="edge">
-<title>JumpBack&#45;&gt;Engaging</title>
-<path fill="none" stroke="#cdc8b1" d="M198.59,-43.12C248.24,-56.11 313.32,-81.95 346.75,-131.88 365.34,-159.64 356.29,-172.55 364.75,-204.88 407.28,-367.43 462.36,-561.21 483.11,-633.66"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="479.71,-634.5 485.83,-643.14 486.43,-632.57 479.71,-634.5"/>
-</g>
-<!-- JumpBack_linked -->
-<g id="node23" class="node">
-<title>JumpBack_linked</title>
-<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="572.73,-48.88 412.27,-48.88 412.27,-12.88 572.73,-12.88 572.73,-48.88"/>
-<text text-anchor="start" x="417.88" y="-25.45" font-family="Helvetica,sans-Serif" font-size="14.00">[Short]Flying Projectiles &#160;</text>
-</g>
-<!-- JumpBack&#45;&gt;JumpBack_linked -->
-<g id="edge21" class="edge">
-<title>JumpBack&#45;&gt;JumpBack_linked</title>
-<path fill="none" stroke="#66cdaa" d="M198.55,-30.88C255.32,-30.88 337.87,-30.88 400.89,-30.88"/>
-<polygon fill="#66cdaa" stroke="#66cdaa" points="400.5,-34.38 410.5,-30.88 400.5,-27.38 400.5,-34.38"/>
-<text text-anchor="middle" x="314.12" y="-33.33" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#66cdaa">QueueEnd</text>
-</g>
-<!-- LastHit -->
-<g id="node24" class="node">
-<title>LastHit</title>
-<polygon fill="none" stroke="black" points="160.75,-1655.88 102.75,-1655.88 102.75,-1619.88 160.75,-1619.88 160.75,-1655.88"/>
-<text text-anchor="middle" x="131.75" y="-1632.45" font-family="Helvetica,sans-Serif" font-size="14.00">LastHit</text>
-</g>
-<!-- DeadState -->
-<g id="node25" class="node">
-<title>DeadState</title>
-<polygon fill="none" stroke="black" points="532.38,-1655.88 452.62,-1655.88 452.62,-1619.88 532.38,-1619.88 532.38,-1655.88"/>
-<text text-anchor="middle" x="492.5" y="-1632.45" font-family="Helvetica,sans-Serif" font-size="14.00">DeadState</text>
-</g>
-<!-- LastHit&#45;&gt;DeadState -->
-<g id="edge22" class="edge">
-<title>LastHit&#45;&gt;DeadState</title>
-<path fill="none" stroke="#cdc8b1" d="M161.2,-1637.88C221.89,-1637.88 364.73,-1637.88 441.17,-1637.88"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="440.88,-1641.38 450.88,-1637.88 440.88,-1634.38 440.88,-1641.38"/>
-</g>
-<!-- PostureBreak -->
-<g id="node26" class="node">
-<title>PostureBreak</title>
-<polygon fill="none" stroke="black" points="180.62,-1441.88 82.88,-1441.88 82.88,-1405.88 180.62,-1405.88 180.62,-1441.88"/>
-<text text-anchor="middle" x="131.75" y="-1418.45" font-family="Helvetica,sans-Serif" font-size="14.00">PostureBreak</text>
-</g>
-<!-- PostureBreak&#45;&gt;PreAttack -->
-<g id="edge23" class="edge">
-<title>PostureBreak&#45;&gt;PreAttack</title>
-<path fill="none" stroke="#cdc8b1" d="M180.76,-1432.84C249.44,-1445.67 374.98,-1469.11 443.6,-1481.93"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="442.95,-1485.37 453.42,-1483.76 444.24,-1478.49 442.95,-1485.37"/>
-</g>
-<!-- Wandering_Idle -->
-<g id="node27" class="node">
-<title>Wandering_Idle</title>
-<polygon fill="none" stroke="black" points="202.38,-1709.88 61.12,-1709.88 61.12,-1673.88 202.38,-1673.88 202.38,-1709.88"/>
-<text text-anchor="middle" x="131.75" y="-1686.45" font-family="Helvetica,sans-Serif" font-size="14.00">Wandering_Idle (Init)</text>
+<polygon fill="none" stroke="black" points="46.75,-8 46.75,-518 628.25,-518 628.25,-8 46.75,-8"/>
+<text text-anchor="middle" x="337.5" y="-500.7" font-family="Helvetica,sans-Serif" font-size="14.00">Attack Sensors</text>
 </g>
 <!-- Level Once Sensor -->
-<g id="node28" class="node">
+<g id="node1" class="node">
 <title>Level Once Sensor</title>
-<polygon fill="none" stroke="black" points="197.5,-1782.88 66,-1782.88 66,-1746.88 197.5,-1746.88 197.5,-1782.88"/>
-<text text-anchor="middle" x="131.75" y="-1759.45" font-family="Helvetica,sans-Serif" font-size="14.00">Level Once Sensor</text>
+<polygon fill="none" stroke="black" points="67.25,-50.12 67.25,-71.88 196.25,-71.88 196.25,-50.12 67.25,-50.12"/>
+<text text-anchor="start" x="70.25" y="-55.58" font-family="Helvetica,sans-Serif" font-size="14.00">Level Once Sensor &#160;</text>
 </g>
 <!-- Level Once Sensor_linked -->
-<g id="node29" class="node">
+<g id="node2" class="node">
 <title>Level Once Sensor_linked</title>
-<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="564.48,-1761.88 420.52,-1761.88 420.52,-1725.88 564.48,-1725.88 564.48,-1761.88"/>
-<text text-anchor="start" x="426.12" y="-1738.45" font-family="Helvetica,sans-Serif" font-size="14.00">Divination Free Zone &#160;</text>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="564.48,-52 420.52,-52 420.52,-16 564.48,-16 564.48,-52"/>
+<text text-anchor="start" x="426.12" y="-28.57" font-family="Helvetica,sans-Serif" font-size="14.00">Divination Free Zone &#160;</text>
 </g>
 <!-- Level Once Sensor&#45;&gt;Level Once Sensor_linked -->
-<g id="edge24" class="edge">
+<g id="edge1" class="edge">
 <title>Level Once Sensor&#45;&gt;Level Once Sensor_linked</title>
-<path fill="none" stroke="#66cdaa" d="M197.88,-1759.24C223.88,-1757.11 254.09,-1754.81 281.5,-1753.12 323.44,-1750.55 370.13,-1748.42 408.82,-1746.85"/>
-<polygon fill="#66cdaa" stroke="#66cdaa" points="408.66,-1750.36 418.51,-1746.47 408.38,-1743.37 408.66,-1750.36"/>
-<text text-anchor="middle" x="314.12" y="-1755.58" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#66cdaa">QueueEnd</text>
+<path fill="none" stroke="#66cdaa" d="M204.2,-53.32C228.69,-50.85 256.28,-48.24 281.5,-46.25 323.58,-42.94 370.48,-40.12 409.26,-38.02"/>
+<polygon fill="#66cdaa" stroke="#66cdaa" points="409.18,-41.53 418.98,-37.5 408.81,-34.54 409.18,-41.53"/>
+<text text-anchor="middle" x="314.12" y="-48.7" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#66cdaa">QueueEnd</text>
 </g>
-<!-- Level Once Sensor_mustuse -->
-<g id="node30" class="node">
-<title>Level Once Sensor_mustuse</title>
-<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="574.5,-1815.88 410.5,-1815.88 410.5,-1779.88 574.5,-1779.88 574.5,-1815.88"/>
-<text text-anchor="start" x="420.5" y="-1792.45" font-family="Helvetica,sans-Serif" font-size="14.00">1 Divination Free Zone &#160;</text>
+<!-- Level Once Sensor_weight -->
+<g id="node3" class="node">
+<title>Level Once Sensor_weight</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="574.5,-106 410.5,-106 410.5,-70 574.5,-70 574.5,-106"/>
+<text text-anchor="start" x="420.5" y="-82.58" font-family="Helvetica,sans-Serif" font-size="14.00">1 Divination Free Zone &#160;</text>
 </g>
-<!-- Level Once Sensor&#45;&gt;Level Once Sensor_mustuse -->
-<g id="edge25" class="edge">
-<title>Level Once Sensor&#45;&gt;Level Once Sensor_mustuse</title>
-<path fill="none" stroke="#458b74" d="M197.72,-1770.85C253.91,-1776.02 335.81,-1783.55 398.87,-1789.35"/>
-<polygon fill="#458b74" stroke="#458b74" points="398.23,-1792.81 408.51,-1790.24 398.87,-1785.84 398.23,-1792.81"/>
-<text text-anchor="middle" x="314.12" y="-1786.78" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#458b74">Weight</text>
+<!-- Level Once Sensor&#45;&gt;Level Once Sensor_weight -->
+<g id="edge2" class="edge">
+<title>Level Once Sensor&#45;&gt;Level Once Sensor_weight</title>
+<path fill="none" stroke="#458b74" d="M204.06,-66.37C260.04,-70.58 338.4,-76.48 399.17,-81.05"/>
+<polygon fill="#458b74" stroke="#458b74" points="398.56,-84.52 408.8,-81.78 399.09,-77.53 398.56,-84.52"/>
+<text text-anchor="middle" x="314.12" y="-79.37" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#458b74">Weight</text>
 </g>
 <!-- RunAwaySensor -->
-<g id="node31" class="node">
+<g id="node4" class="node">
 <title>RunAwaySensor</title>
-<polygon fill="none" stroke="black" points="190,-1851.88 73.5,-1851.88 73.5,-1815.88 190,-1815.88 190,-1851.88"/>
-<text text-anchor="middle" x="131.75" y="-1828.45" font-family="Helvetica,sans-Serif" font-size="14.00">RunAwaySensor</text>
+<polygon fill="none" stroke="black" points="74.75,-138.12 74.75,-159.88 188.75,-159.88 188.75,-138.12 74.75,-138.12"/>
+<text text-anchor="start" x="77.75" y="-143.57" font-family="Helvetica,sans-Serif" font-size="14.00">RunAwaySensor &#160;</text>
 </g>
 <!-- AttackSensor -->
-<g id="node32" class="node">
+<g id="node5" class="node">
 <title>AttackSensor</title>
-<polygon fill="none" stroke="black" points="179.88,-1928.88 83.62,-1928.88 83.62,-1892.88 179.88,-1892.88 179.88,-1928.88"/>
-<text text-anchor="middle" x="131.75" y="-1905.45" font-family="Helvetica,sans-Serif" font-size="14.00">AttackSensor</text>
+<polygon fill="none" stroke="black" points="84.88,-206.12 84.88,-227.88 178.62,-227.88 178.62,-206.12 84.88,-206.12"/>
+<text text-anchor="start" x="87.88" y="-211.57" font-family="Helvetica,sans-Serif" font-size="14.00">AttackSensor &#160;</text>
 </g>
 <!-- AttackSensor_linked -->
-<g id="node33" class="node">
+<g id="node6" class="node">
 <title>AttackSensor_linked</title>
-<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="573.1,-1869.88 411.9,-1869.88 411.9,-1833.88 573.1,-1833.88 573.1,-1869.88"/>
-<text text-anchor="start" x="417.5" y="-1846.45" font-family="Helvetica,sans-Serif" font-size="14.00">[Short]ShorFlyingSword &#160;</text>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="573.1,-160 411.9,-160 411.9,-124 573.1,-124 573.1,-160"/>
+<text text-anchor="start" x="417.5" y="-136.57" font-family="Helvetica,sans-Serif" font-size="14.00">[Short]ShorFlyingSword &#160;</text>
 </g>
 <!-- AttackSensor&#45;&gt;AttackSensor_linked -->
-<g id="edge26" class="edge">
+<g id="edge3" class="edge">
 <title>AttackSensor&#45;&gt;AttackSensor_linked</title>
-<path fill="none" stroke="#66cdaa" d="M180.02,-1903.1C235.92,-1893.91 330.22,-1878.4 400.45,-1866.85"/>
-<polygon fill="#66cdaa" stroke="#66cdaa" points="400.71,-1870.35 410.01,-1865.28 399.58,-1863.45 400.71,-1870.35"/>
-<text text-anchor="middle" x="314.12" y="-1887.36" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#66cdaa">QueueEnd</text>
+<path fill="none" stroke="#66cdaa" d="M186.46,-205.77C242.93,-193.97 332.8,-175.18 400.4,-161.05"/>
+<polygon fill="#66cdaa" stroke="#66cdaa" points="400.92,-164.51 409.99,-159.04 399.48,-157.66 400.92,-164.51"/>
+<text text-anchor="middle" x="314.12" y="-186.44" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#66cdaa">QueueEnd</text>
 </g>
-<!-- AttackSensor_mustuse -->
-<g id="node34" class="node">
-<title>AttackSensor_mustuse</title>
-<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="620.25,-2034 364.75,-2034 364.75,-1887.75 620.25,-1887.75 620.25,-2034"/>
-<text text-anchor="start" x="381.12" y="-2014.7" font-family="Helvetica,sans-Serif" font-size="14.00">0 [Altar]Set Laser Altar Environment &#160;</text>
-<text text-anchor="start" x="417.88" y="-1994.95" font-family="Helvetica,sans-Serif" font-size="14.00">0 [Altar]SmallBlackHole &#160;</text>
-<text text-anchor="start" x="410" y="-1975.2" font-family="Helvetica,sans-Serif" font-size="14.00">0 [Short]SuckSword 往內 &#160;</text>
-<text text-anchor="start" x="421.25" y="-1955.45" font-family="Helvetica,sans-Serif" font-size="14.00">0 [Short]GroundSword &#160;</text>
-<text text-anchor="start" x="411.88" y="-1935.7" font-family="Helvetica,sans-Serif" font-size="14.00">0 [Short]ShorFlyingSword &#160;</text>
-<text text-anchor="start" x="374.75" y="-1915.95" font-family="Helvetica,sans-Serif" font-size="14.00">0 [Short]QuickHorizontalDoubleSword &#160;</text>
-<text text-anchor="start" x="420.5" y="-1896.2" font-family="Helvetica,sans-Serif" font-size="14.00">1 Divination Free Zone &#160;</text>
+<!-- AttackSensor_weight -->
+<g id="node7" class="node">
+<title>AttackSensor_weight</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="620.25,-324.12 364.75,-324.12 364.75,-177.88 620.25,-177.88 620.25,-324.12"/>
+<text text-anchor="start" x="381.12" y="-304.82" font-family="Helvetica,sans-Serif" font-size="14.00">0 [Altar]Set Laser Altar Environment &#160;</text>
+<text text-anchor="start" x="417.88" y="-285.07" font-family="Helvetica,sans-Serif" font-size="14.00">0 [Altar]SmallBlackHole &#160;</text>
+<text text-anchor="start" x="410" y="-265.32" font-family="Helvetica,sans-Serif" font-size="14.00">0 [Short]SuckSword 往內 &#160;</text>
+<text text-anchor="start" x="421.25" y="-245.57" font-family="Helvetica,sans-Serif" font-size="14.00">0 [Short]GroundSword &#160;</text>
+<text text-anchor="start" x="411.88" y="-225.82" font-family="Helvetica,sans-Serif" font-size="14.00">0 [Short]ShorFlyingSword &#160;</text>
+<text text-anchor="start" x="374.75" y="-206.07" font-family="Helvetica,sans-Serif" font-size="14.00">0 [Short]QuickHorizontalDoubleSword &#160;</text>
+<text text-anchor="start" x="420.5" y="-186.32" font-family="Helvetica,sans-Serif" font-size="14.00">1 Divination Free Zone &#160;</text>
 </g>
-<!-- AttackSensor&#45;&gt;AttackSensor_mustuse -->
-<g id="edge27" class="edge">
-<title>AttackSensor&#45;&gt;AttackSensor_mustuse</title>
-<path fill="none" stroke="#458b74" d="M180.02,-1917.46C224.08,-1923.6 292.01,-1933.07 353.2,-1941.6"/>
-<polygon fill="#458b74" stroke="#458b74" points="352.65,-1945.06 363.04,-1942.97 353.62,-1938.12 352.65,-1945.06"/>
-<text text-anchor="middle" x="314.12" y="-1942.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#458b74">Weight</text>
+<!-- AttackSensor&#45;&gt;AttackSensor_weight -->
+<g id="edge4" class="edge">
+<title>AttackSensor&#45;&gt;AttackSensor_weight</title>
+<path fill="none" stroke="#458b74" d="M186.46,-222.09C230.53,-226.27 294.94,-232.37 353.23,-237.9"/>
+<polygon fill="#458b74" stroke="#458b74" points="352.63,-241.35 362.91,-238.81 353.29,-234.39 352.63,-241.35"/>
+<text text-anchor="middle" x="314.12" y="-239.5" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#458b74">Weight</text>
 </g>
 <!-- DodgePredictSensor -->
-<g id="node35" class="node">
+<g id="node8" class="node">
 <title>DodgePredictSensor</title>
-<polygon fill="none" stroke="black" points="62.75,-2029.88 62.75,-2051.62 200.75,-2051.62 200.75,-2029.88 62.75,-2029.88"/>
-<text text-anchor="start" x="65.75" y="-2035.33" font-family="Helvetica,sans-Serif" font-size="14.00">DodgePredictSensor &#160;</text>
-<polygon fill="none" stroke="black" points="62.75,-2008.12 62.75,-2029.88 200.75,-2029.88 200.75,-2008.12 62.75,-2008.12"/>
-<text text-anchor="start" x="65.75" y="-2014.58" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">if: rollingCondition</text>
-<text text-anchor="start" x="162.5" y="-2014.58" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+<polygon fill="none" stroke="black" points="62.75,-320 62.75,-341.75 200.75,-341.75 200.75,-320 62.75,-320"/>
+<text text-anchor="start" x="65.75" y="-325.45" font-family="Helvetica,sans-Serif" font-size="14.00">DodgePredictSensor &#160;</text>
+<polygon fill="none" stroke="black" points="62.75,-298.25 62.75,-320 200.75,-320 200.75,-298.25 62.75,-298.25"/>
+<text text-anchor="start" x="65.75" y="-304.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">if: rollingCondition</text>
+<text text-anchor="start" x="162.5" y="-304.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
 </g>
 <!-- DodgePredictSensor_linked -->
-<g id="node36" class="node">
+<g id="node9" class="node">
 <title>DodgePredictSensor_linked</title>
-<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="564.48,-2087.88 420.52,-2087.88 420.52,-2051.88 564.48,-2051.88 564.48,-2087.88"/>
-<text text-anchor="start" x="426.12" y="-2064.45" font-family="Helvetica,sans-Serif" font-size="14.00">Divination Free Zone &#160;</text>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="564.48,-378 420.52,-378 420.52,-342 564.48,-342 564.48,-378"/>
+<text text-anchor="start" x="426.12" y="-354.57" font-family="Helvetica,sans-Serif" font-size="14.00">Divination Free Zone &#160;</text>
 </g>
 <!-- DodgePredictSensor&#45;&gt;DodgePredictSensor_linked -->
-<g id="edge28" class="edge">
+<g id="edge5" class="edge">
 <title>DodgePredictSensor&#45;&gt;DodgePredictSensor_linked</title>
-<path fill="none" stroke="#66cdaa" d="M208.39,-2038.31C267.1,-2044.86 348.4,-2053.92 408.82,-2060.66"/>
-<polygon fill="#66cdaa" stroke="#66cdaa" points="408.4,-2064.13 418.73,-2061.76 409.18,-2057.17 408.4,-2064.13"/>
-<text text-anchor="middle" x="314.12" y="-2055.91" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#66cdaa">QueueEnd</text>
+<path fill="none" stroke="#66cdaa" d="M208.39,-328.43C267.1,-334.98 348.4,-344.04 408.82,-350.78"/>
+<polygon fill="#66cdaa" stroke="#66cdaa" points="408.4,-354.26 418.73,-351.89 409.18,-347.3 408.4,-354.26"/>
+<text text-anchor="middle" x="314.12" y="-346.03" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#66cdaa">QueueEnd</text>
 </g>
 <!-- AttackPredictSensor -->
-<g id="node37" class="node">
+<g id="node10" class="node">
 <title>AttackPredictSensor</title>
-<polygon fill="none" stroke="black" points="63.88,-2099.88 63.88,-2121.62 199.62,-2121.62 199.62,-2099.88 63.88,-2099.88"/>
-<text text-anchor="start" x="66.88" y="-2105.32" font-family="Helvetica,sans-Serif" font-size="14.00">AttackPredictSensor &#160;</text>
-<polygon fill="none" stroke="black" points="63.88,-2078.12 63.88,-2099.88 199.62,-2099.88 199.62,-2078.12 63.88,-2078.12"/>
-<text text-anchor="start" x="66.88" y="-2084.57" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">if: attackCondition</text>
-<text text-anchor="start" x="162.12" y="-2084.57" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+<polygon fill="none" stroke="black" points="63.88,-390 63.88,-411.75 199.62,-411.75 199.62,-390 63.88,-390"/>
+<text text-anchor="start" x="66.88" y="-395.45" font-family="Helvetica,sans-Serif" font-size="14.00">AttackPredictSensor &#160;</text>
+<polygon fill="none" stroke="black" points="63.88,-368.25 63.88,-390 199.62,-390 199.62,-368.25 63.88,-368.25"/>
+<text text-anchor="start" x="66.88" y="-374.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">if: attackCondition</text>
+<text text-anchor="start" x="162.12" y="-374.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
 </g>
 <!-- AttackPredictSensor_linked -->
-<g id="node38" class="node">
+<g id="node11" class="node">
 <title>AttackPredictSensor_linked</title>
-<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="564.48,-2141.88 420.52,-2141.88 420.52,-2105.88 564.48,-2105.88 564.48,-2141.88"/>
-<text text-anchor="start" x="426.12" y="-2118.45" font-family="Helvetica,sans-Serif" font-size="14.00">Divination Free Zone &#160;</text>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="564.48,-432 420.52,-432 420.52,-396 564.48,-396 564.48,-432"/>
+<text text-anchor="start" x="426.12" y="-408.57" font-family="Helvetica,sans-Serif" font-size="14.00">Divination Free Zone &#160;</text>
 </g>
 <!-- AttackPredictSensor&#45;&gt;AttackPredictSensor_linked -->
-<g id="edge29" class="edge">
+<g id="edge6" class="edge">
 <title>AttackPredictSensor&#45;&gt;AttackPredictSensor_linked</title>
-<path fill="none" stroke="#66cdaa" d="M207.52,-2104.88C266.26,-2108.81 348.01,-2114.28 408.72,-2118.34"/>
-<polygon fill="#66cdaa" stroke="#66cdaa" points="408.47,-2121.83 418.68,-2119 408.93,-2114.84 408.47,-2121.83"/>
-<text text-anchor="middle" x="314.12" y="-2116.47" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#66cdaa">QueueEnd</text>
+<path fill="none" stroke="#66cdaa" d="M207.52,-395C266.26,-398.93 348.01,-404.4 408.72,-408.46"/>
+<polygon fill="#66cdaa" stroke="#66cdaa" points="408.47,-411.95 418.68,-409.13 408.93,-404.97 408.47,-411.95"/>
+<text text-anchor="middle" x="314.12" y="-406.6" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#66cdaa">QueueEnd</text>
 </g>
 <!-- AttackRunToSensor -->
-<g id="node39" class="node">
+<g id="node12" class="node">
 <title>AttackRunToSensor</title>
-<polygon fill="none" stroke="black" points="65.38,-2169.88 65.38,-2191.62 198.12,-2191.62 198.12,-2169.88 65.38,-2169.88"/>
-<text text-anchor="start" x="68.38" y="-2175.32" font-family="Helvetica,sans-Serif" font-size="14.00">AttackRunToSensor &#160;</text>
-<polygon fill="none" stroke="black" points="65.38,-2148.12 65.38,-2169.88 198.12,-2169.88 198.12,-2148.12 65.38,-2148.12"/>
-<text text-anchor="start" x="68.38" y="-2154.57" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">if: state is Engaging</text>
-<text text-anchor="start" x="172.62" y="-2154.57" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+<polygon fill="none" stroke="black" points="65.38,-460 65.38,-481.75 198.12,-481.75 198.12,-460 65.38,-460"/>
+<text text-anchor="start" x="68.38" y="-465.45" font-family="Helvetica,sans-Serif" font-size="14.00">AttackRunToSensor &#160;</text>
+<polygon fill="none" stroke="black" points="65.38,-438.25 65.38,-460 198.12,-460 198.12,-438.25 65.38,-438.25"/>
+<text text-anchor="start" x="68.38" y="-444.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">if: state is Engaging</text>
+<text text-anchor="start" x="172.62" y="-444.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
 </g>
 <!-- AttackRunToSensor_linked -->
-<g id="node40" class="node">
+<g id="node13" class="node">
 <title>AttackRunToSensor_linked</title>
-<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="564.48,-2195.88 420.52,-2195.88 420.52,-2159.88 564.48,-2159.88 564.48,-2195.88"/>
-<text text-anchor="start" x="426.12" y="-2172.45" font-family="Helvetica,sans-Serif" font-size="14.00">Divination Free Zone &#160;</text>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="564.48,-486 420.52,-486 420.52,-450 564.48,-450 564.48,-486"/>
+<text text-anchor="start" x="426.12" y="-462.57" font-family="Helvetica,sans-Serif" font-size="14.00">Divination Free Zone &#160;</text>
 </g>
 <!-- AttackRunToSensor&#45;&gt;AttackRunToSensor_linked -->
-<g id="edge30" class="edge">
+<g id="edge7" class="edge">
 <title>AttackRunToSensor&#45;&gt;AttackRunToSensor_linked</title>
-<path fill="none" stroke="#66cdaa" d="M205.78,-2171.5C264.7,-2172.82 347.58,-2174.67 408.91,-2176.03"/>
-<polygon fill="#66cdaa" stroke="#66cdaa" points="408.51,-2179.53 418.59,-2176.25 408.67,-2172.53 408.51,-2179.53"/>
-<text text-anchor="middle" x="314.12" y="-2177.04" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#66cdaa">QueueEnd</text>
+<path fill="none" stroke="#66cdaa" d="M205.78,-461.63C264.7,-462.94 347.58,-464.79 408.91,-466.16"/>
+<polygon fill="#66cdaa" stroke="#66cdaa" points="408.51,-469.65 418.59,-466.37 408.67,-462.65 408.51,-469.65"/>
+<text text-anchor="middle" x="314.12" y="-467.17" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#66cdaa">QueueEnd</text>
+</g>
+<!-- Divination Free Zone -->
+<g id="node14" class="node">
+<title>Divination Free Zone</title>
+<polygon fill="none" stroke="black" points="62.38,-1292.12 62.38,-1313.88 201.12,-1313.88 201.12,-1292.12 62.38,-1292.12"/>
+<text text-anchor="start" x="65.38" y="-1297.58" font-family="Helvetica,sans-Serif" font-size="14.00">Divination Free Zone &#160;</text>
+<polygon fill="none" stroke="black" points="62.38,-1248.12 62.38,-1292.12 201.12,-1292.12 201.12,-1248.12 62.38,-1248.12"/>
+<text text-anchor="start" x="65.38" y="-1278.72" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">2.98s: JeeQTELoop</text>
+<text text-anchor="start" x="65.38" y="-1266.72" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">7.00s: LinkNextMove</text>
+<text text-anchor="start" x="65.38" y="-1252.82" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">7.17s: Done</text>
+<text text-anchor="start" x="129.88" y="-1252.82" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+</g>
+<!-- Engaging -->
+<g id="node15" class="node">
+<title>Engaging</title>
+<polygon fill="none" stroke="black" points="529,-1207 456,-1207 456,-1171 529,-1171 529,-1207"/>
+<text text-anchor="middle" x="492.5" y="-1183.58" font-family="Helvetica,sans-Serif" font-size="14.00">Engaging</text>
+</g>
+<!-- Divination Free Zone&#45;&gt;Engaging -->
+<g id="edge8" class="edge">
+<title>Divination Free Zone&#45;&gt;Engaging</title>
+<path fill="none" stroke="#cdc8b1" d="M208.83,-1261.49C280.33,-1243.15 385.03,-1216.3 444.9,-1200.95"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="445.61,-1204.38 454.43,-1198.51 443.87,-1197.6 445.61,-1204.38"/>
+</g>
+<!-- [Altar]SmallBlackHole -->
+<g id="node16" class="node">
+<title>[Altar]SmallBlackHole</title>
+<polygon fill="none" stroke="black" points="59.75,-1372.12 59.75,-1393.88 203.75,-1393.88 203.75,-1372.12 59.75,-1372.12"/>
+<text text-anchor="start" x="62.75" y="-1377.58" font-family="Helvetica,sans-Serif" font-size="14.00">[Altar]SmallBlackHole &#160;</text>
+<polygon fill="none" stroke="black" points="59.75,-1340.12 59.75,-1372.12 203.75,-1372.12 203.75,-1340.12 59.75,-1340.12"/>
+<text text-anchor="start" x="62.75" y="-1358.72" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.42s: LinkNextMove</text>
+<text text-anchor="start" x="62.75" y="-1344.82" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.58s: Done</text>
+<text text-anchor="start" x="127.25" y="-1344.82" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+</g>
+<!-- [Altar]SmallBlackHole&#45;&gt;Engaging -->
+<g id="edge9" class="edge">
+<title>[Altar]SmallBlackHole&#45;&gt;Engaging</title>
+<path fill="none" stroke="#cdc8b1" d="M211.69,-1346.3C229.06,-1340.8 247.14,-1334.32 263.5,-1327 335.75,-1294.68 413.25,-1243.94 456.72,-1213.82"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="458.54,-1216.82 464.74,-1208.23 454.54,-1211.08 458.54,-1216.82"/>
+</g>
+<!-- [Short]ShorFlyingSword -->
+<g id="node17" class="node">
+<title>[Short]ShorFlyingSword</title>
+<polygon fill="none" stroke="black" points="53.75,-1452.12 53.75,-1473.88 209.75,-1473.88 209.75,-1452.12 53.75,-1452.12"/>
+<text text-anchor="start" x="56.75" y="-1457.58" font-family="Helvetica,sans-Serif" font-size="14.00">[Short]ShorFlyingSword &#160;</text>
+<polygon fill="none" stroke="black" points="53.75,-1420.12 53.75,-1452.12 209.75,-1452.12 209.75,-1420.12 53.75,-1420.12"/>
+<text text-anchor="start" x="56.75" y="-1438.72" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">1.00s: LinkNextMove</text>
+<text text-anchor="start" x="56.75" y="-1424.82" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">1.17s: Done</text>
+<text text-anchor="start" x="121.25" y="-1424.82" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+</g>
+<!-- [Short]ShorFlyingSword&#45;&gt;Engaging -->
+<g id="edge10" class="edge">
+<title>[Short]ShorFlyingSword&#45;&gt;Engaging</title>
+<path fill="none" stroke="#cdc8b1" d="M217.5,-1427.4C233.35,-1422 249.37,-1415.28 263.5,-1407 352.14,-1355.07 433.29,-1262.2 470.34,-1216.27"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="472.91,-1218.65 476.41,-1208.65 467.44,-1214.29 472.91,-1218.65"/>
+</g>
+<!-- [Short]QuickHorizontalDoubleSword -->
+<g id="node18" class="node">
+<title>[Short]QuickHorizontalDoubleSword</title>
+<polygon fill="none" stroke="black" points="16.62,-1544.12 16.62,-1565.88 246.88,-1565.88 246.88,-1544.12 16.62,-1544.12"/>
+<text text-anchor="start" x="19.62" y="-1549.58" font-family="Helvetica,sans-Serif" font-size="14.00">[Short]QuickHorizontalDoubleSword &#160;</text>
+<polygon fill="none" stroke="black" points="16.62,-1500.12 16.62,-1544.12 246.88,-1544.12 246.88,-1500.12 16.62,-1500.12"/>
+<text text-anchor="start" x="19.62" y="-1530.72" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">0.00s: CheckFacing</text>
+<text text-anchor="start" x="19.62" y="-1518.72" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">1.50s: LinkNextMove</text>
+<text text-anchor="start" x="19.62" y="-1504.82" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">1.83s: Done</text>
+<text text-anchor="start" x="84.12" y="-1504.82" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+</g>
+<!-- [Short]QuickHorizontalDoubleSword&#45;&gt;Engaging -->
+<g id="edge11" class="edge">
+<title>[Short]QuickHorizontalDoubleSword&#45;&gt;Engaging</title>
+<path fill="none" stroke="#cdc8b1" d="M248.58,-1496.26C253.76,-1493.38 258.76,-1490.3 263.5,-1487 368.99,-1413.67 447.27,-1276.46 477.65,-1217.32"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="480.68,-1219.07 482.07,-1208.57 474.44,-1215.91 480.68,-1219.07"/>
+</g>
+<!-- [Finisher]QuickTeleportSword 危戳 -->
+<g id="node19" class="node">
+<title>[Finisher]QuickTeleportSword 危戳</title>
+<polygon fill="none" stroke="black" points="17.38,-1648.12 17.38,-1669.88 246.12,-1669.88 246.12,-1648.12 17.38,-1648.12"/>
+<text text-anchor="start" x="20.38" y="-1653.58" font-family="Helvetica,sans-Serif" font-size="14.00">[Finisher]QuickTeleportSword 危戳 &#160;</text>
+<polygon fill="none" stroke="black" points="17.38,-1592.12 17.38,-1648.12 246.12,-1648.12 246.12,-1592.12 17.38,-1592.12"/>
+<text text-anchor="start" x="20.38" y="-1634.72" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">0.00s: CheckFacing</text>
+<text text-anchor="start" x="20.38" y="-1622.72" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">1.17s: CheckFacing</text>
+<text text-anchor="start" x="20.38" y="-1610.72" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.08s: LinkNextMove</text>
+<text text-anchor="start" x="20.38" y="-1596.82" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.17s: Done</text>
+<text text-anchor="start" x="84.88" y="-1596.82" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+</g>
+<!-- [Finisher]QuickTeleportSword 危戳&#45;&gt;Engaging -->
+<g id="edge12" class="edge">
+<title>[Finisher]QuickTeleportSword 危戳&#45;&gt;Engaging</title>
+<path fill="none" stroke="#cdc8b1" d="M250.93,-1588.16C255.3,-1585.28 259.51,-1582.23 263.5,-1579 387.9,-1478.22 458.88,-1290.18 482.54,-1218.13"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="485.85,-1219.24 485.58,-1208.65 479.19,-1217.1 485.85,-1219.24"/>
+</g>
+<!-- [Altar]Laser Altar Circle -->
+<g id="node20" class="node">
+<title>[Altar]Laser Altar Circle</title>
+<polygon fill="none" stroke="black" points="56,-1728.12 56,-1749.88 207.5,-1749.88 207.5,-1728.12 56,-1728.12"/>
+<text text-anchor="start" x="59" y="-1733.58" font-family="Helvetica,sans-Serif" font-size="14.00">[Altar]Laser Altar Circle &#160;</text>
+<polygon fill="none" stroke="black" points="56,-1696.12 56,-1728.12 207.5,-1728.12 207.5,-1696.12 56,-1696.12"/>
+<text text-anchor="start" x="59" y="-1714.72" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">4.17s: LinkNextMove</text>
+<text text-anchor="start" x="59" y="-1700.82" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">4.33s: Done</text>
+<text text-anchor="start" x="123.5" y="-1700.82" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+</g>
+<!-- [Altar]Laser Altar Circle&#45;&gt;Engaging -->
+<g id="edge13" class="edge">
+<title>[Altar]Laser Altar Circle&#45;&gt;Engaging</title>
+<path fill="none" stroke="#cdc8b1" d="M215.36,-1707.71C232.43,-1701.92 249.46,-1693.95 263.5,-1683 420.19,-1560.78 473.33,-1305.82 487.29,-1218.83"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="490.74,-1219.39 488.81,-1208.97 483.82,-1218.32 490.74,-1219.39"/>
+</g>
+<!-- [Altar]Health Altar -->
+<g id="node21" class="node">
+<title>[Altar]Health Altar</title>
+<polygon fill="none" stroke="black" points="72.5,-1808.12 72.5,-1829.88 191,-1829.88 191,-1808.12 72.5,-1808.12"/>
+<text text-anchor="start" x="75.5" y="-1813.58" font-family="Helvetica,sans-Serif" font-size="14.00">[Altar]Health Altar &#160;</text>
+<polygon fill="none" stroke="black" points="72.5,-1776.12 72.5,-1808.12 191,-1808.12 191,-1776.12 72.5,-1776.12"/>
+<text text-anchor="start" x="75.5" y="-1794.72" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">2.08s: LinkNextMove</text>
+<text text-anchor="start" x="75.5" y="-1780.82" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">2.25s: Done</text>
+<text text-anchor="start" x="140" y="-1780.82" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+</g>
+<!-- [Altar]Health Altar&#45;&gt;Engaging -->
+<g id="edge14" class="edge">
+<title>[Altar]Health Altar&#45;&gt;Engaging</title>
+<path fill="none" stroke="#cdc8b1" d="M198.82,-1791.78C220.84,-1785.79 244.56,-1776.71 263.5,-1763 315.49,-1725.36 318.2,-1702.49 346.75,-1645 422.33,-1492.79 469.56,-1292.59 485.48,-1218.35"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="488.89,-1219.14 487.53,-1208.63 482.04,-1217.69 488.89,-1219.14"/>
+</g>
+<!-- Divination JumpKicked -->
+<g id="node22" class="node">
+<title>Divination JumpKicked</title>
+<polygon fill="none" stroke="black" points="56.38,-1888.12 56.38,-1909.88 207.12,-1909.88 207.12,-1888.12 56.38,-1888.12"/>
+<text text-anchor="start" x="59.38" y="-1893.58" font-family="Helvetica,sans-Serif" font-size="14.00">Divination JumpKicked &#160;</text>
+<polygon fill="none" stroke="black" points="56.38,-1856.12 56.38,-1888.12 207.12,-1888.12 207.12,-1856.12 56.38,-1856.12"/>
+<text text-anchor="start" x="59.38" y="-1874.72" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">2.58s: LinkNextMove</text>
+<text text-anchor="start" x="59.38" y="-1860.82" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.50s: Done</text>
+<text text-anchor="start" x="123.88" y="-1860.82" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+</g>
+<!-- Divination JumpKicked&#45;&gt;Engaging -->
+<g id="edge15" class="edge">
+<title>Divination JumpKicked&#45;&gt;Engaging</title>
+<path fill="none" stroke="#cdc8b1" d="M214.88,-1867.65C232.07,-1861.86 249.28,-1853.91 263.5,-1843 318.84,-1800.56 318.62,-1773.81 346.75,-1710 425.44,-1531.47 471.76,-1299.43 486.41,-1218.43"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="489.84,-1219.13 488.15,-1208.67 482.95,-1217.9 489.84,-1219.13"/>
+</g>
+<!-- [Short]Flying Projectiles -->
+<g id="node23" class="node">
+<title>[Short]Flying Projectiles</title>
+<polygon fill="none" stroke="black" points="54.12,-1200.12 54.12,-1221.88 209.38,-1221.88 209.38,-1200.12 54.12,-1200.12"/>
+<text text-anchor="start" x="57.12" y="-1205.58" font-family="Helvetica,sans-Serif" font-size="14.00">[Short]Flying Projectiles &#160;</text>
+<polygon fill="none" stroke="black" points="54.12,-1156.12 54.12,-1200.12 209.38,-1200.12 209.38,-1156.12 54.12,-1156.12"/>
+<text text-anchor="start" x="57.12" y="-1186.72" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">0.50s: CheckFacing</text>
+<text text-anchor="start" x="57.12" y="-1174.72" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">4.08s: LinkNextMove</text>
+<text text-anchor="start" x="57.12" y="-1160.82" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">4.25s: Done</text>
+<text text-anchor="start" x="121.62" y="-1160.82" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+</g>
+<!-- [Short]Flying Projectiles&#45;&gt;Engaging -->
+<g id="edge16" class="edge">
+<title>[Short]Flying Projectiles&#45;&gt;Engaging</title>
+<path fill="none" stroke="#cdc8b1" d="M217.31,-1189C288.25,-1189 386.93,-1189 444.53,-1189"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="444.31,-1192.5 454.31,-1189 444.31,-1185.5 444.31,-1192.5"/>
+</g>
+<!-- [Finisher]BlackHoleAttack -->
+<g id="node24" class="node">
+<title>[Finisher]BlackHoleAttack</title>
+<polygon fill="none" stroke="black" points="48.12,-1108.12 48.12,-1129.88 215.38,-1129.88 215.38,-1108.12 48.12,-1108.12"/>
+<text text-anchor="start" x="51.12" y="-1113.58" font-family="Helvetica,sans-Serif" font-size="14.00">[Finisher]BlackHoleAttack &#160;</text>
+<polygon fill="none" stroke="black" points="48.12,-1076.12 48.12,-1108.12 215.38,-1108.12 215.38,-1076.12 48.12,-1076.12"/>
+<text text-anchor="start" x="51.12" y="-1094.72" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">10.72s: LinkNextMove</text>
+<text text-anchor="start" x="51.12" y="-1080.82" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">11.17s: Done</text>
+<text text-anchor="start" x="121.62" y="-1080.82" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+</g>
+<!-- [Finisher]BlackHoleAttack&#45;&gt;Engaging -->
+<g id="edge17" class="edge">
+<title>[Finisher]BlackHoleAttack&#45;&gt;Engaging</title>
+<path fill="none" stroke="#cdc8b1" d="M223.28,-1124.7C293.77,-1141.6 388.75,-1164.37 444.73,-1177.79"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="443.71,-1181.14 454.25,-1180.07 445.34,-1174.33 443.71,-1181.14"/>
+</g>
+<!-- [Altar]Set Laser Altar Environment -->
+<g id="node25" class="node">
+<title>[Altar]Set Laser Altar Environment</title>
+<polygon fill="none" stroke="black" points="23,-1028.12 23,-1049.88 240.5,-1049.88 240.5,-1028.12 23,-1028.12"/>
+<text text-anchor="start" x="26" y="-1033.58" font-family="Helvetica,sans-Serif" font-size="14.00">[Altar]Set Laser Altar Environment &#160;</text>
+<polygon fill="none" stroke="black" points="23,-996.12 23,-1028.12 240.5,-1028.12 240.5,-996.12 23,-996.12"/>
+<text text-anchor="start" x="26" y="-1014.73" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.75s: LinkNextMove</text>
+<text text-anchor="start" x="26" y="-1000.83" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.92s: Done</text>
+<text text-anchor="start" x="90.5" y="-1000.83" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+</g>
+<!-- [Altar]Set Laser Altar Environment&#45;&gt;Engaging -->
+<g id="edge18" class="edge">
+<title>[Altar]Set Laser Altar Environment&#45;&gt;Engaging</title>
+<path fill="none" stroke="#cdc8b1" d="M240.08,-1053.84C248.08,-1056.74 255.96,-1059.8 263.5,-1063 333.04,-1092.47 408.87,-1137.11 453.2,-1164.58"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="451.34,-1167.55 461.68,-1169.88 455.05,-1161.61 451.34,-1167.55"/>
+</g>
+<!-- [Short]SuckSword 往內 -->
+<g id="node26" class="node">
+<title>[Short]SuckSword 往內</title>
+<polygon fill="none" stroke="black" points="51.88,-948.12 51.88,-969.88 211.62,-969.88 211.62,-948.12 51.88,-948.12"/>
+<text text-anchor="start" x="54.88" y="-953.58" font-family="Helvetica,sans-Serif" font-size="14.00">[Short]SuckSword 往內 &#160;</text>
+<polygon fill="none" stroke="black" points="51.88,-916.12 51.88,-948.12 211.62,-948.12 211.62,-916.12 51.88,-916.12"/>
+<text text-anchor="start" x="54.88" y="-934.73" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.58s: LinkNextMove</text>
+<text text-anchor="start" x="54.88" y="-920.83" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.67s: Done</text>
+<text text-anchor="start" x="119.38" y="-920.83" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+</g>
+<!-- [Short]SuckSword 往內&#45;&gt;Engaging -->
+<g id="edge19" class="edge">
+<title>[Short]SuckSword 往內&#45;&gt;Engaging</title>
+<path fill="none" stroke="#cdc8b1" d="M219.39,-963.62C234.58,-968.87 249.87,-975.27 263.5,-983 349.72,-1031.89 430.88,-1118.31 468.91,-1162.04"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="466.2,-1164.25 475.37,-1169.55 471.5,-1159.69 466.2,-1164.25"/>
+</g>
+<!-- [Finisher]Teleport3Sword Smash 下砸 -->
+<g id="node27" class="node">
+<title>[Finisher]Teleport3Sword Smash 下砸</title>
+<polygon fill="none" stroke="black" points="8,-868.12 8,-889.88 255.5,-889.88 255.5,-868.12 8,-868.12"/>
+<text text-anchor="start" x="11" y="-873.58" font-family="Helvetica,sans-Serif" font-size="14.00">[Finisher]Teleport3Sword Smash 下砸 &#160;</text>
+<polygon fill="none" stroke="black" points="8,-824.12 8,-868.12 255.5,-868.12 255.5,-824.12 8,-824.12"/>
+<text text-anchor="start" x="11" y="-854.73" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">2.00s: CheckFacing</text>
+<text text-anchor="start" x="11" y="-842.73" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">4.25s: LinkNextMove</text>
+<text text-anchor="start" x="11" y="-828.83" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">4.33s: Done</text>
+<text text-anchor="start" x="75.5" y="-828.83" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+</g>
+<!-- [Finisher]Teleport3Sword Smash 下砸&#45;&gt;Engaging -->
+<g id="edge20" class="edge">
+<title>[Finisher]Teleport3Sword Smash 下砸&#45;&gt;Engaging</title>
+<path fill="none" stroke="#cdc8b1" d="M247.7,-893.73C253.16,-896.62 258.46,-899.71 263.5,-903 367.86,-971.15 446.22,-1102.93 477.1,-1160.7"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="473.85,-1162.04 481.61,-1169.25 480.05,-1158.77 473.85,-1162.04"/>
+</g>
+<!-- [Finisher]SwordBlizzard -->
+<g id="node28" class="node">
+<title>[Finisher]SwordBlizzard</title>
+<polygon fill="none" stroke="black" points="54.12,-776.12 54.12,-797.88 209.38,-797.88 209.38,-776.12 54.12,-776.12"/>
+<text text-anchor="start" x="57.12" y="-781.58" font-family="Helvetica,sans-Serif" font-size="14.00">[Finisher]SwordBlizzard &#160;</text>
+<polygon fill="none" stroke="black" points="54.12,-744.12 54.12,-776.12 209.38,-776.12 209.38,-744.12 54.12,-744.12"/>
+<text text-anchor="start" x="57.12" y="-762.73" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">5.93s: LinkNextMove</text>
+<text text-anchor="start" x="57.12" y="-748.83" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">6.27s: Done</text>
+<text text-anchor="start" x="121.62" y="-748.83" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+</g>
+<!-- [Finisher]SwordBlizzard&#45;&gt;Engaging -->
+<g id="edge21" class="edge">
+<title>[Finisher]SwordBlizzard&#45;&gt;Engaging</title>
+<path fill="none" stroke="#cdc8b1" d="M217.09,-788.6C233.32,-794.2 249.58,-801.5 263.5,-811 392.74,-899.16 460.84,-1087.08 483.13,-1159.6"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="479.77,-1160.58 486,-1169.15 486.48,-1158.57 479.77,-1160.58"/>
+</g>
+<!-- Divination Free Zone_EndLessLoop -->
+<g id="node29" class="node">
+<title>Divination Free Zone_EndLessLoop</title>
+<polygon fill="none" stroke="black" points="17.38,-613.12 17.38,-634.88 246.12,-634.88 246.12,-613.12 17.38,-613.12"/>
+<text text-anchor="start" x="20.38" y="-618.58" font-family="Helvetica,sans-Serif" font-size="14.00">Divination Free Zone_EndLessLoop &#160;</text>
+</g>
+<!-- Divination Free Zone_EndLessLoop&#45;&gt;Engaging -->
+<g id="edge22" class="edge">
+<title>Divination Free Zone_EndLessLoop&#45;&gt;Engaging</title>
+<path fill="none" stroke="#cdc8b1" d="M244.02,-641.89C250.78,-644.52 257.33,-647.54 263.5,-651 310.74,-677.5 319.28,-693.32 346.75,-740 431.75,-884.42 473.34,-1084.81 486.62,-1159.44"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="483.16,-1159.96 488.32,-1169.22 490.05,-1158.76 483.16,-1159.96"/>
+</g>
+<!-- Divination Free Zone_EndLessLoop_linked -->
+<g id="node30" class="node">
+<title>Divination Free Zone_EndLessLoop_linked</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="533.73,-642 451.27,-642 451.27,-606 533.73,-606 533.73,-642"/>
+<text text-anchor="start" x="456.88" y="-618.58" font-family="Helvetica,sans-Serif" font-size="14.00">JumpBack &#160;</text>
+</g>
+<!-- Divination Free Zone_EndLessLoop&#45;&gt;Divination Free Zone_EndLessLoop_linked -->
+<g id="edge23" class="edge">
+<title>Divination Free Zone_EndLessLoop&#45;&gt;Divination Free Zone_EndLessLoop_linked</title>
+<path fill="none" stroke="#66cdaa" d="M253.71,-624C317.04,-624 391.27,-624 439.73,-624"/>
+<polygon fill="#66cdaa" stroke="#66cdaa" points="439.66,-627.5 449.66,-624 439.66,-620.5 439.66,-627.5"/>
+<text text-anchor="middle" x="314.12" y="-626.45" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#66cdaa">QueueEnd</text>
+</g>
+<!-- [Short]GroundSword -->
+<g id="node31" class="node">
+<title>[Short]GroundSword</title>
+<polygon fill="none" stroke="black" points="63.12,-696.12 63.12,-717.88 200.38,-717.88 200.38,-696.12 63.12,-696.12"/>
+<text text-anchor="start" x="66.12" y="-701.58" font-family="Helvetica,sans-Serif" font-size="14.00">[Short]GroundSword &#160;</text>
+<polygon fill="none" stroke="black" points="63.12,-664.12 63.12,-696.12 200.38,-696.12 200.38,-664.12 63.12,-664.12"/>
+<text text-anchor="start" x="66.12" y="-682.73" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">2.92s: LinkNextMove</text>
+<text text-anchor="start" x="66.12" y="-668.83" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.08s: Done</text>
+<text text-anchor="start" x="130.62" y="-668.83" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+</g>
+<!-- [Short]GroundSword&#45;&gt;Engaging -->
+<g id="edge24" class="edge">
+<title>[Short]GroundSword&#45;&gt;Engaging</title>
+<path fill="none" stroke="#cdc8b1" d="M208.32,-706.76C227.2,-712.64 246.81,-720.52 263.5,-731 309.65,-759.97 317.78,-774.85 346.75,-821 419.43,-936.77 466.62,-1095.07 484,-1159.71"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="480.57,-1160.42 486.51,-1169.19 487.33,-1158.63 480.57,-1160.42"/>
+</g>
+<!-- HurtState -->
+<g id="node32" class="node">
+<title>HurtState</title>
+<polygon fill="none" stroke="black" points="72.88,-2102.12 72.88,-2123.88 190.62,-2123.88 190.62,-2102.12 72.88,-2102.12"/>
+<text text-anchor="start" x="99.5" y="-2107.57" font-family="Helvetica,sans-Serif" font-size="14.00">HurtState &#160;</text>
+<polygon fill="none" stroke="black" points="72.88,-2070.12 72.88,-2102.12 190.62,-2102.12 190.62,-2070.12 72.88,-2070.12"/>
+<text text-anchor="start" x="75.88" y="-2088.72" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">0.83s: LinkNextMove</text>
+<text text-anchor="start" x="75.88" y="-2074.82" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">0.92s: Done</text>
+<text text-anchor="start" x="140.38" y="-2074.82" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+</g>
+<!-- PreAttack -->
+<g id="node33" class="node">
+<title>PreAttack</title>
+<polygon fill="none" stroke="black" points="529.75,-2035 455.25,-2035 455.25,-1999 529.75,-1999 529.75,-2035"/>
+<text text-anchor="middle" x="492.5" y="-2011.58" font-family="Helvetica,sans-Serif" font-size="14.00">PreAttack</text>
+</g>
+<!-- HurtState&#45;&gt;PreAttack -->
+<g id="edge25" class="edge">
+<title>HurtState&#45;&gt;PreAttack</title>
+<path fill="none" stroke="#cdc8b1" d="M198.55,-2082.33C269.58,-2066.49 380.97,-2041.65 443.96,-2027.6"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="444.66,-2031.03 453.65,-2025.44 443.13,-2024.2 444.66,-2031.03"/>
+</g>
+<!-- Hurt_BigState -->
+<g id="node34" class="node">
+<title>Hurt_BigState</title>
+<polygon fill="none" stroke="black" points="72.88,-2022.12 72.88,-2043.88 190.62,-2043.88 190.62,-2022.12 72.88,-2022.12"/>
+<text text-anchor="start" x="86" y="-2027.58" font-family="Helvetica,sans-Serif" font-size="14.00">Hurt_BigState &#160;</text>
+<polygon fill="none" stroke="black" points="72.88,-1990.12 72.88,-2022.12 190.62,-2022.12 190.62,-1990.12 72.88,-1990.12"/>
+<text text-anchor="start" x="75.88" y="-2008.72" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">0.83s: LinkNextMove</text>
+<text text-anchor="start" x="75.88" y="-1994.82" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">0.92s: Done</text>
+<text text-anchor="start" x="140.38" y="-1994.82" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+</g>
+<!-- Hurt_BigState&#45;&gt;PreAttack -->
+<g id="edge26" class="edge">
+<title>Hurt_BigState&#45;&gt;PreAttack</title>
+<path fill="none" stroke="#cdc8b1" d="M198.55,-2017C269.58,-2017 380.97,-2017 443.96,-2017"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="443.62,-2020.5 453.62,-2017 443.62,-2013.5 443.62,-2020.5"/>
+</g>
+<!-- JumpBack -->
+<g id="node35" class="node">
+<title>JumpBack</title>
+<polygon fill="none" stroke="black" points="72.88,-562.12 72.88,-583.88 190.62,-583.88 190.62,-562.12 72.88,-562.12"/>
+<text text-anchor="start" x="96.12" y="-567.58" font-family="Helvetica,sans-Serif" font-size="14.00">JumpBack &#160;</text>
+<polygon fill="none" stroke="black" points="72.88,-530.12 72.88,-562.12 190.62,-562.12 190.62,-530.12 72.88,-530.12"/>
+<text text-anchor="start" x="75.88" y="-548.73" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">0.50s: LinkNextMove</text>
+<text text-anchor="start" x="75.88" y="-534.83" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">1.17s: Done</text>
+<text text-anchor="start" x="140.38" y="-534.83" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+</g>
+<!-- JumpBack&#45;&gt;Engaging -->
+<g id="edge27" class="edge">
+<title>JumpBack&#45;&gt;Engaging</title>
+<path fill="none" stroke="#cdc8b1" d="M198.57,-559.68C246.05,-565.13 308.32,-580.12 346.75,-620 385.52,-660.24 464.06,-1048.95 485.81,-1159.69"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="482.31,-1160.03 487.66,-1169.18 489.18,-1158.69 482.31,-1160.03"/>
+</g>
+<!-- JumpBack_linked -->
+<g id="node36" class="node">
+<title>JumpBack_linked</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="572.73,-575 412.27,-575 412.27,-539 572.73,-539 572.73,-575"/>
+<text text-anchor="start" x="417.88" y="-551.58" font-family="Helvetica,sans-Serif" font-size="14.00">[Short]Flying Projectiles &#160;</text>
+</g>
+<!-- JumpBack&#45;&gt;JumpBack_linked -->
+<g id="edge28" class="edge">
+<title>JumpBack&#45;&gt;JumpBack_linked</title>
+<path fill="none" stroke="#66cdaa" d="M198.55,-557C255.32,-557 337.87,-557 400.89,-557"/>
+<polygon fill="#66cdaa" stroke="#66cdaa" points="400.5,-560.5 410.5,-557 400.5,-553.5 400.5,-560.5"/>
+<text text-anchor="middle" x="314.12" y="-559.45" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#66cdaa">QueueEnd</text>
+</g>
+<!-- LastHit -->
+<g id="node37" class="node">
+<title>LastHit</title>
+<polygon fill="none" stroke="black" points="104,-2153.12 104,-2174.88 159.5,-2174.88 159.5,-2153.12 104,-2153.12"/>
+<text text-anchor="start" x="107" y="-2158.57" font-family="Helvetica,sans-Serif" font-size="14.00">LastHit &#160;</text>
+</g>
+<!-- DeadState -->
+<g id="node38" class="node">
+<title>DeadState</title>
+<polygon fill="none" stroke="black" points="532.38,-2182 452.62,-2182 452.62,-2146 532.38,-2146 532.38,-2182"/>
+<text text-anchor="middle" x="492.5" y="-2158.57" font-family="Helvetica,sans-Serif" font-size="14.00">DeadState</text>
+</g>
+<!-- LastHit&#45;&gt;DeadState -->
+<g id="edge29" class="edge">
+<title>LastHit&#45;&gt;DeadState</title>
+<path fill="none" stroke="#cdc8b1" d="M167.47,-2164C231.15,-2164 366.85,-2164 440.83,-2164"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="440.64,-2167.5 450.64,-2164 440.64,-2160.5 440.64,-2167.5"/>
+</g>
+<!-- PostureBreak -->
+<g id="node39" class="node">
+<title>PostureBreak</title>
+<polygon fill="none" stroke="black" points="84.12,-1939.12 84.12,-1960.88 179.38,-1960.88 179.38,-1939.12 84.12,-1939.12"/>
+<text text-anchor="start" x="87.12" y="-1944.58" font-family="Helvetica,sans-Serif" font-size="14.00">PostureBreak &#160;</text>
+</g>
+<!-- PostureBreak&#45;&gt;PreAttack -->
+<g id="edge30" class="edge">
+<title>PostureBreak&#45;&gt;PreAttack</title>
+<path fill="none" stroke="#cdc8b1" d="M187.24,-1960.18C257.19,-1973.24 377.43,-1995.7 443.89,-2008.11"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="442.9,-2011.48 453.37,-2009.88 444.18,-2004.6 442.9,-2011.48"/>
+</g>
+<!-- Wandering_Idle -->
+<g id="node40" class="node">
+<title>Wandering_Idle</title>
+<polygon fill="none" stroke="black" points="202.38,-2236 61.12,-2236 61.12,-2200 202.38,-2200 202.38,-2236"/>
+<text text-anchor="middle" x="131.75" y="-2212.57" font-family="Helvetica,sans-Serif" font-size="14.00">Wandering_Idle (Init)</text>
 </g>
 </g>
 </svg>

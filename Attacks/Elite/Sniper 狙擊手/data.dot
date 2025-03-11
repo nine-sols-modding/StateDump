@@ -1,0 +1,53 @@
+strict digraph "Foo" {
+	"rankdir"="LR";
+	node ["shape"="box","fontname"="Helvetica"];
+	edge ["fontname"="Helvetica"];
+	subgraph "cluster_attacksensors" {
+		"rank"="sink";
+		"label"="Attack Sensors";
+		"fontname"="Helvetica";
+		"Level Once Sensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>Level Once Sensor  </TD></TR></TABLE>>]
+		"Level Once Sensor_linked" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>Attack  </TD></TR></TABLE>>,"margin"="0.05"]
+		"Level Once Sensor" -> "Level Once Sensor_linked"  ["label"="QueueEnd","color"="aquamarine3","fontcolor"="aquamarine3"]
+		"Level Once Sensor_weight" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>1 Attack  </TD></TR></TABLE>>]
+		"Level Once Sensor" -> "Level Once Sensor_weight"  ["label"="Weight","color"="aquamarine4","fontcolor"="aquamarine4"]
+		"TeleportSensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>TeleportSensor  </TD></TR></TABLE>>]
+		"TeleportSensor_linked" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>Attack  </TD></TR></TABLE>>,"margin"="0.05"]
+		"TeleportSensor" -> "TeleportSensor_linked"  ["label"="QueueEnd","color"="aquamarine3","fontcolor"="aquamarine3"]
+		"AttackSensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>AttackSensor  </TD></TR></TABLE>>]
+		"AttackSensor_linked" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>Attack  </TD></TR><TR><TD>Teleport  </TD></TR></TABLE>>,"margin"="0.05"]
+		"AttackSensor" -> "AttackSensor_linked"  ["label"="QueueEnd","color"="aquamarine3","fontcolor"="aquamarine3"]
+		"DodgePredictSensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>DodgePredictSensor  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">if: rollingCondition</FONT>  </TD></TR></TABLE>>]
+		"DodgePredictSensor_linked" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>Attack  </TD></TR></TABLE>>,"margin"="0.05"]
+		"DodgePredictSensor" -> "DodgePredictSensor_linked"  ["label"="QueueEnd","color"="aquamarine3","fontcolor"="aquamarine3"]
+		"AttackPredictSensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>AttackPredictSensor  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">if: attackCondition</FONT>  </TD></TR></TABLE>>]
+		"AttackPredictSensor_linked" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>Attack  </TD></TR></TABLE>>,"margin"="0.05"]
+		"AttackPredictSensor" -> "AttackPredictSensor_linked"  ["label"="QueueEnd","color"="aquamarine3","fontcolor"="aquamarine3"]
+		"AttackRunToSensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>AttackRunToSensor  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">if: state is Engaging</FONT>  </TD></TR></TABLE>>]
+		"AttackRunToSensor_linked" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>Attack  </TD></TR></TABLE>>,"margin"="0.05"]
+		"AttackRunToSensor" -> "AttackRunToSensor_linked"  ["label"="QueueEnd","color"="aquamarine3","fontcolor"="aquamarine3"]
+		"ShootSensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>ShootSensor  </TD></TR></TABLE>>]
+		"ShootSensor_linked" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>Shoot  </TD></TR></TABLE>>,"margin"="0.05"]
+		"ShootSensor" -> "ShootSensor_linked"  ["label"="QueueEnd","color"="aquamarine3","fontcolor"="aquamarine3"]
+	}
+	
+	"Attack" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"Attack_weight" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>1 Teleport  </TD></TR></TABLE>>]
+	"Attack" -> "Attack_weight"  ["label"="Weight","color"="aquamarine4","fontcolor"="aquamarine4"]
+	"Attack" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>Attack  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.33s: CheckFacing<br/>1.58s: CheckFacing<br/>2.58s: LinkNextMove<br/>2.92s: Done</FONT>  </TD></TR></TABLE>>]
+	"Shoot" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"Shoot" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>Shoot  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">2.27s: Done</FONT>  </TD></TR></TABLE>>]
+	"Teleport" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"Teleport" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>Teleport  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.50s: Shoot<br/>0.92s: CheckFacing<br/>1.85s: Done</FONT>  </TD></TR></TABLE>>]
+	"AttackParrying" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"AttackParrying" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>AttackParrying  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.00s: EnableGravity<br/>2.40s: LinkNextMove<br/>2.52s: Done</FONT>  </TD></TR></TABLE>>]
+	"HurtState" -> "PreAttack"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"HurtState_linked" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>Attack  </TD></TR><TR><TD>Attack  </TD></TR><TR><TD>Attack  </TD></TR></TABLE>>,"margin"="0.05"]
+	"HurtState" -> "HurtState_linked"  ["label"="QueueEnd","color"="aquamarine3","fontcolor"="aquamarine3"]
+	"HurtState" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>HurtState  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.00s: EnableGravity<br/>0.13s: LinkNextMove<br/>0.17s: Done</FONT>  </TD></TR></TABLE>>]
+	"Hurt_BigState" -> "PreAttack"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"Hurt_BigState" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>Hurt_BigState  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.00s: EnableGravity<br/>1.00s: Done</FONT>  </TD></TR></TABLE>>]
+	"PostureBreak" -> "DeadState"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"PostureBreak" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>PostureBreak  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.00s: EnableGravity<br/>0.17s: Done</FONT>  </TD></TR></TABLE>>]
+	"Wandering_Idle" ["label"="Wandering_Idle (Init)"]
+}

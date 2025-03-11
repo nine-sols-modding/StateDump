@@ -2,11 +2,13 @@
   "InitState": "MonsterBase+States.WanderingIdle",
   "BossGeneralStates": {
     "MonsterBase+States.Attack1": {
-      "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/States/Attacks/[1]Attack_Bark@BossGeneralState",
+      "$id": "/States/Attacks/[1]Attack_Bark@[1]Attack_Bark",
+      "$component": "[1]Attack_Bark",
       "state": "MonsterBase+States.Attack1",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -26,18 +28,20 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Attack2": {
-      "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/States/Attacks/[2]Attack 2 Bite@BossGeneralState",
+      "$id": "/States/Attacks/[2]Attack 2 Bite@[2]Attack 2 Bite",
+      "$component": "[2]Attack 2 Bite",
       "state": "MonsterBase+States.Attack2",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [
         {
-          "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/States/Attacks/[2]Attack 2 Bite/weight (1)@LinkNextMoveStateWeight",
+          "$id": "/States/Attacks/[2]Attack 2 Bite/weight (1)@weight (1)",
+          "$component": "weight (1)",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
           "stateWeightList": [
             {
-              "StateType": "MonsterBase+States.Skip",
+              "StateType": "MonsterBase+States.RunAway",
               "Weight": 1
             },
             {
@@ -48,6 +52,7 @@
         }
       ],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -71,18 +76,20 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Attack3": {
-      "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/States/Attacks/[2]Attack 3 RunBite@BossGeneralState",
+      "$id": "/States/Attacks/[2]Attack 3 RunBite@[2]Attack 3 RunBite",
+      "$component": "[2]Attack 3 RunBite",
       "state": "MonsterBase+States.Attack2",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [
         {
-          "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/States/Attacks/[2]Attack 3 RunBite/weight@LinkNextMoveStateWeight",
+          "$id": "/States/Attacks/[2]Attack 3 RunBite/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
           "stateWeightList": [
             {
-              "StateType": "MonsterBase+States.Skip",
+              "StateType": "MonsterBase+States.RunAway",
               "Weight": 1
             },
             {
@@ -93,6 +100,7 @@
         }
       ],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -116,11 +124,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Hurt": {
-      "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/States/HurtState@BossGeneralState",
+      "$id": "/States/HurtState@HurtState",
+      "$component": "HurtState",
       "state": "MonsterBase+States.Hurt",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -140,11 +150,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Hurt_Big": {
-      "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/States/Hurt_BigState@BossGeneralState",
+      "$id": "/States/Hurt_BigState@Hurt_BigState",
+      "$component": "Hurt_BigState",
       "state": "MonsterBase+States.Hurt_Big",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -166,7 +178,8 @@
   },
   "OtherStates": {
     "MonsterBase+States.WanderingIdle": {
-      "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/States/0_Wandering_Idle@StealthWanderingIdle",
+      "$id": "/States/0_Wandering_Idle@0_Wandering_Idle",
+      "$component": "0_Wandering_Idle",
       "originalPos": {
         "x": 5668.0,
         "y": -7776.0,
@@ -189,12 +202,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Wandering": {
-      "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/States/0_Wandering_Walking@StealthWandering",
+      "$id": "/States/0_Wandering_Walking@0_Wandering_Walking",
+      "$component": "0_Wandering_Walking",
       "MaxRun": 72.0,
       "RunAccel": 100.0,
       "RunReduce": 400.0,
       "wanderingPointGenerator": {
-        "$ref": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/WanderingPoints@LoopWanderingPointGenerator"
+        "$ref": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/WanderingPoints@WanderingPoints"
       },
       "FailReason": "",
       "preAllocateGotoTargetSuccess": null,
@@ -211,11 +225,12 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Alerted": {
-      "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/States/Alert@StealthAlertState",
+      "$id": "/States/Alert@Alert",
+      "$component": "Alert",
       "_alertSoundPlayer": null,
       "customStartScoutTime": -1.0,
       "lookAroundParma": {
-        "$ref": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/States/0_Wandering_Walking@MoveParam"
+        "$ref": "/States/0_Wandering_Walking@0_Wandering_Walking"
       },
       "clip": [
         {
@@ -228,7 +243,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Engaging": {
-      "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/States/1_Engaging@StealthEngaging",
+      "$id": "/States/1_Engaging@1_Engaging",
+      "$component": "1_Engaging",
       "IsEngagingInstantAttack": false,
       "ForceRunToPlayer": false,
       "beforeTransitionClip": null,
@@ -244,7 +260,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.PreAttack": {
-      "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/States/1_PreAttack@StealthPreAttackState",
+      "$id": "/States/1_PreAttack@1_PreAttack",
+      "$component": "1_PreAttack",
       "exitPreAttackCoolDown": 2.0,
       "ChangeToEngageDelayTime": 0.0,
       "ApproachingSchemes": [],
@@ -255,7 +272,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Panic": {
-      "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/States/Not See Player/1_Panic@StealthPanicState",
+      "$id": "/States/Not See Player/1_Panic@1_Panic",
+      "$component": "1_Panic",
       "isDone": false,
       "MinStateTime": 0.5,
       "clip": [],
@@ -264,7 +282,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.OutOfReach": {
-      "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/States/Not See Player/3_Out of Reach@StealthOutOfReachState",
+      "$id": "/States/Not See Player/3_Out of Reach@3_Out of Reach",
+      "$component": "3_Out of Reach",
       "MinStateTime": 0.5,
       "OutOfReachReason": "OutOfReachState",
       "clip": [],
@@ -273,9 +292,10 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Confused": {
-      "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/States/Not See Player/4_Confuse@StealthConfuse",
+      "$id": "/States/Not See Player/4_Confuse@4_Confuse",
+      "$component": "4_Confuse",
       "_confuseSoundPlayer": {
-        "$ref": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/States/Not See Player/4_Confuse/confuseSound@SoundPlayer"
+        "$ref": "/States/Not See Player/4_Confuse/confuseSound@confuseSound"
       },
       "clip": [
         {
@@ -288,7 +308,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.TurnAround": {
-      "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/States/TurnAround@StealthTurnAround",
+      "$id": "/States/TurnAround@TurnAround",
+      "$component": "TurnAround",
       "_currentAnimState": null,
       "engagingTurnAroundAnimation": {
         "stateName": "EngagingTurnAround",
@@ -318,7 +339,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.RunAway": {
-      "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/States/RunAway@StealthRunAway",
+      "$id": "/States/RunAway@RunAway",
+      "$component": "RunAway",
       "ExitRange": 50,
       "MaxRun": 240.0,
       "RunAccel": 800.0,
@@ -330,14 +352,15 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Dead": {
-      "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/States/DeadState@MonsterDeadState",
+      "$id": "/States/DeadState@DeadState",
+      "$component": "DeadState",
       "shootEvent": "UnityEvent(0)",
       "_selfDestructClip": null,
       "IsDeadShooted": false,
       "IsRemoveDeadBody": true,
       "hitData": null,
       "deadNoiseEffect": {
-        "$ref": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/MonsterCore/Animator(Proxy)/Animator/LogicRoot/EventBroadcastSystem/Dead Noise@EffectDealer"
+        "$ref": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/EventBroadcastSystem/Dead Noise@Dead Noise"
       },
       "IsEnterClearVelX": true,
       "DeadValue": [],
@@ -355,7 +378,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.MoveToPosition": {
-      "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/States/MoveToState@StealthMoveToState",
+      "$id": "/States/MoveToState@MoveToState",
+      "$component": "MoveToState",
       "targetPos": {
         "x": 0.0,
         "y": 0.0,
@@ -375,7 +399,8 @@
     }
   },
   "HurtInterrupt": {
-    "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/MonsterCore/Animator(Proxy)/Animator/LogicRoot/HurtInterrupt@MonsterHurtInterrupt",
+    "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/HurtInterrupt@HurtInterrupt",
+    "$component": "HurtInterrupt",
     "customInterruptTH": -1.0,
     "IsHurtInterruptChangeState": true,
     "IsForcePlayingBigHurtAnimation": false,
@@ -385,7 +410,8 @@
     "linkMoveWeights": []
   },
   "TeleportBinding": {
-    "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Teleport@TeleportBinding",
+    "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Teleport@Teleport",
+    "$component": "Teleport",
     "teleportScheme": "TeleportBinding+TeleportScheme.ToPlayerPosition",
     "offsetCandidates": [],
     "offset": {
@@ -397,18 +423,20 @@
   },
   "AttackSensors": [
     {
-      "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor@Level Once Sensor",
+      "$component": "Level Once Sensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [
         {
-          "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor/weight@LinkNextMoveStateWeight",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
           "stateWeightList": [
             {
-              "StateType": "MonsterBase+States.Undefined",
+              "StateType": "MonsterBase+States.Attack3",
               "Weight": 1
             }
           ]
@@ -447,7 +475,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/0_RunAwaySensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/0_RunAwaySensor@0_RunAwaySensor",
+      "$component": "0_RunAwaySensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [],
@@ -484,22 +513,24 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor@1_AttackSensor",
+      "$component": "1_AttackSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [
         {
-          "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor/weight@LinkNextMoveStateWeight",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
           "stateWeightList": [
             {
-              "StateType": "MonsterBase+States.Undefined",
+              "StateType": "MonsterBase+States.Attack1",
               "Weight": 1
             },
             {
-              "StateType": "MonsterBase+States.Undefined",
+              "StateType": "MonsterBase+States.Attack2",
               "Weight": 0
             }
           ]
@@ -538,7 +569,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor@2_DodgePredictSensor",
+      "$component": "2_DodgePredictSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [],
@@ -569,7 +601,8 @@
       "conditions": [],
       "_conditions": [
         {
-          "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor/rollingCondition@PlayerMovePredictCondition",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor/rollingCondition@rollingCondition",
+          "$component": "rollingCondition",
           "ParryDetect": false,
           "DodgeDetect": true,
           "JumpDetect": false,
@@ -592,12 +625,14 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor@3_AttackPredictSensor",
+      "$component": "3_AttackPredictSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [
         {
-          "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/weight@LinkNextMoveStateWeight",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
@@ -631,7 +666,8 @@
       "conditions": [],
       "_conditions": [
         {
-          "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/attackCondition@PlayerMovePredictCondition",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/attackCondition@attackCondition",
+          "$component": "attackCondition",
           "ParryDetect": false,
           "DodgeDetect": false,
           "JumpDetect": false,
@@ -654,7 +690,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackRunToSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackRunToSensor@1_AttackRunToSensor",
+      "$component": "1_AttackRunToSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingOnly",
       "AttackWeightPhaseList": [],
@@ -691,22 +728,24 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor_Far@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor_Far@1_AttackSensor_Far",
+      "$component": "1_AttackSensor_Far",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingOnly",
       "AttackWeightPhaseList": [
         {
-          "$id": "A6_S1/Room/Prefab/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario (看守的人)/StealthGameMonster_Dog Variant Shield/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor_Far/weight@LinkNextMoveStateWeight",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor_Far/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
           "stateWeightList": [
             {
-              "StateType": "MonsterBase+States.Undefined",
+              "StateType": "MonsterBase+States.Attack1",
               "Weight": 0
             },
             {
-              "StateType": "MonsterBase+States.Undefined",
+              "StateType": "MonsterBase+States.Attack3",
               "Weight": 1
             }
           ]

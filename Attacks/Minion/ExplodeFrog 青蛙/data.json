@@ -2,11 +2,27 @@
   "InitState": "MonsterBase+States.WanderingIdle",
   "BossGeneralStates": {
     "MonsterBase+States.Attack1": {
-      "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/States/Attacks/[1]Attack@BossGeneralState",
+      "$id": "/States/Attacks/[1]Attack@[1]Attack",
+      "$component": "[1]Attack",
       "state": "MonsterBase+States.Attack1",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
-      "linkInterruptMoveConditionalWeights": [],
+      "linkInterruptMoveConditionalWeights": [
+        {
+          "$id": "/States/Attacks/[1]Attack/Linkmove@Linkmove",
+          "$component": "Linkmove",
+          "type": "LinkMoveSetType.InterruptConditional",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack2",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -30,11 +46,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Attack2": {
-      "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/States/Attacks/[2]Explode@BossGeneralState",
+      "$id": "/States/Attacks/[2]Explode@[2]Explode",
+      "$component": "[2]Explode",
       "state": "MonsterBase+States.Attack2",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -54,11 +72,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Attack3": {
-      "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/States/Attacks/[3]DashAttack@BossGeneralState",
+      "$id": "/States/Attacks/[3]DashAttack@[3]DashAttack",
+      "$component": "[3]DashAttack",
       "state": "MonsterBase+States.Attack3",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -78,11 +98,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Hurt": {
-      "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/States/HurtState@BossGeneralState",
+      "$id": "/States/HurtState@HurtState",
+      "$component": "HurtState",
       "state": "MonsterBase+States.Hurt",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -102,11 +124,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.AttackParrying1": {
-      "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/States/AttackParrying@BossGeneralState",
+      "$id": "/States/AttackParrying@AttackParrying",
+      "$component": "AttackParrying",
       "state": "MonsterBase+States.AttackParrying1",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -134,11 +158,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Hurt_Big": {
-      "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/States/Hurt_BigState@BossGeneralState",
+      "$id": "/States/Hurt_BigState@Hurt_BigState",
+      "$component": "Hurt_BigState",
       "state": "MonsterBase+States.Hurt_Big",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -160,18 +186,19 @@
   },
   "OtherStates": {
     "MonsterBase+States.WanderingIdle": {
-      "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/States/0_Wandering_Idle@StealthWanderingIdle",
+      "$id": "/States/0_Wandering_Idle@0_Wandering_Idle",
+      "$component": "0_Wandering_Idle",
       "originalPos": {
-        "x": 0.0,
-        "y": 0.0,
+        "x": 4116.0,
+        "y": -3120.0,
         "z": 0.0
       },
       "originalFacing": "Facings.Left",
       "SinglePointIdle": false,
-      "newPosTime": 1.0,
-      "newPosTimer": 1.0,
+      "newPosTime": 2.0,
+      "newPosTimer": 1.9833256,
       "IsNewPosRandom": false,
-      "configSetting": "StealthWanderingIdle+ConfigWanderingSetting.Undefined",
+      "configSetting": "StealthWanderingIdle+ConfigWanderingSetting.Guard",
       "clip": [
         {
           "Time": 1.66666663,
@@ -183,12 +210,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Wandering": {
-      "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/States/0_Wandering_Walking@StealthWandering",
+      "$id": "/States/0_Wandering_Walking@0_Wandering_Walking",
+      "$component": "0_Wandering_Walking",
       "MaxRun": 0.0,
       "RunAccel": 100.0,
       "RunReduce": 400.0,
       "wanderingPointGenerator": {
-        "$ref": "TrapMonster_ExplodeFrog 青蛙(Clone)/States/0_Wandering_Walking/WanderingPoints@LoopWanderingPointGenerator"
+        "$ref": "A3_S3/Room/Prefab/Gameplay_Boat/[觸發框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario/[MonsterBehaviorProvider] LevelDesign_PlayerSensor/WanderingPoints@WanderingPoints"
       },
       "FailReason": "",
       "preAllocateGotoTargetSuccess": null,
@@ -200,11 +228,12 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Alerted": {
-      "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/States/Alert@StealthAlertState",
+      "$id": "/States/Alert@Alert",
+      "$component": "Alert",
       "_alertSoundPlayer": null,
       "customStartScoutTime": -1.0,
       "lookAroundParma": {
-        "$ref": "TrapMonster_ExplodeFrog 青蛙(Clone)/States/0_Wandering_Walking@MoveParam"
+        "$ref": "/States/0_Wandering_Walking@0_Wandering_Walking"
       },
       "clip": [
         {
@@ -217,7 +246,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Engaging": {
-      "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/States/1_Engaging@StealthEngaging",
+      "$id": "/States/1_Engaging@1_Engaging",
+      "$component": "1_Engaging",
       "IsEngagingInstantAttack": false,
       "ForceRunToPlayer": false,
       "beforeTransitionClip": null,
@@ -233,12 +263,14 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.PreAttack": {
-      "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/States/1_PreAttack@StealthPreAttackState",
+      "$id": "/States/1_PreAttack@1_PreAttack",
+      "$component": "1_PreAttack",
       "exitPreAttackCoolDown": 2.0,
       "ChangeToEngageDelayTime": 0.0,
       "ApproachingSchemes": [
         {
-          "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/States/1_PreAttack/preAttack@StealthEngagingScheme",
+          "$id": "/States/1_PreAttack/preAttack@preAttack",
+          "$component": "preAttack",
           "EnterApproachingRange": 160,
           "EnterApproachingRangeRandomOffset": 0,
           "ExitApproachingRange": 240,
@@ -278,7 +310,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Panic": {
-      "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/States/Not See Player/1_Panic@StealthPanicState",
+      "$id": "/States/Not See Player/1_Panic@1_Panic",
+      "$component": "1_Panic",
       "isDone": false,
       "MinStateTime": 0.5,
       "clip": [],
@@ -287,7 +320,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.OutOfReach": {
-      "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/States/Not See Player/3_Out of Reach@StealthOutOfReachState",
+      "$id": "/States/Not See Player/3_Out of Reach@3_Out of Reach",
+      "$component": "3_Out of Reach",
       "MinStateTime": 0.5,
       "OutOfReachReason": "OutOfReachState",
       "clip": [],
@@ -296,9 +330,10 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Confused": {
-      "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/States/Not See Player/4_Confuse@StealthConfuse",
+      "$id": "/States/Not See Player/4_Confuse@4_Confuse",
+      "$component": "4_Confuse",
       "_confuseSoundPlayer": {
-        "$ref": "TrapMonster_ExplodeFrog 青蛙(Clone)/States/Not See Player/4_Confuse/confuseSound@SoundPlayer"
+        "$ref": "/States/Not See Player/4_Confuse/confuseSound@confuseSound"
       },
       "clip": [
         {
@@ -311,7 +346,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.TurnAround": {
-      "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/States/TurnAround@StealthTurnAround",
+      "$id": "/States/TurnAround@TurnAround",
+      "$component": "TurnAround",
       "_currentAnimState": null,
       "engagingTurnAroundAnimation": {
         "stateName": "EngagingTurnAround",
@@ -341,22 +377,23 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Dead": {
-      "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/States/DeadState@MonsterDeadState",
+      "$id": "/States/DeadState@DeadState",
+      "$component": "DeadState",
       "shootEvent": "UnityEvent(0)",
       "_selfDestructClip": {
-        "$ref": "TrapMonster_ExplodeFrog 青蛙(Clone)/States/DeadState/SelfDestructDeadOverrideClip@SelfDestructOverrideClip"
+        "$ref": "/States/DeadState/SelfDestructDeadOverrideClip@SelfDestructDeadOverrideClip"
       },
       "IsDeadShooted": false,
       "IsRemoveDeadBody": true,
       "hitData": null,
       "deadNoiseEffect": {
-        "$ref": "TrapMonster_ExplodeFrog 青蛙(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/EventBroadcastSystem/Dead Noise@EffectDealer"
+        "$ref": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/EventBroadcastSystem/Dead Noise@Dead Noise"
       },
       "IsEnterClearVelX": true,
       "DeadValue": [],
       "overrideByTimeline": null,
       "monsterViewDummy": null,
-      "_isCulling": false,
+      "_isCulling": true,
       "clip": [
         {
           "Time": 0.0166666675,
@@ -372,7 +409,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.MoveToPosition": {
-      "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/States/MoveToState@StealthMoveToState",
+      "$id": "/States/MoveToState@MoveToState",
+      "$component": "MoveToState",
       "targetPos": {
         "x": 0.0,
         "y": 0.0,
@@ -387,7 +425,8 @@
     }
   },
   "HurtInterrupt": {
-    "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/HurtInterrupt@MonsterHurtInterrupt",
+    "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/HurtInterrupt@HurtInterrupt",
+    "$component": "HurtInterrupt",
     "customInterruptTH": -1.0,
     "IsHurtInterruptChangeState": true,
     "IsForcePlayingBigHurtAnimation": false,
@@ -397,7 +436,8 @@
     "linkMoveWeights": []
   },
   "TeleportBinding": {
-    "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Teleport@TeleportBinding",
+    "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Teleport@Teleport",
+    "$component": "Teleport",
     "teleportScheme": "TeleportBinding+TeleportScheme.ToPlayerPosition",
     "offsetCandidates": [],
     "offset": {
@@ -409,10 +449,25 @@
   },
   "AttackSensors": [
     {
-      "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor@Level Once Sensor",
+      "$component": "Level Once Sensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
-      "AttackWeightPhaseList": [],
+      "AttackWeightPhaseList": [
+        {
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor/weight@weight",
+          "$component": "weight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack1",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
       "testWeight": null,
       "OnlySameArea": false,
       "OnlyMonsterCanSeePlayer": true,
@@ -421,7 +476,7 @@
       ],
       "AttackDelayMin": 0.0,
       "AttackDelayMax": 0.0,
-      "currentAttackDelay": 0.25,
+      "currentAttackDelay": 0.0,
       "coolDownType": "CooldownTokenType.NormalAttack",
       "_stateCoolDownProvider": null,
       "coolDownStat": null,
@@ -446,7 +501,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/0_RunAwaySensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/0_RunAwaySensor@0_RunAwaySensor",
+      "$component": "0_RunAwaySensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [],
@@ -458,7 +514,7 @@
       ],
       "AttackDelayMin": 0.0,
       "AttackDelayMax": 0.5,
-      "currentAttackDelay": 0.25,
+      "currentAttackDelay": 0.386093616,
       "coolDownType": "CooldownTokenType.NoCoolDown",
       "_stateCoolDownProvider": null,
       "coolDownStat": null,
@@ -483,7 +539,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor@1_AttackSensor",
+      "$component": "1_AttackSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.AllValid",
       "AttackWeightPhaseList": [],
@@ -520,7 +577,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor@2_DodgePredictSensor",
+      "$component": "2_DodgePredictSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [],
@@ -551,7 +609,8 @@
       "conditions": [],
       "_conditions": [
         {
-          "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor/rollingCondition@PlayerMovePredictCondition",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor/rollingCondition@rollingCondition",
+          "$component": "rollingCondition",
           "ParryDetect": false,
           "DodgeDetect": true,
           "JumpDetect": false,
@@ -574,12 +633,14 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor@3_AttackPredictSensor",
+      "$component": "3_AttackPredictSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [
         {
-          "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/weight@LinkNextMoveStateWeight",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
@@ -613,7 +674,8 @@
       "conditions": [],
       "_conditions": [
         {
-          "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/attackCondition@PlayerMovePredictCondition",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/attackCondition@attackCondition",
+          "$component": "attackCondition",
           "ParryDetect": false,
           "DodgeDetect": false,
           "JumpDetect": false,
@@ -636,7 +698,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackRunToSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackRunToSensor@1_AttackRunToSensor",
+      "$component": "1_AttackRunToSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingOnly",
       "AttackWeightPhaseList": [],
@@ -673,7 +736,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "TrapMonster_ExplodeFrog 青蛙(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_JumpAttackSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_JumpAttackSensor@2_JumpAttackSensor",
+      "$component": "2_JumpAttackSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.AllValid",
       "AttackWeightPhaseList": [],
@@ -685,7 +749,7 @@
       ],
       "AttackDelayMin": 0.1,
       "AttackDelayMax": 0.3,
-      "currentAttackDelay": 0.0,
+      "currentAttackDelay": 0.255330473,
       "coolDownType": "CooldownTokenType.NormalAttack",
       "_stateCoolDownProvider": null,
       "coolDownStat": null,

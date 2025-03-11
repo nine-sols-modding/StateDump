@@ -1,0 +1,50 @@
+strict digraph "Foo" {
+	"rankdir"="LR";
+	node ["shape"="box","fontname"="Helvetica"];
+	edge ["fontname"="Helvetica"];
+	subgraph "cluster_attacksensors" {
+		"rank"="sink";
+		"label"="Attack Sensors";
+		"fontname"="Helvetica";
+		"Level Once Sensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>Level Once Sensor  </TD></TR></TABLE>>]
+		"Level Once Sensor_linked" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>AttackWithStanding  </TD></TR></TABLE>>,"margin"="0.05"]
+		"Level Once Sensor" -> "Level Once Sensor_linked"  ["label"="QueueEnd","color"="aquamarine3","fontcolor"="aquamarine3"]
+		"Level Once Sensor_weight" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>1 AttackWithStanding  </TD></TR></TABLE>>]
+		"Level Once Sensor" -> "Level Once Sensor_weight"  ["label"="Weight","color"="aquamarine4","fontcolor"="aquamarine4"]
+		"RunAwaySensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>RunAwaySensor  </TD></TR></TABLE>>]
+		"AttackSensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>AttackSensor  </TD></TR></TABLE>>]
+		"AttackSensor_linked" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>NormalAttack  </TD></TR></TABLE>>,"margin"="0.05"]
+		"AttackSensor" -> "AttackSensor_linked"  ["label"="QueueEnd","color"="aquamarine3","fontcolor"="aquamarine3"]
+		"DodgePredictSensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>DodgePredictSensor  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">if: rollingCondition</FONT>  </TD></TR></TABLE>>]
+		"DodgePredictSensor_linked" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>AttackWithStanding  </TD></TR></TABLE>>,"margin"="0.05"]
+		"DodgePredictSensor" -> "DodgePredictSensor_linked"  ["label"="QueueEnd","color"="aquamarine3","fontcolor"="aquamarine3"]
+		"AttackPredictSensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>AttackPredictSensor  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">if: attackCondition</FONT>  </TD></TR></TABLE>>]
+		"AttackPredictSensor_linked" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>AttackWithStanding  </TD></TR></TABLE>>,"margin"="0.05"]
+		"AttackPredictSensor" -> "AttackPredictSensor_linked"  ["label"="QueueEnd","color"="aquamarine3","fontcolor"="aquamarine3"]
+		"AttackRunToSensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>AttackRunToSensor  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">if: state is Engaging</FONT>  </TD></TR></TABLE>>]
+		"AttackRunToSensor_linked" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>AttackWithStanding  </TD></TR></TABLE>>,"margin"="0.05"]
+		"AttackRunToSensor" -> "AttackRunToSensor_linked"  ["label"="QueueEnd","color"="aquamarine3","fontcolor"="aquamarine3"]
+	}
+	
+	"AttackWithStanding" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"AttackWithStanding" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>AttackWithStanding  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">2.00s: CheckFacing<br/>3.83s: Done</FONT>  </TD></TR></TABLE>>]
+	"Revive" -> "Seat"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"Revive" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>Revive  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">1.50s: Done</FONT>  </TD></TR></TABLE>>]
+	"NormalAttack" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"NormalAttack" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>NormalAttack  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">2.25s: Done</FONT>  </TD></TR></TABLE>>]
+	"FakeDead" -> "Seat"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"FakeDead_weight" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>1 Seat  </TD></TR></TABLE>>]
+	"FakeDead" -> "FakeDead_weight"  ["label"="Weight","color"="aquamarine4","fontcolor"="aquamarine4"]
+	"FakeDead" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>FakeDead  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">1.00s: Done</FONT>  </TD></TR></TABLE>>]
+	"HurtState" -> "PreAttack"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"HurtState" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>HurtState  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.02s: LinkNextMove<br/>0.17s: Done</FONT>  </TD></TR></TABLE>>]
+	"PostureBreak" -> "Revive"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"PostureBreak" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>PostureBreak  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.50s: Done</FONT>  </TD></TR></TABLE>>]
+	"StandUp" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"StandUp" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>StandUp  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">2.00s: Done</FONT>  </TD></TR></TABLE>>]
+	"ZEnterState" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"ZEnterState" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>ZEnterState  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">2.00s: Done</FONT>  </TD></TR></TABLE>>]
+	"ZExitState" -> "Seat"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"ZExitState" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>ZExitState  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">1.00s: Done</FONT>  </TD></TR></TABLE>>]
+	"Seat" ["label"="Seat (Init)"]
+}

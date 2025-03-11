@@ -2,13 +2,15 @@
   "InitState": "MonsterBase+States.WanderingIdle",
   "BossGeneralStates": {
     "MonsterBase+States.Attack1": {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/TrapMonster_ExplodeEgg/States/Attacks/[1]Attack@BossGeneralState",
+      "$id": "/States/Attacks/[1]Attack@[1]Attack",
+      "$component": "[1]Attack",
       "state": "MonsterBase+States.Attack1",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [
         {
-          "$id": "A3_S3/Room/Prefab/Gameplay_Middle/TrapMonster_ExplodeEgg/States/Attacks/[1]Attack/interruptConditionWeights@LinkNextMoveStateWeight",
+          "$id": "/States/Attacks/[1]Attack/interruptConditionWeights@interruptConditionWeights",
+          "$component": "interruptConditionWeights",
           "type": "LinkMoveSetType.InterruptConditional",
           "IsRandom": true,
           "mustUseStates": [],
@@ -20,6 +22,7 @@
           ]
         }
       ],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -39,11 +42,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Attack2": {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/TrapMonster_ExplodeEgg/States/Attacks/[2]Explode@BossGeneralState",
+      "$id": "/States/Attacks/[2]Explode@[2]Explode",
+      "$component": "[2]Explode",
       "state": "MonsterBase+States.Attack1",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -63,11 +68,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Hurt": {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/TrapMonster_ExplodeEgg/States/HurtState@BossGeneralState",
+      "$id": "/States/HurtState@HurtState",
+      "$component": "HurtState",
       "state": "MonsterBase+States.Hurt",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -89,16 +96,17 @@
   },
   "OtherStates": {
     "MonsterBase+States.WanderingIdle": {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/TrapMonster_ExplodeEgg/States/0_Wandering_Idle@StealthWanderingIdle",
+      "$id": "/States/0_Wandering_Idle@0_Wandering_Idle",
+      "$component": "0_Wandering_Idle",
       "originalPos": {
-        "x": -3463.125,
-        "y": -3234.0,
+        "x": -3576.0,
+        "y": -3312.0,
         "z": 0.0
       },
       "originalFacing": "Facings.Right",
       "SinglePointIdle": true,
       "newPosTime": -1.0,
-      "newPosTimer": -1.02,
+      "newPosTimer": -1.01663625,
       "IsNewPosRandom": false,
       "configSetting": "StealthWanderingIdle+ConfigWanderingSetting.Undefined",
       "clip": [
@@ -112,12 +120,14 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.PreAttack": {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/TrapMonster_ExplodeEgg/States/1_PreAttack@StealthPreAttackState",
+      "$id": "/States/1_PreAttack@1_PreAttack",
+      "$component": "1_PreAttack",
       "exitPreAttackCoolDown": 2.0,
       "ChangeToEngageDelayTime": 0.0,
       "ApproachingSchemes": [
         {
-          "$id": "A3_S3/Room/Prefab/Gameplay_Middle/TrapMonster_ExplodeEgg/States/1_PreAttack/preAttack@StealthEngagingScheme",
+          "$id": "/States/1_PreAttack/preAttack@preAttack",
+          "$component": "preAttack",
           "EnterApproachingRange": 160,
           "EnterApproachingRangeRandomOffset": 0,
           "ExitApproachingRange": 240,
@@ -162,7 +172,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Panic": {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/TrapMonster_ExplodeEgg/States/Not See Player/1_Panic@StealthPanicState",
+      "$id": "/States/Not See Player/1_Panic@1_Panic",
+      "$component": "1_Panic",
       "isDone": false,
       "MinStateTime": 0.5,
       "clip": null,
@@ -171,7 +182,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.OutOfReach": {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/TrapMonster_ExplodeEgg/States/Not See Player/3_Out of Reach@StealthOutOfReachState",
+      "$id": "/States/Not See Player/3_Out of Reach@3_Out of Reach",
+      "$component": "3_Out of Reach",
       "MinStateTime": 0.5,
       "OutOfReachReason": "OutOfReachState",
       "clip": [
@@ -185,9 +197,10 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Confused": {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/TrapMonster_ExplodeEgg/States/Not See Player/4_Confuse@StealthConfuse",
+      "$id": "/States/Not See Player/4_Confuse@4_Confuse",
+      "$component": "4_Confuse",
       "_confuseSoundPlayer": {
-        "$ref": "A3_S3/Room/Prefab/Gameplay_Middle/TrapMonster_ExplodeEgg/States/Not See Player/4_Confuse/confuseSound@SoundPlayer"
+        "$ref": "/States/Not See Player/4_Confuse/confuseSound@confuseSound"
       },
       "clip": [
         {
@@ -200,16 +213,17 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Dead": {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/TrapMonster_ExplodeEgg/States/DeadState@MonsterDeadState",
+      "$id": "/States/DeadState@DeadState",
+      "$component": "DeadState",
       "shootEvent": "UnityEvent(0)",
       "_selfDestructClip": {
-        "$ref": "A3_S3/Room/Prefab/Gameplay_Middle/TrapMonster_ExplodeEgg/States/DeadState/SelfDestructDeadOverrideClip@SelfDestructOverrideClip"
+        "$ref": "/States/DeadState/SelfDestructDeadOverrideClip@SelfDestructDeadOverrideClip"
       },
       "IsDeadShooted": false,
       "IsRemoveDeadBody": true,
       "hitData": null,
       "deadNoiseEffect": {
-        "$ref": "A3_S3/Room/Prefab/Gameplay_Middle/TrapMonster_ExplodeEgg/MonsterCore/Animator(Proxy)/Animator/LogicRoot/EventBroadcastSystem/Dead Noise@EffectDealer"
+        "$ref": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/EventBroadcastSystem/Dead Noise@Dead Noise"
       },
       "IsEnterClearVelX": true,
       "DeadValue": [],
@@ -232,7 +246,8 @@
     }
   },
   "HurtInterrupt": {
-    "$id": "A3_S3/Room/Prefab/Gameplay_Middle/TrapMonster_ExplodeEgg/MonsterCore/Animator(Proxy)/Animator/LogicRoot/HurtInterrupt@MonsterHurtInterrupt",
+    "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/HurtInterrupt@HurtInterrupt",
+    "$component": "HurtInterrupt",
     "customInterruptTH": -1.0,
     "IsHurtInterruptChangeState": true,
     "IsForcePlayingBigHurtAnimation": false,
@@ -242,7 +257,8 @@
     "linkMoveWeights": []
   },
   "TeleportBinding": {
-    "$id": "A3_S3/Room/Prefab/Gameplay_Middle/TrapMonster_ExplodeEgg/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Teleport@TeleportBinding",
+    "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Teleport@Teleport",
+    "$component": "Teleport",
     "teleportScheme": "TeleportBinding+TeleportScheme.ToPlayerPosition",
     "offsetCandidates": [],
     "offset": {
@@ -254,18 +270,20 @@
   },
   "AttackSensors": [
     {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/TrapMonster_ExplodeEgg/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor@Level Once Sensor",
+      "$component": "Level Once Sensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [
         {
-          "$id": "A3_S3/Room/Prefab/Gameplay_Middle/TrapMonster_ExplodeEgg/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor/weight@LinkNextMoveStateWeight",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
           "stateWeightList": [
             {
-              "StateType": "MonsterBase+States.Undefined",
+              "StateType": "MonsterBase+States.Attack1",
               "Weight": 1
             }
           ]
@@ -304,7 +322,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/TrapMonster_ExplodeEgg/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/0_RunAwaySensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/0_RunAwaySensor@0_RunAwaySensor",
+      "$component": "0_RunAwaySensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [],
@@ -316,7 +335,7 @@
       ],
       "AttackDelayMin": 0.0,
       "AttackDelayMax": 0.5,
-      "currentAttackDelay": 0.0829412341,
+      "currentAttackDelay": 0.253321677,
       "coolDownType": "CooldownTokenType.NoCoolDown",
       "_stateCoolDownProvider": null,
       "coolDownStat": null,
@@ -341,7 +360,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/TrapMonster_ExplodeEgg/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor@1_AttackSensor",
+      "$component": "1_AttackSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.AllValid",
       "AttackWeightPhaseList": [],
@@ -378,7 +398,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/TrapMonster_ExplodeEgg/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor@2_DodgePredictSensor",
+      "$component": "2_DodgePredictSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [],
@@ -409,7 +430,8 @@
       "conditions": [],
       "_conditions": [
         {
-          "$id": "A3_S3/Room/Prefab/Gameplay_Middle/TrapMonster_ExplodeEgg/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor/rollingCondition@PlayerMovePredictCondition",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor/rollingCondition@rollingCondition",
+          "$component": "rollingCondition",
           "ParryDetect": false,
           "DodgeDetect": true,
           "JumpDetect": false,
@@ -432,12 +454,14 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/TrapMonster_ExplodeEgg/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor@3_AttackPredictSensor",
+      "$component": "3_AttackPredictSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [
         {
-          "$id": "A3_S3/Room/Prefab/Gameplay_Middle/TrapMonster_ExplodeEgg/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/weight@LinkNextMoveStateWeight",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
@@ -471,7 +495,8 @@
       "conditions": [],
       "_conditions": [
         {
-          "$id": "A3_S3/Room/Prefab/Gameplay_Middle/TrapMonster_ExplodeEgg/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/attackCondition@PlayerMovePredictCondition",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/attackCondition@attackCondition",
+          "$component": "attackCondition",
           "ParryDetect": false,
           "DodgeDetect": false,
           "JumpDetect": false,
@@ -494,7 +519,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/TrapMonster_ExplodeEgg/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackRunToSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackRunToSensor@1_AttackRunToSensor",
+      "$component": "1_AttackRunToSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingOnly",
       "AttackWeightPhaseList": [],

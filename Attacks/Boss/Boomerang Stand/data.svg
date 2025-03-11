@@ -5,319 +5,319 @@
  -->
 <!-- Title: Foo Pages: 1 -->
 <svg width="406pt" height="992pt"
- viewBox="0.00 0.00 406.38 991.88" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 987.88)">
+ viewBox="0.00 0.00 406.38 992.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 988)">
 <title>Foo</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-987.88 402.38,-987.88 402.38,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-988 402.38,-988 402.38,4 -4,4"/>
 <g id="clust1" class="cluster">
 <title>cluster_attacksensors</title>
-<polygon fill="none" stroke="black" points="8,-563.88 8,-975.88 390.38,-975.88 390.38,-563.88 8,-563.88"/>
-<text text-anchor="middle" x="199.19" y="-958.58" font-family="Helvetica,sans-Serif" font-size="14.00">Attack Sensors</text>
-</g>
-<!-- Attack -->
-<g id="node1" class="node">
-<title>Attack</title>
-<polygon fill="none" stroke="black" points="34.12,-186 34.12,-207.75 151.88,-207.75 151.88,-186 34.12,-186"/>
-<text text-anchor="start" x="70.5" y="-191.45" font-family="Helvetica,sans-Serif" font-size="14.00">Attack &#160;</text>
-<polygon fill="none" stroke="black" points="34.12,-154 34.12,-186 151.88,-186 151.88,-154 34.12,-154"/>
-<text text-anchor="start" x="37.12" y="-172.6" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.00s: LinkNextMove</text>
-<text text-anchor="start" x="37.12" y="-158.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.50s: Done</text>
-<text text-anchor="start" x="101.62" y="-158.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
-</g>
-<!-- Engaging -->
-<g id="node2" class="node">
-<title>Engaging</title>
-<polygon fill="none" stroke="black" points="363.88,-134.88 290.88,-134.88 290.88,-98.88 363.88,-98.88 363.88,-134.88"/>
-<text text-anchor="middle" x="327.38" y="-111.45" font-family="Helvetica,sans-Serif" font-size="14.00">Engaging</text>
-</g>
-<!-- Attack&#45;&gt;Engaging -->
-<g id="edge1" class="edge">
-<title>Attack&#45;&gt;Engaging</title>
-<path fill="none" stroke="#cdc8b1" d="M159.78,-154.1C169.17,-150.75 178.77,-147.56 188,-144.88 217.97,-136.17 252.35,-129.2 279.35,-124.39"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="279.69,-127.88 288.94,-122.72 278.49,-120.99 279.69,-127.88"/>
-</g>
-<!-- Attack_mustuse -->
-<g id="node3" class="node">
-<title>Attack_mustuse</title>
-<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="383.5,-212.62 271.25,-212.62 271.25,-165.12 383.5,-165.12 383.5,-212.62"/>
-<text text-anchor="start" x="281.25" y="-193.32" font-family="Helvetica,sans-Serif" font-size="14.00">0 RollThrough &#160;</text>
-<text text-anchor="start" x="286.12" y="-173.57" font-family="Helvetica,sans-Serif" font-size="14.00">0 JumpBack &#160;</text>
-</g>
-<!-- Attack&#45;&gt;Attack_mustuse -->
-<g id="edge2" class="edge">
-<title>Attack&#45;&gt;Attack_mustuse</title>
-<path fill="none" stroke="#458b74" d="M159.66,-183.14C190.97,-184.21 228.37,-185.5 259.81,-186.58"/>
-<polygon fill="#458b74" stroke="#458b74" points="259.47,-190.07 269.58,-186.92 259.71,-183.08 259.47,-190.07"/>
-<text text-anchor="middle" x="220.62" y="-188.74" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#458b74">Weight</text>
-</g>
-<!-- JumpAttack -->
-<g id="node4" class="node">
-<title>JumpAttack</title>
-<polygon fill="none" stroke="black" points="34.12,-266 34.12,-287.75 151.88,-287.75 151.88,-266 34.12,-266"/>
-<text text-anchor="start" x="53.62" y="-271.45" font-family="Helvetica,sans-Serif" font-size="14.00">JumpAttack &#160;</text>
-<polygon fill="none" stroke="black" points="34.12,-234 34.12,-266 151.88,-266 151.88,-234 34.12,-234"/>
-<text text-anchor="start" x="37.12" y="-252.6" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">2.50s: LinkNextMove</text>
-<text text-anchor="start" x="37.12" y="-238.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">2.67s: Done</text>
-<text text-anchor="start" x="101.62" y="-238.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
-</g>
-<!-- JumpAttack&#45;&gt;Engaging -->
-<g id="edge3" class="edge">
-<title>JumpAttack&#45;&gt;Engaging</title>
-<path fill="none" stroke="#cdc8b1" d="M159.63,-230.33C163.35,-227.41 166.85,-224.26 170,-220.88 183.57,-206.31 174.02,-194.04 188,-179.88 201.65,-166.04 245.39,-147.27 280.08,-133.83"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="281.01,-137.22 289.1,-130.38 278.51,-130.68 281.01,-137.22"/>
-</g>
-<!-- JumpAttack_mustuse -->
-<g id="node5" class="node">
-<title>JumpAttack_mustuse</title>
-<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="383.5,-284.62 271.25,-284.62 271.25,-237.12 383.5,-237.12 383.5,-284.62"/>
-<text text-anchor="start" x="281.25" y="-265.32" font-family="Helvetica,sans-Serif" font-size="14.00">0 RollThrough &#160;</text>
-<text text-anchor="start" x="286.12" y="-245.57" font-family="Helvetica,sans-Serif" font-size="14.00">0 JumpBack &#160;</text>
-</g>
-<!-- JumpAttack&#45;&gt;JumpAttack_mustuse -->
-<g id="edge4" class="edge">
-<title>JumpAttack&#45;&gt;JumpAttack_mustuse</title>
-<path fill="none" stroke="#458b74" d="M159.66,-260.88C190.97,-260.88 228.37,-260.88 259.81,-260.88"/>
-<polygon fill="#458b74" stroke="#458b74" points="259.58,-264.38 269.58,-260.88 259.58,-257.38 259.58,-264.38"/>
-<text text-anchor="middle" x="220.62" y="-263.32" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#458b74">Weight</text>
-</g>
-<!-- Attack 3 -->
-<g id="node6" class="node">
-<title>Attack 3</title>
-<polygon fill="none" stroke="black" points="34.12,-36 34.12,-57.75 151.88,-57.75 151.88,-36 34.12,-36"/>
-<text text-anchor="start" x="64.88" y="-41.45" font-family="Helvetica,sans-Serif" font-size="14.00">Attack 3 &#160;</text>
-<polygon fill="none" stroke="black" points="34.12,-4 34.12,-36 151.88,-36 151.88,-4 34.12,-4"/>
-<text text-anchor="start" x="37.12" y="-22.6" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.00s: LinkNextMove</text>
-<text text-anchor="start" x="37.12" y="-8.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.50s: Done</text>
-<text text-anchor="start" x="101.62" y="-8.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
-</g>
-<!-- Attack 3&#45;&gt;Engaging -->
-<g id="edge5" class="edge">
-<title>Attack 3&#45;&gt;Engaging</title>
-<path fill="none" stroke="#cdc8b1" d="M159.66,-55.17C197.93,-69.34 245.28,-86.86 279.73,-99.61"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="278.42,-102.86 289.01,-103.05 280.85,-96.29 278.42,-102.86"/>
-</g>
-<!-- Attack 3_mustuse -->
-<g id="node7" class="node">
-<title>Attack 3_mustuse</title>
-<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="383.5,-54.62 271.25,-54.62 271.25,-7.12 383.5,-7.12 383.5,-54.62"/>
-<text text-anchor="start" x="281.25" y="-35.33" font-family="Helvetica,sans-Serif" font-size="14.00">1 RollThrough &#160;</text>
-<text text-anchor="start" x="286.12" y="-15.57" font-family="Helvetica,sans-Serif" font-size="14.00">1 JumpBack &#160;</text>
-</g>
-<!-- Attack 3&#45;&gt;Attack 3_mustuse -->
-<g id="edge6" class="edge">
-<title>Attack 3&#45;&gt;Attack 3_mustuse</title>
-<path fill="none" stroke="#458b74" d="M159.66,-30.88C190.97,-30.88 228.37,-30.88 259.81,-30.88"/>
-<polygon fill="#458b74" stroke="#458b74" points="259.58,-34.38 269.58,-30.88 259.58,-27.38 259.58,-34.38"/>
-<text text-anchor="middle" x="220.62" y="-33.33" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#458b74">Weight</text>
-</g>
-<!-- HurtState -->
-<g id="node8" class="node">
-<title>HurtState</title>
-<polygon fill="none" stroke="black" points="54,-405.88 54,-427.62 132,-427.62 132,-405.88 54,-405.88"/>
-<text text-anchor="start" x="60.75" y="-411.32" font-family="Helvetica,sans-Serif" font-size="14.00">HurtState &#160;</text>
-<polygon fill="none" stroke="black" points="54,-384.12 54,-405.88 132,-405.88 132,-384.12 54,-384.12"/>
-<text text-anchor="start" x="57" y="-390.57" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">0.17s: Done</text>
-<text text-anchor="start" x="121.5" y="-390.57" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
-</g>
-<!-- PreAttack -->
-<g id="node9" class="node">
-<title>PreAttack</title>
-<polygon fill="none" stroke="black" points="364.62,-423.88 290.12,-423.88 290.12,-387.88 364.62,-387.88 364.62,-423.88"/>
-<text text-anchor="middle" x="327.38" y="-400.45" font-family="Helvetica,sans-Serif" font-size="14.00">PreAttack</text>
-</g>
-<!-- HurtState&#45;&gt;PreAttack -->
-<g id="edge7" class="edge">
-<title>HurtState&#45;&gt;PreAttack</title>
-<path fill="none" stroke="#cdc8b1" d="M139.91,-405.88C179.88,-405.88 237.62,-405.88 278.23,-405.88"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="278.21,-409.38 288.21,-405.88 278.21,-402.38 278.21,-409.38"/>
-</g>
-<!-- Hurt_BigState -->
-<g id="node10" class="node">
-<title>Hurt_BigState</title>
-<polygon fill="none" stroke="black" points="44.25,-335.88 44.25,-357.62 141.75,-357.62 141.75,-335.88 44.25,-335.88"/>
-<text text-anchor="start" x="47.25" y="-341.32" font-family="Helvetica,sans-Serif" font-size="14.00">Hurt_BigState &#160;</text>
-<polygon fill="none" stroke="black" points="44.25,-314.12 44.25,-335.88 141.75,-335.88 141.75,-314.12 44.25,-314.12"/>
-<text text-anchor="start" x="47.25" y="-320.57" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">1.00s: Done</text>
-<text text-anchor="start" x="111.75" y="-320.57" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
-</g>
-<!-- Hurt_BigState&#45;&gt;PreAttack -->
-<g id="edge8" class="edge">
-<title>Hurt_BigState&#45;&gt;PreAttack</title>
-<path fill="none" stroke="#cdc8b1" d="M149.66,-352.64C189.13,-364.53 241.54,-380.32 279.01,-391.61"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="277.61,-394.84 288.19,-394.37 279.63,-388.14 277.61,-394.84"/>
-</g>
-<!-- JumpBack -->
-<g id="node11" class="node">
-<title>JumpBack</title>
-<polygon fill="none" stroke="black" points="54,-475.88 54,-497.62 132,-497.62 132,-475.88 54,-475.88"/>
-<text text-anchor="start" x="57.38" y="-481.32" font-family="Helvetica,sans-Serif" font-size="14.00">JumpBack &#160;</text>
-<polygon fill="none" stroke="black" points="54,-454.12 54,-475.88 132,-475.88 132,-454.12 54,-454.12"/>
-<text text-anchor="start" x="57" y="-460.57" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">1.00s: Done</text>
-<text text-anchor="start" x="121.5" y="-460.57" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
-</g>
-<!-- JumpBack&#45;&gt;PreAttack -->
-<g id="edge9" class="edge">
-<title>JumpBack&#45;&gt;PreAttack</title>
-<path fill="none" stroke="#cdc8b1" d="M139.91,-462.05C180.05,-449.95 238.11,-432.46 278.75,-420.22"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="279.71,-423.59 288.27,-417.35 277.69,-416.89 279.71,-423.59"/>
-</g>
-<!-- RollThrough -->
-<g id="node12" class="node">
-<title>RollThrough</title>
-<polygon fill="none" stroke="black" points="49.5,-105.88 49.5,-127.62 136.5,-127.62 136.5,-105.88 49.5,-105.88"/>
-<text text-anchor="start" x="52.5" y="-111.33" font-family="Helvetica,sans-Serif" font-size="14.00">RollThrough &#160;</text>
-<polygon fill="none" stroke="black" points="49.5,-84.12 49.5,-105.88 136.5,-105.88 136.5,-84.12 49.5,-84.12"/>
-<text text-anchor="start" x="52.5" y="-90.58" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">1.00s: Done</text>
-<text text-anchor="start" x="117" y="-90.58" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
-</g>
-<!-- RollThrough&#45;&gt;Engaging -->
-<g id="edge10" class="edge">
-<title>RollThrough&#45;&gt;Engaging</title>
-<path fill="none" stroke="#cdc8b1" d="M144.42,-108.26C184.43,-110.16 239.94,-112.78 279.1,-114.64"/>
-<polygon fill="#cdc8b1" stroke="#cdc8b1" points="278.78,-118.13 288.93,-115.1 279.11,-111.13 278.78,-118.13"/>
-</g>
-<!-- Wandering_Idle -->
-<g id="node13" class="node">
-<title>Wandering_Idle</title>
-<polygon fill="none" stroke="black" points="163.62,-555.88 22.38,-555.88 22.38,-519.88 163.62,-519.88 163.62,-555.88"/>
-<text text-anchor="middle" x="93" y="-532.45" font-family="Helvetica,sans-Serif" font-size="14.00">Wandering_Idle (Init)</text>
+<polygon fill="none" stroke="black" points="8,-8 8,-420 390.38,-420 390.38,-8 8,-8"/>
+<text text-anchor="middle" x="199.19" y="-402.7" font-family="Helvetica,sans-Serif" font-size="14.00">Attack Sensors</text>
 </g>
 <!-- Level Once Sensor -->
-<g id="node14" class="node">
+<g id="node1" class="node">
 <title>Level Once Sensor</title>
-<polygon fill="none" stroke="black" points="158.75,-611.88 27.25,-611.88 27.25,-575.88 158.75,-575.88 158.75,-611.88"/>
-<text text-anchor="middle" x="93" y="-588.45" font-family="Helvetica,sans-Serif" font-size="14.00">Level Once Sensor</text>
+<polygon fill="none" stroke="black" points="28.5,-26.12 28.5,-47.88 157.5,-47.88 157.5,-26.12 28.5,-26.12"/>
+<text text-anchor="start" x="31.5" y="-31.57" font-family="Helvetica,sans-Serif" font-size="14.00">Level Once Sensor &#160;</text>
 </g>
 <!-- Level Once Sensor_linked -->
-<g id="node15" class="node">
+<g id="node2" class="node">
 <title>Level Once Sensor_linked</title>
-<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="355.48,-607.88 299.27,-607.88 299.27,-571.88 355.48,-571.88 355.48,-607.88"/>
-<text text-anchor="start" x="304.88" y="-584.45" font-family="Helvetica,sans-Serif" font-size="14.00">Attack &#160;</text>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="355.48,-52 299.27,-52 299.27,-16 355.48,-16 355.48,-52"/>
+<text text-anchor="start" x="304.88" y="-28.57" font-family="Helvetica,sans-Serif" font-size="14.00">Attack &#160;</text>
 </g>
 <!-- Level Once Sensor&#45;&gt;Level Once Sensor_linked -->
-<g id="edge11" class="edge">
+<g id="edge1" class="edge">
 <title>Level Once Sensor&#45;&gt;Level Once Sensor_linked</title>
-<path fill="none" stroke="#66cdaa" d="M159.04,-592.76C200.54,-592.04 252.91,-591.14 287.91,-590.54"/>
-<polygon fill="#66cdaa" stroke="#66cdaa" points="287.62,-594.04 297.55,-590.37 287.5,-587.04 287.62,-594.04"/>
-<text text-anchor="middle" x="220.62" y="-594.68" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#66cdaa">QueueEnd</text>
+<path fill="none" stroke="#66cdaa" d="M165.3,-36.08C205.46,-35.56 254.08,-34.93 287.32,-34.5"/>
+<polygon fill="#66cdaa" stroke="#66cdaa" points="287.37,-38 297.32,-34.38 287.28,-31 287.37,-38"/>
+<text text-anchor="middle" x="220.62" y="-38.22" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#66cdaa">QueueEnd</text>
 </g>
-<!-- Level Once Sensor_mustuse -->
-<g id="node16" class="node">
-<title>Level Once Sensor_mustuse</title>
-<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="365.12,-661.88 289.62,-661.88 289.62,-625.88 365.12,-625.88 365.12,-661.88"/>
-<text text-anchor="start" x="299.62" y="-638.45" font-family="Helvetica,sans-Serif" font-size="14.00">1 Attack &#160;</text>
+<!-- Level Once Sensor_weight -->
+<g id="node3" class="node">
+<title>Level Once Sensor_weight</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="365.12,-106 289.62,-106 289.62,-70 365.12,-70 365.12,-106"/>
+<text text-anchor="start" x="299.62" y="-82.58" font-family="Helvetica,sans-Serif" font-size="14.00">1 Attack &#160;</text>
 </g>
-<!-- Level Once Sensor&#45;&gt;Level Once Sensor_mustuse -->
-<g id="edge12" class="edge">
-<title>Level Once Sensor&#45;&gt;Level Once Sensor_mustuse</title>
-<path fill="none" stroke="#458b74" d="M159.04,-607.87C196.8,-615.99 243.56,-626.06 278.04,-633.48"/>
-<polygon fill="#458b74" stroke="#458b74" points="277.24,-636.88 287.76,-635.57 278.72,-630.04 277.24,-636.88"/>
-<text text-anchor="middle" x="220.62" y="-630.15" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#458b74">Weight</text>
+<!-- Level Once Sensor&#45;&gt;Level Once Sensor_weight -->
+<g id="edge2" class="edge">
+<title>Level Once Sensor&#45;&gt;Level Once Sensor_weight</title>
+<path fill="none" stroke="#458b74" d="M165.3,-52.65C201.94,-60.69 245.61,-70.27 278.24,-77.43"/>
+<polygon fill="#458b74" stroke="#458b74" points="277.29,-80.81 287.81,-79.54 278.79,-73.97 277.29,-80.81"/>
+<text text-anchor="middle" x="220.62" y="-73.95" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#458b74">Weight</text>
 </g>
 <!-- RunAwaySensor -->
-<g id="node17" class="node">
+<g id="node4" class="node">
 <title>RunAwaySensor</title>
-<polygon fill="none" stroke="black" points="151.25,-673.88 34.75,-673.88 34.75,-637.88 151.25,-637.88 151.25,-673.88"/>
-<text text-anchor="middle" x="93" y="-650.45" font-family="Helvetica,sans-Serif" font-size="14.00">RunAwaySensor</text>
+<polygon fill="none" stroke="black" points="36,-82.12 36,-103.88 150,-103.88 150,-82.12 36,-82.12"/>
+<text text-anchor="start" x="39" y="-87.58" font-family="Helvetica,sans-Serif" font-size="14.00">RunAwaySensor &#160;</text>
 </g>
 <!-- AttackSensor -->
-<g id="node18" class="node">
+<g id="node5" class="node">
 <title>AttackSensor</title>
-<polygon fill="none" stroke="black" points="141.12,-731.88 44.88,-731.88 44.88,-695.88 141.12,-695.88 141.12,-731.88"/>
-<text text-anchor="middle" x="93" y="-708.45" font-family="Helvetica,sans-Serif" font-size="14.00">AttackSensor</text>
+<polygon fill="none" stroke="black" points="46.12,-145.12 46.12,-166.88 139.88,-166.88 139.88,-145.12 46.12,-145.12"/>
+<text text-anchor="start" x="49.12" y="-150.57" font-family="Helvetica,sans-Serif" font-size="14.00">AttackSensor &#160;</text>
 </g>
 <!-- AttackSensor_linked -->
-<g id="node19" class="node">
+<g id="node6" class="node">
 <title>AttackSensor_linked</title>
-<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="355.48,-715.88 299.27,-715.88 299.27,-679.88 355.48,-679.88 355.48,-715.88"/>
-<text text-anchor="start" x="304.88" y="-692.45" font-family="Helvetica,sans-Serif" font-size="14.00">Attack &#160;</text>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="355.48,-160 299.27,-160 299.27,-124 355.48,-124 355.48,-160"/>
+<text text-anchor="start" x="304.88" y="-136.57" font-family="Helvetica,sans-Serif" font-size="14.00">Attack &#160;</text>
 </g>
 <!-- AttackSensor&#45;&gt;AttackSensor_linked -->
-<g id="edge13" class="edge">
+<g id="edge3" class="edge">
 <title>AttackSensor&#45;&gt;AttackSensor_linked</title>
-<path fill="none" stroke="#66cdaa" d="M141.59,-710.6C184.64,-707.63 247.27,-703.32 287.41,-700.56"/>
-<polygon fill="#66cdaa" stroke="#66cdaa" points="287.61,-704.05 297.35,-699.87 287.13,-697.07 287.61,-704.05"/>
-<text text-anchor="middle" x="220.62" y="-709.76" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#66cdaa">QueueEnd</text>
+<path fill="none" stroke="#66cdaa" d="M147.6,-152.77C190.48,-150.19 249.57,-146.63 287.87,-144.32"/>
+<polygon fill="#66cdaa" stroke="#66cdaa" points="287.77,-147.83 297.54,-143.74 287.35,-140.85 287.77,-147.83"/>
+<text text-anchor="middle" x="220.62" y="-152.7" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#66cdaa">QueueEnd</text>
 </g>
-<!-- AttackSensor_mustuse -->
-<g id="node20" class="node">
-<title>AttackSensor_mustuse</title>
-<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="382.38,-781.62 272.38,-781.62 272.38,-734.12 382.38,-734.12 382.38,-781.62"/>
-<text text-anchor="start" x="299.62" y="-762.33" font-family="Helvetica,sans-Serif" font-size="14.00">1 Attack &#160;</text>
-<text text-anchor="start" x="282.38" y="-742.58" font-family="Helvetica,sans-Serif" font-size="14.00">1 JumpAttack &#160;</text>
+<!-- AttackSensor_weight -->
+<g id="node7" class="node">
+<title>AttackSensor_weight</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="382.38,-225.75 272.38,-225.75 272.38,-178.25 382.38,-178.25 382.38,-225.75"/>
+<text text-anchor="start" x="299.62" y="-206.45" font-family="Helvetica,sans-Serif" font-size="14.00">1 Attack &#160;</text>
+<text text-anchor="start" x="282.38" y="-186.7" font-family="Helvetica,sans-Serif" font-size="14.00">1 JumpAttack &#160;</text>
 </g>
-<!-- AttackSensor&#45;&gt;AttackSensor_mustuse -->
-<g id="edge14" class="edge">
-<title>AttackSensor&#45;&gt;AttackSensor_mustuse</title>
-<path fill="none" stroke="#458b74" d="M141.59,-722.89C176.03,-729.41 223,-738.3 260.97,-745.49"/>
-<polygon fill="#458b74" stroke="#458b74" points="259.97,-748.86 270.44,-747.28 261.27,-741.98 259.97,-748.86"/>
-<text text-anchor="middle" x="220.62" y="-746.09" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#458b74">Weight</text>
+<!-- AttackSensor&#45;&gt;AttackSensor_weight -->
+<g id="edge4" class="edge">
+<title>AttackSensor&#45;&gt;AttackSensor_weight</title>
+<path fill="none" stroke="#458b74" d="M147.6,-166.61C181.49,-173.32 225.51,-182.03 261.38,-189.13"/>
+<polygon fill="#458b74" stroke="#458b74" points="260.26,-192.48 270.75,-190.99 261.62,-185.61 260.26,-192.48"/>
+<text text-anchor="middle" x="220.62" y="-189.57" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#458b74">Weight</text>
 </g>
 <!-- DodgePredictSensor -->
-<g id="node21" class="node">
+<g id="node8" class="node">
 <title>DodgePredictSensor</title>
-<polygon fill="none" stroke="black" points="24,-777.88 24,-799.62 162,-799.62 162,-777.88 24,-777.88"/>
-<text text-anchor="start" x="27" y="-783.33" font-family="Helvetica,sans-Serif" font-size="14.00">DodgePredictSensor &#160;</text>
-<polygon fill="none" stroke="black" points="24,-756.12 24,-777.88 162,-777.88 162,-756.12 24,-756.12"/>
-<text text-anchor="start" x="27" y="-762.58" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">if: rollingCondition</text>
-<text text-anchor="start" x="123.75" y="-762.58" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+<polygon fill="none" stroke="black" points="24,-222 24,-243.75 162,-243.75 162,-222 24,-222"/>
+<text text-anchor="start" x="27" y="-227.45" font-family="Helvetica,sans-Serif" font-size="14.00">DodgePredictSensor &#160;</text>
+<polygon fill="none" stroke="black" points="24,-200.25 24,-222 162,-222 162,-200.25 24,-200.25"/>
+<text text-anchor="start" x="27" y="-206.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">if: rollingCondition</text>
+<text text-anchor="start" x="123.75" y="-206.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
 </g>
 <!-- DodgePredictSensor_linked -->
-<g id="node22" class="node">
+<g id="node9" class="node">
 <title>DodgePredictSensor_linked</title>
-<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="355.48,-835.88 299.27,-835.88 299.27,-799.88 355.48,-799.88 355.48,-835.88"/>
-<text text-anchor="start" x="304.88" y="-812.45" font-family="Helvetica,sans-Serif" font-size="14.00">Attack &#160;</text>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="355.48,-280 299.27,-280 299.27,-244 355.48,-244 355.48,-280"/>
+<text text-anchor="start" x="304.88" y="-256.57" font-family="Helvetica,sans-Serif" font-size="14.00">Attack &#160;</text>
 </g>
 <!-- DodgePredictSensor&#45;&gt;DodgePredictSensor_linked -->
-<g id="edge15" class="edge">
+<g id="edge5" class="edge">
 <title>DodgePredictSensor&#45;&gt;DodgePredictSensor_linked</title>
-<path fill="none" stroke="#66cdaa" d="M169.77,-790.92C209.16,-797.7 255.65,-805.7 287.68,-811.21"/>
-<polygon fill="#66cdaa" stroke="#66cdaa" points="286.85,-814.62 297.3,-812.87 288.04,-807.72 286.85,-814.62"/>
-<text text-anchor="middle" x="220.62" y="-807.39" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#66cdaa">QueueEnd</text>
+<path fill="none" stroke="#66cdaa" d="M169.77,-235.04C209.16,-241.82 255.65,-249.83 287.68,-255.34"/>
+<polygon fill="#66cdaa" stroke="#66cdaa" points="286.85,-258.75 297.3,-257 288.04,-251.85 286.85,-258.75"/>
+<text text-anchor="middle" x="220.62" y="-251.51" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#66cdaa">QueueEnd</text>
 </g>
 <!-- AttackPredictSensor -->
-<g id="node23" class="node">
+<g id="node10" class="node">
 <title>AttackPredictSensor</title>
-<polygon fill="none" stroke="black" points="25.12,-847.88 25.12,-869.62 160.88,-869.62 160.88,-847.88 25.12,-847.88"/>
-<text text-anchor="start" x="28.12" y="-853.33" font-family="Helvetica,sans-Serif" font-size="14.00">AttackPredictSensor &#160;</text>
-<polygon fill="none" stroke="black" points="25.12,-826.12 25.12,-847.88 160.88,-847.88 160.88,-826.12 25.12,-826.12"/>
-<text text-anchor="start" x="28.12" y="-832.58" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">if: attackCondition</text>
-<text text-anchor="start" x="123.38" y="-832.58" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+<polygon fill="none" stroke="black" points="25.12,-292 25.12,-313.75 160.88,-313.75 160.88,-292 25.12,-292"/>
+<text text-anchor="start" x="28.12" y="-297.45" font-family="Helvetica,sans-Serif" font-size="14.00">AttackPredictSensor &#160;</text>
+<polygon fill="none" stroke="black" points="25.12,-270.25 25.12,-292 160.88,-292 160.88,-270.25 25.12,-270.25"/>
+<text text-anchor="start" x="28.12" y="-276.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">if: attackCondition</text>
+<text text-anchor="start" x="123.38" y="-276.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
 </g>
 <!-- AttackPredictSensor_linked -->
-<g id="node24" class="node">
+<g id="node11" class="node">
 <title>AttackPredictSensor_linked</title>
-<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="355.48,-889.88 299.27,-889.88 299.27,-853.88 355.48,-853.88 355.48,-889.88"/>
-<text text-anchor="start" x="304.88" y="-866.45" font-family="Helvetica,sans-Serif" font-size="14.00">Attack &#160;</text>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="355.48,-334 299.27,-334 299.27,-298 355.48,-298 355.48,-334"/>
+<text text-anchor="start" x="304.88" y="-310.57" font-family="Helvetica,sans-Serif" font-size="14.00">Attack &#160;</text>
 </g>
 <!-- AttackPredictSensor&#45;&gt;AttackPredictSensor_linked -->
-<g id="edge16" class="edge">
+<g id="edge6" class="edge">
 <title>AttackPredictSensor&#45;&gt;AttackPredictSensor_linked</title>
-<path fill="none" stroke="#66cdaa" d="M168.8,-855.6C208.39,-859.69 255.35,-864.54 287.64,-867.87"/>
-<polygon fill="#66cdaa" stroke="#66cdaa" points="287.02,-871.33 297.33,-868.88 287.74,-864.37 287.02,-871.33"/>
-<text text-anchor="middle" x="220.62" y="-866.56" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#66cdaa">QueueEnd</text>
+<path fill="none" stroke="#66cdaa" d="M168.8,-299.73C208.39,-303.81 255.35,-308.66 287.64,-312"/>
+<polygon fill="#66cdaa" stroke="#66cdaa" points="287.02,-315.45 297.33,-313 287.74,-308.49 287.02,-315.45"/>
+<text text-anchor="middle" x="220.62" y="-310.69" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#66cdaa">QueueEnd</text>
 </g>
 <!-- AttackRunToSensor -->
-<g id="node25" class="node">
+<g id="node12" class="node">
 <title>AttackRunToSensor</title>
-<polygon fill="none" stroke="black" points="26.62,-917.88 26.62,-939.62 159.38,-939.62 159.38,-917.88 26.62,-917.88"/>
-<text text-anchor="start" x="29.62" y="-923.33" font-family="Helvetica,sans-Serif" font-size="14.00">AttackRunToSensor &#160;</text>
-<polygon fill="none" stroke="black" points="26.62,-896.12 26.62,-917.88 159.38,-917.88 159.38,-896.12 26.62,-896.12"/>
-<text text-anchor="start" x="29.62" y="-902.58" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">if: state is Engaging</text>
-<text text-anchor="start" x="133.88" y="-902.58" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+<polygon fill="none" stroke="black" points="26.62,-362 26.62,-383.75 159.38,-383.75 159.38,-362 26.62,-362"/>
+<text text-anchor="start" x="29.62" y="-367.45" font-family="Helvetica,sans-Serif" font-size="14.00">AttackRunToSensor &#160;</text>
+<polygon fill="none" stroke="black" points="26.62,-340.25 26.62,-362 159.38,-362 159.38,-340.25 26.62,-340.25"/>
+<text text-anchor="start" x="29.62" y="-346.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">if: state is Engaging</text>
+<text text-anchor="start" x="133.88" y="-346.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
 </g>
 <!-- AttackRunToSensor_linked -->
-<g id="node26" class="node">
+<g id="node13" class="node">
 <title>AttackRunToSensor_linked</title>
-<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="355.48,-943.88 299.27,-943.88 299.27,-907.88 355.48,-907.88 355.48,-943.88"/>
-<text text-anchor="start" x="304.88" y="-920.45" font-family="Helvetica,sans-Serif" font-size="14.00">Attack &#160;</text>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="355.48,-388 299.27,-388 299.27,-352 355.48,-352 355.48,-388"/>
+<text text-anchor="start" x="304.88" y="-364.57" font-family="Helvetica,sans-Serif" font-size="14.00">Attack &#160;</text>
 </g>
 <!-- AttackRunToSensor&#45;&gt;AttackRunToSensor_linked -->
-<g id="edge17" class="edge">
+<g id="edge7" class="edge">
 <title>AttackRunToSensor&#45;&gt;AttackRunToSensor_linked</title>
-<path fill="none" stroke="#66cdaa" d="M167.21,-920.4C207.14,-921.77 254.95,-923.42 287.68,-924.54"/>
-<polygon fill="#66cdaa" stroke="#66cdaa" points="287.39,-928.03 297.5,-924.88 287.63,-921.04 287.39,-928.03"/>
-<text text-anchor="middle" x="220.62" y="-925.74" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#66cdaa">QueueEnd</text>
+<path fill="none" stroke="#66cdaa" d="M167.21,-364.52C207.14,-365.89 254.95,-367.54 287.68,-368.67"/>
+<polygon fill="#66cdaa" stroke="#66cdaa" points="287.39,-372.16 297.5,-369.01 287.63,-365.16 287.39,-372.16"/>
+<text text-anchor="middle" x="220.62" y="-369.86" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#66cdaa">QueueEnd</text>
+</g>
+<!-- Attack -->
+<g id="node14" class="node">
+<title>Attack</title>
+<polygon fill="none" stroke="black" points="34.12,-614.12 34.12,-635.88 151.88,-635.88 151.88,-614.12 34.12,-614.12"/>
+<text text-anchor="start" x="70.5" y="-619.58" font-family="Helvetica,sans-Serif" font-size="14.00">Attack &#160;</text>
+<polygon fill="none" stroke="black" points="34.12,-582.12 34.12,-614.12 151.88,-614.12 151.88,-582.12 34.12,-582.12"/>
+<text text-anchor="start" x="37.12" y="-600.73" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.00s: LinkNextMove</text>
+<text text-anchor="start" x="37.12" y="-586.83" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.50s: Done</text>
+<text text-anchor="start" x="101.62" y="-586.83" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+</g>
+<!-- Engaging -->
+<g id="node15" class="node">
+<title>Engaging</title>
+<polygon fill="none" stroke="black" points="363.88,-560 290.88,-560 290.88,-524 363.88,-524 363.88,-560"/>
+<text text-anchor="middle" x="327.38" y="-536.58" font-family="Helvetica,sans-Serif" font-size="14.00">Engaging</text>
+</g>
+<!-- Attack&#45;&gt;Engaging -->
+<g id="edge8" class="edge">
+<title>Attack&#45;&gt;Engaging</title>
+<path fill="none" stroke="#cdc8b1" d="M159.66,-590.07C197.93,-579.04 245.28,-565.38 279.73,-555.45"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="280.34,-558.92 288.98,-552.78 278.4,-552.19 280.34,-558.92"/>
+</g>
+<!-- Attack_weight -->
+<g id="node16" class="node">
+<title>Attack_weight</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="383.5,-632.75 271.25,-632.75 271.25,-585.25 383.5,-585.25 383.5,-632.75"/>
+<text text-anchor="start" x="281.25" y="-613.45" font-family="Helvetica,sans-Serif" font-size="14.00">0 RollThrough &#160;</text>
+<text text-anchor="start" x="286.12" y="-593.7" font-family="Helvetica,sans-Serif" font-size="14.00">0 JumpBack &#160;</text>
+</g>
+<!-- Attack&#45;&gt;Attack_weight -->
+<g id="edge9" class="edge">
+<title>Attack&#45;&gt;Attack_weight</title>
+<path fill="none" stroke="#458b74" d="M159.66,-609C190.97,-609 228.37,-609 259.81,-609"/>
+<polygon fill="#458b74" stroke="#458b74" points="259.58,-612.5 269.58,-609 259.58,-605.5 259.58,-612.5"/>
+<text text-anchor="middle" x="220.62" y="-611.45" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#458b74">Weight</text>
+</g>
+<!-- JumpAttack -->
+<g id="node17" class="node">
+<title>JumpAttack</title>
+<polygon fill="none" stroke="black" points="34.12,-694.12 34.12,-715.88 151.88,-715.88 151.88,-694.12 34.12,-694.12"/>
+<text text-anchor="start" x="53.62" y="-699.58" font-family="Helvetica,sans-Serif" font-size="14.00">JumpAttack &#160;</text>
+<polygon fill="none" stroke="black" points="34.12,-662.12 34.12,-694.12 151.88,-694.12 151.88,-662.12 34.12,-662.12"/>
+<text text-anchor="start" x="37.12" y="-680.73" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">2.50s: LinkNextMove</text>
+<text text-anchor="start" x="37.12" y="-666.83" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">2.67s: Done</text>
+<text text-anchor="start" x="101.62" y="-666.83" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+</g>
+<!-- JumpAttack&#45;&gt;Engaging -->
+<g id="edge10" class="edge">
+<title>JumpAttack&#45;&gt;Engaging</title>
+<path fill="none" stroke="#cdc8b1" d="M159.81,-677.87C191.76,-669.38 228.49,-654.58 253.25,-629 270.55,-611.12 255.75,-595.46 271.25,-576 274.21,-572.29 277.68,-568.88 281.43,-565.77"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="283.35,-568.7 289.33,-559.96 279.2,-563.07 283.35,-568.7"/>
+</g>
+<!-- JumpAttack_weight -->
+<g id="node18" class="node">
+<title>JumpAttack_weight</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="383.5,-712.75 271.25,-712.75 271.25,-665.25 383.5,-665.25 383.5,-712.75"/>
+<text text-anchor="start" x="281.25" y="-693.45" font-family="Helvetica,sans-Serif" font-size="14.00">0 RollThrough &#160;</text>
+<text text-anchor="start" x="286.12" y="-673.7" font-family="Helvetica,sans-Serif" font-size="14.00">0 JumpBack &#160;</text>
+</g>
+<!-- JumpAttack&#45;&gt;JumpAttack_weight -->
+<g id="edge11" class="edge">
+<title>JumpAttack&#45;&gt;JumpAttack_weight</title>
+<path fill="none" stroke="#458b74" d="M159.66,-689C190.97,-689 228.37,-689 259.81,-689"/>
+<polygon fill="#458b74" stroke="#458b74" points="259.58,-692.5 269.58,-689 259.58,-685.5 259.58,-692.5"/>
+<text text-anchor="middle" x="220.62" y="-691.45" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#458b74">Weight</text>
+</g>
+<!-- Attack 3 -->
+<g id="node19" class="node">
+<title>Attack 3</title>
+<polygon fill="none" stroke="black" points="34.12,-464.12 34.12,-485.88 151.88,-485.88 151.88,-464.12 34.12,-464.12"/>
+<text text-anchor="start" x="64.88" y="-469.57" font-family="Helvetica,sans-Serif" font-size="14.00">Attack 3 &#160;</text>
+<polygon fill="none" stroke="black" points="34.12,-432.12 34.12,-464.12 151.88,-464.12 151.88,-432.12 34.12,-432.12"/>
+<text text-anchor="start" x="37.12" y="-450.73" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.00s: LinkNextMove</text>
+<text text-anchor="start" x="37.12" y="-436.83" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">3.50s: Done</text>
+<text text-anchor="start" x="101.62" y="-436.83" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+</g>
+<!-- Attack 3&#45;&gt;Engaging -->
+<g id="edge12" class="edge">
+<title>Attack 3&#45;&gt;Engaging</title>
+<path fill="none" stroke="#cdc8b1" d="M159.66,-482.45C197.93,-496.12 245.28,-513.03 279.73,-525.34"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="278.41,-528.58 289.01,-528.65 280.77,-521.99 278.41,-528.58"/>
+</g>
+<!-- Attack 3_weight -->
+<g id="node20" class="node">
+<title>Attack 3_weight</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="383.5,-482.75 271.25,-482.75 271.25,-435.25 383.5,-435.25 383.5,-482.75"/>
+<text text-anchor="start" x="281.25" y="-463.45" font-family="Helvetica,sans-Serif" font-size="14.00">1 RollThrough &#160;</text>
+<text text-anchor="start" x="286.12" y="-443.7" font-family="Helvetica,sans-Serif" font-size="14.00">1 JumpBack &#160;</text>
+</g>
+<!-- Attack 3&#45;&gt;Attack 3_weight -->
+<g id="edge13" class="edge">
+<title>Attack 3&#45;&gt;Attack 3_weight</title>
+<path fill="none" stroke="#458b74" d="M159.66,-459C190.97,-459 228.37,-459 259.81,-459"/>
+<polygon fill="#458b74" stroke="#458b74" points="259.58,-462.5 269.58,-459 259.58,-455.5 259.58,-462.5"/>
+<text text-anchor="middle" x="220.62" y="-461.45" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#458b74">Weight</text>
+</g>
+<!-- HurtState -->
+<g id="node21" class="node">
+<title>HurtState</title>
+<polygon fill="none" stroke="black" points="54,-904 54,-925.75 132,-925.75 132,-904 54,-904"/>
+<text text-anchor="start" x="60.75" y="-909.45" font-family="Helvetica,sans-Serif" font-size="14.00">HurtState &#160;</text>
+<polygon fill="none" stroke="black" points="54,-882.25 54,-904 132,-904 132,-882.25 54,-882.25"/>
+<text text-anchor="start" x="57" y="-888.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">0.17s: Done</text>
+<text text-anchor="start" x="121.5" y="-888.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+</g>
+<!-- PreAttack -->
+<g id="node22" class="node">
+<title>PreAttack</title>
+<polygon fill="none" stroke="black" points="364.62,-852 290.12,-852 290.12,-816 364.62,-816 364.62,-852"/>
+<text text-anchor="middle" x="327.38" y="-828.58" font-family="Helvetica,sans-Serif" font-size="14.00">PreAttack</text>
+</g>
+<!-- HurtState&#45;&gt;PreAttack -->
+<g id="edge14" class="edge">
+<title>HurtState&#45;&gt;PreAttack</title>
+<path fill="none" stroke="#cdc8b1" d="M139.91,-890.17C180.05,-878.08 238.11,-860.59 278.75,-848.35"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="279.71,-851.71 288.27,-845.48 277.69,-845.01 279.71,-851.71"/>
+</g>
+<!-- Hurt_BigState -->
+<g id="node23" class="node">
+<title>Hurt_BigState</title>
+<polygon fill="none" stroke="black" points="44.25,-834 44.25,-855.75 141.75,-855.75 141.75,-834 44.25,-834"/>
+<text text-anchor="start" x="47.25" y="-839.45" font-family="Helvetica,sans-Serif" font-size="14.00">Hurt_BigState &#160;</text>
+<polygon fill="none" stroke="black" points="44.25,-812.25 44.25,-834 141.75,-834 141.75,-812.25 44.25,-812.25"/>
+<text text-anchor="start" x="47.25" y="-818.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">1.00s: Done</text>
+<text text-anchor="start" x="111.75" y="-818.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+</g>
+<!-- Hurt_BigState&#45;&gt;PreAttack -->
+<g id="edge15" class="edge">
+<title>Hurt_BigState&#45;&gt;PreAttack</title>
+<path fill="none" stroke="#cdc8b1" d="M149.66,-834C188.96,-834 241.09,-834 278.52,-834"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="278.13,-837.5 288.13,-834 278.13,-830.5 278.13,-837.5"/>
+</g>
+<!-- JumpBack -->
+<g id="node24" class="node">
+<title>JumpBack</title>
+<polygon fill="none" stroke="black" points="54,-764 54,-785.75 132,-785.75 132,-764 54,-764"/>
+<text text-anchor="start" x="57.38" y="-769.45" font-family="Helvetica,sans-Serif" font-size="14.00">JumpBack &#160;</text>
+<polygon fill="none" stroke="black" points="54,-742.25 54,-764 132,-764 132,-742.25 54,-742.25"/>
+<text text-anchor="start" x="57" y="-748.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">1.00s: Done</text>
+<text text-anchor="start" x="121.5" y="-748.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+</g>
+<!-- JumpBack&#45;&gt;PreAttack -->
+<g id="edge16" class="edge">
+<title>JumpBack&#45;&gt;PreAttack</title>
+<path fill="none" stroke="#cdc8b1" d="M139.91,-777.83C180.05,-789.92 238.11,-807.41 278.75,-819.65"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="277.69,-822.99 288.27,-822.52 279.71,-816.29 277.69,-822.99"/>
+</g>
+<!-- RollThrough -->
+<g id="node25" class="node">
+<title>RollThrough</title>
+<polygon fill="none" stroke="black" points="49.5,-534 49.5,-555.75 136.5,-555.75 136.5,-534 49.5,-534"/>
+<text text-anchor="start" x="52.5" y="-539.45" font-family="Helvetica,sans-Serif" font-size="14.00">RollThrough &#160;</text>
+<polygon fill="none" stroke="black" points="49.5,-512.25 49.5,-534 136.5,-534 136.5,-512.25 49.5,-512.25"/>
+<text text-anchor="start" x="52.5" y="-518.7" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#838b8b">1.00s: Done</text>
+<text text-anchor="start" x="117" y="-518.7" font-family="Helvetica,sans-Serif" font-size="14.00"> &#160;</text>
+</g>
+<!-- RollThrough&#45;&gt;Engaging -->
+<g id="edge17" class="edge">
+<title>RollThrough&#45;&gt;Engaging</title>
+<path fill="none" stroke="#cdc8b1" d="M144.42,-535.74C184.43,-537.11 239.94,-539.02 279.1,-540.37"/>
+<polygon fill="#cdc8b1" stroke="#cdc8b1" points="278.82,-543.86 288.93,-540.71 279.06,-536.87 278.82,-543.86"/>
+</g>
+<!-- Wandering_Idle -->
+<g id="node26" class="node">
+<title>Wandering_Idle</title>
+<polygon fill="none" stroke="black" points="163.62,-984 22.38,-984 22.38,-948 163.62,-948 163.62,-984"/>
+<text text-anchor="middle" x="93" y="-960.58" font-family="Helvetica,sans-Serif" font-size="14.00">Wandering_Idle (Init)</text>
 </g>
 </g>
 </svg>

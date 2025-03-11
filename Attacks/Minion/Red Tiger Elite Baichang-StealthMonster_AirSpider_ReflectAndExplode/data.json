@@ -2,11 +2,13 @@
   "InitState": "MonsterBase+States.WanderingIdle",
   "BossGeneralStates": {
     "MonsterBase+States.Attack1": {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/StealthMonster_AirSpider_ReflectAndExplode (6)/States/Attacks/[1]FollowChaseHitPlayer@BossGeneralState",
+      "$id": "/States/Attacks/[1]FollowChaseHitPlayer@[1]FollowChaseHitPlayer",
+      "$component": "[1]FollowChaseHitPlayer",
       "state": "MonsterBase+States.Attack1",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -34,11 +36,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Attack2": {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/StealthMonster_AirSpider_ReflectAndExplode (6)/States/Attacks/[2]Explosion@BossGeneralState",
+      "$id": "/States/Attacks/[2]Explosion@[2]Explosion",
+      "$component": "[2]Explosion",
       "state": "MonsterBase+States.Attack2",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -58,11 +62,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Attack3": {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/StealthMonster_AirSpider_ReflectAndExplode (6)/States/Attacks/[3]FollowChaseHitPlayer(QuickVer航母版)@BossGeneralState",
+      "$id": "/States/Attacks/[3]FollowChaseHitPlayer(QuickVer航母版)@[3]FollowChaseHitPlayer(QuickVer航母版)",
+      "$component": "[3]FollowChaseHitPlayer(QuickVer航母版)",
       "state": "MonsterBase+States.Attack1",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -102,11 +108,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Attack4": {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/StealthMonster_AirSpider_ReflectAndExplode (6)/States/Attacks/[4]Forward Chase 直射@BossGeneralState",
+      "$id": "/States/Attacks/[4]Forward Chase 直射@[4]Forward Chase 直射",
+      "$component": "[4]Forward Chase 直射",
       "state": "MonsterBase+States.Attack1",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -130,11 +138,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.AttackParrying1": {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/StealthMonster_AirSpider_ReflectAndExplode (6)/States/[1]AttackParrying@BossGeneralState",
+      "$id": "/States/[1]AttackParrying@[1]AttackParrying",
+      "$component": "[1]AttackParrying",
       "state": "MonsterBase+States.AttackParrying1",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -154,11 +164,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Hurt": {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/StealthMonster_AirSpider_ReflectAndExplode (6)/States/Hurt1@BossGeneralState",
+      "$id": "/States/Hurt1@Hurt1",
+      "$component": "Hurt1",
       "state": "MonsterBase+States.Hurt",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -178,11 +190,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Hurt_Big": {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/StealthMonster_AirSpider_ReflectAndExplode (6)/States/Hurt2@BossGeneralState",
+      "$id": "/States/Hurt2@Hurt2",
+      "$component": "Hurt2",
       "state": "MonsterBase+States.Hurt_Big",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -202,11 +216,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Sit": {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/StealthMonster_AirSpider_ReflectAndExplode (6)/States/Sleep@BossGeneralState",
+      "$id": "/States/Sleep@Sleep",
+      "$component": "Sleep",
       "state": "MonsterBase+States.Sit",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -226,11 +242,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.StandUp": {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/StealthMonster_AirSpider_ReflectAndExplode (6)/States/WakeUp@BossGeneralState",
+      "$id": "/States/WakeUp@WakeUp",
+      "$component": "WakeUp",
       "state": "MonsterBase+States.StandUp",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -256,9 +274,10 @@
   },
   "OtherStates": {
     "MonsterBase+States.WanderingIdle": {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/StealthMonster_AirSpider_ReflectAndExplode (6)/States/Idle@WanderingIdleState",
+      "$id": "/States/Idle@Idle",
+      "$component": "Idle",
       "newPosTime": -1.0,
-      "configSetting": "WanderingIdleState+ConfigWanderingSetting.Undefined",
+      "configSetting": "WanderingIdleState+ConfigWanderingSetting.HasWandering",
       "newPosTimer": -1.0,
       "DecaySpeed": true,
       "DecaySpeedValue": 100.0,
@@ -273,20 +292,21 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Wandering": {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/StealthMonster_AirSpider_ReflectAndExplode (6)/States/Wandering@FlyingMonsterWandering",
+      "$id": "/States/Wandering@Wandering",
+      "$component": "Wandering",
       "wanderingPos": {
-        "x": -26.5,
-        "y": -4340.0,
+        "x": -352.0,
+        "y": -3684.0,
         "z": 0.0
       },
       "maxWanderingLength": 30.0,
       "wanderingIdleLength": 5.0,
       "forceRelocateWanderingLocationTime": 5.0,
-      "forceRelocateWanderingLocationTimer": 0.0,
+      "forceRelocateWanderingLocationTimer": 4.9831686,
       "patrolPoints": [
         {
           "position": {
-            "x": -81.5,
+            "x": 40.0,
             "y": 0.0,
             "z": 0.0
           },
@@ -304,7 +324,7 @@
         },
         {
           "position": {
-            "x": 85.6000061,
+            "x": -40.00009,
             "y": 0.0,
             "z": 0.0
           },
@@ -335,7 +355,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Engaging": {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/StealthMonster_AirSpider_ReflectAndExplode (6)/States/Engaging@FlyingMonsterEngaging",
+      "$id": "/States/Engaging@Engaging",
+      "$component": "Engaging",
       "state": "MonsterBase+States.Engaging",
       "MaxDirectionThreashold": 50.0,
       "DelayTargetTime": 0.0,
@@ -344,7 +365,55 @@
         "x": 0.0,
         "y": 20.0
       },
-      "PlayerOnTheRight": null,
+      "PlayerOnTheRight": {
+        "extendFalseTimeCheck": null,
+        "_autoDestroy": false,
+        "_actionDone": null,
+        "_owner": null,
+        "_check": {
+          "delegates": null,
+          "method_ptr": {
+            "value": 2183729134400
+          },
+          "invoke_impl": {
+            "value": 2174626701440
+          },
+          "m_target": {
+            "$ref": "/States/Engaging@Engaging"
+          },
+          "method": {
+            "value": 2180078707528
+          },
+          "delegate_trampoline": {
+            "value": 0
+          },
+          "extra_arg": {
+            "value": 0
+          },
+          "method_code": {
+            "value": 2185243169256
+          },
+          "interp_method": {
+            "value": 0
+          },
+          "interp_invoke_impl": {
+            "value": 0
+          },
+          "method_info": null,
+          "original_method_info": null,
+          "data": null,
+          "method_is_virtual": false
+        },
+        "_isTrueTimer": 0.0,
+        "_isFalseTimer": "Infinity",
+        "activated": true,
+        "CustomBufferTime": 0.09,
+        "IsCanceled": false,
+        "_result": false,
+        "onResultChanged": null,
+        "result": false,
+        "OnResultChanged": null
+      },
       "detectMode": "DetectGroundMode.SelfGround",
       "KeepYDistance": false,
       "KeepDistanceToGround": 100.0,
@@ -386,20 +455,21 @@
       "VariationRatio": 0.2
     },
     "MonsterBase+States.Dead": {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/StealthMonster_AirSpider_ReflectAndExplode (6)/States/MonsterSharedStates/DeadState@MonsterDeadState",
+      "$id": "/States/MonsterSharedStates/DeadState@DeadState",
+      "$component": "DeadState",
       "shootEvent": "UnityEvent(0)",
       "_selfDestructClip": null,
       "IsDeadShooted": false,
       "IsRemoveDeadBody": true,
       "hitData": null,
       "deadNoiseEffect": {
-        "$ref": "A1_S2_GameLevel/Room/Prefab/GamePlay6/StealthMonster_AirSpider_ReflectAndExplode (6)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/EventBroadcastSystem/Dead Noise@EffectDealer"
+        "$ref": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/EventBroadcastSystem/Dead Noise@Dead Noise"
       },
       "IsEnterClearVelX": false,
       "DeadValue": [],
       "overrideByTimeline": null,
       "monsterViewDummy": null,
-      "_isCulling": false,
+      "_isCulling": true,
       "clip": [
         {
           "Time": 0.25,
@@ -411,7 +481,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.OutOfReach": {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/StealthMonster_AirSpider_ReflectAndExplode (6)/States/Out of Reach@StealthOutOfReachState",
+      "$id": "/States/Out of Reach@Out of Reach",
+      "$component": "Out of Reach",
       "MinStateTime": 0.5,
       "OutOfReachReason": "OutOfReachState",
       "clip": [
@@ -425,7 +496,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Confused": {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/StealthMonster_AirSpider_ReflectAndExplode (6)/States/3_Confuse@StealthConfuse",
+      "$id": "/States/3_Confuse@3_Confuse",
+      "$component": "3_Confuse",
       "_confuseSoundPlayer": null,
       "clip": [
         {
@@ -438,7 +510,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.TurnAround": {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/StealthMonster_AirSpider_ReflectAndExplode (6)/States/TurnAround@StealthTurnAround",
+      "$id": "/States/TurnAround@TurnAround",
+      "$component": "TurnAround",
       "_currentAnimState": null,
       "engagingTurnAroundAnimation": {
         "stateName": "EngagingTurnAround",
@@ -473,7 +546,8 @@
     }
   },
   "HurtInterrupt": {
-    "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/StealthMonster_AirSpider_ReflectAndExplode (6)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/HurtInterrupt@MonsterHurtInterrupt",
+    "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/HurtInterrupt@HurtInterrupt",
+    "$component": "HurtInterrupt",
     "customInterruptTH": -1.0,
     "IsHurtInterruptChangeState": true,
     "IsForcePlayingBigHurtAnimation": false,
@@ -483,7 +557,8 @@
     "linkMoveWeights": []
   },
   "TeleportBinding": {
-    "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/StealthMonster_AirSpider_ReflectAndExplode (6)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Teleport@TeleportBinding",
+    "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Teleport@Teleport",
+    "$component": "Teleport",
     "teleportScheme": "TeleportBinding+TeleportScheme.ToPlayerPosition",
     "offsetCandidates": [],
     "offset": {
@@ -495,18 +570,20 @@
   },
   "AttackSensors": [
     {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/StealthMonster_AirSpider_ReflectAndExplode (6)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor@Level Once Sensor",
+      "$component": "Level Once Sensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [
         {
-          "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/StealthMonster_AirSpider_ReflectAndExplode (6)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor/weight@LinkNextMoveStateWeight",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
           "stateWeightList": [
             {
-              "StateType": "MonsterBase+States.Undefined",
+              "StateType": "MonsterBase+States.Skip",
               "Weight": 1
             }
           ]
@@ -545,7 +622,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/StealthMonster_AirSpider_ReflectAndExplode (6)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/0_RunAwaySensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/0_RunAwaySensor@0_RunAwaySensor",
+      "$component": "0_RunAwaySensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [],
@@ -557,7 +635,7 @@
       ],
       "AttackDelayMin": 0.0,
       "AttackDelayMax": 0.5,
-      "currentAttackDelay": 0.3375321,
+      "currentAttackDelay": 0.169132322,
       "coolDownType": "CooldownTokenType.NoCoolDown",
       "_stateCoolDownProvider": null,
       "coolDownStat": null,
@@ -582,7 +660,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/StealthMonster_AirSpider_ReflectAndExplode (6)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor@1_AttackSensor",
+      "$component": "1_AttackSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [],
@@ -619,7 +698,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/StealthMonster_AirSpider_ReflectAndExplode (6)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor@2_DodgePredictSensor",
+      "$component": "2_DodgePredictSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [],
@@ -631,7 +711,7 @@
       ],
       "AttackDelayMin": 0.0,
       "AttackDelayMax": 0.5,
-      "currentAttackDelay": 0.228561252,
+      "currentAttackDelay": 0.451187253,
       "coolDownType": "CooldownTokenType.NoCoolDown",
       "_stateCoolDownProvider": null,
       "coolDownStat": null,
@@ -650,7 +730,8 @@
       "conditions": [],
       "_conditions": [
         {
-          "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/StealthMonster_AirSpider_ReflectAndExplode (6)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor/rollingCondition@PlayerMovePredictCondition",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor/rollingCondition@rollingCondition",
+          "$component": "rollingCondition",
           "ParryDetect": false,
           "DodgeDetect": true,
           "JumpDetect": false,

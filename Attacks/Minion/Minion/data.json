@@ -1,12 +1,14 @@
 {
-  "InitState": "MonsterBase+States.WanderingIdle",
+  "InitState": "MonsterBase+States.Wandering",
   "BossGeneralStates": {
     "MonsterBase+States.Attack1": {
-      "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/States/Attacks/[1]Attack@BossGeneralState",
+      "$id": "/States/Attacks/[1]Attack@[1]Attack",
+      "$component": "[1]Attack",
       "state": "MonsterBase+States.Attack1",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -38,12 +40,14 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.PostureBreak": {
-      "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/States/PostureBreak@PostureBreakState",
+      "$id": "/States/PostureBreak@PostureBreak",
+      "$component": "PostureBreak",
       "postureBreakAmmoSpawner": null,
       "state": "MonsterBase+States.Undefined",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -67,11 +71,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Hurt": {
-      "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/States/HurtState@BossGeneralState",
+      "$id": "/States/HurtState@HurtState",
+      "$component": "HurtState",
       "state": "MonsterBase+States.Hurt",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -91,11 +97,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.AttackParrying1": {
-      "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/States/AttackParrying@BossGeneralState",
+      "$id": "/States/AttackParrying@AttackParrying",
+      "$component": "AttackParrying",
       "state": "MonsterBase+States.AttackParrying1",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -123,11 +131,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Hurt_Big": {
-      "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/States/Hurt_BigState@BossGeneralState",
+      "$id": "/States/Hurt_BigState@Hurt_BigState",
+      "$component": "Hurt_BigState",
       "state": "MonsterBase+States.Hurt_Big",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -149,16 +159,17 @@
   },
   "OtherStates": {
     "MonsterBase+States.WanderingIdle": {
-      "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/States/0_Wandering_Idle@StealthWanderingIdle",
+      "$id": "/States/0_Wandering_Idle@0_Wandering_Idle",
+      "$component": "0_Wandering_Idle",
       "originalPos": {
-        "x": -5268.0,
-        "y": -1888.0,
+        "x": -2760.0,
+        "y": -2752.0,
         "z": 0.0
       },
-      "originalFacing": "Facings.Left",
+      "originalFacing": "Facings.Right",
       "SinglePointIdle": false,
-      "newPosTime": 3.0,
-      "newPosTimer": 2.98354626,
+      "newPosTime": 2.5,
+      "newPosTimer": 2.5,
       "IsNewPosRandom": false,
       "configSetting": "StealthWanderingIdle+ConfigWanderingSetting.Undefined",
       "clip": [
@@ -172,15 +183,49 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Wandering": {
-      "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/States/0_Wandering_Walking@StealthWandering",
+      "$id": "/States/0_Wandering_Walking@0_Wandering_Walking",
+      "$component": "0_Wandering_Walking",
       "MaxRun": 60.0,
       "RunAccel": 100.0,
       "RunReduce": 400.0,
       "wanderingPointGenerator": {
-        "$ref": "A2_S1/Room/Prefab/Gameplay4/WanderingPoints@LoopWanderingPointGenerator"
+        "$ref": "A1_S1_GameLevel/Room/GamePlayS2_1/Part1_Room/EngagingTokenFirstRoom/WanderingPoints@WanderingPoints"
       },
       "FailReason": "",
-      "preAllocateGotoTargetSuccess": null,
+      "preAllocateGotoTargetSuccess": {
+        "delegates": null,
+        "method_ptr": {
+          "value": 2183708824640
+        },
+        "invoke_impl": {
+          "value": 2174626701440
+        },
+        "m_target": {
+          "$ref": "/States/0_Wandering_Walking@0_Wandering_Walking"
+        },
+        "method": {
+          "value": 2180079852216
+        },
+        "delegate_trampoline": {
+          "value": 0
+        },
+        "extra_arg": {
+          "value": 0
+        },
+        "method_code": {
+          "value": 2184140250824
+        },
+        "interp_method": {
+          "value": 0
+        },
+        "interp_invoke_impl": {
+          "value": 0
+        },
+        "method_info": null,
+        "original_method_info": null,
+        "data": null,
+        "method_is_virtual": false
+      },
       "OnAirMoveSpeed": 0.65,
       "canTurnAround": true,
       "clip": [
@@ -194,11 +239,12 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Alerted": {
-      "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/States/Alert@StealthAlertState",
+      "$id": "/States/Alert@Alert",
+      "$component": "Alert",
       "_alertSoundPlayer": null,
       "customStartScoutTime": -1.0,
       "lookAroundParma": {
-        "$ref": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/States/0_Wandering_Walking@MoveParam"
+        "$ref": "/States/0_Wandering_Walking@0_Wandering_Walking"
       },
       "clip": [
         {
@@ -211,7 +257,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Engaging": {
-      "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/States/1_Engaging@StealthEngaging",
+      "$id": "/States/1_Engaging@1_Engaging",
+      "$component": "1_Engaging",
       "IsEngagingInstantAttack": false,
       "ForceRunToPlayer": false,
       "beforeTransitionClip": null,
@@ -232,12 +279,14 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.PreAttack": {
-      "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/States/1_PreAttack@StealthPreAttackState",
+      "$id": "/States/1_PreAttack@1_PreAttack",
+      "$component": "1_PreAttack",
       "exitPreAttackCoolDown": 2.0,
       "ChangeToEngageDelayTime": 0.0,
       "ApproachingSchemes": [
         {
-          "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/States/1_PreAttack/preAttack@StealthEngagingScheme",
+          "$id": "/States/1_PreAttack/preAttack@preAttack",
+          "$component": "preAttack",
           "EnterApproachingRange": 90,
           "EnterApproachingRangeRandomOffset": 20,
           "ExitApproachingRange": 145,
@@ -282,7 +331,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Panic": {
-      "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/States/Not See Player/1_Panic@StealthPanicState",
+      "$id": "/States/Not See Player/1_Panic@1_Panic",
+      "$component": "1_Panic",
       "isDone": false,
       "MinStateTime": 0.5,
       "clip": [
@@ -296,7 +346,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.OutOfReach": {
-      "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/States/Not See Player/3_Out of Reach@StealthOutOfReachState",
+      "$id": "/States/Not See Player/3_Out of Reach@3_Out of Reach",
+      "$component": "3_Out of Reach",
       "MinStateTime": 0.5,
       "OutOfReachReason": "OutOfReachState",
       "clip": [
@@ -310,9 +361,10 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Confused": {
-      "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/States/Not See Player/4_Confuse@StealthConfuse",
+      "$id": "/States/Not See Player/4_Confuse@4_Confuse",
+      "$component": "4_Confuse",
       "_confuseSoundPlayer": {
-        "$ref": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/States/Not See Player/4_Confuse/confuseSound@SoundPlayer"
+        "$ref": "/States/Not See Player/4_Confuse/confuseSound@confuseSound"
       },
       "clip": [
         {
@@ -325,8 +377,20 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.TurnAround": {
-      "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/States/TurnAround@StealthTurnAround",
-      "_currentAnimState": null,
+      "$id": "/States/TurnAround@TurnAround",
+      "$component": "TurnAround",
+      "_currentAnimState": {
+        "stateName": "TurnAround",
+        "prototypeClip": [
+          {
+            "Time": 0.416666657,
+            "Event": "AnimationEvents+AnimationEvent.Done"
+          }
+        ],
+        "_cachedBaseClipName": null,
+        "overrideStateType": "MonsterBase+States.Undefined",
+        "note": ""
+      },
       "engagingTurnAroundAnimation": {
         "stateName": "EngagingTurnAround",
         "prototypeClip": [
@@ -355,14 +419,15 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Dead": {
-      "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/States/DeadState@MonsterDeadState",
+      "$id": "/States/DeadState@DeadState",
+      "$component": "DeadState",
       "shootEvent": "UnityEvent(0)",
       "_selfDestructClip": null,
       "IsDeadShooted": false,
       "IsRemoveDeadBody": true,
       "hitData": null,
       "deadNoiseEffect": {
-        "$ref": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/EventBroadcastSystem/Dead Noise@EffectDealer"
+        "$ref": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/EventBroadcastSystem/Dead Noise@Dead Noise"
       },
       "IsEnterClearVelX": true,
       "DeadValue": [],
@@ -380,7 +445,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.MoveToPosition": {
-      "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/States/MoveToState@StealthMoveToState",
+      "$id": "/States/MoveToState@MoveToState",
+      "$component": "MoveToState",
       "targetPos": {
         "x": 0.0,
         "y": 0.0,
@@ -399,7 +465,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Sit": {
-      "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/States/Seat@StealthSeatState",
+      "$id": "/States/Seat@Seat",
+      "$component": "Seat",
       "isSitDown": false,
       "clip": [
         {
@@ -413,7 +480,8 @@
     }
   },
   "HurtInterrupt": {
-    "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/HurtInterrupt@MonsterHurtInterrupt",
+    "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/HurtInterrupt@HurtInterrupt",
+    "$component": "HurtInterrupt",
     "customInterruptTH": -1.0,
     "IsHurtInterruptChangeState": true,
     "IsForcePlayingBigHurtAnimation": false,
@@ -423,7 +491,8 @@
     "linkMoveWeights": []
   },
   "TeleportBinding": {
-    "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Teleport@TeleportBinding",
+    "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Teleport@Teleport",
+    "$component": "Teleport",
     "teleportScheme": "TeleportBinding+TeleportScheme.ToPlayerPosition",
     "offsetCandidates": [],
     "offset": {
@@ -435,18 +504,20 @@
   },
   "AttackSensors": [
     {
-      "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor@Level Once Sensor",
+      "$component": "Level Once Sensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [
         {
-          "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor/weight@LinkNextMoveStateWeight",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
           "stateWeightList": [
             {
-              "StateType": "MonsterBase+States.Undefined",
+              "StateType": "MonsterBase+States.Attack1",
               "Weight": 1
             }
           ]
@@ -485,7 +556,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/0_RunAwaySensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/0_RunAwaySensor@0_RunAwaySensor",
+      "$component": "0_RunAwaySensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [],
@@ -497,7 +569,7 @@
       ],
       "AttackDelayMin": 0.0,
       "AttackDelayMax": 0.5,
-      "currentAttackDelay": 0.274786443,
+      "currentAttackDelay": 0.450915754,
       "coolDownType": "CooldownTokenType.NoCoolDown",
       "_stateCoolDownProvider": null,
       "coolDownStat": null,
@@ -522,7 +594,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor@1_AttackSensor",
+      "$component": "1_AttackSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.PreAttackOnly",
       "AttackWeightPhaseList": [],
@@ -534,7 +607,7 @@
       ],
       "AttackDelayMin": 0.0,
       "AttackDelayMax": 0.5,
-      "currentAttackDelay": 0.0116731524,
+      "currentAttackDelay": 0.22451219,
       "coolDownType": "CooldownTokenType.NormalAttack",
       "_stateCoolDownProvider": null,
       "coolDownStat": {
@@ -586,7 +659,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor@2_DodgePredictSensor",
+      "$component": "2_DodgePredictSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [],
@@ -631,7 +705,8 @@
       "conditions": [],
       "_conditions": [
         {
-          "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor/rollingCondition@PlayerMovePredictCondition",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor/rollingCondition@rollingCondition",
+          "$component": "rollingCondition",
           "ParryDetect": false,
           "DodgeDetect": true,
           "JumpDetect": false,
@@ -654,12 +729,14 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor@3_AttackPredictSensor",
+      "$component": "3_AttackPredictSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [
         {
-          "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/weight@LinkNextMoveStateWeight",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
@@ -693,7 +770,8 @@
       "conditions": [],
       "_conditions": [
         {
-          "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/attackCondition@PlayerMovePredictCondition",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/attackCondition@attackCondition",
+          "$component": "attackCondition",
           "ParryDetect": false,
           "DodgeDetect": false,
           "JumpDetect": false,
@@ -716,7 +794,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackRunToSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackRunToSensor@1_AttackRunToSensor",
+      "$component": "1_AttackRunToSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingOnly",
       "AttackWeightPhaseList": [],
@@ -767,7 +846,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A2_S1/Room/Prefab/Gameplay4/StealthGameMonster_Minion (1)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_TouchSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_TouchSensor@3_TouchSensor",
+      "$component": "3_TouchSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [],

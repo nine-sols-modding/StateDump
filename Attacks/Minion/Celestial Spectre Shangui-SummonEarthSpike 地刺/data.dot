@@ -1,0 +1,36 @@
+strict digraph "Foo" {
+	"rankdir"="LR";
+	node ["shape"="box","fontname"="Helvetica"];
+	edge ["fontname"="Helvetica"];
+	subgraph "cluster_attacksensors" {
+		"rank"="sink";
+		"label"="Attack Sensors";
+		"fontname"="Helvetica";
+		"Level Once Sensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>Level Once Sensor  </TD></TR></TABLE>>]
+		"RunAwaySensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>RunAwaySensor  </TD></TR></TABLE>>]
+		"AttackSensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>AttackSensor  </TD></TR></TABLE>>]
+		"DodgePredictSensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>DodgePredictSensor  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">if: rollingCondition</FONT>  </TD></TR></TABLE>>]
+		"AttackPredictSensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>AttackPredictSensor  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">if: attackCondition</FONT>  </TD></TR></TABLE>>]
+		"AttackRunToSensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>AttackRunToSensor  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">if: state is Engaging</FONT>  </TD></TR></TABLE>>]
+	}
+	
+	"AttackParrying" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"AttackParrying" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>AttackParrying  </TD></TR></TABLE>>]
+	"HurtState" -> "PreAttack"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"HurtState" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>HurtState  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.17s: Done</FONT>  </TD></TR></TABLE>>]
+	"Hurt_BigState" -> "PreAttack"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"Hurt_BigState" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>Hurt_BigState  </TD></TR></TABLE>>]
+	"JumpBack" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"JumpBack" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>JumpBack  </TD></TR></TABLE>>]
+	"PostureBreak" -> "PreAttack"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"PostureBreak" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>PostureBreak  </TD></TR></TABLE>>]
+	"RollThrough" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"RollThrough" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>RollThrough  </TD></TR></TABLE>>]
+	"StandUp" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"StandUp" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>StandUp  </TD></TR></TABLE>>]
+	"ZEnterState" -> "Wandering_Idle"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"ZEnterState" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>ZEnterState  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">1.08s: Done</FONT>  </TD></TR></TABLE>>]
+	"ZExitState" -> "ZEnterState"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"ZExitState" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>ZExitState  </TD></TR></TABLE>>]
+	"ZEnterState" ["label"="ZEnterState (Init)"]
+}

@@ -2,11 +2,13 @@
   "InitState": "MonsterBase+States.WanderingIdle",
   "BossGeneralStates": {
     "MonsterBase+States.RollThrough": {
-      "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/States/RollThrough@BossGeneralState",
+      "$id": "/States/RollThrough@RollThrough",
+      "$component": "RollThrough",
       "state": "MonsterBase+States.RollThrough",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -30,7 +32,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Attack4": {
-      "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/States/Attacks/[3]Danger@BossGeneralState",
+      "$id": "/States/Attacks/[3]Danger@[3]Danger",
+      "$component": "[3]Danger",
       "state": "MonsterBase+States.Attack1",
       "linkedStateTypes": [
         "MonsterBase+States.Attack2",
@@ -39,6 +42,7 @@
       ],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -58,7 +62,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Attack5": {
-      "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/States/Attacks/[5]Top Tele Danger@BossGeneralState",
+      "$id": "/States/Attacks/[5]Top Tele Danger@[5]Top Tele Danger",
+      "$component": "[5]Top Tele Danger",
       "state": "MonsterBase+States.Attack1",
       "linkedStateTypes": [
         "MonsterBase+States.Attack2",
@@ -67,6 +72,7 @@
       ],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -90,12 +96,14 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.PostureBreak": {
-      "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/States/PostureBreak@PostureBreakState",
+      "$id": "/States/PostureBreak@PostureBreak",
+      "$component": "PostureBreak",
       "postureBreakAmmoSpawner": null,
       "state": "MonsterBase+States.Undefined",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -119,11 +127,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Hurt": {
-      "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/States/HurtState@BossGeneralState",
+      "$id": "/States/HurtState@HurtState",
+      "$component": "HurtState",
       "state": "MonsterBase+States.Hurt",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -143,11 +153,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.LastHit": {
-      "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/States/LastHit@BossGeneralState",
+      "$id": "/States/LastHit@LastHit",
+      "$component": "LastHit",
       "state": "MonsterBase+States.LastHit",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -171,11 +183,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Hurt_Big": {
-      "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/States/Hurt_BigState@BossGeneralState",
+      "$id": "/States/Hurt_BigState@Hurt_BigState",
+      "$component": "Hurt_BigState",
       "state": "MonsterBase+States.Hurt_Big",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -201,7 +215,8 @@
   },
   "OtherStates": {
     "MonsterBase+States.WanderingIdle": {
-      "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/States/0_Wandering_Idle@StealthWanderingIdle",
+      "$id": "/States/0_Wandering_Idle@0_Wandering_Idle",
+      "$component": "0_Wandering_Idle",
       "originalPos": {
         "x": 0.0,
         "y": 0.0,
@@ -224,12 +239,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Wandering": {
-      "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/States/0_Wandering_Walking@StealthWandering",
+      "$id": "/States/0_Wandering_Walking@0_Wandering_Walking",
+      "$component": "0_Wandering_Walking",
       "MaxRun": 72.0,
       "RunAccel": 100.0,
       "RunReduce": 400.0,
       "wanderingPointGenerator": {
-        "$ref": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/States/0_Wandering_Walking/WanderingPoints@LoopWanderingPointGenerator"
+        "$ref": "/States/0_Wandering_Walking/WanderingPoints@WanderingPoints"
       },
       "FailReason": "",
       "preAllocateGotoTargetSuccess": null,
@@ -246,11 +262,12 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Alerted": {
-      "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/States/Alert@StealthAlertState",
+      "$id": "/States/Alert@Alert",
+      "$component": "Alert",
       "_alertSoundPlayer": null,
       "customStartScoutTime": -1.0,
       "lookAroundParma": {
-        "$ref": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/States/0_Wandering_Walking@MoveParam"
+        "$ref": "/States/0_Wandering_Walking@0_Wandering_Walking"
       },
       "clip": [
         {
@@ -263,7 +280,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Engaging": {
-      "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/States/1_Engaging@StealthEngaging",
+      "$id": "/States/1_Engaging@1_Engaging",
+      "$component": "1_Engaging",
       "IsEngagingInstantAttack": false,
       "ForceRunToPlayer": false,
       "beforeTransitionClip": null,
@@ -284,12 +302,14 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.PreAttack": {
-      "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/States/1_PreAttack@StealthPreAttackState",
+      "$id": "/States/1_PreAttack@1_PreAttack",
+      "$component": "1_PreAttack",
       "exitPreAttackCoolDown": 2.0,
       "ChangeToEngageDelayTime": 0.0,
       "ApproachingSchemes": [
         {
-          "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/States/1_PreAttack/preAttack@StealthEngagingScheme",
+          "$id": "/States/1_PreAttack/preAttack@preAttack",
+          "$component": "preAttack",
           "EnterApproachingRange": 120,
           "EnterApproachingRangeRandomOffset": 10,
           "ExitApproachingRange": 200,
@@ -334,7 +354,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Panic": {
-      "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/States/Not See Player/1_Panic@StealthPanicState",
+      "$id": "/States/Not See Player/1_Panic@1_Panic",
+      "$component": "1_Panic",
       "isDone": false,
       "MinStateTime": 0.5,
       "clip": [
@@ -348,7 +369,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.OutOfReach": {
-      "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/States/Not See Player/3_Out of Reach@StealthOutOfReachState",
+      "$id": "/States/Not See Player/3_Out of Reach@3_Out of Reach",
+      "$component": "3_Out of Reach",
       "MinStateTime": 0.5,
       "OutOfReachReason": "OutOfReachState",
       "clip": [
@@ -362,9 +384,10 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Confused": {
-      "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/States/Not See Player/4_Confuse@StealthConfuse",
+      "$id": "/States/Not See Player/4_Confuse@4_Confuse",
+      "$component": "4_Confuse",
       "_confuseSoundPlayer": {
-        "$ref": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/States/Not See Player/4_Confuse/confuseSound@SoundPlayer"
+        "$ref": "/States/Not See Player/4_Confuse/confuseSound@confuseSound"
       },
       "clip": [
         {
@@ -377,7 +400,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.TurnAround": {
-      "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/States/TurnAround@StealthTurnAround",
+      "$id": "/States/TurnAround@TurnAround",
+      "$component": "TurnAround",
       "_currentAnimState": null,
       "engagingTurnAroundAnimation": {
         "stateName": "EngagingTurnAround",
@@ -411,14 +435,15 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Dead": {
-      "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/States/DeadState@MonsterDeadState",
+      "$id": "/States/DeadState@DeadState",
+      "$component": "DeadState",
       "shootEvent": "UnityEvent(0)",
       "_selfDestructClip": null,
       "IsDeadShooted": false,
       "IsRemoveDeadBody": true,
       "hitData": null,
       "deadNoiseEffect": {
-        "$ref": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/EventBroadcastSystem/Dead Noise@EffectDealer"
+        "$ref": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/EventBroadcastSystem/Dead Noise@Dead Noise"
       },
       "IsEnterClearVelX": true,
       "DeadValue": [],
@@ -440,7 +465,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.MoveToPosition": {
-      "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/States/MoveToState@StealthMoveToState",
+      "$id": "/States/MoveToState@MoveToState",
+      "$component": "MoveToState",
       "targetPos": {
         "x": 0.0,
         "y": 0.0,
@@ -460,7 +486,8 @@
     }
   },
   "HurtInterrupt": {
-    "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/HurtInterrupt@MonsterHurtInterrupt",
+    "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/HurtInterrupt@HurtInterrupt",
+    "$component": "HurtInterrupt",
     "customInterruptTH": -1.0,
     "IsHurtInterruptChangeState": true,
     "IsForcePlayingBigHurtAnimation": false,
@@ -470,7 +497,8 @@
     "linkMoveWeights": []
   },
   "TeleportBinding": {
-    "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Teleport@TeleportBinding",
+    "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Teleport@Teleport",
+    "$component": "Teleport",
     "teleportScheme": "TeleportBinding+TeleportScheme.ToPlayerPosition",
     "offsetCandidates": [],
     "offset": {
@@ -482,7 +510,8 @@
   },
   "AttackSensors": [
     {
-      "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor@Level Once Sensor",
+      "$component": "Level Once Sensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [],
@@ -519,7 +548,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/0_RunAwaySensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/0_RunAwaySensor@0_RunAwaySensor",
+      "$component": "0_RunAwaySensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [],
@@ -556,12 +586,13 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor@1_AttackSensor",
+      "$component": "1_AttackSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [],
       "testWeight": {
-        "$ref": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor/test@TestStateWeight"
+        "$ref": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor/test@test"
       },
       "OnlySameArea": false,
       "OnlyMonsterCanSeePlayer": true,
@@ -602,7 +633,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor@2_DodgePredictSensor",
+      "$component": "2_DodgePredictSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [],
@@ -633,7 +665,8 @@
       "conditions": [],
       "_conditions": [
         {
-          "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor/rollingCondition@PlayerMovePredictCondition",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor/rollingCondition@rollingCondition",
+          "$component": "rollingCondition",
           "ParryDetect": false,
           "DodgeDetect": true,
           "JumpDetect": false,
@@ -656,12 +689,14 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor@3_AttackPredictSensor",
+      "$component": "3_AttackPredictSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [
         {
-          "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/weight@LinkNextMoveStateWeight",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
@@ -695,7 +730,8 @@
       "conditions": [],
       "_conditions": [
         {
-          "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/attackCondition@PlayerMovePredictCondition",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/attackCondition@attackCondition",
+          "$component": "attackCondition",
           "ParryDetect": false,
           "DodgeDetect": false,
           "JumpDetect": false,
@@ -718,7 +754,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackRunToSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackRunToSensor@1_AttackRunToSensor",
+      "$component": "1_AttackRunToSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingOnly",
       "AttackWeightPhaseList": [],
@@ -755,26 +792,28 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor@3_AttackPredictSensor",
+      "$component": "3_AttackPredictSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.AllValid",
       "AttackWeightPhaseList": [
         {
-          "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/weight@LinkNextMoveStateWeight",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
           "stateWeightList": [
             {
-              "StateType": "MonsterBase+States.Undefined",
+              "StateType": "MonsterBase+States.Skip",
               "Weight": 1
             },
             {
-              "StateType": "MonsterBase+States.Undefined",
+              "StateType": "MonsterBase+States.Skip",
               "Weight": 1
             },
             {
-              "StateType": "MonsterBase+States.Undefined",
+              "StateType": "MonsterBase+States.Skip",
               "Weight": 0
             }
           ]
@@ -816,7 +855,8 @@
       "conditions": [],
       "_conditions": [
         {
-          "$id": "StealthGameMonster_NinjaWaterGhostMiniBoss 水鬼小王 AfterImage Variant(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/attackCondition@PlayerMovePredictCondition",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/attackCondition@attackCondition",
+          "$component": "attackCondition",
           "ParryDetect": false,
           "DodgeDetect": false,
           "JumpDetect": false,

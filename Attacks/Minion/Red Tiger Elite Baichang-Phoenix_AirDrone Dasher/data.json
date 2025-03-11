@@ -2,11 +2,13 @@
   "InitState": "MonsterBase+States.WanderingIdle",
   "BossGeneralStates": {
     "MonsterBase+States.Attack1": {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_Phoenix_AirDrone Dasher/States/Attacks/[1]FlyingDashAttack@BossGeneralState",
+      "$id": "/States/Attacks/[1]FlyingDashAttack@[1]FlyingDashAttack",
+      "$component": "[1]FlyingDashAttack",
       "state": "MonsterBase+States.Attack1",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -30,11 +32,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Hurt": {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_Phoenix_AirDrone Dasher/States/Hurt1@BossGeneralState",
+      "$id": "/States/Hurt1@Hurt1",
+      "$component": "Hurt1",
       "state": "MonsterBase+States.Hurt",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -54,11 +58,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Hurt_Big": {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_Phoenix_AirDrone Dasher/States/Hurt2@BossGeneralState",
+      "$id": "/States/Hurt2@Hurt2",
+      "$component": "Hurt2",
       "state": "MonsterBase+States.Hurt_Big",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -80,7 +86,8 @@
   },
   "OtherStates": {
     "MonsterBase+States.WanderingIdle": {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_Phoenix_AirDrone Dasher/States/Idle@WanderingIdleState",
+      "$id": "/States/Idle@Idle",
+      "$component": "Idle",
       "newPosTime": 3.0,
       "configSetting": "WanderingIdleState+ConfigWanderingSetting.HasWandering",
       "newPosTimer": 3.0,
@@ -92,7 +99,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Wandering": {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_Phoenix_AirDrone Dasher/States/Wandering@FlyingMonsterWandering",
+      "$id": "/States/Wandering@Wandering",
+      "$component": "Wandering",
       "wanderingPos": {
         "x": -84.0,
         "y": -4376.0,
@@ -149,7 +157,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Engaging": {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_Phoenix_AirDrone Dasher/States/Engaging@FlyingMonsterEngaging",
+      "$id": "/States/Engaging@Engaging",
+      "$component": "Engaging",
       "state": "MonsterBase+States.Engaging",
       "MaxDirectionThreashold": 50.0,
       "DelayTargetTime": 0.0,
@@ -166,16 +175,16 @@
         "_check": {
           "delegates": null,
           "method_ptr": {
-            "value": 2523184978576
+            "value": 2183729134400
           },
           "invoke_impl": {
-            "value": 2514087190656
+            "value": 2174626701440
           },
           "m_target": {
-            "$ref": "A1_S2_GameLevel/Room/Prefab/GamePlay6/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_Phoenix_AirDrone Dasher/States/Engaging@FlyingMonsterEngaging"
+            "$ref": "/States/Engaging@Engaging"
           },
           "method": {
-            "value": 2519545109944
+            "value": 2180078707528
           },
           "delegate_trampoline": {
             "value": 0
@@ -184,7 +193,7 @@
             "value": 0
           },
           "method_code": {
-            "value": 2523465397512
+            "value": 2185243169256
           },
           "interp_method": {
             "value": 0
@@ -197,14 +206,14 @@
           "data": null,
           "method_is_virtual": false
         },
-        "_isTrueTimer": 212.5736,
-        "_isFalseTimer": 0.0,
+        "_isTrueTimer": 0.0,
+        "_isFalseTimer": "Infinity",
         "activated": true,
         "CustomBufferTime": 0.09,
         "IsCanceled": false,
-        "_result": true,
+        "_result": false,
         "onResultChanged": null,
-        "result": true,
+        "result": false,
         "OnResultChanged": null
       },
       "detectMode": "DetectGroundMode.PlayerGround",
@@ -243,14 +252,15 @@
       "VariationRatio": 0.2
     },
     "MonsterBase+States.Dead": {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_Phoenix_AirDrone Dasher/States/MonsterSharedStates/DeadState@MonsterDeadState",
+      "$id": "/States/MonsterSharedStates/DeadState@DeadState",
+      "$component": "DeadState",
       "shootEvent": "UnityEvent(0)",
       "_selfDestructClip": null,
       "IsDeadShooted": false,
       "IsRemoveDeadBody": true,
       "hitData": null,
       "deadNoiseEffect": {
-        "$ref": "A1_S2_GameLevel/Room/Prefab/GamePlay6/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_Phoenix_AirDrone Dasher/MonsterCore/Animator(Proxy)/Animator/LogicRoot/EventBroadcastSystem/Dead Noise@EffectDealer"
+        "$ref": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/EventBroadcastSystem/Dead Noise@Dead Noise"
       },
       "IsEnterClearVelX": false,
       "DeadValue": [],
@@ -268,7 +278,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.OutOfReach": {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_Phoenix_AirDrone Dasher/States/Out of Reach@StealthOutOfReachState",
+      "$id": "/States/Out of Reach@Out of Reach",
+      "$component": "Out of Reach",
       "MinStateTime": 0.5,
       "OutOfReachReason": "OutOfReachState",
       "clip": [],
@@ -277,7 +288,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Confused": {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_Phoenix_AirDrone Dasher/States/3_Confuse@StealthConfuse",
+      "$id": "/States/3_Confuse@3_Confuse",
+      "$component": "3_Confuse",
       "_confuseSoundPlayer": null,
       "clip": [
         {
@@ -290,7 +302,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.TurnAround": {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_Phoenix_AirDrone Dasher/States/TurnAround@StealthTurnAround",
+      "$id": "/States/TurnAround@TurnAround",
+      "$component": "TurnAround",
       "_currentAnimState": {
         "stateName": "TurnAround",
         "prototypeClip": [
@@ -332,7 +345,8 @@
     }
   },
   "HurtInterrupt": {
-    "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_Phoenix_AirDrone Dasher/MonsterCore/Animator(Proxy)/Animator/LogicRoot/HurtInterrupt@MonsterHurtInterrupt",
+    "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/HurtInterrupt@HurtInterrupt",
+    "$component": "HurtInterrupt",
     "customInterruptTH": -1.0,
     "IsHurtInterruptChangeState": true,
     "IsForcePlayingBigHurtAnimation": false,
@@ -342,7 +356,8 @@
     "linkMoveWeights": []
   },
   "TeleportBinding": {
-    "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_Phoenix_AirDrone Dasher/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Teleport@TeleportBinding",
+    "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Teleport@Teleport",
+    "$component": "Teleport",
     "teleportScheme": "TeleportBinding+TeleportScheme.ToPlayerPosition",
     "offsetCandidates": [],
     "offset": {
@@ -354,18 +369,20 @@
   },
   "AttackSensors": [
     {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_Phoenix_AirDrone Dasher/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor@Level Once Sensor",
+      "$component": "Level Once Sensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [
         {
-          "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_Phoenix_AirDrone Dasher/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor/weight@LinkNextMoveStateWeight",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
           "stateWeightList": [
             {
-              "StateType": "MonsterBase+States.Undefined",
+              "StateType": "MonsterBase+States.Skip",
               "Weight": 1
             }
           ]
@@ -404,7 +421,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_Phoenix_AirDrone Dasher/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/0_RunAwaySensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/0_RunAwaySensor@0_RunAwaySensor",
+      "$component": "0_RunAwaySensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [],
@@ -441,7 +459,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_Phoenix_AirDrone Dasher/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor@1_AttackSensor",
+      "$component": "1_AttackSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [],
@@ -478,7 +497,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_Phoenix_AirDrone Dasher/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor@2_DodgePredictSensor",
+      "$component": "2_DodgePredictSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [],
@@ -509,7 +529,8 @@
       "conditions": [],
       "_conditions": [
         {
-          "$id": "A1_S2_GameLevel/Room/Prefab/GamePlay6/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_Phoenix_AirDrone Dasher/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor/rollingCondition@PlayerMovePredictCondition",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor/rollingCondition@rollingCondition",
+          "$component": "rollingCondition",
           "ParryDetect": false,
           "DodgeDetect": true,
           "JumpDetect": false,

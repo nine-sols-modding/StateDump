@@ -2,11 +2,13 @@
   "InitState": "MonsterBase+States.WanderingIdle",
   "BossGeneralStates": {
     "MonsterBase+States.Attack1": {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_FlyingShooter_Farm (4)/States/Attacks/[1]FlyingMonsterShootState@BossGeneralState",
+      "$id": "/States/Attacks/[1]FlyingMonsterShootState@[1]FlyingMonsterShootState",
+      "$component": "[1]FlyingMonsterShootState",
       "state": "MonsterBase+States.Attack1",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -26,11 +28,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Hurt": {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_FlyingShooter_Farm (4)/States/Hurt1@BossGeneralState",
+      "$id": "/States/Hurt1@Hurt1",
+      "$component": "Hurt1",
       "state": "MonsterBase+States.Hurt",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -50,11 +54,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Hurt_Big": {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_FlyingShooter_Farm (4)/States/Hurt2@BossGeneralState",
+      "$id": "/States/Hurt2@Hurt2",
+      "$component": "Hurt2",
       "state": "MonsterBase+States.Hurt_Big",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -74,11 +80,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.JumpEnter": {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_FlyingShooter_Farm (4)/States/SpawnEnterState@BossGeneralState",
+      "$id": "/States/SpawnEnterState@SpawnEnterState",
+      "$component": "SpawnEnterState",
       "state": "MonsterBase+States.JumpEnter",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -100,9 +108,10 @@
   },
   "OtherStates": {
     "MonsterBase+States.WanderingIdle": {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_FlyingShooter_Farm (4)/States/Idle@WanderingIdleState",
-      "newPosTime": 3.5,
-      "configSetting": "WanderingIdleState+ConfigWanderingSetting.HasWandering",
+      "$id": "/States/Idle@Idle",
+      "$component": "Idle",
+      "newPosTime": 3.0,
+      "configSetting": "WanderingIdleState+ConfigWanderingSetting.Undefined",
       "newPosTimer": 3.0,
       "DecaySpeed": true,
       "DecaySpeedValue": 100.0,
@@ -112,20 +121,21 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Wandering": {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_FlyingShooter_Farm (4)/States/Wandering@FlyingMonsterWandering",
+      "$id": "/States/Wandering@Wandering",
+      "$component": "Wandering",
       "wanderingPos": {
-        "x": -3040.0,
-        "y": -2996.0,
+        "x": 9813.5,
+        "y": -2988.0,
         "z": 0.0
       },
       "maxWanderingLength": 30.0,
       "wanderingIdleLength": 3.0,
       "forceRelocateWanderingLocationTime": 5.0,
-      "forceRelocateWanderingLocationTimer": 4.98,
+      "forceRelocateWanderingLocationTimer": 0.0,
       "patrolPoints": [
         {
           "position": {
-            "x": 44.0,
+            "x": -81.5,
             "y": 0.0,
             "z": 0.0
           },
@@ -143,7 +153,7 @@
         },
         {
           "position": {
-            "x": -48.00009,
+            "x": 85.6000061,
             "y": 0.0,
             "z": 0.0
           },
@@ -169,7 +179,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Engaging": {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_FlyingShooter_Farm (4)/States/Engaging@FlyingMonsterEngaging",
+      "$id": "/States/Engaging@Engaging",
+      "$component": "Engaging",
       "state": "MonsterBase+States.Engaging",
       "MaxDirectionThreashold": 50.0,
       "DelayTargetTime": 0.0,
@@ -178,55 +189,7 @@
         "x": 0.0,
         "y": 110.0
       },
-      "PlayerOnTheRight": {
-        "extendFalseTimeCheck": null,
-        "_autoDestroy": false,
-        "_actionDone": null,
-        "_owner": null,
-        "_check": {
-          "delegates": null,
-          "method_ptr": {
-            "value": 2523184978576
-          },
-          "invoke_impl": {
-            "value": 2514087190656
-          },
-          "m_target": {
-            "$ref": "A3_S3/Room/Prefab/Gameplay_Middle/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_FlyingShooter_Farm (4)/States/Engaging@FlyingMonsterEngaging"
-          },
-          "method": {
-            "value": 2519545109944
-          },
-          "delegate_trampoline": {
-            "value": 0
-          },
-          "extra_arg": {
-            "value": 0
-          },
-          "method_code": {
-            "value": 2523465397512
-          },
-          "interp_method": {
-            "value": 0
-          },
-          "interp_invoke_impl": {
-            "value": 0
-          },
-          "method_info": null,
-          "original_method_info": null,
-          "data": null,
-          "method_is_virtual": false
-        },
-        "_isTrueTimer": 1.5364387,
-        "_isFalseTimer": 0.0,
-        "activated": true,
-        "CustomBufferTime": 0.09,
-        "IsCanceled": false,
-        "_result": true,
-        "onResultChanged": null,
-        "result": true,
-        "OnResultChanged": null
-      },
+      "PlayerOnTheRight": null,
       "detectMode": "DetectGroundMode.PlayerGround",
       "KeepYDistance": true,
       "KeepDistanceToGround": 80.0,
@@ -263,14 +226,15 @@
       "VariationRatio": 0.2
     },
     "MonsterBase+States.Dead": {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_FlyingShooter_Farm (4)/States/MonsterSharedStates/DeadState@MonsterDeadState",
+      "$id": "/States/MonsterSharedStates/DeadState@DeadState",
+      "$component": "DeadState",
       "shootEvent": "UnityEvent(0)",
       "_selfDestructClip": null,
       "IsDeadShooted": false,
       "IsRemoveDeadBody": true,
       "hitData": null,
       "deadNoiseEffect": {
-        "$ref": "A3_S3/Room/Prefab/Gameplay_Middle/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_FlyingShooter_Farm (4)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/EventBroadcastSystem/Dead Noise@EffectDealer"
+        "$ref": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/EventBroadcastSystem/Dead Noise@Dead Noise"
       },
       "IsEnterClearVelX": false,
       "DeadValue": [],
@@ -288,7 +252,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.OutOfReach": {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_FlyingShooter_Farm (4)/States/Out of Reach@StealthOutOfReachState",
+      "$id": "/States/Out of Reach@Out of Reach",
+      "$component": "Out of Reach",
       "MinStateTime": 0.5,
       "OutOfReachReason": "OutOfReachState",
       "clip": null,
@@ -297,7 +262,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Confused": {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_FlyingShooter_Farm (4)/States/3_Confuse@StealthConfuse",
+      "$id": "/States/3_Confuse@3_Confuse",
+      "$component": "3_Confuse",
       "_confuseSoundPlayer": null,
       "clip": [
         {
@@ -310,7 +276,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.TurnAround": {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_FlyingShooter_Farm (4)/States/TurnAround@StealthTurnAround",
+      "$id": "/States/TurnAround@TurnAround",
+      "$component": "TurnAround",
       "_currentAnimState": null,
       "engagingTurnAroundAnimation": {
         "stateName": "EngagingTurnAround",
@@ -341,7 +308,8 @@
     }
   },
   "HurtInterrupt": {
-    "$id": "A3_S3/Room/Prefab/Gameplay_Middle/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_FlyingShooter_Farm (4)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/HurtInterrupt@MonsterHurtInterrupt",
+    "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/HurtInterrupt@HurtInterrupt",
+    "$component": "HurtInterrupt",
     "customInterruptTH": -1.0,
     "IsHurtInterruptChangeState": true,
     "IsForcePlayingBigHurtAnimation": false,
@@ -351,7 +319,8 @@
     "linkMoveWeights": []
   },
   "TeleportBinding": {
-    "$id": "A3_S3/Room/Prefab/Gameplay_Middle/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_FlyingShooter_Farm (4)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Teleport@TeleportBinding",
+    "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Teleport@Teleport",
+    "$component": "Teleport",
     "teleportScheme": "TeleportBinding+TeleportScheme.ToPlayerPosition",
     "offsetCandidates": [],
     "offset": {
@@ -363,18 +332,20 @@
   },
   "AttackSensors": [
     {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_FlyingShooter_Farm (4)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor@Level Once Sensor",
+      "$component": "Level Once Sensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [
         {
-          "$id": "A3_S3/Room/Prefab/Gameplay_Middle/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_FlyingShooter_Farm (4)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor/weight@LinkNextMoveStateWeight",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
           "stateWeightList": [
             {
-              "StateType": "MonsterBase+States.Undefined",
+              "StateType": "MonsterBase+States.Skip",
               "Weight": 1
             }
           ]
@@ -413,7 +384,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_FlyingShooter_Farm (4)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/0_RunAwaySensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/0_RunAwaySensor@0_RunAwaySensor",
+      "$component": "0_RunAwaySensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [],
@@ -425,7 +397,7 @@
       ],
       "AttackDelayMin": 0.0,
       "AttackDelayMax": 0.5,
-      "currentAttackDelay": 0.429992676,
+      "currentAttackDelay": 0.2643549,
       "coolDownType": "CooldownTokenType.NoCoolDown",
       "_stateCoolDownProvider": null,
       "coolDownStat": null,
@@ -450,7 +422,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_FlyingShooter_Farm (4)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor@1_AttackSensor",
+      "$component": "1_AttackSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [],
@@ -487,7 +460,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "A3_S3/Room/Prefab/Gameplay_Middle/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_FlyingShooter_Farm (4)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor@2_DodgePredictSensor",
+      "$component": "2_DodgePredictSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [],
@@ -499,7 +473,7 @@
       ],
       "AttackDelayMin": 0.0,
       "AttackDelayMax": 0.5,
-      "currentAttackDelay": 0.3581944,
+      "currentAttackDelay": 0.0751194954,
       "coolDownType": "CooldownTokenType.NoCoolDown",
       "_stateCoolDownProvider": null,
       "coolDownStat": null,
@@ -518,7 +492,8 @@
       "conditions": [],
       "_conditions": [
         {
-          "$id": "A3_S3/Room/Prefab/Gameplay_Middle/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/StealthGameMonster_FlyingShooter_Farm (4)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor/rollingCondition@PlayerMovePredictCondition",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor/rollingCondition@rollingCondition",
+          "$component": "rollingCondition",
           "ParryDetect": false,
           "DodgeDetect": true,
           "JumpDetect": false,

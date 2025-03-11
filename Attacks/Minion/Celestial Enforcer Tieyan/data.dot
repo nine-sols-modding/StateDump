@@ -1,0 +1,50 @@
+strict digraph "Foo" {
+	"rankdir"="LR";
+	node ["shape"="box","fontname"="Helvetica"];
+	edge ["fontname"="Helvetica"];
+	subgraph "cluster_attacksensors" {
+		"rank"="sink";
+		"label"="Attack Sensors";
+		"fontname"="Helvetica";
+		"Level Once Sensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>Level Once Sensor  </TD></TR></TABLE>>]
+		"Level Once Sensor_linked" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>Attack1_Triangle_ShootAttack  </TD></TR></TABLE>>,"margin"="0.05"]
+		"Level Once Sensor" -> "Level Once Sensor_linked"  ["label"="QueueEnd","color"="aquamarine3","fontcolor"="aquamarine3"]
+		"Level Once Sensor_weight" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>1 Skip  </TD></TR></TABLE>>]
+		"Level Once Sensor" -> "Level Once Sensor_weight"  ["label"="Weight","color"="aquamarine4","fontcolor"="aquamarine4"]
+		"RunAwaySensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>RunAwaySensor  </TD></TR></TABLE>>]
+		"AttackSensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>AttackSensor  </TD></TR></TABLE>>]
+		"AttackSensor_linked" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>Attack1_Triangle_ShootAttack  </TD></TR></TABLE>>,"margin"="0.05"]
+		"AttackSensor" -> "AttackSensor_linked"  ["label"="QueueEnd","color"="aquamarine3","fontcolor"="aquamarine3"]
+		"DodgePredictSensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>DodgePredictSensor  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">if: rollingCondition</FONT>  </TD></TR></TABLE>>]
+		"DodgePredictSensor_linked" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>Attack1_Triangle_ShootAttack  </TD></TR></TABLE>>,"margin"="0.05"]
+		"DodgePredictSensor" -> "DodgePredictSensor_linked"  ["label"="QueueEnd","color"="aquamarine3","fontcolor"="aquamarine3"]
+	}
+	
+	"Attack1_Triangle_ShootAttack" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"Attack1_Triangle_ShootAttack" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>Attack1_Triangle_ShootAttack  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">2.33s: LinkNextMove<br/>2.92s: Done</FONT>  </TD></TR></TABLE>>]
+	"Attack2_Teleport" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"Attack2_Teleport" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>Attack2_Teleport  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.58s: CheckFacing<br/>0.75s: LinkNextMove<br/>0.83s: Done</FONT>  </TD></TR></TABLE>>]
+	"Attack3_Twin_ShootAttack" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"Attack3_Twin_ShootAttack" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>Attack3_Twin_ShootAttack  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">1.83s: LinkNextMove<br/>2.42s: Done</FONT>  </TD></TR></TABLE>>]
+	"拋棄[4]Attack4_DangerCircle_Rush" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"拋棄[4]Attack4_DangerCircle_Rush" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>拋棄[4]Attack4_DangerCircle_Rush  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">3.17s: LinkNextMove<br/>3.50s: Done</FONT>  </TD></TR></TABLE>>]
+	"拋棄Attack5_SummonMonster" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"拋棄Attack5_SummonMonster" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>拋棄Attack5_SummonMonster  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">2.67s: CheckFacing<br/>2.83s: LinkNextMove<br/>3.00s: Done</FONT>  </TD></TR></TABLE>>]
+	"Attack6_QuickAttack_Normal_SingleShot" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"Attack6_QuickAttack_Normal_SingleShot" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>Attack6_QuickAttack_Normal_SingleShot  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">1.00s: LinkNextMove<br/>1.33s: Done</FONT>  </TD></TR></TABLE>>]
+	"拋棄[7]Attack7_QuickAttack_Danger" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"拋棄[7]Attack7_QuickAttack_Danger" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>拋棄[7]Attack7_QuickAttack_Danger  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">1.50s: LinkNextMove<br/>2.08s: Done</FONT>  </TD></TR></TABLE>>]
+	"Attack8_BallNearAttack" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"Attack8_BallNearAttack" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>Attack8_BallNearAttack  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.83s: EnableGravity<br/>1.00s: DisableGravity<br/>1.83s: LinkNextMove<br/>1.83s: CheckFacing<br/>3.92s: LinkNextMove<br/>4.08s: Done</FONT>  </TD></TR></TABLE>>]
+	"拋棄[9]Attack9_ThrowBallAttack" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"拋棄[9]Attack9_ThrowBallAttack" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>拋棄[9]Attack9_ThrowBallAttack  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">1.50s: LinkNextMove<br/>2.08s: Done</FONT>  </TD></TR></TABLE>>]
+	"Hurt1" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"Hurt1" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>Hurt1  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.33s: Done</FONT>  </TD></TR></TABLE>>]
+	"Hurt2" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"Hurt2" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>Hurt2  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">2.00s: Done</FONT>  </TD></TR></TABLE>>]
+	"LastHit" -> "DeadState"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"LastHit" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>LastHit  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">1.00s: Done</FONT>  </TD></TR></TABLE>>]
+	"PostureBreak" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"PostureBreak" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>PostureBreak  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">2.00s: Done</FONT>  </TD></TR></TABLE>>]
+	"Idle" ["label"="Idle (Init)"]
+}

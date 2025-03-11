@@ -1,0 +1,35 @@
+strict digraph "Foo" {
+	"rankdir"="LR";
+	node ["shape"="box","fontname"="Helvetica"];
+	edge ["fontname"="Helvetica"];
+	subgraph "cluster_attacksensors" {
+		"rank"="sink";
+		"label"="Attack Sensors";
+		"fontname"="Helvetica";
+		"Level Once Sensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>Level Once Sensor  </TD></TR></TABLE>>]
+		"Level Once Sensor_linked" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>Danger  </TD></TR></TABLE>>,"margin"="0.05"]
+		"Level Once Sensor" -> "Level Once Sensor_linked"  ["label"="QueueEnd","color"="aquamarine3","fontcolor"="aquamarine3"]
+		"RunAwaySensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>RunAwaySensor  </TD></TR></TABLE>>]
+		"AttackSensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>AttackSensor  </TD></TR></TABLE>>]
+		"AttackSensor_linked" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>Danger  </TD></TR><TR><TD>JumpSlash  </TD></TR><TR><TD>DoubleJumpSlash  </TD></TR></TABLE>>,"margin"="0.05"]
+		"AttackSensor" -> "AttackSensor_linked"  ["label"="QueueEnd","color"="aquamarine3","fontcolor"="aquamarine3"]
+		"DodgePredictSensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>DodgePredictSensor  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">if: rollingCondition</FONT>  </TD></TR></TABLE>>]
+		"DodgePredictSensor_linked" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>Danger  </TD></TR></TABLE>>,"margin"="0.05"]
+		"DodgePredictSensor" -> "DodgePredictSensor_linked"  ["label"="QueueEnd","color"="aquamarine3","fontcolor"="aquamarine3"]
+		"AttackPredictSensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>AttackPredictSensor  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">if: attackCondition</FONT>  </TD></TR></TABLE>>]
+		"AttackPredictSensor_linked" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>Danger  </TD></TR></TABLE>>,"margin"="0.05"]
+		"AttackPredictSensor" -> "AttackPredictSensor_linked"  ["label"="QueueEnd","color"="aquamarine3","fontcolor"="aquamarine3"]
+		"AttackRunToSensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>AttackRunToSensor  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">if: state is Engaging</FONT>  </TD></TR></TABLE>>]
+		"AttackRunToSensor_linked" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>Danger  </TD></TR></TABLE>>,"margin"="0.05"]
+		"AttackRunToSensor" -> "AttackRunToSensor_linked"  ["label"="QueueEnd","color"="aquamarine3","fontcolor"="aquamarine3"]
+	}
+	
+	"Danger" -> "DeadState"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"Danger" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>Danger  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">1.70s: Done</FONT>  </TD></TR></TABLE>>]
+	"JumpSlash" -> "DeadState"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"JumpSlash" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>JumpSlash  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">1.50s: Done</FONT>  </TD></TR></TABLE>>]
+	"DoubleJumpSlash" -> "DeadState"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"DoubleJumpSlash" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>DoubleJumpSlash  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.58s: CheckFacing<br/>0.92s: CheckFacing<br/>1.50s: Done</FONT>  </TD></TR></TABLE>>]
+	"HideState" -> "DeadState"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"HideState" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>HideState  </TD></TR></TABLE>>]
+}

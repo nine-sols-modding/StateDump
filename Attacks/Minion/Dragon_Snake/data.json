@@ -2,11 +2,13 @@
   "InitState": "MonsterBase+States.WanderingIdle",
   "BossGeneralStates": {
     "MonsterBase+States.Attack1": {
-      "$id": "Dragon_Snake(Clone)/States/Attacks/[1]Attack@BossGeneralState",
+      "$id": "/States/Attacks/[1]Attack@[1]Attack",
+      "$component": "[1]Attack",
       "state": "MonsterBase+States.Attack1",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -26,11 +28,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Hurt": {
-      "$id": "Dragon_Snake(Clone)/States/HurtState@BossGeneralState",
+      "$id": "/States/HurtState@HurtState",
+      "$component": "HurtState",
       "state": "MonsterBase+States.Hurt",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -54,11 +58,13 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Hurt_Big": {
-      "$id": "Dragon_Snake(Clone)/States/Hurt_BigState@BossGeneralState",
+      "$id": "/States/Hurt_BigState@Hurt_BigState",
+      "$component": "Hurt_BigState",
       "state": "MonsterBase+States.Hurt_Big",
       "linkedStateTypes": [],
       "linkNextMoveStateWeights": [],
       "linkInterruptMoveConditionalWeights": [],
+      "DelayOffset": 0.0,
       "groupingNodes": [],
       "ToCloseTransitionState": "MonsterBase+States.Undefined",
       "HasInterruptTurnaround": false,
@@ -84,18 +90,19 @@
   },
   "OtherStates": {
     "MonsterBase+States.WanderingIdle": {
-      "$id": "Dragon_Snake(Clone)/States/0_Wandering_Idle@StealthWanderingIdle",
+      "$id": "/States/0_Wandering_Idle@0_Wandering_Idle",
+      "$component": "0_Wandering_Idle",
       "originalPos": {
-        "x": 0.0,
-        "y": 0.0,
+        "x": 1186.25,
+        "y": -3150.5,
         "z": 0.0
       },
       "originalFacing": "Facings.Left",
-      "SinglePointIdle": true,
-      "newPosTime": -1.0,
+      "SinglePointIdle": false,
+      "newPosTime": 1.0,
       "newPosTimer": -1.0,
       "IsNewPosRandom": false,
-      "configSetting": "StealthWanderingIdle+ConfigWanderingSetting.Undefined",
+      "configSetting": "StealthWanderingIdle+ConfigWanderingSetting.HasWandering",
       "clip": [
         {
           "Time": 0.0,
@@ -107,15 +114,49 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Wandering": {
-      "$id": "Dragon_Snake(Clone)/States/0_Wandering_Walking@StealthWandering",
+      "$id": "/States/0_Wandering_Walking@0_Wandering_Walking",
+      "$component": "0_Wandering_Walking",
       "MaxRun": 40.0,
       "RunAccel": 100.0,
       "RunReduce": 400.0,
       "wanderingPointGenerator": {
-        "$ref": "Dragon_Snake(Clone)/States/0_Wandering_Walking/WanderingPoints@LoopWanderingPointGenerator"
+        "$ref": "A3_S1/Room/Prefab/Gameplay_BeforeBoat/[MonsterBehaviorProvider] EngagingToken/[自然巡邏框架]/[MonsterBehaviorProvider] LevelDesign_CullingAndResetGroup/[MonsterBehaviorProvider] LevelDesign_Init_Scenario /[MonsterBehaviorProvider] LevelDesign_WanderingGroup (巡邏的人)/WanderingPoints@WanderingPoints"
       },
       "FailReason": "",
-      "preAllocateGotoTargetSuccess": null,
+      "preAllocateGotoTargetSuccess": {
+        "delegates": null,
+        "method_ptr": {
+          "value": 2183708824640
+        },
+        "invoke_impl": {
+          "value": 2174626701440
+        },
+        "m_target": {
+          "$ref": "/States/0_Wandering_Walking@0_Wandering_Walking"
+        },
+        "method": {
+          "value": 2180079852216
+        },
+        "delegate_trampoline": {
+          "value": 0
+        },
+        "extra_arg": {
+          "value": 0
+        },
+        "method_code": {
+          "value": 2184140250824
+        },
+        "interp_method": {
+          "value": 0
+        },
+        "interp_invoke_impl": {
+          "value": 0
+        },
+        "method_info": null,
+        "original_method_info": null,
+        "data": null,
+        "method_is_virtual": false
+      },
       "OnAirMoveSpeed": 0.65,
       "canTurnAround": true,
       "clip": [
@@ -129,11 +170,12 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Alerted": {
-      "$id": "Dragon_Snake(Clone)/States/Alert@StealthAlertState",
+      "$id": "/States/Alert@Alert",
+      "$component": "Alert",
       "_alertSoundPlayer": null,
       "customStartScoutTime": -1.0,
       "lookAroundParma": {
-        "$ref": "Dragon_Snake(Clone)/States/0_Wandering_Walking@MoveParam"
+        "$ref": "/States/0_Wandering_Walking@0_Wandering_Walking"
       },
       "clip": [
         {
@@ -146,7 +188,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Engaging": {
-      "$id": "Dragon_Snake(Clone)/States/1_Engaging@StealthEngaging",
+      "$id": "/States/1_Engaging@1_Engaging",
+      "$component": "1_Engaging",
       "IsEngagingInstantAttack": false,
       "ForceRunToPlayer": false,
       "beforeTransitionClip": null,
@@ -167,12 +210,14 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.PreAttack": {
-      "$id": "Dragon_Snake(Clone)/States/1_PreAttack@StealthPreAttackState",
+      "$id": "/States/1_PreAttack@1_PreAttack",
+      "$component": "1_PreAttack",
       "exitPreAttackCoolDown": 2.0,
       "ChangeToEngageDelayTime": 0.0,
       "ApproachingSchemes": [
         {
-          "$id": "Dragon_Snake(Clone)/States/1_PreAttack/preAttack@StealthEngagingScheme",
+          "$id": "/States/1_PreAttack/preAttack@preAttack",
+          "$component": "preAttack",
           "EnterApproachingRange": 77,
           "EnterApproachingRangeRandomOffset": 20,
           "ExitApproachingRange": 112,
@@ -217,7 +262,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Panic": {
-      "$id": "Dragon_Snake(Clone)/States/Not See Player/1_Panic@StealthPanicState",
+      "$id": "/States/Not See Player/1_Panic@1_Panic",
+      "$component": "1_Panic",
       "isDone": false,
       "MinStateTime": 0.5,
       "clip": [
@@ -231,7 +277,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.OutOfReach": {
-      "$id": "Dragon_Snake(Clone)/States/Not See Player/3_Out of Reach@StealthOutOfReachState",
+      "$id": "/States/Not See Player/3_Out of Reach@3_Out of Reach",
+      "$component": "3_Out of Reach",
       "MinStateTime": 0.5,
       "OutOfReachReason": "OutOfReachState",
       "clip": [
@@ -245,9 +292,10 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Confused": {
-      "$id": "Dragon_Snake(Clone)/States/Not See Player/4_Confuse@StealthConfuse",
+      "$id": "/States/Not See Player/4_Confuse@4_Confuse",
+      "$component": "4_Confuse",
       "_confuseSoundPlayer": {
-        "$ref": "Dragon_Snake(Clone)/States/Not See Player/4_Confuse/confuseSound@SoundPlayer"
+        "$ref": "/States/Not See Player/4_Confuse/confuseSound@confuseSound"
       },
       "clip": [
         {
@@ -260,7 +308,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.TurnAround": {
-      "$id": "Dragon_Snake(Clone)/States/TurnAround@StealthTurnAround",
+      "$id": "/States/TurnAround@TurnAround",
+      "$component": "TurnAround",
       "_currentAnimState": null,
       "engagingTurnAroundAnimation": {
         "stateName": "EngagingTurnAround",
@@ -290,20 +339,21 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.Dead": {
-      "$id": "Dragon_Snake(Clone)/States/DeadState@MonsterDeadState",
+      "$id": "/States/DeadState@DeadState",
+      "$component": "DeadState",
       "shootEvent": "UnityEvent(0)",
       "_selfDestructClip": null,
       "IsDeadShooted": false,
       "IsRemoveDeadBody": true,
       "hitData": null,
       "deadNoiseEffect": {
-        "$ref": "Dragon_Snake(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/EventBroadcastSystem/Dead Noise@EffectDealer"
+        "$ref": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/EventBroadcastSystem/Dead Noise@Dead Noise"
       },
       "IsEnterClearVelX": true,
       "DeadValue": [],
       "overrideByTimeline": null,
       "monsterViewDummy": null,
-      "_isCulling": false,
+      "_isCulling": true,
       "clip": [
         {
           "Time": 0.0,
@@ -319,7 +369,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.MoveToPosition": {
-      "$id": "Dragon_Snake(Clone)/States/MoveToState@StealthMoveToState",
+      "$id": "/States/MoveToState@MoveToState",
+      "$component": "MoveToState",
       "targetPos": {
         "x": 0.0,
         "y": 0.0,
@@ -338,7 +389,8 @@
       "VariationRatio": 0.3
     },
     "MonsterBase+States.JumpEnter": {
-      "$id": "Dragon_Snake(Clone)/States/JumpEnterState@MonsterJumpEnterState",
+      "$id": "/States/JumpEnterState@JumpEnterState",
+      "$component": "JumpEnterState",
       "subState": "MonsterJumpEnterState+JumpEnterSubState.ThrowUp",
       "ThrowUpAnimation": "JumpEnterUp",
       "ThrowDownAnimtion": "JumpEnterUp",
@@ -354,7 +406,8 @@
     }
   },
   "HurtInterrupt": {
-    "$id": "Dragon_Snake(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/HurtInterrupt@MonsterHurtInterrupt",
+    "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/HurtInterrupt@HurtInterrupt",
+    "$component": "HurtInterrupt",
     "customInterruptTH": -1.0,
     "IsHurtInterruptChangeState": true,
     "IsForcePlayingBigHurtAnimation": false,
@@ -364,7 +417,8 @@
     "linkMoveWeights": []
   },
   "TeleportBinding": {
-    "$id": "Dragon_Snake(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Teleport@TeleportBinding",
+    "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Teleport@Teleport",
+    "$component": "Teleport",
     "teleportScheme": "TeleportBinding+TeleportScheme.ToPlayerPosition",
     "offsetCandidates": [],
     "offset": {
@@ -376,10 +430,25 @@
   },
   "AttackSensors": [
     {
-      "$id": "Dragon_Snake(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor@Level Once Sensor",
+      "$component": "Level Once Sensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
-      "AttackWeightPhaseList": [],
+      "AttackWeightPhaseList": [
+        {
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/Level Once Sensor/weight@weight",
+          "$component": "weight",
+          "type": "LinkMoveSetType.NextMove",
+          "IsRandom": true,
+          "mustUseStates": [],
+          "stateWeightList": [
+            {
+              "StateType": "MonsterBase+States.Attack1",
+              "Weight": 1
+            }
+          ]
+        }
+      ],
       "testWeight": null,
       "OnlySameArea": false,
       "OnlyMonsterCanSeePlayer": true,
@@ -388,7 +457,7 @@
       ],
       "AttackDelayMin": 0.0,
       "AttackDelayMax": 0.0,
-      "currentAttackDelay": 0.25,
+      "currentAttackDelay": 0.0,
       "coolDownType": "CooldownTokenType.NormalAttack",
       "_stateCoolDownProvider": null,
       "coolDownStat": null,
@@ -413,7 +482,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "Dragon_Snake(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/0_RunAwaySensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/0_RunAwaySensor@0_RunAwaySensor",
+      "$component": "0_RunAwaySensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [],
@@ -425,7 +495,7 @@
       ],
       "AttackDelayMin": 0.0,
       "AttackDelayMax": 0.5,
-      "currentAttackDelay": 0.25,
+      "currentAttackDelay": 0.360056162,
       "coolDownType": "CooldownTokenType.NoCoolDown",
       "_stateCoolDownProvider": null,
       "coolDownStat": null,
@@ -450,7 +520,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "Dragon_Snake(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackSensor@1_AttackSensor",
+      "$component": "1_AttackSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [],
@@ -462,7 +533,7 @@
       ],
       "AttackDelayMin": 0.1,
       "AttackDelayMax": 0.5,
-      "currentAttackDelay": 0.25,
+      "currentAttackDelay": 0.385216475,
       "coolDownType": "CooldownTokenType.NormalAttack",
       "_stateCoolDownProvider": null,
       "coolDownStat": null,
@@ -487,7 +558,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "Dragon_Snake(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor@2_DodgePredictSensor",
+      "$component": "2_DodgePredictSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [],
@@ -518,7 +590,8 @@
       "conditions": [],
       "_conditions": [
         {
-          "$id": "Dragon_Snake(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor/rollingCondition@PlayerMovePredictCondition",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/2_DodgePredictSensor/rollingCondition@rollingCondition",
+          "$component": "rollingCondition",
           "ParryDetect": false,
           "DodgeDetect": true,
           "JumpDetect": false,
@@ -541,12 +614,14 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "Dragon_Snake(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor@3_AttackPredictSensor",
+      "$component": "3_AttackPredictSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingAndPreAttackOrOutOfReachAndPanic",
       "AttackWeightPhaseList": [
         {
-          "$id": "Dragon_Snake(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/weight@LinkNextMoveStateWeight",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/weight@weight",
+          "$component": "weight",
           "type": "LinkMoveSetType.NextMove",
           "IsRandom": true,
           "mustUseStates": [],
@@ -580,7 +655,8 @@
       "conditions": [],
       "_conditions": [
         {
-          "$id": "Dragon_Snake(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/attackCondition@PlayerMovePredictCondition",
+          "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/3_AttackPredictSensor/attackCondition@attackCondition",
+          "$component": "attackCondition",
           "ParryDetect": false,
           "DodgeDetect": false,
           "JumpDetect": false,
@@ -603,7 +679,8 @@
       "IsOnGroundOnly": false
     },
     {
-      "$id": "Dragon_Snake(Clone)/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackRunToSensor@AttackSensor",
+      "$id": "/MonsterCore/Animator(Proxy)/Animator/LogicRoot/Sensors/1_AttackRunToSensor@1_AttackRunToSensor",
+      "$component": "1_AttackRunToSensor",
       "IsAvailbleInCombo": false,
       "forStateType": "AttackSensorForStateType.EngagingOnly",
       "AttackWeightPhaseList": [],

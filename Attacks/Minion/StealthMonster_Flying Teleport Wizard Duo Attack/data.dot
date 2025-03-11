@@ -1,0 +1,38 @@
+strict digraph "Foo" {
+	"rankdir"="LR";
+	node ["shape"="box","fontname"="Helvetica"];
+	edge ["fontname"="Helvetica"];
+	subgraph "cluster_attacksensors" {
+		"rank"="sink";
+		"label"="Attack Sensors";
+		"fontname"="Helvetica";
+		"Level Once Sensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>Level Once Sensor  </TD></TR></TABLE>>]
+		"Level Once Sensor_linked" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>Attack1_Shoot  </TD></TR></TABLE>>,"margin"="0.05"]
+		"Level Once Sensor" -> "Level Once Sensor_linked"  ["label"="QueueEnd","color"="aquamarine3","fontcolor"="aquamarine3"]
+		"Level Once Sensor_weight" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>1 Skip  </TD></TR></TABLE>>]
+		"Level Once Sensor" -> "Level Once Sensor_weight"  ["label"="Weight","color"="aquamarine4","fontcolor"="aquamarine4"]
+		"RunAwaySensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>RunAwaySensor  </TD></TR></TABLE>>]
+		"AttackSensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>AttackSensor  </TD></TR></TABLE>>]
+		"AttackSensor_linked" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>Attack2_Teleport  </TD></TR></TABLE>>,"margin"="0.05"]
+		"AttackSensor" -> "AttackSensor_linked"  ["label"="QueueEnd","color"="aquamarine3","fontcolor"="aquamarine3"]
+		"AttackSensor_mustuse" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="4"><TR><TD>Attack1_Shoot  </TD></TR></TABLE>>]
+		"AttackSensor" -> "AttackSensor_mustuse"  ["label"="Initial","color"="goldenrod1","fontcolor"="goldenrod1"]
+		"AttackSensor_weight" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>1 Attack2_Teleport  </TD></TR></TABLE>>]
+		"AttackSensor" -> "AttackSensor_weight"  ["label"="Weight","color"="aquamarine4","fontcolor"="aquamarine4"]
+		"DodgePredictSensor" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>DodgePredictSensor  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">if: rollingCondition</FONT>  </TD></TR></TABLE>>]
+		"DodgePredictSensor_linked" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>Attack1_Shoot  </TD></TR></TABLE>>,"margin"="0.05"]
+		"DodgePredictSensor" -> "DodgePredictSensor_linked"  ["label"="QueueEnd","color"="aquamarine3","fontcolor"="aquamarine3"]
+	}
+	
+	"Attack1_Shoot" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"Attack1_Shoot" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>Attack1_Shoot  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">1.67s: Done</FONT>  </TD></TR></TABLE>>]
+	"Attack2_Teleport" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"Attack2_Teleport_weight" ["shape"="box","style"="dotted","label"=<<TABLE border="0" cellspacing="0" cellborder="0" cellpadding="2"><TR><TD>1 Attack1_Shoot  </TD></TR></TABLE>>]
+	"Attack2_Teleport" -> "Attack2_Teleport_weight"  ["label"="Weight","color"="aquamarine4","fontcolor"="aquamarine4"]
+	"Attack2_Teleport" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>Attack2_Teleport  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">1.50s: CheckFacing<br/>1.83s: LinkNextMove<br/>1.90s: Done</FONT>  </TD></TR></TABLE>>]
+	"Hurt1" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"Hurt1" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>Hurt1  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.17s: Done</FONT>  </TD></TR></TABLE>>]
+	"Hurt2" -> "Engaging"  ["color"="cornsilk3","fontcolor"="cornsilk3"]
+	"Hurt2" ["shape"="plaintext","label"=<<TABLE border="0" cellspacing="0" cellborder="1" cellpadding="2"><TR><TD>Hurt2  </TD></TR><TR><TD align="left" balign="left"><FONT point-size="12" color="azure4">0.25s: Done</FONT>  </TD></TR></TABLE>>]
+	"Idle" ["label"="Idle (Init)"]
+}
